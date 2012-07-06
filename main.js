@@ -26,8 +26,8 @@ var APP = {
 				$page_previous = $page_current.next();
 				previous = $page_previous.attr('class').split(' ')[0].replace("-", "_").toString();
 				window.setTimeout(function(){
-					APP[previous].reset($page_previous)
-				}, 5000)
+					APP[previous].reset($page_previous);
+				}, 1200);
 			};
 
 		var stepForward = function() {
@@ -55,29 +55,13 @@ var APP = {
 		reset: function(current) {}
 	},
 
-	// REVIEW
-	// whichTransitionEvent: function() {
-	// 	var t;
-	// 	var el = document.createElement('fakeelement');
-	// 	var transitions = {
-	// 		'transition':'transitionEnd',
-	// 		'OTransition':'oTransitionEnd',
-	// 		'MSTransition':'msTransitionEnd',
-	// 		'MozTransition':'transitionend',
-	// 		'WebkitTransition':'webkitTransitionEnd'
-	// 	};
-	// 	for(t in transitions){
-	// 		if( el.style[t] !== undefined ){
-	// 			return transitions[t];
-	// 		}
-	// 	}
-	// },
 	/* SCENE exposition-2 */
 
 	exposition_2: {
+
 		start: function(current) {
-			// REVIEW
-			// var transitionEnd = APP.whichTransitionEvent();
+			current.children('.cloud').css('-webkit-transition','');
+
 			var $cloud = current.children('.cloud');
 			var $house_right = current.children('.house-right');
 			var $house_left = current.children('.house-left');
@@ -87,7 +71,7 @@ var APP = {
 		},
 
 		reset: function(current) {
-			console.log(current);
+			current.children('.cloud').css('-webkit-transition','none');
 			current.children().toggleClass('stop go');
 		}
 	},
