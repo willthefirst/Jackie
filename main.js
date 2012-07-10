@@ -16,9 +16,9 @@ var APP = {
 
 			var page = APP.paginate;
 
-			page.newPage($('.page-current'));
+			page.newPage($('.current'));
 
-			/* Navigation */		
+			/* Navigation */
 			$('.btn-next').on('click', page.stepForward);
 			$('.btn-previous').on('click', page.stepBack);
 		},
@@ -30,18 +30,17 @@ var APP = {
 			page.$current = current;
 
 			/* Initiate scene-specific JS */
-			var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
-			APP[scene].start(page.$current);
+			// var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
+			// APP[scene].start(page.$current);
 
-			page.$next     = page.$current.prev();
-			page.$previous = page.$current.next();
+			page.$next     = page.$current.next();
+
+			page.$previous = page.$current.prev();
 
 			/* Reset previous page elements */
-			var previous = page.$previous.attr('class').split(' ')[0].replace("-", "_").toString();
+			// var previous = page.$previous.attr('class').split(' ')[0].replace("-", "_").toString();
 
-			window.setTimeout(function(){
-				APP[previous].reset(page.$previous);
-			}, 1200);
+
 
 		},
 
@@ -49,8 +48,13 @@ var APP = {
 
 			var page = APP.paginate;
 
-			page.$current.toggleClass('hidden page-current');
-			page.$next.toggleClass('page-current hidden');
+
+			var a = page.$current;
+			page.$next.toggleClass('current hidden');
+
+			window.setTimeout(function() {
+				a.toggleClass('hidden current');
+			}, 1200);
 
 			page.newPage(page.$next);
 
@@ -59,9 +63,11 @@ var APP = {
 		stepBack: function() {
 
 			var page = APP.paginate;
+			page.$current.toggleClass('hidden current');
 
-			page.$current.toggleClass('hidden page-current');
-			page.$previous.toggleClass('page-current hidden');
+			page.$previous.toggleClass('current hidden');
+
+
 
 			page.newPage(page.$previous);
 
@@ -83,13 +89,13 @@ var APP = {
 		start: function(current) {
 			$('.btn-previous').hide();
 
-			var $cloud_1 = current.children('.cloud-1');
-			var $cloud_2 = current.children('.cloud-2');
-			var $left_cloud = current.children('.left-cloud');
-			var $right_cloud = current.children('.right-cloud');
-			var $sky = current.children('.sky');
+			// var $cloud_1 = current.children('.cloud-1');
+			// var $cloud_2 = current.children('.cloud-2');
+			// var $left_cloud = current.children('.left-cloud');
+			// var $right_cloud = current.children('.right-cloud');
+			// var $sky = current.children('.sky');
 
-			current.children($cloud_1, $cloud_2, $left_cloud, $right_cloud, $sky).toggleClass('stop go');
+			// current.children($cloud_1, $cloud_2, $left_cloud, $right_cloud, $sky).toggleClass('stop go');
 		},
 
 		reset: function(current) {
@@ -104,19 +110,19 @@ var APP = {
 		start: function(current) {
 			$('.btn-previous').show();
 
-			current.children('.cloud').css('-webkit-transition','');
+			// current.children('.cloud').css('-webkit-transition','');
 
-			var $cloud = current.children('.cloud');
-			var $house_right = current.children('.house-right');
-			var $house_left = current.children('.house-left');
-			var $sign = current.children('.sign');
+			// var $cloud = current.children('.cloud');
+			// var $house_right = current.children('.house-right');
+			// var $house_left = current.children('.house-left');
+			// var $sign = current.children('.sign');
 
-			current.children($cloud, $house_right, $house_left, $sign).toggleClass('stop go');
+			// current.children($cloud, $house_right, $house_left, $sign).toggleClass('stop go');
 		},
 
 		reset: function(current) {
-			current.children('.cloud').css('-webkit-transition','none');
-			current.children().toggleClass('stop go');
+			// current.children('.cloud').css('-webkit-transition','none');
+			// current.children().toggleClass('stop go');
 		}
 	},
 
