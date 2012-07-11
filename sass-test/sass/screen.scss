@@ -32,7 +32,6 @@
 		//@end
 
 		@include transition(opacity 1s linear);
-
 		@include full-frame;
 
 		div {
@@ -80,12 +79,16 @@
 /* @group general animations/interactions */
 
 	.hidden {
-
 		visibility: hidden;
 		opacity: 0;
 	}
 
 	.current {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.previous {
 		visibility: visible;
 		opacity: 1;
 	}
@@ -100,28 +103,27 @@
 
 	.title {
 		@include dimensions(577.6px, 533px);
-		background: url(../../images/1_start/optimized/retina/title_2x.png) no-repeat top left;
+		@include responsive-bg(1start/title, top left);
 		left: 50%;
 		margin-left: -280.5px;		
 	}
 
 	.mountain {
 		@include dimensions(100%, 225px);
-		background: url(../../images/1_start/optimized/retina/mountain_2x.png) no-repeat bottom left;		
+		@include responsive-bg(1start/mountain, bottom left);
 		bottom: -2px;
 	}
 
 	.sky {
 		@include single-transition(all, 15s, linear, 0s);
 		@include dimensions(100%, 550px);
-		background: url(../../images/1_start/optimized/retina/sky_2x.png) no-repeat bottom left;		
+		@include responsive-bg(1start/sky, bottom left);
 		bottom: -100px;
 	}
 
 	.cloud-1 {
-		@include single-transition(all, 50s, linear, 2s);
 		@include dimensions(230px, 178px);
-		background: url(../../images/1_start/optimized/retina/cloud1_2x.png) no-repeat;
+		@include responsive-bg(1start/cloud1);
 		bottom: 225px;
 		right: 75px;
 	}
@@ -129,71 +131,66 @@
 	.cloud-2 {
 		@include single-transition(all, 50s, linear, 2s);
 		@include dimensions(295.2px, 120px);
-		background: url(../../images/1_start/optimized/retina/cloud2_2x.png) no-repeat;
+		@include responsive-bg(1start/cloud2, bottom left);
 		top: 170px;
 		left: 120px;
 	}
 
 	.titlej {
 		@include dimensions(273.45px,268.95px);
-		background: url(../../images/1_start/optimized/retina/frontj_2x.png) no-repeat;
+		@include responsive-bg(1start/frontj);
 		top: 148px;
 		left: 240px;
 	}
 
 	.right-cloud {
 		@include dimensions(890px, 460px);
-		background: url(../../images/1_start/optimized/retina/right-cloud_2x.png) no-repeat top right;
+		@include responsive-bg(1start/right-cloud, top right);
 		right: 0;
 	}
 
 	.left-cloud {
-		@include single-transition(all, 3s, ease-in, 1s);
 		@include dimensions(950px, 640px);
-		background: url(../../images/1_start/optimized/retina/left-cloud_2x.png) no-repeat top left;
+		@include responsive-bg(1start/left-cloud);
 		top: 0px;
 	}
 
 	/* @group animations */
 
 		.current > .right-cloud {
-			@include animation(right-cloud, 3s, 1s, $function:ease-in, $fill-mode:forwards);
+			@include animation(right-cloud, 5s, 1s, $function:ease-in, $fill-mode:forwards);
 		}
 
-		@-webkit-keyframes right-cloud {
-			0% {
-				@include translate3d(0, 0, 0); 
-			}
-
-			100% {
-				@include translate3d(200%, 0, 0); 
-			}
-		}
-
-		@-moz-keyframes right-cloud {
-			0% {
-				@include translate3d(0, 0, 0); 
-			}
-
-			100% {
-				@include translate3d(200%, 0, 0); 
-			}
+		@include keyframes(right-cloud) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(200%, 0, 0); }
 		}
 
 		.current > .left-cloud {
-			@include translate3d(-200%, 0, 0); 
+			@include animation(left-cloud, 5s, 1s, $function:ease-in, $fill-mode:forwards);
+		}
+
+		@include keyframes(left-cloud) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(-200%, 0, 0); }
 		}
 
 		.current > .cloud-1 {
-			@include translate3d(-300%, 0, 0); 
+			@include animation(cloud-1, 50s, 1s, $function:linear, $fill-mode:forwards);
+		}
+
+		@include keyframes(cloud-1) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(-300%, 0, 0); }
 		}
 
 		.current > .cloud-2 {
-			@include translate3d(300%, 0, 0); 
+			@include animation(cloud-2, 50s, 1s, $function:linear, $fill-mode:forwards);
 		}
 
-		.current > .sky {
-			@include translate3d(0, 5%, 0);
+		@include keyframes(cloud-2) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(300%, 0, 0); }
 		}
 
 	/* @end */
@@ -208,7 +205,7 @@
 		height: 419px;
 		bottom: 111px;
 		right: 85px;
-		background: url(../../images/2_exposition/optimized/retina/house_right_2x.png) no-repeat bottom left;
+		@include responsive-bg(2exposition/house_right, bottom left);
 	 }
 
 	.house-left {
@@ -217,25 +214,23 @@
 		height: 458.08px;
 		bottom: 173px;
 		right: 195px;
-		background: url(../../images/2_exposition/optimized/retina/house_left_2x.png) no-repeat bottom left;
+		@include responsive-bg(2exposition/house_left, bottom left);
 	 }
 
 	.cloud {
-		@include single-transition(all, 60s, linear, 0s);
 		height: 299.46px;
 		width: 395.87px;
 		top: 20px;
 		right: -100px;
-		background: url(../../images/2_exposition/optimized/retina/cloud_2x.png) no-repeat bottom left;
+		@include responsive-bg(2exposition/cloud, bottom left);
 	 }
 
 	.sign {
-		@include single-transition(transform, .5s, linear, 9s);
 		height: 141px;
 		width: 173px;
 		left: 406px;
 		bottom: 177px;
-		background: url(../../images/2_exposition/optimized/retina/sign_2x.png) no-repeat bottom left;
+		@include responsive-bg(2exposition/sign, bottom left);
 		@include background-size(100% 100%);
 		@include transform(rotate(240deg));
 		@include transform-origin(90%, 93%);
@@ -251,7 +246,7 @@
 		width: 100%;
 		height: 485px;
 		bottom: 0;
-		background: url(../../images/2_exposition/optimized/retina/grass_top_2x.png) no-repeat bottom left;
+		@include responsive-bg(2exposition/grass_top, bottom left);
 		@include background-size(100% 100%);
 	}
 
@@ -259,7 +254,7 @@
 		width: 100%;
 		height: 188px;
 		bottom: 0;
-		background: url(../../images/2_exposition/optimized/retina/grass_bottom_2x.png) no-repeat bottom left;
+		@include responsive-bg(2exposition/grass_bottom, bottom left);
 		@include background-size(100% 100%);
 	}
 
@@ -269,86 +264,66 @@
 
 	/* @group animations */
 
-		@-webkit-keyframes fall_left {
-			0% {
-				 opacity: 1;
-				-webkit-transform: rotate3D(0, 0, 0, 0deg);
-			}
-
-			60% {
-				-webkit-transform: rotate3D(100, 25, 0, 150deg);
-				opacity: 1;
-			}
-
-			100% {
-				-webkit-transform: rotate3D(100, 25, 0, 150deg);
-				opacity: 0;
-			}
-		}
-
-		@-moz-keyframes fall_left {
-			0% {
-				opacity: 1;
-				-moz-transform: rotate3D(0, 0, 0, 0deg);
-			}
-
-			60% {
-				-moz-transform: rotate3D(100, -25, 0, 150deg);
-				opacity: 1;
-			}
-
-			100% {
-				opacity: 0;
-			} 
-		}
-
-		@-webkit-keyframes fall_right {
-			0% {
-				opacity: 1;
-				-webkit-transform: rotate3D(0, 0, 0, 0deg);
-			}
-
-			60% {
-				-webkit-transform: rotate3D(100, -25, 0, 150deg);
-				opacity: 1;
-			}
-
-			100% {
-				-webkit-transform: rotate3D(100, -25, 0, 150deg);
-				opacity: 0;
-			}
-		}
-
-		@-moz-keyframes fall_left {
-			0% {
-				opacity: 1;
-				-moz-transform: rotate3D(0, 0, 0, 0deg);
-			}
-
-			60% {
-				-moz-transform: rotate3D(100, -25, 0, 150deg);
-				opacity: 1;
-			}
-
-			100% {
-				opacity: 0;
-			}
-		}
-
 		.current > .house-right {
 			@include animation(fall_right, 2s, 5s, $function:ease-in, $fill-mode:forwards);
+		}
+
+		@include keyframes(fall_right) {
+			0% {
+				opacity: 1;
+				@include rotate3d(0, 0, 0, 0deg);
+			}
+
+			60% {
+				@include rotate3d(100, -25, 0, 150deg);
+				opacity: 1;
+			}
+
+			100% {
+				@include rotate3d(100, -25, 0, 150deg);
+				opacity: 0;
+			}
 		}
 
 		.current > .house-left {
 			@include animation(fall_left, 2s, 5s, $function:ease-in, $fill-mode:forwards);
 		}
 
+		@include keyframes(fall_left) {
+			0% {
+				opacity: 1;
+				@include rotate3d(0, 0, 0, 0deg);
+			}
+
+			60% {
+				@include rotate3d(100, 25, 0, 150deg);
+				opacity: 1;
+			}
+
+			100% {
+				@include rotate3d(100, 25, 0, 150deg);
+				opacity: 0;
+			}
+		}
+
 		.current > .sign {
-			@include transform(rotate(360deg));
+			@include animation(sign, .3s, 7s, $function:ease-in, $fill-mode:forwards);
+		}
+
+		@include keyframes(sign) {
+			100% {
+				@include rotate(360deg);
+			}
 		}
 
 		.current > .cloud {
-			@include translate3d(-300%, 0, 0); 
+			@include animation(cloud, 60s, 0.1s, $function:linear, $fill-mode:forwards);
+		}
+
+		@include keyframes(cloud) {
+			100% {
+				@include translate3d(-300%, 0, 0);
+			}
 		}
 
 	/* @end */

@@ -1,7 +1,9 @@
 @mixin animation($name, $duration: 1s, $delay: 0s, $iterations:"", $function: ease-in-out, $fill-mode: forwards) {
-  -webkit-animation: $name $duration $delay #{$iterations} $function $fill-mode;
-  -moz-animation: $name $duration $delay #{$iterations} $function $fill-mode;
+	-webkit-animation: $name $duration $delay #{$iterations} $function $fill-mode;
+	-moz-animation: $name $duration $delay #{$iterations} $function $fill-mode;
 }
 
-//review; do you want to use this library?
-// http://thecssguru.freeiz.com/animate/src/partials/_animate.sass
+@mixin keyframes($name) {
+	@-webkit-keyframes $name {@content;}
+	@-moz-keyframes $name {@content;}
+}
