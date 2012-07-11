@@ -24,53 +24,39 @@ var APP = {
 		},
 
 		newPage: function(current) {
-
 			var page = APP.paginate;
-
 			page.$current = current;
-
-			/* Initiate scene-specific JS */
-			// var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
-			// APP[scene].start(page.$current);
-
 			page.$next     = page.$current.next();
-
 			page.$previous = page.$current.prev();
-
-			/* Reset previous page elements */
-			// var previous = page.$previous.attr('class').split(' ')[0].replace("-", "_").toString();
-
-
-
 		},
 
 		stepForward: function() {
-
 			var page = APP.paginate;
 
-
 			var a = page.$current;
+			page.$previous.toggleClass('previous hidden');
 			page.$next.toggleClass('current hidden');
 
 			window.setTimeout(function() {
-				a.toggleClass('hidden current');
+				a.toggleClass('previous current');
 			}, 1200);
 
 			page.newPage(page.$next);
-
 		},
 
 		stepBack: function() {
-
 			var page = APP.paginate;
-			page.$current.toggleClass('hidden current');
+			var a = page.$current;
 
-			page.$previous.toggleClass('current hidden');
+			a.css('opacity','0');
+			page.$previous.toggleClass('current previous');
+			page.$previous.prev().toggleClass('hidden previous');
 
-
+			window.setTimeout(function() {
+				a.toggleClass('current hidden').css('opacity','');
+			}, 1200);
 
 			page.newPage(page.$previous);
-
 		}
 	},
 
@@ -88,14 +74,6 @@ var APP = {
 	start_1: {
 		start: function(current) {
 			$('.btn-previous').hide();
-
-			// var $cloud_1 = current.children('.cloud-1');
-			// var $cloud_2 = current.children('.cloud-2');
-			// var $left_cloud = current.children('.left-cloud');
-			// var $right_cloud = current.children('.right-cloud');
-			// var $sky = current.children('.sky');
-
-			// current.children($cloud_1, $cloud_2, $left_cloud, $right_cloud, $sky).toggleClass('stop go');
 		},
 
 		reset: function(current) {
@@ -109,20 +87,9 @@ var APP = {
 
 		start: function(current) {
 			$('.btn-previous').show();
-
-			// current.children('.cloud').css('-webkit-transition','');
-
-			// var $cloud = current.children('.cloud');
-			// var $house_right = current.children('.house-right');
-			// var $house_left = current.children('.house-left');
-			// var $sign = current.children('.sign');
-
-			// current.children($cloud, $house_right, $house_left, $sign).toggleClass('stop go');
 		},
 
 		reset: function(current) {
-			// current.children('.cloud').css('-webkit-transition','none');
-			// current.children().toggleClass('stop go');
 		}
 	},
 
