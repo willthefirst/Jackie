@@ -2,9 +2,13 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>Jill and the Beanstalk</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
-	<link href="./sass-test/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<title>Jackie and the Beanstalk</title>
+	<link href="./style/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="./style/assets/add2home.css">
 
 				<!-- Live Reload Snippet -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
@@ -15,7 +19,7 @@
 			<div class="btn-previous"><</div>
 			<div class="btn-next">></div>
 			<div class="temp-0 scene hidden"></div>
-			<div class="start-1 scene hidden">
+			<div class="start-1 scene current">
 				<div class="cloud-1"></div>
 				<div class="sky"></div>
 				<div class="mountain"></div>
@@ -25,8 +29,10 @@
 				<div class="right-cloud"></div>
 				<div class="left-cloud"></div>
 			</div>
-			<div class="exposition-2 scene current">
+			<div class="exposition-2 scene hidden">
 				<div class="cloud"></div>
+				<p class="a">Once upon a time there lived a girl named Jackie, who lived in a big house...<span class="b"><br /><br />...well, not that big.</span></p>
+				<p class="c">In fact, Jackie and her mother were very poor. They had little money, little food, and a little house. All they had was a cow, who provided little milk.</p>
 				<div class="grass-top"></div>
 				<div class="sign"></div>
 				<div class="grass-bottom"></div>
@@ -73,6 +79,7 @@
 		</div>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="./main.js"></script>
+	<script src="./scripts/modules/main.js"></script>
+	<script type="application/javascript" src="./scripts/assets/homescreen/src/add2home.js"></script>
 </body>
 </html>
