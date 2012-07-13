@@ -26,6 +26,11 @@ var APP = {
 		newPage: function(current) {
 			var page = APP.paginate;
 			page.$current = current;
+
+			/* Initiate scene-specific JS */
+			var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
+			APP[scene].start(page.$current);
+
 			page.$next     = page.$current.next();
 			page.$previous = page.$current.prev();
 		},
@@ -40,7 +45,7 @@ var APP = {
 			window.setTimeout(function() {
 				a.toggleClass('previous current');
 			}, 1200);
-
+			
 			page.newPage(page.$next);
 		},
 
@@ -60,15 +65,6 @@ var APP = {
 		}
 	},
 
-	/* temp */
-	temp_0: {
-		start: function(current) {
-			$('.btn-previous').hide();
-		},
-
-		reset: function(current) {}
-	},
-
 	/* SCENE start_1 */
 
 	start_1: {
@@ -77,7 +73,6 @@ var APP = {
 		},
 
 		reset: function(current) {
-
 		}
 	},
 

@@ -1,5 +1,5 @@
 3.2.0.alpha.261 (Bleeding Edge)
-f7aef83f48fcecf890d4cef7d0dd13d7922e171f
+0ad7ae67e44b739138ca7d2fd2189cc0dfdb2aa3
 o:Sass::Tree::RootNode
 :@template"ê$@import "compass/layout/stretching";
 @import "compass/reset";
@@ -255,7 +255,7 @@ f7aef83f48fcecf890d4cef7d0dd13d7922e171f
 
 		@include keyframes(cloud-1) {
 			0% { @include translate3d(0, 0, 0); }
-			100% { @include translate3d(-300%, 0, 0); }
+			100% { @include translate3d(-400%, 0, 0); }
 		}
 
 		.current > .cloud-2 {
@@ -277,7 +277,7 @@ f7aef83f48fcecf890d4cef7d0dd13d7922e171f
 		@include bluesky(75%, 77%);
 
 		.a {
-			@include dimensions(500px, 400px);
+			@include dimensions(400px, 400px);
 			left: 40px;
 			position: absolute;
 			top: 100px;
@@ -971,8 +971,8 @@ i›;*o;+;,{ ;-0;'[o;.;&@;["left-cloud;
 i›; To;
 ;[ ;;;["/* @group animations */;
 iÂ;@o;!;i ;[o;";[ ;"animation;
-iË;@;{"functiono;	;;;"ease-in;
-iË;@"fill_modeo;	;;;"forwards;
+iË;@;{"fill_modeo;	;;;"forwards;
+iË;@"functiono;	;;;"ease-in;
 iË;@;[o;	;;;"right-cloud;
 iË;@o;/;0["s;i
 ;1"5s;
@@ -1000,8 +1000,8 @@ iÌ;#["	100%;@;$o;%;&" ;
 iÌ;'[o;(;'[["	100%" ; T;"keyframes;
 iÎ;@;{ ; T;[o;	;;;"right-cloud;
 iÎ;@o;!;i ;[o;";[ ;"animation;
-iÒ;@;{"functiono;	;;;"ease-in;
-iÒ;@"fill_modeo;	;;;"forwards;
+iÒ;@;{"fill_modeo;	;;;"forwards;
+iÒ;@"functiono;	;;;"ease-in;
 iÒ;@;[o;	;;;"left-cloud;
 iÒ;@o;/;0["s;i
 ;1"5s;
@@ -1030,8 +1030,8 @@ iˆ;#["	100%;@;$o;%;&" ;
 iˆ;'[o;(;'[["	100%" ; T;"keyframes;
 iÙ;@;{ ; T;[o;	;;;"left-cloud;
 iÙ;@o;!;i ;[o;";[ ;"animation;
-i˙;@;{"functiono;	;;;"linear;
-i˙;@"fill_modeo;	;;;"forwards;
+i˙;@;{"fill_modeo;	;;;"forwards;
+i˙;@"functiono;	;;;"linear;
 i˙;@;[o;	;;;"cloud-1;
 i˙;@o;/;0["s;i7;1"50s;
 i˙;@;2[ o;/;0["s;i;1"1s;
@@ -1050,8 +1050,8 @@ i˛;@;2@…o;/;0[ ;i ;1"0;
 i˛;@;2@…;
 i˛;#["0%;@;$o;%;&" ;
 i˛;'[o;(;'[["0%" ; To;!;i ;[o;";[ ;"translate3d;
-iˇ;@;{ ;[o;/;0["%;i˛‘˛;1"
--300%;
+iˇ;@;{ ;[o;/;0["%;i˛p˛;1"
+-400%;
 iˇ;@;2[ o;/;0[ ;i ;1"0;
 iˇ;@;2@…o;/;0[ ;i ;1"0;
 iˇ;@;2@…;
@@ -1059,8 +1059,8 @@ iˇ;#["	100%;@;$o;%;&" ;
 iˇ;'[o;(;'[["	100%" ; T;"keyframes;
 i˝;@;{ ; T;[o;	;;;"cloud-1;
 i˝;@o;!;i ;[o;";[ ;"animation;
-i;@;{"functiono;	;;;"linear;
-i;@"fill_modeo;	;;;"forwards;
+i;@;{"fill_modeo;	;;;"forwards;
+i;@"functiono;	;;;"linear;
 i;@;[o;	;;;"cloud-2;
 i;@o;/;0["s;i7;1"50s;
 i;@;2[ o;/;0["s;i;1"1s;
@@ -1096,8 +1096,8 @@ i;@o;!;i ;[	o;";[ ;"bluesky;
 i;@;{ ;[o;/;0["%;iP;1"75%;
 i;@;2[ o;/;0["%;iR;1"77%;
 i;@;2[ o;!;i ;[	o;";[ ;"dimensions;
-i;@;{ ;[o;/;0["px;iÙ;1"
-500px;
+i;@;{ ;[o;/;0["px;iê;1"
+400px;
 i;@;2[ o;/;0["px;iê;1"
 400px;
 i;@;2[ o;;i ;[ ;["	left;o;;;;"	40px;@;
@@ -1321,8 +1321,8 @@ ii;@;2@…;<o;D	;"house_fall_go;
 ii;@;E"house_fall_go;=;Fo;
 ;[ ;;;["/* @end */;
 ik;@o;!;i ;[o;";[ ;"animation;
-in;@;{"functiono;	;;;"linear;
-in;@"fill_modeo;	;;;"forwards;
+in;@;{"fill_modeo;	;;;"forwards;
+in;@"functiono;	;;;"linear;
 in;@;[o;	;;;"in;
 in;@o;/;0["s;i;1"1s;
 in;@;2[ o;/;0["s;i
@@ -1340,8 +1340,8 @@ imo;)
 im;*o;+;,{ ;-0;'[o;.;&@
 ;["b;
 im; To;!;i ;[o;";[ ;"animation;
-ir;@;{"functiono;	;;;"linear;
-ir;@"fill_modeo;	;;;"forwards;
+ir;@;{"fill_modeo;	;;;"forwards;
+ir;@"functiono;	;;;"linear;
 ir;@;[o;	;;;"out;
 ir;@o;/;0["s;i;1"1s;
 ir;@;2[ o;D	;"second_text_go;
@@ -1358,8 +1358,8 @@ iq">o;)
 iq;*o;+;,{ ;-0;'[o;.;&@?
 ;["a;
 iq; To;!;i ;[o;";[ ;"animation;
-iv;@;{"functiono;	;;;"linear;
-iv;@"fill_modeo;	;;;"forwards;
+iv;@;{"fill_modeo;	;;;"forwards;
+iv;@"functiono;	;;;"linear;
 iv;@;[o;	;;;"in;
 iv;@o;/;0["s;i;1"1s;
 iv;@;2[ o;D	;"second_text_go;
@@ -1376,8 +1376,8 @@ iu">o;)
 iu;*o;+;,{ ;-0;'[o;.;&@l
 ;["c;
 iu; To;!;i ;[o;";[ ;"animation;
-iz;@;{"functiono;	;;;"ease-in;
-iz;@"fill_modeo;	;;;"forwards;
+iz;@;{"fill_modeo;	;;;"forwards;
+iz;@"functiono;	;;;"ease-in;
 iz;@;[o;	;;;"fall_right;
 iz;@o;D	;"house_fall_speed;
 iz;@;E"house_fall_speedo;D	;"house_fall_go;
@@ -1420,8 +1420,8 @@ ià;#["	100%;@;$o;%;&" ;
 ià;'[o;(;'[["	100%" ; T;"keyframes;
 i};@;{ ; T;[o;	;;;"fall_right;
 i};@o;!;i ;[o;";[ ;"animation;
-iè;@;{"functiono;	;;;"ease-in;
-iè;@"fill_modeo;	;;;"forwards;
+iè;@;{"fill_modeo;	;;;"forwards;
+iè;@"functiono;	;;;"ease-in;
 iè;@;[o;	;;;"fall_left;
 iè;@o;D	;"house_fall_speed;
 iè;@;E"house_fall_speedo;D	;"house_fall_go;
@@ -1460,8 +1460,8 @@ iù;#["	100%;@;$o;%;&" ;
 iù;'[o;(;'[["	100%" ; T;"keyframes;
 ií;@;{ ; T;[o;	;;;"fall_left;
 ií;@o;!;i ;[o;";[ ;"animation;
-i§;@;{"functiono;	;;;"ease-in;
-i§;@"fill_modeo;	;;;"forwards;
+i§;@;{"fill_modeo;	;;;"forwards;
+i§;@"functiono;	;;;"ease-in;
 i§;@;[o;	;;;"	sign;
 i§;@o;/;0["s;f0.29999999999999999 33;1"	0.3s;
 i§;@;2[ o;D	;"sign_go;
@@ -1480,8 +1480,8 @@ i®;#["	100%;@;$o;%;&" ;
 i®;'[o;(;'[["	100%" ; T;"keyframes;
 iß;@;{ ; T;[o;	;;;"	sign;
 iß;@o;!;i ;[o;";[ ;"animation;
-iÆ;@;{"functiono;	;;;"linear;
-iÆ;@"fill_modeo;	;;;"forwards;
+iÆ;@;{"fill_modeo;	;;;"forwards;
+iÆ;@"functiono;	;;;"linear;
 iÆ;@;[o;	;;;"
 cloud;
 iÆ;@o;/;0["s;iA;1"60s;

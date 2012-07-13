@@ -82,6 +82,7 @@
  *
  */
 #addToHomeScreen .addToHomeClose {
+	display:none; //We don't want nobody closing our bubbles!
 	-webkit-box-sizing:border-box;
 	position:absolute;
 	right:4px;

@@ -252,7 +252,7 @@
 
 		@include keyframes(cloud-1) {
 			0% { @include translate3d(0, 0, 0); }
-			100% { @include translate3d(-300%, 0, 0); }
+			100% { @include translate3d(-400%, 0, 0); }
 		}
 
 		.current > .cloud-2 {
@@ -274,7 +274,7 @@
 		@include bluesky(75%, 77%);
 
 		.a {
-			@include dimensions(500px, 400px);
+			@include dimensions(400px, 400px);
 			left: 40px;
 			position: absolute;
 			top: 100px;
