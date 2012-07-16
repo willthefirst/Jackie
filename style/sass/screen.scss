@@ -33,7 +33,7 @@
 
 /* @end */
 
-/* @group containers */
+/* @group general */
 
 	.container {
 		@include stretch;
@@ -437,6 +437,251 @@
 		}
 
 	/* @end */
+
+/* @end */
+
+/* @group beanstalk-4 */
+
+	.beanstalk-4 {
+		overflow-y: scroll;
+	}
+
+	.background {
+		@include responsive-bg(4beanstalk/background, bottom left);
+		@include dimensions(100%, 3229px);
+	}
+	
+	::-webkit-scrollbar {
+	    display: none;
+	}
+
+	.beanstalk {
+		@include responsive-bg(4beanstalk/beanstalk, bottom left);
+		@include dimensions(1003px, 2463px);
+		bottom: 0;
+	}
+
+	.cloudsdivide {
+		@include responsive-bg(4beanstalk/cloudsdivide, bottom left);
+		@include dimensions(100%, 1048px);
+		top: 350px;
+	}
+
+	.castleclouds {
+		@include responsive-bg(4beanstalk/castleclouds, bottom left);
+		@include dimensions(184px, 108px);
+		top: 58px;
+		right: 90px;
+	}
+
+	.castle {
+		@include responsive-bg(4beanstalk/castle, bottom left);
+		@include dimensions(335px, 558px);
+		top: 58px;
+		right: -40px;
+		z-index: 1;
+	}
+
+	.upperclouds {
+		@include responsive-bg(4beanstalk/cloudsupper, bottom left);
+		@include dimensions(523px, 517px);
+		top: 91px;
+		right: -108px;
+		z-index: 2;
+	}
+
+	.right {
+		right: -200%;
+	}
+
+	.left {
+		left: -200%;
+	}
+
+	.cloudback {
+		@include responsive-bg(4beanstalk/cloudsback, bottom left);
+		@include dimensions(1794px, 560px);
+
+		&.top {
+			bottom: 1500px;
+		}
+
+		&.top2 {
+			bottom: 1500px;
+		}
+
+		&.middle {
+			bottom: 1000px;
+		}
+
+		&.bottom {
+			bottom: 800px;
+		}
+	}
+
+	.cloudfront {
+		@include responsive-bg(4beanstalk/cloudfront, bottom left);
+		@include dimensions(1689px, 987px);
+
+		&.top {
+			bottom: 1500px;
+		}
+
+		&.top2 {
+			bottom: 1500px;
+		}
+
+		&.middle {
+			bottom: 1000px;
+		}
+
+		&.bottom {
+			bottom: 800px;
+		}
+	}
+
+	.bird {
+		@include responsive-bg(4beanstalk/birds_front_1, bottom left);
+		@include dimensions(26px, 21px);
+		top: 120px;
+		right: 100px;
+		z-index: 2;
+		outline: 1px solid #000;
+	}
+
+	/* @group animations */
+
+		/* @group lower clouds */
+
+			.current > .background > .cloudfront.top {
+				@include animation(left, 7s, 0.1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudfront.top2 {
+				@include animation(right, 8s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudback.top2 {
+				@include animation(left, 7s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudfront.top2 {
+				@include animation(right, 10s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudfront.middle {
+				@include animation(right, 8s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudfront.bottom {
+				@include animation(left, 12s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudback.top {
+				@include animation(right, 7s, 0.1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudback.middle {
+				@include animation(left, 8s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .cloudback.bottom {
+				@include animation(right, 11s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			@include keyframes(left) {
+				0% { @include translate3d(0, 0, 0); }
+				100% { @include translate3d(-200%, 0, 0); }
+			}
+
+			@include keyframes(right) {
+				0% { @include translate3d(0, 0, 0); }
+				100% { @include translate3d(200%, 0, 0); }
+			}
+
+		/* @end */
+
+		/* @group top */
+
+			.current > .background > .cloudsdivide {
+				@include animation(bouncebig, 3s, .1s, $iterations:infinite, $function:ease-in-out, $fill-mode:forwards);
+			}
+
+			.current > .background > .castleclouds {
+				@include animation(bouncesmall, 3s, .1s, $iterations:infinite, $function:ease-in-out, $fill-mode:forwards);
+			}
+
+			.current > .background > .bird {
+				@include animation(fly, 5s, .1s, $iterations: infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			@include keyframes(fly) {
+				0% {
+					@include rotate3d(0, 1, 0, 90deg);
+				}
+
+				25% {
+					right: 150px;	
+				}
+
+				50% {
+					right: 200px;	
+					z-index: 0;
+				}
+
+				75% {
+					right: 150px;	
+				}
+
+				100% {
+					@include rotate3d(0, 1, 0, 360deg);
+					right: 150px;	
+					z-index: 2;
+				}
+
+			}
+
+			@include keyframes(bouncebig) {
+				0% { @include translate3d(0, 0, 0); }
+				50% { @include translate3d(0, -20px, 0); }
+				100% { @include translate3d(0, 0, 0); }
+			}
+
+			@include keyframes(bouncesmall) {
+				0% { @include translate3d(0, 0, 0); }
+				50% { @include translate3d(0, -10px, 0); }
+				100% { @include translate3d(0, 0, 0); }
+			}
+			
+			
+
+		/* @end */
+
+	/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @end */
 

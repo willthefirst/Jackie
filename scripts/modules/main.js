@@ -100,7 +100,7 @@ var APP = {
 
 	/* SCENE beantoss_4 */
 
-	beantoss_4: {
+	beanstalk_4: {
 
 		start: function(current) {},
 
