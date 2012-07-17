@@ -71,18 +71,21 @@
 		font-family: 'Esteban', serif;
 		font-size: 36px;
 		line-height: 40px;
+		position: absolute;
 		text-align: left;
 		text-shadow: 0px 1px 2px #000;
-		
-		&:first-letter {
-			float: left;
-			font-family: Mardian Demo, serif;
-			font-size: 200px;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 100px;
-			margin-right: 22px;
-			padding-left: 5px;
+
+		&.dropcap {
+			&:first-letter {
+				float: left;
+				font-family: Mardian Demo, serif;
+				font-size: 200px;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 100px;
+				margin-right: 22px;
+				padding-left: 5px;
+			}
 		};
 	}
 
@@ -149,15 +152,13 @@
 	/* @group element showing/hiding */
 
 		@include keyframes(in) {
-			100% {
-				opacity: 1;
-			}
+			0% { opacity: 0; }
+			100% { opacity: 1; }
 		}
 
 		@include keyframes(out) {
-			100% {
-				opacity: 0;
-			}
+			0% { opacity: 1; }
+			100% { opacity: 0; }
 		}
 
 	/* @end */
@@ -362,7 +363,7 @@
 
 		/* @end */
 
-		.current .b {
+		.current > .a > .b {
 			@include animation(in, 1s, 5s, $function:linear, $fill-mode:forwards);
 		}
 
@@ -449,6 +450,50 @@
 	.background {
 		@include responsive-bg(4beanstalk/background, bottom left);
 		@include dimensions(100%, 3229px);
+		// bottom: 0;
+
+
+		/* @group text */
+
+		.a {
+			bottom: 410px;
+			right: 50px;
+			@include dimensions(500px, auto);
+			opacity: 1;
+		}
+
+		.b {
+			bottom: 1000px;
+			right: 40px;
+			color: rgb(34, 133, 41);
+			opacity: 0;
+		}
+
+		.c {
+			bottom: 1600px;
+			left: 300px;
+			color: rgb(34, 133, 41);
+			opacity: 0;
+		}
+
+		.d{
+			bottom: 2039px;
+			right: 340px;
+			@include rotateZ(22deg);
+			color: rgb(34, 133, 41);
+			opacity: 0;
+		}
+
+		.e {
+			top: 70px;
+			left: 40px;
+			width: 700px;
+			opacity: 0;
+
+		}
+		
+		/* @end */
+
 	}
 	
 	::-webkit-scrollbar {
@@ -540,13 +585,36 @@
 		}
 	}
 
-	.bird {
+	.birda {
 		@include responsive-bg(4beanstalk/birds_front_1, bottom left);
-		@include dimensions(26px, 21px);
+		@include dimensions(13px, 11px);
 		top: 120px;
 		right: 100px;
 		z-index: 2;
-		outline: 1px solid #000;
+	}
+
+	.birdb {
+		@include responsive-bg(4beanstalk/birds_front_2, bottom left);
+		@include dimensions(11px, 6px);
+		top: 120px;
+		right: 180px;
+		z-index: 2;
+	}
+
+	.birdc {
+		@include responsive-bg(4beanstalk/birds_front_3, bottom left);
+		@include dimensions(10px, 5px);
+		top: 120px;
+		right: 200px;
+		z-index: 0;
+	}
+
+	.birdd{
+		@include responsive-bg(4beanstalk/birds_back_1, bottom left);
+		@include dimensions(18px, 6px);
+		top: 100px;
+		right: 200px;
+		z-index: 0;
 	}
 
 	/* @group animations */
@@ -611,34 +679,167 @@
 				@include animation(bouncesmall, 3s, .1s, $iterations:infinite, $function:ease-in-out, $fill-mode:forwards);
 			}
 
-			.current > .background > .bird {
-				@include animation(fly, 5s, .1s, $iterations: infinite, $function:linear, $fill-mode:forwards);
+			.current > .background > .birda {
+				@include animation(fly1, 3s, .1s, $iterations: infinite, $function:linear, $fill-mode:forwards);
 			}
 
-			@include keyframes(fly) {
+			.current > .background > .birdb {
+				@include animation(fly2, 3s, .1s, $iterations: infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .birdc {
+				@include animation(fly3, 3s, .1s, $iterations: infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			.current > .background > .birdd {
+				@include animation(fly4, 4s, .1s, $iterations: infinite, $function:linear, $fill-mode:forwards);
+			}
+
+			@include keyframes(fly1) {
 				0% {
 					@include rotate3d(0, 1, 0, 90deg);
+					right: 115px;
 				}
 
 				25% {
-					right: 150px;	
+					@include rotate3d(0, 1, 0, 0deg);
+					right: 162.5px;
+				}
+
+				49% {
+					z-index: 2;
 				}
 
 				50% {
-					right: 200px;	
+					@include rotate3d(0, 1, 0, -90deg);
+					right: 210px;	
 					z-index: 0;
 				}
 
 				75% {
-					right: 150px;	
+					@include rotate3d(0, 1, 0, -180deg);
+					right: 162.5px;
+				}
+
+				99% {
+					z-index: 0;
 				}
 
 				100% {
-					@include rotate3d(0, 1, 0, 360deg);
-					right: 150px;	
+					@include rotate3d(0, 1, 0, -270deg);
+					right: 115px;	
+					z-index: 2;
+				}
+			}
+
+			@include keyframes(fly2) {
+				0% {
+					@include rotate3d(0, 1, 0, 0deg);
+					right: 170px;
+				}
+
+				24% {
 					z-index: 2;
 				}
 
+				25% {
+					@include rotate3d(0, 1, 0, -90deg);
+					right: 210px;
+					z-index: 0;
+				}
+
+				50% {
+					@include rotate3d(0, 1, 0, -180deg);
+					right: 170px;	
+				}
+
+				74% {
+					z-index: 0;
+				}
+
+				75% {
+					@include rotate3d(0, 1, 0, -270deg);
+					right: 130px;
+					z-index: 2;	
+				}
+
+				100% {
+					@include rotate3d(0, 1, 0, -360deg);
+					right: 170px;	
+				}
+			}
+
+			@include keyframes(fly3) {
+				0% {
+					@include rotate3d(0, 1, 0, -90deg);
+					right: 230px;
+					z-index: 0
+				}
+
+				25% {
+					@include rotate3d(0, 1, 0, -180deg);
+					right: 170px;
+				}
+
+				49% {
+					z-index: 0;
+				}
+
+				50% {
+					@include rotate3d(0, 1, 0, -270deg);
+					right: 110px;
+					z-index: 2;
+				}
+
+				75% {
+					@include rotate3d(0, 1, 0, -360deg);
+					right: 170px;
+				}
+
+				99% {
+					z-index: 2;
+				}
+
+				100% {
+					@include rotate3d(0, 1, 0, -450deg);
+					right: 230px;
+					z-index: 0;
+				}
+			}
+
+			@include keyframes(fly4) {
+				0% {
+					@include rotate3d(0, 1, 0, -90deg);
+					right: 230px;
+					z-index: 0;
+				}
+
+				25% {
+					@include rotate3d(0, 1, 0, -180deg);
+					right: 170px;
+					z-index: 0;
+				}
+
+				50% {
+					@include rotate3d(0, 1, 0, -270deg);
+					right: 110px;	
+				}
+
+				75% {
+					@include rotate3d(0, 1, 0, -360deg);
+					right: 170px;
+					z-index: 2;	
+				}
+
+				99% {
+					z-index: 2;
+				}
+
+				100% {
+					@include rotate3d(0, 1, 0, -450deg);
+					right: 230px;
+					z-index: 0;
+				}
 			}
 
 			@include keyframes(bouncebig) {
@@ -652,8 +853,19 @@
 				50% { @include translate3d(0, -10px, 0); }
 				100% { @include translate3d(0, 0, 0); }
 			}
-			
-			
+
+		/* @end */
+
+		/* @group text */
+
+		.on {
+			@include animation(in, 1s, 0s, $function:linear, $fill-mode:forwards);
+		}
+
+		.off {
+			@include animation(out, .5s, 0s, $function:linear, $fill-mode:forwards);
+		}
+
 
 		/* @end */
 

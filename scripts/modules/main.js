@@ -102,7 +102,71 @@ var APP = {
 
 	beanstalk_4: {
 
-		start: function(current) {},
+		start: function(current) {
+			var $scene = $('.beanstalk-4');
+			var a = $('.background > .a');
+			var b = $('.background > .b');
+			var c = $('.background > .c');
+			var d = $('.background > .d');
+			var e = $('.background > .e');
+
+			function Narrator(paragraph, top, bottom) {
+				this.paragraph = paragraph;
+				this.top = top;
+				this.bottom = bottom;
+
+				this.on = function() {
+					paragraph.addClass('on');
+					paragraph.removeClass('off');
+				};
+
+				this.off = function() {
+					paragraph.addClass('off');
+					paragraph.removeClass('on');
+				};
+			}
+
+			a = new Narrator(a, 2461, 2393);
+			b = new Narrator(b, 2045, 1585);
+			c = new Narrator(c, 1493, 1061);
+			d = new Narrator(d, 1025, 517);
+			e = new Narrator(e, 12, 0);
+
+			var narrators = [a,b,c,d,e];
+
+			$scene.scroll(function(e) {
+				var scroll_pos = e.target.scrollTop;
+				console.log(scroll_pos);
+
+				for(var i = 0; i < narrators.length; i++) {
+					if (narrators[i].bottom <= scroll_pos && scroll_pos <= narrators[i].top) {
+						console.log(narrators[i].paragraph);
+						narrators[i].on();
+					}
+					else {
+						narrators[i].off();
+					}
+				}
+			});
+
+/*			$scene.scroll(function(e) {
+				var scroll_pos = e.target.scrollTop;
+				console.log(scroll_pos);
+
+
+				if (scroll_pos >= 2393) {
+					a.addClass('on');
+					a.removeClass('off');
+				}
+
+				else (scroll_pos <= 2393) {
+					a.addClass('off');
+					a.removeClass('on');
+				}
+			} */
+
+		},
+
 
 		reset: function(current) {}
 
@@ -183,7 +247,6 @@ var APP = {
 
 		start: function(current) {
 			$('.btn-next').show();
-
 		},
 
 		reset: function(current) {}
