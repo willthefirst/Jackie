@@ -103,69 +103,118 @@ var APP = {
 	beanstalk_4: {
 
 		start: function(current) {
+			var narrators = this.narrators();
 			var $scene = $('.beanstalk-4');
-			var a = $('.background > .a');
-			var b = $('.background > .b');
-			var c = $('.background > .c');
-			var d = $('.background > .d');
-			var e = $('.background > .e');
+			$scene.scrollTop(2461);
 
-			function Narrator(paragraph, top, bottom) {
+			var oldScroll = 0;
+
+			var didScroll = function() {
+				x = false;
+
+				if ($scene.scrollTop() !== oldScroll) {
+					oldScroll = $scene.scrollTop();
+					x = true;
+				}
+
+				else {
+					x = false;
+				}
+
+				return x;
+			};
+
+			setInterval(function() {
+				if ( didScroll() ) {
+
+					for(var i = 0; i < narrators.length; i++) {
+
+						var scrollIsInbound = narrators[i].bottom > oldScroll && oldScroll > narrators[i].top;
+						var scrollIsOutbound = narrators[i].bottom < oldScroll || oldScroll < narrators[i].top;
+
+						if (!narrators[i].isOn && scrollIsInbound) {
+							narrators[i].on();
+						}
+
+						else if (narrators[i].isOn && scrollIsOutbound) {
+							narrators[i].off();
+						}
+					}
+				}
+			}, 250);
+
+
+		},
+
+		checkNarrators: function() {
+
+		},
+
+		narrators: function() {
+
+			// Narrator constructor: narrators are paragraphs with specific scroll boundaries.
+			var Narrator = function(paragraph, bottom, top) {
 				this.paragraph = paragraph;
 				this.top = top;
 				this.bottom = bottom;
+				this.isOn = false;
 
 				this.on = function() {
 					paragraph.addClass('on');
 					paragraph.removeClass('off');
+					this.isOn = true;
 				};
 
 				this.off = function() {
 					paragraph.addClass('off');
 					paragraph.removeClass('on');
+					this.isOn = false;
 				};
-			}
+			};
 
-			a = new Narrator(a, 2461, 2393);
-			b = new Narrator(b, 2045, 1585);
-			c = new Narrator(c, 1493, 1061);
-			d = new Narrator(d, 1025, 517);
-			e = new Narrator(e, 12, 0);
+			var a = new Narrator($('.background > .a'), 2461, 2393);
+			a.isOn = true;
+			var b = new Narrator($('.background > .b'), 2045, 1585);
+			var c = new Narrator($('.background > .c'), 1493, 1061);
+			var d = new Narrator($('.background > .d'), 1025, 517);
+			var e = new Narrator($('.background > .e'), 200, 0);
 
 			var narrators = [a,b,c,d,e];
+			return narrators;
+		},
 
-			$scene.scroll(function(e) {
-				var scroll_pos = e.target.scrollTop;
-				console.log(scroll_pos);
 
-				for(var i = 0; i < narrators.length; i++) {
-					if (narrators[i].bottom <= scroll_pos && scroll_pos <= narrators[i].top) {
-						console.log(narrators[i].paragraph);
-						narrators[i].on();
-					}
-					else {
-						narrators[i].off();
-					}
-				}
-			});
+/*
 
+scrollpos
+
+if narrator is off but scroll+pos is his, turn on narrator
+else if narrator is on but scrollpos is not his, turn off.
+
+
+*/
+
+
+// on off state
+
+// interval check = check every .25s if scroll
 /*			$scene.scroll(function(e) {
-				var scroll_pos = e.target.scrollTop;
-				console.log(scroll_pos);
+				var oldScroll = e.target.scrollTop;
+				console.log(oldScroll);
 
 
-				if (scroll_pos >= 2393) {
+				if (oldScroll >= 2393) {
 					a.addClass('on');
 					a.removeClass('off');
 				}
 
-				else (scroll_pos <= 2393) {
+				else (oldScroll <= 2393) {
 					a.addClass('off');
 					a.removeClass('on');
 				}
 			} */
 
-		},
+		
 
 
 		reset: function(current) {}
