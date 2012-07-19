@@ -152,9 +152,16 @@ p.dropcap:first-letter {
   padding-left: 5px;
 }
 
-/* @end */
-/* @group general elements */
-/* line 96, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
+.glow {
+  -webkit-animation: glow 2s 0s infinite linear forwards;
+  -moz-animation: glow 2s 0s infinite linear forwards;
+  color: #fff;
+  text-shadow: 0px -2px 5px #008cff, 0px 2px 5px #008cff;
+  font-weight: bold;
+}
+
+/* line 99, ../sass/screen.scss */
 .btn-previous {
   background-color: green;
   border: solid 1px #000;
@@ -169,7 +176,7 @@ p.dropcap:first-letter {
   z-index: 5;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .btn-next {
   background-color: green;
   border: solid 1px #000;
@@ -187,19 +194,19 @@ p.dropcap:first-letter {
 /* @end */
 /* @group general animations/interactions */
 /* @group page-turning */
-/* line 135, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .hidden {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .current {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .previous {
   opacity: 1;
   visibility: visible;
@@ -208,57 +215,111 @@ p.dropcap:first-letter {
 /* @end  */
 /* @group element showing/hiding */
 @-webkit-keyframes in {
-  /* line 155, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 156, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes in {
-  /* line 155, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 156, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes out {
-  /* line 160, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 161, ../sass/screen.scss */
+  /* line 164, ../sass/screen.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes out {
-  /* line 160, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 161, ../sass/screen.scss */
+  /* line 164, ../sass/screen.scss */
   100% {
     opacity: 0;
   }
 }
 
 /* @end */
+@-webkit-keyframes glow {
+  /* line 170, ../sass/screen.scss */
+  0% {
+    text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
+  }
+
+  /* line 171, ../sass/screen.scss */
+  25% {
+    text-shadow: 0px -2px 20px #ff0002, 0px 2px 20px #ff0002;
+  }
+
+  /* line 172, ../sass/screen.scss */
+  50% {
+    text-shadow: 0px -2px 5px #0025da, 0px 2px 5px #0025da;
+  }
+
+  /* line 173, ../sass/screen.scss */
+  75% {
+    text-shadow: 0px -2px 20px #ff9600, 0px 2px 20px #ff9600;
+  }
+
+  /* line 174, ../sass/screen.scss */
+  100% {
+    text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
+  }
+}
+
+@-moz-keyframes glow {
+  /* line 170, ../sass/screen.scss */
+  0% {
+    text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
+  }
+
+  /* line 171, ../sass/screen.scss */
+  25% {
+    text-shadow: 0px -2px 20px #ff0002, 0px 2px 20px #ff0002;
+  }
+
+  /* line 172, ../sass/screen.scss */
+  50% {
+    text-shadow: 0px -2px 5px #0025da, 0px 2px 5px #0025da;
+  }
+
+  /* line 173, ../sass/screen.scss */
+  75% {
+    text-shadow: 0px -2px 20px #ff9600, 0px 2px 20px #ff9600;
+  }
+
+  /* line 174, ../sass/screen.scss */
+  100% {
+    text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
+  }
+}
+
 /* @end */
 /* @group start-1 page */
-/* line 170, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .start-1 {
   background: #e3e4e5;
   /* Old browsers */
@@ -278,7 +339,7 @@ p.dropcap:first-letter {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .title {
   width: 577.6px;
   height: 533px;
@@ -287,13 +348,13 @@ p.dropcap:first-letter {
   margin-left: -280.5px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 174, ../sass/screen.scss */
+  /* line 186, ../sass/screen.scss */
   .title {
     background: url(../../images/retina/1start/title_2x.png) no-repeat top left;
   }
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .mountain {
   width: 100%;
   height: 225px;
@@ -301,13 +362,13 @@ p.dropcap:first-letter {
   bottom: -2px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 181, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   .mountain {
     background: url(../../images/retina/1start/mountain_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .sky {
   -webkit-transition: all 15s linear;
   -webkit-transition-delay: 0s;
@@ -321,13 +382,13 @@ p.dropcap:first-letter {
   bottom: -100px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 187, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   .sky {
     background: url(../../images/retina/1start/sky_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .cloud-1 {
   width: 230px;
   height: 178px;
@@ -336,13 +397,13 @@ p.dropcap:first-letter {
   right: 75px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 194, ../sass/screen.scss */
+  /* line 206, ../sass/screen.scss */
   .cloud-1 {
     background: url(../../images/retina/1start/cloud1_2x.png) no-repeat top left;
   }
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .cloud-2 {
   -webkit-transition: all 50s linear;
   -webkit-transition-delay: 2s;
@@ -357,13 +418,13 @@ p.dropcap:first-letter {
   left: 120px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 201, ../sass/screen.scss */
+  /* line 213, ../sass/screen.scss */
   .cloud-2 {
     background: url(../../images/retina/1start/cloud2_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .titlej {
   width: 273.45px;
   height: 268.95px;
@@ -372,13 +433,13 @@ p.dropcap:first-letter {
   left: 240px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 209, ../sass/screen.scss */
+  /* line 221, ../sass/screen.scss */
   .titlej {
     background: url(../../images/retina/1start/frontj_2x.png) no-repeat top left;
   }
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .right-cloud {
   width: 890px;
   height: 460px;
@@ -386,13 +447,13 @@ p.dropcap:first-letter {
   right: 0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 216, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   .right-cloud {
     background: url(../../images/retina/1start/right-cloud_2x.png) no-repeat top right;
   }
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .left-cloud {
   width: 950px;
   height: 640px;
@@ -400,21 +461,21 @@ p.dropcap:first-letter {
   top: 0px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 222, ../sass/screen.scss */
+  /* line 234, ../sass/screen.scss */
   .left-cloud {
     background: url(../../images/retina/1start/left-cloud_2x.png) no-repeat top left;
   }
 }
 
 /* @group animations */
-/* line 232, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .current > .right-cloud {
   -webkit-animation: right-cloud 5s 1s  ease-in forwards;
   -moz-animation: right-cloud 5s 1s  ease-in forwards;
 }
 
 @-webkit-keyframes right-cloud {
-  /* line 237, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -423,7 +484,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 238, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -434,7 +495,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes right-cloud {
-  /* line 237, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -443,7 +504,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 238, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -453,14 +514,14 @@ p.dropcap:first-letter {
   }
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .current > .left-cloud {
   -webkit-animation: left-cloud 5s 1s  ease-in forwards;
   -moz-animation: left-cloud 5s 1s  ease-in forwards;
 }
 
 @-webkit-keyframes left-cloud {
-  /* line 246, ../sass/screen.scss */
+  /* line 258, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -469,7 +530,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 247, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -480,7 +541,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes left-cloud {
-  /* line 246, ../sass/screen.scss */
+  /* line 258, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -489,7 +550,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 247, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -499,14 +560,14 @@ p.dropcap:first-letter {
   }
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .current > .cloud-1 {
   -webkit-animation: cloud-1 50s 1s  linear forwards;
   -moz-animation: cloud-1 50s 1s  linear forwards;
 }
 
 @-webkit-keyframes cloud-1 {
-  /* line 255, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -515,7 +576,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 256, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-400%, 0, 0);
     -moz-transform: translate3d(-400%, 0, 0);
@@ -526,7 +587,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud-1 {
-  /* line 255, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -535,7 +596,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 256, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-400%, 0, 0);
     -moz-transform: translate3d(-400%, 0, 0);
@@ -545,14 +606,14 @@ p.dropcap:first-letter {
   }
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .current > .cloud-2 {
   -webkit-animation: cloud-2 50s 1s  linear forwards;
   -moz-animation: cloud-2 50s 1s  linear forwards;
 }
 
 @-webkit-keyframes cloud-2 {
-  /* line 264, ../sass/screen.scss */
+  /* line 276, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -561,7 +622,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 265, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(300%, 0, 0);
     -moz-transform: translate3d(300%, 0, 0);
@@ -572,7 +633,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud-2 {
-  /* line 264, ../sass/screen.scss */
+  /* line 276, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -581,7 +642,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 265, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(300%, 0, 0);
     -moz-transform: translate3d(300%, 0, 0);
@@ -594,7 +655,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @end */
 /* @group exposition-2 */
-/* line 274, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .exposition-2 {
   background: #e3e4e5;
   /* Old browsers */
@@ -613,7 +674,7 @@ p.dropcap:first-letter {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e4e5', endColorstr='#155a93',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 277, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .exposition-2 .a, .exposition-2 .c {
   width: 400px;
   height: 400px;
@@ -621,23 +682,23 @@ p.dropcap:first-letter {
   position: absolute;
   top: 100px;
 }
-/* line 284, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .exposition-2 .b {
   float: right;
   opacity: 0;
 }
-/* line 289, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .exposition-2 .c {
   opacity: 0;
 }
-/* line 293, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .exposition-2 .c:first-letter {
   line-height: 120px;
   margin-bottom: 20px;
   margin-right: 40px;
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .house-right {
   background: url(../../images/normal/2exposition/house_right.png) no-repeat bottom left;
   -webkit-transform-origin: 50% 95%;
@@ -651,13 +712,13 @@ p.dropcap:first-letter {
   width: 160px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 301, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   .house-right {
     background: url(../../images/retina/2exposition/house_right_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .house-left {
   background: url(../../images/normal/2exposition/house_left.png) no-repeat bottom left;
   -webkit-transform-origin: 50% 100%;
@@ -671,13 +732,13 @@ p.dropcap:first-letter {
   width: 415.53px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 310, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   .house-left {
     background: url(../../images/retina/2exposition/house_left_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .cloud {
   background: url(../../images/normal/2exposition/cloud.png) no-repeat bottom left;
   height: 299.46px;
@@ -686,13 +747,13 @@ p.dropcap:first-letter {
   width: 395.87px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 319, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   .cloud {
     background: url(../../images/retina/2exposition/cloud_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .sign {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -715,13 +776,13 @@ p.dropcap:first-letter {
   width: 173px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 327, ../sass/screen.scss */
+  /* line 339, ../sass/screen.scss */
   .sign {
     background: url(../../images/retina/2exposition/sign_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 338, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .grass-top {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -733,13 +794,13 @@ p.dropcap:first-letter {
   width: 100%;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 338, ../sass/screen.scss */
+  /* line 350, ../sass/screen.scss */
   .grass-top {
     background: url(../../images/retina/2exposition/grass_top_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .grass-bottom {
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -751,7 +812,7 @@ p.dropcap:first-letter {
   width: 100%;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 346, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   .grass-bottom {
     background: url(../../images/retina/2exposition/grass_bottom_2x.png) no-repeat bottom left;
   }
@@ -760,32 +821,32 @@ p.dropcap:first-letter {
 /* @group animations */
 /* @group timing variables */
 /* @end */
-/* line 366, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .current > .a > .b, .exposition-2 .current > .c > .b {
   -webkit-animation: in 1s 5s  linear forwards;
   -moz-animation: in 1s 5s  linear forwards;
 }
 
-/* line 370, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .current > .a, .exposition-2 .current > .c {
   -webkit-animation: out 1s 8.5s  linear forwards;
   -moz-animation: out 1s 8.5s  linear forwards;
 }
 
-/* line 374, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .current > .c {
   -webkit-animation: in 1s 8.5s  linear forwards;
   -moz-animation: in 1s 8.5s  linear forwards;
 }
 
-/* line 378, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .current > .house-right {
   -webkit-animation: fall_right 2s 7s  ease-in forwards;
   -moz-animation: fall_right 2s 7s  ease-in forwards;
 }
 
 @-webkit-keyframes fall_right {
-  /* line 383, ../sass/screen.scss */
+  /* line 395, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -795,7 +856,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 388, ../sass/screen.scss */
+  /* line 400, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -805,7 +866,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 393, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -817,7 +878,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fall_right {
-  /* line 383, ../sass/screen.scss */
+  /* line 395, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -827,7 +888,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 388, ../sass/screen.scss */
+  /* line 400, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -837,7 +898,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 393, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -848,14 +909,14 @@ p.dropcap:first-letter {
   }
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 .current > .house-left {
   -webkit-animation: fall_left 2s 7s  ease-in forwards;
   -moz-animation: fall_left 2s 7s  ease-in forwards;
 }
 
 @-webkit-keyframes fall_left {
-  /* line 404, ../sass/screen.scss */
+  /* line 416, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -865,7 +926,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 409, ../sass/screen.scss */
+  /* line 421, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -875,7 +936,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 414, ../sass/screen.scss */
+  /* line 426, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -887,7 +948,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fall_left {
-  /* line 404, ../sass/screen.scss */
+  /* line 416, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -897,7 +958,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 409, ../sass/screen.scss */
+  /* line 421, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -907,7 +968,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 414, ../sass/screen.scss */
+  /* line 426, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -918,14 +979,14 @@ p.dropcap:first-letter {
   }
 }
 
-/* line 420, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .current > .sign {
   -webkit-animation: sign 0.3s 9s  ease-in forwards;
   -moz-animation: sign 0.3s 9s  ease-in forwards;
 }
 
 @-webkit-keyframes sign {
-  /* line 425, ../sass/screen.scss */
+  /* line 437, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -936,7 +997,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes sign {
-  /* line 425, ../sass/screen.scss */
+  /* line 437, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -946,14 +1007,14 @@ p.dropcap:first-letter {
   }
 }
 
-/* line 430, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .current > .cloud {
   -webkit-animation: cloud 60s 0.1s  linear forwards;
   -moz-animation: cloud 60s 0.1s  linear forwards;
 }
 
 @-webkit-keyframes cloud {
-  /* line 435, ../sass/screen.scss */
+  /* line 447, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-300%, 0, 0);
     -moz-transform: translate3d(-300%, 0, 0);
@@ -964,7 +1025,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud {
-  /* line 435, ../sass/screen.scss */
+  /* line 447, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-300%, 0, 0);
     -moz-transform: translate3d(-300%, 0, 0);
@@ -976,13 +1037,257 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @end */
-/* @group beanstalk-4 */
-/* line 446, ../sass/screen.scss */
-.beanstalk-4 {
-  overflow-y: scroll;
+/* @group cowsale-3 */
+/* line 458, ../sass/screen.scss */
+.cowsale-3 {
+  background: #31607d;
+  /* Old browsers */
+  background: -moz-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, 50% 45%, 0px, 50% 45%, 100%, color-stop(10%, #31607d), color-stop(100%, #07102b));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at 50% 45%, #31607d 10%, #07102b 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#31607d', endColorstr='#07102b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 450, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
+.scroll {
+  background: url(../../images/normal/multitext/scroll.png) no-repeat bottom left;
+  width: 0px;
+  height: 502px;
+  top: 143px;
+  overflow: hidden;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 462, ../sass/screen.scss */
+  .scroll {
+    background: url(../../images/retina/multitext/scroll_2x.png) no-repeat bottom left;
+  }
+}
+
+/* line 469, ../sass/screen.scss */
+.scroll-left-bottom, .scroll-left-top {
+  background: url(../../images/normal/multitext/left_shadow.png) no-repeat bottom left;
+  width: 136px;
+  height: 553px;
+  left: 418px;
+  top: 136px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 469, ../sass/screen.scss */
+  .scroll-left-bottom, .scroll-left-top {
+    background: url(../../images/retina/multitext/left_shadow_2x.png) no-repeat bottom left;
+  }
+}
+
+/* line 476, ../sass/screen.scss */
+.scroll-left-top {
+  background: url(../../images/normal/multitext/left_noshadow.png) no-repeat bottom left;
+  width: 97px;
+  height: 553px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 476, ../sass/screen.scss */
+  .scroll-left-top {
+    background: url(../../images/retina/multitext/left_noshadow_2x.png) no-repeat bottom left;
+  }
+}
+
+/* line 482, ../sass/screen.scss */
+.scroll-right {
+  background: url(../../images/normal/multitext/right_shadow.png) no-repeat bottom left;
+  width: 139px;
+  height: 553px;
+  left: 459px;
+  top: 127px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 482, ../sass/screen.scss */
+  .scroll-right {
+    background: url(../../images/retina/multitext/right_shadow_2x.png) no-repeat bottom left;
+  }
+}
+
+/* line 489, ../sass/screen.scss */
+.text {
+  width: 580px;
+  color: #000;
+  text-shadow: none;
+  font-size: 20px;
+  margin: 80px 30px 20px 30px;
+  line-height: 30px;
+}
+
+/* @group animations */
+/* line 502, ../sass/screen.scss */
+.current > .scroll-left-top {
+  -webkit-animation: moveleft 1.5s 1s  ease-out forwards;
+  -moz-animation: moveleft 1.5s 1s  ease-out forwards;
+}
+/* line 506, ../sass/screen.scss */
+.current > .scroll-left-bottom, .current > .scroll-left-top {
+  -webkit-animation: moveleft 1.5s 1s  ease-out forwards;
+  -moz-animation: moveleft 1.5s 1s  ease-out forwards;
+}
+
+/* line 511, ../sass/screen.scss */
+.current > .scroll-right {
+  -webkit-animation: moveright 1.5s 1s  ease-out forwards;
+  -moz-animation: moveright 1.5s 1s  ease-out forwards;
+}
+
+/* line 515, ../sass/screen.scss */
+.current > .scroll {
+  -webkit-animation: expand 1.5s 1s  ease-out forwards;
+  -moz-animation: expand 1.5s 1s  ease-out forwards;
+}
+
+@-webkit-keyframes moveright {
+  /* line 520, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  /* line 524, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translate3d(315px, 0px, 0px);
+    -moz-transform: translate3d(315px, 0px, 0px);
+    -ms-transform: translate3d(315px, 0px, 0px);
+    -o-transform: translate3d(315px, 0px, 0px);
+    transform: translate3d(315px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes moveright {
+  /* line 520, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  /* line 524, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translate3d(315px, 0px, 0px);
+    -moz-transform: translate3d(315px, 0px, 0px);
+    -ms-transform: translate3d(315px, 0px, 0px);
+    -o-transform: translate3d(315px, 0px, 0px);
+    transform: translate3d(315px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes moveleft {
+  /* line 530, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  /* line 534, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translate3d(-310px, 0px, 0px);
+    -moz-transform: translate3d(-310px, 0px, 0px);
+    -ms-transform: translate3d(-310px, 0px, 0px);
+    -o-transform: translate3d(-310px, 0px, 0px);
+    transform: translate3d(-310px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes moveleft {
+  /* line 530, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  /* line 534, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translate3d(-310px, 0px, 0px);
+    -moz-transform: translate3d(-310px, 0px, 0px);
+    -ms-transform: translate3d(-310px, 0px, 0px);
+    -o-transform: translate3d(-310px, 0px, 0px);
+    transform: translate3d(-310px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes expand {
+  /* line 540, ../sass/screen.scss */
+  0% {
+    -webkit-background-size: 640px, 100%;
+    -moz-background-size: 640px, 100%;
+    -o-background-size: 640px, 100%;
+    background-size: 640px, 100%;
+    width: 20px;
+    left: 50%;
+    margin-left: -20px;
+  }
+
+  /* line 547, ../sass/screen.scss */
+  100% {
+    -webkit-background-size: 640px, 100%;
+    -moz-background-size: 640px, 100%;
+    -o-background-size: 640px, 100%;
+    background-size: 640px, 100%;
+    width: 640px;
+    left: 50%;
+    margin-left: -320px;
+  }
+}
+
+@-moz-keyframes expand {
+  /* line 540, ../sass/screen.scss */
+  0% {
+    -webkit-background-size: 640px, 100%;
+    -moz-background-size: 640px, 100%;
+    -o-background-size: 640px, 100%;
+    background-size: 640px, 100%;
+    width: 20px;
+    left: 50%;
+    margin-left: -20px;
+  }
+
+  /* line 547, ../sass/screen.scss */
+  100% {
+    -webkit-background-size: 640px, 100%;
+    -moz-background-size: 640px, 100%;
+    -o-background-size: 640px, 100%;
+    background-size: 640px, 100%;
+    width: 640px;
+    left: 50%;
+    margin-left: -320px;
+  }
+}
+
+/* @end */
+/* @end */
+/* @group beanstalk-4 */
+/* line 561, ../sass/screen.scss */
+.beanstalk-4 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* line 566, ../sass/screen.scss */
 .background {
   background: url(../../images/normal/4beanstalk/background.png) no-repeat bottom left;
   width: 100%;
@@ -991,12 +1296,12 @@ p.dropcap:first-letter {
   /* @end */
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 450, ../sass/screen.scss */
+  /* line 566, ../sass/screen.scss */
   .background {
     background: url(../../images/retina/4beanstalk/background_2x.png) no-repeat bottom left;
   }
 }
-/* line 458, ../sass/screen.scss */
+/* line 572, ../sass/screen.scss */
 .background .a, .background .exposition-2 .c, .exposition-2 .background .c {
   bottom: 410px;
   right: 50px;
@@ -1004,21 +1309,21 @@ p.dropcap:first-letter {
   height: auto;
   opacity: 1;
 }
-/* line 465, ../sass/screen.scss */
+/* line 579, ../sass/screen.scss */
 .background .b {
   bottom: 1000px;
   right: 40px;
   color: #228529;
   opacity: 0;
 }
-/* line 472, ../sass/screen.scss */
+/* line 586, ../sass/screen.scss */
 .background .c {
   bottom: 1600px;
   left: 300px;
   color: #228529;
   opacity: 0;
 }
-/* line 479, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 .background .d {
   bottom: 2039px;
   right: 340px;
@@ -1030,7 +1335,7 @@ p.dropcap:first-letter {
   color: #228529;
   opacity: 0;
 }
-/* line 487, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 .background .e {
   top: 70px;
   left: 40px;
@@ -1038,12 +1343,12 @@ p.dropcap:first-letter {
   opacity: 0;
 }
 
-/* line 499, ../sass/screen.scss */
+/* line 613, ../sass/screen.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 503, ../sass/screen.scss */
+/* line 617, ../sass/screen.scss */
 .beanstalk {
   background: url(../../images/normal/4beanstalk/beanstalk.png) no-repeat bottom left;
   width: 1003px;
@@ -1051,13 +1356,13 @@ p.dropcap:first-letter {
   bottom: 0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 503, ../sass/screen.scss */
+  /* line 617, ../sass/screen.scss */
   .beanstalk {
     background: url(../../images/retina/4beanstalk/beanstalk_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 509, ../sass/screen.scss */
+/* line 623, ../sass/screen.scss */
 .cloudsdivide {
   background: url(../../images/normal/4beanstalk/cloudsdivide.png) no-repeat bottom left;
   width: 100%;
@@ -1065,13 +1370,13 @@ p.dropcap:first-letter {
   top: 350px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 509, ../sass/screen.scss */
+  /* line 623, ../sass/screen.scss */
   .cloudsdivide {
     background: url(../../images/retina/4beanstalk/cloudsdivide_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 515, ../sass/screen.scss */
+/* line 629, ../sass/screen.scss */
 .castleclouds {
   background: url(../../images/normal/4beanstalk/castleclouds.png) no-repeat bottom left;
   width: 184px;
@@ -1080,13 +1385,13 @@ p.dropcap:first-letter {
   right: 90px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 515, ../sass/screen.scss */
+  /* line 629, ../sass/screen.scss */
   .castleclouds {
     background: url(../../images/retina/4beanstalk/castleclouds_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 522, ../sass/screen.scss */
+/* line 636, ../sass/screen.scss */
 .castle {
   background: url(../../images/normal/4beanstalk/castle.png) no-repeat bottom left;
   width: 335px;
@@ -1096,13 +1401,13 @@ p.dropcap:first-letter {
   z-index: 1;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 522, ../sass/screen.scss */
+  /* line 636, ../sass/screen.scss */
   .castle {
     background: url(../../images/retina/4beanstalk/castle_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 530, ../sass/screen.scss */
+/* line 644, ../sass/screen.scss */
 .upperclouds {
   background: url(../../images/normal/4beanstalk/cloudsupper.png) no-repeat bottom left;
   width: 523px;
@@ -1112,81 +1417,81 @@ p.dropcap:first-letter {
   z-index: 2;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 530, ../sass/screen.scss */
+  /* line 644, ../sass/screen.scss */
   .upperclouds {
     background: url(../../images/retina/4beanstalk/cloudsupper_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 538, ../sass/screen.scss */
+/* line 652, ../sass/screen.scss */
 .right {
   right: -200%;
 }
 
-/* line 542, ../sass/screen.scss */
+/* line 656, ../sass/screen.scss */
 .left {
   left: -200%;
 }
 
-/* line 546, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 .cloudback {
   background: url(../../images/normal/4beanstalk/cloudsback.png) no-repeat bottom left;
   width: 1794px;
   height: 560px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 546, ../sass/screen.scss */
+  /* line 660, ../sass/screen.scss */
   .cloudback {
     background: url(../../images/retina/4beanstalk/cloudsback_2x.png) no-repeat bottom left;
   }
 }
-/* line 550, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 .cloudback.top {
   bottom: 1500px;
 }
-/* line 554, ../sass/screen.scss */
+/* line 668, ../sass/screen.scss */
 .cloudback.top2 {
   bottom: 1500px;
 }
-/* line 558, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 .cloudback.middle {
   bottom: 1000px;
 }
-/* line 562, ../sass/screen.scss */
+/* line 676, ../sass/screen.scss */
 .cloudback.bottom {
   bottom: 800px;
 }
 
-/* line 567, ../sass/screen.scss */
+/* line 681, ../sass/screen.scss */
 .cloudfront {
   background: url(../../images/normal/4beanstalk/cloudfront.png) no-repeat bottom left;
   width: 1689px;
   height: 987px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 567, ../sass/screen.scss */
+  /* line 681, ../sass/screen.scss */
   .cloudfront {
     background: url(../../images/retina/4beanstalk/cloudfront_2x.png) no-repeat bottom left;
   }
 }
-/* line 571, ../sass/screen.scss */
+/* line 685, ../sass/screen.scss */
 .cloudfront.top {
   bottom: 1500px;
 }
-/* line 575, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 .cloudfront.top2 {
   bottom: 1500px;
 }
-/* line 579, ../sass/screen.scss */
+/* line 693, ../sass/screen.scss */
 .cloudfront.middle {
   bottom: 1000px;
 }
-/* line 583, ../sass/screen.scss */
+/* line 697, ../sass/screen.scss */
 .cloudfront.bottom {
   bottom: 800px;
 }
 
-/* line 588, ../sass/screen.scss */
+/* line 702, ../sass/screen.scss */
 .birda {
   background: url(../../images/normal/4beanstalk/birds_front_1.png) no-repeat bottom left;
   width: 13px;
@@ -1196,13 +1501,13 @@ p.dropcap:first-letter {
   z-index: 2;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 588, ../sass/screen.scss */
+  /* line 702, ../sass/screen.scss */
   .birda {
     background: url(../../images/retina/4beanstalk/birds_front_1_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 596, ../sass/screen.scss */
+/* line 710, ../sass/screen.scss */
 .birdb {
   background: url(../../images/normal/4beanstalk/birds_front_2.png) no-repeat bottom left;
   width: 11px;
@@ -1212,13 +1517,13 @@ p.dropcap:first-letter {
   z-index: 2;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 596, ../sass/screen.scss */
+  /* line 710, ../sass/screen.scss */
   .birdb {
     background: url(../../images/retina/4beanstalk/birds_front_2_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 604, ../sass/screen.scss */
+/* line 718, ../sass/screen.scss */
 .birdc {
   background: url(../../images/normal/4beanstalk/birds_front_3.png) no-repeat bottom left;
   width: 10px;
@@ -1228,13 +1533,13 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 604, ../sass/screen.scss */
+  /* line 718, ../sass/screen.scss */
   .birdc {
     background: url(../../images/retina/4beanstalk/birds_front_3_2x.png) no-repeat bottom left;
   }
 }
 
-/* line 612, ../sass/screen.scss */
+/* line 726, ../sass/screen.scss */
 .birdd {
   background: url(../../images/normal/4beanstalk/birds_back_1.png) no-repeat bottom left;
   width: 18px;
@@ -1244,7 +1549,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 612, ../sass/screen.scss */
+  /* line 726, ../sass/screen.scss */
   .birdd {
     background: url(../../images/retina/4beanstalk/birds_back_1_2x.png) no-repeat bottom left;
   }
@@ -1252,62 +1557,62 @@ p.dropcap:first-letter {
 
 /* @group animations */
 /* @group lower clouds */
-/* line 624, ../sass/screen.scss */
+/* line 738, ../sass/screen.scss */
 .current > .background > .cloudfront.top {
   -webkit-animation: left 7s 0.1s infinite linear forwards;
   -moz-animation: left 7s 0.1s infinite linear forwards;
 }
 
-/* line 628, ../sass/screen.scss */
+/* line 742, ../sass/screen.scss */
 .current > .background > .cloudfront.top2 {
   -webkit-animation: right 8s 1s infinite linear forwards;
   -moz-animation: right 8s 1s infinite linear forwards;
 }
 
-/* line 632, ../sass/screen.scss */
+/* line 746, ../sass/screen.scss */
 .current > .background > .cloudback.top2 {
   -webkit-animation: left 7s 0.1s infinite linear forwards;
   -moz-animation: left 7s 0.1s infinite linear forwards;
 }
 
-/* line 636, ../sass/screen.scss */
+/* line 750, ../sass/screen.scss */
 .current > .background > .cloudfront.top2 {
   -webkit-animation: right 10s 1s infinite linear forwards;
   -moz-animation: right 10s 1s infinite linear forwards;
 }
 
-/* line 640, ../sass/screen.scss */
+/* line 754, ../sass/screen.scss */
 .current > .background > .cloudfront.middle {
   -webkit-animation: right 8s 0.1s infinite linear forwards;
   -moz-animation: right 8s 0.1s infinite linear forwards;
 }
 
-/* line 644, ../sass/screen.scss */
+/* line 758, ../sass/screen.scss */
 .current > .background > .cloudfront.bottom {
   -webkit-animation: left 12s 0.1s infinite linear forwards;
   -moz-animation: left 12s 0.1s infinite linear forwards;
 }
 
-/* line 648, ../sass/screen.scss */
+/* line 762, ../sass/screen.scss */
 .current > .background > .cloudback.top {
   -webkit-animation: right 7s 0.1s infinite linear forwards;
   -moz-animation: right 7s 0.1s infinite linear forwards;
 }
 
-/* line 652, ../sass/screen.scss */
+/* line 766, ../sass/screen.scss */
 .current > .background > .cloudback.middle {
   -webkit-animation: left 8s 0.1s infinite linear forwards;
   -moz-animation: left 8s 0.1s infinite linear forwards;
 }
 
-/* line 656, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 .current > .background > .cloudback.bottom {
   -webkit-animation: right 11s 0.1s infinite linear forwards;
   -moz-animation: right 11s 0.1s infinite linear forwards;
 }
 
 @-webkit-keyframes left {
-  /* line 661, ../sass/screen.scss */
+  /* line 775, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1316,7 +1621,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 662, ../sass/screen.scss */
+  /* line 776, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -1327,7 +1632,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes left {
-  /* line 661, ../sass/screen.scss */
+  /* line 775, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1336,7 +1641,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 662, ../sass/screen.scss */
+  /* line 776, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -1347,7 +1652,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes right {
-  /* line 666, ../sass/screen.scss */
+  /* line 780, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1356,7 +1661,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 667, ../sass/screen.scss */
+  /* line 781, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -1367,7 +1672,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes right {
-  /* line 666, ../sass/screen.scss */
+  /* line 780, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1376,7 +1681,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 667, ../sass/screen.scss */
+  /* line 781, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -1388,44 +1693,44 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group top */
-/* line 674, ../sass/screen.scss */
+/* line 788, ../sass/screen.scss */
 .current > .background > .cloudsdivide {
   -webkit-animation: bouncebig 3s 0.1s infinite ease-in-out forwards;
   -moz-animation: bouncebig 3s 0.1s infinite ease-in-out forwards;
 }
 
-/* line 678, ../sass/screen.scss */
+/* line 792, ../sass/screen.scss */
 .current > .background > .castleclouds {
   -webkit-animation: bouncesmall 3s 0.1s infinite ease-in-out forwards;
   -moz-animation: bouncesmall 3s 0.1s infinite ease-in-out forwards;
 }
 
-/* line 682, ../sass/screen.scss */
+/* line 796, ../sass/screen.scss */
 .current > .background > .birda {
   -webkit-animation: fly1 3s 0.1s infinite linear forwards;
   -moz-animation: fly1 3s 0.1s infinite linear forwards;
 }
 
-/* line 686, ../sass/screen.scss */
+/* line 800, ../sass/screen.scss */
 .current > .background > .birdb {
   -webkit-animation: fly2 3s 0.1s infinite linear forwards;
   -moz-animation: fly2 3s 0.1s infinite linear forwards;
 }
 
-/* line 690, ../sass/screen.scss */
+/* line 804, ../sass/screen.scss */
 .current > .background > .birdc {
   -webkit-animation: fly3 3s 0.1s infinite linear forwards;
   -moz-animation: fly3 3s 0.1s infinite linear forwards;
 }
 
-/* line 694, ../sass/screen.scss */
+/* line 808, ../sass/screen.scss */
 .current > .background > .birdd {
   -webkit-animation: fly4 4s 0.1s infinite linear forwards;
   -moz-animation: fly4 4s 0.1s infinite linear forwards;
 }
 
 @-webkit-keyframes fly1 {
-  /* line 699, ../sass/screen.scss */
+  /* line 813, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
     -moz-transform: rotate3d(0, 1, 0, 90deg);
@@ -1435,7 +1740,7 @@ p.dropcap:first-letter {
     right: 115px;
   }
 
-  /* line 704, ../sass/screen.scss */
+  /* line 818, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -1445,12 +1750,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 709, ../sass/screen.scss */
+  /* line 823, ../sass/screen.scss */
   49% {
     z-index: 2;
   }
 
-  /* line 713, ../sass/screen.scss */
+  /* line 827, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1461,7 +1766,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 719, ../sass/screen.scss */
+  /* line 833, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1471,12 +1776,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 724, ../sass/screen.scss */
+  /* line 838, ../sass/screen.scss */
   99% {
     z-index: 0;
   }
 
-  /* line 728, ../sass/screen.scss */
+  /* line 842, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1489,7 +1794,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly1 {
-  /* line 699, ../sass/screen.scss */
+  /* line 813, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
     -moz-transform: rotate3d(0, 1, 0, 90deg);
@@ -1499,7 +1804,7 @@ p.dropcap:first-letter {
     right: 115px;
   }
 
-  /* line 704, ../sass/screen.scss */
+  /* line 818, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -1509,12 +1814,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 709, ../sass/screen.scss */
+  /* line 823, ../sass/screen.scss */
   49% {
     z-index: 2;
   }
 
-  /* line 713, ../sass/screen.scss */
+  /* line 827, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1525,7 +1830,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 719, ../sass/screen.scss */
+  /* line 833, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1535,12 +1840,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 724, ../sass/screen.scss */
+  /* line 838, ../sass/screen.scss */
   99% {
     z-index: 0;
   }
 
-  /* line 728, ../sass/screen.scss */
+  /* line 842, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1553,7 +1858,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly2 {
-  /* line 736, ../sass/screen.scss */
+  /* line 850, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -1563,12 +1868,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 741, ../sass/screen.scss */
+  /* line 855, ../sass/screen.scss */
   24% {
     z-index: 2;
   }
 
-  /* line 745, ../sass/screen.scss */
+  /* line 859, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1579,7 +1884,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 865, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1589,12 +1894,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 756, ../sass/screen.scss */
+  /* line 870, ../sass/screen.scss */
   74% {
     z-index: 0;
   }
 
-  /* line 760, ../sass/screen.scss */
+  /* line 874, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1605,7 +1910,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 766, ../sass/screen.scss */
+  /* line 880, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -1617,7 +1922,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly2 {
-  /* line 736, ../sass/screen.scss */
+  /* line 850, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -1627,12 +1932,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 741, ../sass/screen.scss */
+  /* line 855, ../sass/screen.scss */
   24% {
     z-index: 2;
   }
 
-  /* line 745, ../sass/screen.scss */
+  /* line 859, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1643,7 +1948,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 865, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1653,12 +1958,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 756, ../sass/screen.scss */
+  /* line 870, ../sass/screen.scss */
   74% {
     z-index: 0;
   }
 
-  /* line 760, ../sass/screen.scss */
+  /* line 874, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1669,7 +1974,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 766, ../sass/screen.scss */
+  /* line 880, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -1681,7 +1986,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly3 {
-  /* line 773, ../sass/screen.scss */
+  /* line 887, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1692,7 +1997,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 779, ../sass/screen.scss */
+  /* line 893, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1702,12 +2007,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 784, ../sass/screen.scss */
+  /* line 898, ../sass/screen.scss */
   49% {
     z-index: 0;
   }
 
-  /* line 788, ../sass/screen.scss */
+  /* line 902, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1718,7 +2023,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 794, ../sass/screen.scss */
+  /* line 908, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -1728,12 +2033,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 799, ../sass/screen.scss */
+  /* line 913, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 803, ../sass/screen.scss */
+  /* line 917, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -1746,7 +2051,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly3 {
-  /* line 773, ../sass/screen.scss */
+  /* line 887, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1757,7 +2062,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 779, ../sass/screen.scss */
+  /* line 893, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1767,12 +2072,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 784, ../sass/screen.scss */
+  /* line 898, ../sass/screen.scss */
   49% {
     z-index: 0;
   }
 
-  /* line 788, ../sass/screen.scss */
+  /* line 902, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1783,7 +2088,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 794, ../sass/screen.scss */
+  /* line 908, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -1793,12 +2098,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 799, ../sass/screen.scss */
+  /* line 913, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 803, ../sass/screen.scss */
+  /* line 917, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -1811,7 +2116,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly4 {
-  /* line 811, ../sass/screen.scss */
+  /* line 925, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1822,7 +2127,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 817, ../sass/screen.scss */
+  /* line 931, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1833,7 +2138,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 823, ../sass/screen.scss */
+  /* line 937, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1843,7 +2148,7 @@ p.dropcap:first-letter {
     right: 110px;
   }
 
-  /* line 828, ../sass/screen.scss */
+  /* line 942, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -1854,12 +2159,12 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 834, ../sass/screen.scss */
+  /* line 948, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 838, ../sass/screen.scss */
+  /* line 952, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -1872,7 +2177,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly4 {
-  /* line 811, ../sass/screen.scss */
+  /* line 925, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -1883,7 +2188,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 817, ../sass/screen.scss */
+  /* line 931, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -1894,7 +2199,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 823, ../sass/screen.scss */
+  /* line 937, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -1904,7 +2209,7 @@ p.dropcap:first-letter {
     right: 110px;
   }
 
-  /* line 828, ../sass/screen.scss */
+  /* line 942, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -1915,12 +2220,12 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 834, ../sass/screen.scss */
+  /* line 948, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 838, ../sass/screen.scss */
+  /* line 952, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -1933,7 +2238,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes bouncebig {
-  /* line 846, ../sass/screen.scss */
+  /* line 960, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1942,7 +2247,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 847, ../sass/screen.scss */
+  /* line 961, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -20px, 0);
     -moz-transform: translate3d(0, -20px, 0);
@@ -1951,7 +2256,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -20px, 0);
   }
 
-  /* line 848, ../sass/screen.scss */
+  /* line 962, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1962,7 +2267,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes bouncebig {
-  /* line 846, ../sass/screen.scss */
+  /* line 960, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1971,7 +2276,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 847, ../sass/screen.scss */
+  /* line 961, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -20px, 0);
     -moz-transform: translate3d(0, -20px, 0);
@@ -1980,7 +2285,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -20px, 0);
   }
 
-  /* line 848, ../sass/screen.scss */
+  /* line 962, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1991,7 +2296,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes bouncesmall {
-  /* line 852, ../sass/screen.scss */
+  /* line 966, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2000,7 +2305,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 853, ../sass/screen.scss */
+  /* line 967, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -10px, 0);
     -moz-transform: translate3d(0, -10px, 0);
@@ -2009,7 +2314,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -10px, 0);
   }
 
-  /* line 854, ../sass/screen.scss */
+  /* line 968, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2020,7 +2325,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes bouncesmall {
-  /* line 852, ../sass/screen.scss */
+  /* line 966, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2029,7 +2334,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 853, ../sass/screen.scss */
+  /* line 967, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -10px, 0);
     -moz-transform: translate3d(0, -10px, 0);
@@ -2038,7 +2343,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -10px, 0);
   }
 
-  /* line 854, ../sass/screen.scss */
+  /* line 968, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2050,13 +2355,13 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group text */
-/* line 861, ../sass/screen.scss */
+/* line 975, ../sass/screen.scss */
 .on {
   -webkit-animation: in 1s 0s  linear forwards;
   -moz-animation: in 1s 0s  linear forwards;
 }
 
-/* line 865, ../sass/screen.scss */
+/* line 979, ../sass/screen.scss */
 .off {
   -webkit-animation: out 0.5s 0s  linear forwards;
   -moz-animation: out 0.5s 0s  linear forwards;
@@ -2066,7 +2371,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @end */
 /* @group theft-8 */
-/* line 902, ../sass/screen.scss */
+/* line 1016, ../sass/screen.scss */
 .basket {
   height: 600px;
   width: 300px;
@@ -2077,7 +2382,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 911, ../sass/screen.scss */
+/* line 1025, ../sass/screen.scss */
 .sack {
   width: 300px;
   display: block;
@@ -2088,7 +2393,7 @@ p.dropcap:first-letter {
   z-index: 2;
 }
 
-/* line 920, ../sass/screen.scss */
+/* line 1034, ../sass/screen.scss */
 .item1 {
   height: 200px;
   width: 200px;
@@ -2101,7 +2406,7 @@ p.dropcap:first-letter {
   z-index: 1;
 }
 
-/* line 931, ../sass/screen.scss */
+/* line 1045, ../sass/screen.scss */
 .item2 {
   height: 200px;
   width: 200px;
@@ -2113,7 +2418,7 @@ p.dropcap:first-letter {
   right: -200px;
 }
 
-/* line 941, ../sass/screen.scss */
+/* line 1055, ../sass/screen.scss */
 .item3 {
   height: 200px;
   width: 200px;

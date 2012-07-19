@@ -89,9 +89,12 @@
 		};
 	}
 
-/* @end */
-
-/* @group general elements */
+	.glow {
+		@include animation(glow, 2s, 0s, infinite, linear, forwards);
+		color: #fff;
+		text-shadow: 0px -2px 5px #008CFF, 0px 2px 5px #008CFF;
+		font-weight: bold;
+	}
 
 	.btn-previous {
 		//temp
@@ -162,6 +165,15 @@
 		}
 
 	/* @end */
+
+	@include keyframes(glow) {
+		0% { text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f; }
+		25% { text-shadow: 0px -2px 20px #ff0002, 0px 2px 20px #ff0002; }
+		50% { text-shadow: 0px -2px 5px #0025da, 0px 2px 5px #0025da; }
+		75% { text-shadow: 0px -2px 20px #ff9600, 0px 2px 20px #ff9600; }
+		100% { text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f; }
+
+	}
 
 /* @end */
 
@@ -441,17 +453,119 @@
 
 /* @end */
 
+/* @group cowsale-3 */
+
+	.cowsale-3 {
+		@include scrollbg;
+	}
+
+	.scroll {
+		@include responsive-bg(multitext/scroll, bottom left);
+		@include dimensions(0px, 502px);
+		top: 143px;
+		overflow: hidden;
+	}
+
+	.scroll-left-bottom {
+		@include responsive-bg(multitext/left_shadow, bottom left);
+		@include dimensions(136px, 553px);
+		left: 418px;
+		top: 136px;
+	}
+
+	.scroll-left-top {
+		@extend .scroll-left-bottom;
+		@include responsive-bg(multitext/left_noshadow, bottom left);
+		@include dimensions(97px, 553px);
+	}
+
+	.scroll-right {
+		@include responsive-bg(multitext/right_shadow, bottom left);
+		@include dimensions(139px, 553px);
+		left: 459px;
+		top: 127px;
+	}
+
+	.text {
+		width: 580px;
+		color: #000;
+		text-shadow: none;
+		font-size: 20px;
+		margin: 80px 30px 20px 30px;
+		line-height: 30px;
+		
+	}
+
+	/* @group animations */
+
+		.current {
+			&>.scroll-left-top {
+				@include animation(moveleft, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
+			}
+
+			&>.scroll-left-bottom {
+				@include animation(moveleft, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
+			}
+		}
+
+		.current > .scroll-right {
+			@include animation(moveright, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
+		}
+
+		.current > .scroll {
+			@include animation(expand, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
+		}
+
+		@include keyframes(moveright) {
+			0% {
+				@include translate3d( 0px, 0px, 0px );
+			}
+
+			100% {
+				@include translate3d( 315px, 0px, 0px );
+			}
+		}
+
+		@include keyframes(moveleft) {
+			0% {
+				@include translate3d( 0px, 0px, 0px );
+			}
+
+			100% {
+				@include translate3d( -310px, 0px, 0px );
+			}
+		}
+
+		@include keyframes(expand) {
+			0% {
+				@include background-size(640px, 100%);
+				width: 20px;
+				left: 50%;
+				margin-left: -20px;
+			}
+
+			100% {
+				@include background-size(640px, 100%);
+				width: 640px;
+				left: 50%;
+				margin-left: -320px;
+			}
+		}
+
+	/* @end */
+
+/* @end */
+
 /* @group beanstalk-4 */
 
 	.beanstalk-4 {
 		overflow-y: scroll;
+		overflow-x: hidden;
 	}
 
 	.background {
 		@include responsive-bg(4beanstalk/background, bottom left);
 		@include dimensions(100%, 3229px);
-		// bottom: 0;
-
 
 		/* @group text */
 

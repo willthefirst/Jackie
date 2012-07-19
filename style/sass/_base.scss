@@ -17,6 +17,25 @@
 	/* IE6-9 fallback on horizontal gradient */ 
 }
 
+@mixin scrollbg {
+	background: #31607d;
+	/* Old browsers */
+	background: -moz-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(radial, 50% 45%, 0px, 50% 45%, 100%, color-stop(10%, #31607d), color-stop(100%, #07102b));
+	/* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* Opera 12+ */
+	background: -ms-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* IE10+ */
+	background: radial-gradient(ellipse at 50% 45%, #31607d 10%, #07102b 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#31607d', endColorstr='#07102b',GradientType=1 );
+	/* IE6-9 fallback on horizontal gradient */ 
+}
+
 @mixin full-frame {
 	height: 5000px;
 	width: 1024px;

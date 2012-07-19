@@ -44,7 +44,7 @@ var APP = {
 
 			window.setTimeout(function() {
 				a.toggleClass('previous current');
-			}, 1200);
+			}, 1500);
 			
 			page.newPage(page.$next);
 		},
@@ -59,7 +59,7 @@ var APP = {
 
 			window.setTimeout(function() {
 				a.toggleClass('current hidden').css('opacity','');
-			}, 1200);
+			}, 1500);
 
 			page.newPage(page.$previous);
 		}
@@ -116,7 +116,7 @@ var APP = {
 					oldScroll = $scene.scrollTop();
 					x = true;
 				}
-
+				
 				else {
 					x = false;
 				}
@@ -143,10 +143,6 @@ var APP = {
 				}
 			}, 250);
 
-
-		},
-
-		checkNarrators: function() {
 
 		},
 
