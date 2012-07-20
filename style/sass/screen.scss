@@ -66,6 +66,10 @@
 		}
 	}
 
+	em {
+		font-style: italic;
+	}
+
 	p {
 		color: #fff;
 		font-family: 'Esteban', serif;
@@ -556,9 +560,31 @@
 
 /* @end */
 
-/* @group beanstalk-4 */
+/* @group nextmorning-4 */
 
-	.beanstalk-4 {
+	.nextmorning-4 {
+		@extend .cowsale-3;
+	}
+
+	.text4 {
+		@extend .text;
+		width: 300px;
+		margin-left: 200px;
+	}
+
+	.intrigue {
+		@extend .text;
+		width: 500px;
+		margin: 280px 50px 0 170px;
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+/* @end */
+
+/* @group beanstalk-5 */
+
+	.beanstalk-5 {
 		overflow-y: scroll;
 		overflow-x: hidden;
 	}

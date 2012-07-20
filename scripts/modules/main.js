@@ -98,13 +98,23 @@ var APP = {
 
 	},
 
-	/* SCENE beantoss_4 */
+	/* SCENE cowsale_4 */
 
-	beanstalk_4: {
+	nextmorning_4: {
+
+		start: function(current) {},
+
+		reset: function(current) {}
+
+	},
+
+	/* SCENE beanstalk_5 */
+
+	beanstalk_5: {
 
 		start: function(current) {
 			var narrators = this.narrators();
-			var $scene = $('.beanstalk-4');
+			var $scene = $('.beanstalk-5');
 			$scene.scrollTop(2461);
 
 			var oldScroll = 0;
