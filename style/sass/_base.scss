@@ -1,3 +1,5 @@
+//review turn into radial gradient.
+
 @mixin bluesky ($x: 50%, $y: 50%) {
 	background: #e3e4e5;
 	/* Old browsers */
@@ -51,6 +53,7 @@
 @mixin responsive-bg($path, $position: top left) {
 	background: url(../../images/normal/#{$path}.png) no-repeat $position;
 	@media screen and (-webkit-min-device-pixel-ratio: 2) {
-		background: url(../../images/retina/#{$path}_2x.png) no-repeat $position; 
+		background: url(../../images/retina/#{$path}_2x.png) no-repeat $position;
+		@include background-size(100% 100%);
 	}
 }

@@ -189,92 +189,15 @@ var APP = {
 			return narrators;
 		},
 
-
-/*
-
-scrollpos
-
-if narrator is off but scroll+pos is his, turn on narrator
-else if narrator is on but scrollpos is not his, turn off.
-
-
-*/
-
-
-// on off state
-
-// interval check = check every .25s if scroll
-/*			$scene.scroll(function(e) {
-				var oldScroll = e.target.scrollTop;
-				console.log(oldScroll);
-
-
-				if (oldScroll >= 2393) {
-					a.addClass('on');
-					a.removeClass('off');
-				}
-
-				else (oldScroll <= 2393) {
-					a.addClass('off');
-					a.removeClass('on');
-				}
-			} */
-
-		
-
-
 		reset: function(current) {}
 
 	},
 
 	/* SCENE nextmorning_5 */
 
-	nextmorning_5: {
+	giant_7: {
 
 		start: function(current) {},
-
-		reset: function(current) {}
-
-	},
-
-	/* SCENE beanstalk_6 */
-
-	beanstalk_6: {
-
-		start: function(current) {},
-
-		reset: function(current) {}
-
-	},
-
-	/* SCENE arrival_7 */
-
-	arrival_7: {
-
-		start: function(current) {},
-
-		reset: function(current) {}
-
-	},
-
-	/* SCENE giant_8 */
-
-	giant_8: {
-
-		start: function(current) {
-
-		// temp
-		// var $item_1 = $('.item1');
-		// var $item_2 = $('.item2');
-		// var $item_3 = $('.item3');
-
-		// var steal = function(item) {
-		// 		item.addClass('steal');
-		// 	};
-
-		// steal($item_1);
-
-		},
 
 		reset: function(current) {}
 
