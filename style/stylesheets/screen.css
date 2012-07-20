@@ -345,6 +345,10 @@ p.dropcap:first-letter {
   width: 577.6px;
   height: 533px;
   background: url(../../images/normal/1start/title.png) no-repeat top left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   left: 50%;
   margin-left: -280.5px;
 }
@@ -364,6 +368,10 @@ p.dropcap:first-letter {
   width: 100%;
   height: 225px;
   background: url(../../images/normal/1start/mountain.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   bottom: -2px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -388,6 +396,10 @@ p.dropcap:first-letter {
   width: 100%;
   height: 550px;
   background: url(../../images/normal/1start/sky.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   bottom: -100px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -406,6 +418,10 @@ p.dropcap:first-letter {
   width: 230px;
   height: 178px;
   background: url(../../images/normal/1start/cloud1.png) no-repeat top left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   bottom: 225px;
   right: 75px;
 }
@@ -431,6 +447,10 @@ p.dropcap:first-letter {
   width: 295.2px;
   height: 120px;
   background: url(../../images/normal/1start/cloud2.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   top: 170px;
   left: 120px;
 }
@@ -450,6 +470,10 @@ p.dropcap:first-letter {
   width: 273.45px;
   height: 268.95px;
   background: url(../../images/normal/1start/frontj.png) no-repeat top left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   top: 148px;
   left: 240px;
 }
@@ -469,6 +493,10 @@ p.dropcap:first-letter {
   width: 890px;
   height: 460px;
   background: url(../../images/normal/1start/right-cloud.png) no-repeat top right;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   right: 0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -487,6 +515,10 @@ p.dropcap:first-letter {
   width: 950px;
   height: 640px;
   background: url(../../images/normal/1start/left-cloud.png) no-repeat top left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   top: 0px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -734,6 +766,10 @@ p.dropcap:first-letter {
 /* line 316, ../sass/screen.scss */
 .house-right {
   background: url(../../images/normal/2exposition/house_right.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   -webkit-transform-origin: 50% 95%;
   -moz-transform-origin: 50% 95%;
   -ms-transform-origin: 50% 95%;
@@ -758,6 +794,10 @@ p.dropcap:first-letter {
 /* line 325, ../sass/screen.scss */
 .house-left {
   background: url(../../images/normal/2exposition/house_left.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
@@ -782,6 +822,10 @@ p.dropcap:first-letter {
 /* line 334, ../sass/screen.scss */
 .cloud {
   background: url(../../images/normal/2exposition/cloud.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   height: 299.46px;
   right: -100px;
   top: 20px;
@@ -805,6 +849,10 @@ p.dropcap:first-letter {
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
   background: url(../../images/normal/2exposition/sign.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
   -ms-transform: rotate(240deg);
@@ -838,6 +886,10 @@ p.dropcap:first-letter {
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
   background: url(../../images/normal/2exposition/grass_top.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   bottom: 0;
   height: 485px;
   width: 100%;
@@ -860,6 +912,10 @@ p.dropcap:first-letter {
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
   background: url(../../images/normal/2exposition/grass_bottom.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   bottom: 0;
   height: 188px;
   width: 100%;
@@ -1118,6 +1174,10 @@ p.dropcap:first-letter {
 /* line 465, ../sass/screen.scss */
 .scroll {
   background: url(../../images/normal/multitext/scroll.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 0px;
   height: 502px;
   top: 143px;
@@ -1137,6 +1197,10 @@ p.dropcap:first-letter {
 /* line 472, ../sass/screen.scss */
 .scroll-left-bottom, .scroll-left-top {
   background: url(../../images/normal/multitext/left_shadow.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 136px;
   height: 553px;
   left: 418px;
@@ -1156,6 +1220,10 @@ p.dropcap:first-letter {
 /* line 479, ../sass/screen.scss */
 .scroll-left-top {
   background: url(../../images/normal/multitext/left_noshadow.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 97px;
   height: 553px;
 }
@@ -1173,6 +1241,10 @@ p.dropcap:first-letter {
 /* line 485, ../sass/screen.scss */
 .scroll-right {
   background: url(../../images/normal/multitext/right_shadow.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 139px;
   height: 553px;
   left: 459px;
@@ -1379,6 +1451,10 @@ p.dropcap:first-letter {
 /* line 591, ../sass/screen.scss */
 .background {
   background: url(../../images/normal/4beanstalk/background.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 100%;
   height: 3229px;
   /* @group text */
@@ -1444,6 +1520,10 @@ p.dropcap:first-letter {
 /* line 642, ../sass/screen.scss */
 .beanstalk {
   background: url(../../images/normal/4beanstalk/beanstalk.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 1003px;
   height: 2463px;
   bottom: 0;
@@ -1462,6 +1542,10 @@ p.dropcap:first-letter {
 /* line 648, ../sass/screen.scss */
 .cloudsdivide {
   background: url(../../images/normal/4beanstalk/cloudsdivide.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 100%;
   height: 1048px;
   top: 350px;
@@ -1480,6 +1564,10 @@ p.dropcap:first-letter {
 /* line 654, ../sass/screen.scss */
 .castleclouds {
   background: url(../../images/normal/4beanstalk/castleclouds.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 184px;
   height: 108px;
   top: 58px;
@@ -1499,6 +1587,10 @@ p.dropcap:first-letter {
 /* line 661, ../sass/screen.scss */
 .castle {
   background: url(../../images/normal/4beanstalk/castle.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 335px;
   height: 558px;
   top: 58px;
@@ -1519,6 +1611,10 @@ p.dropcap:first-letter {
 /* line 669, ../sass/screen.scss */
 .upperclouds {
   background: url(../../images/normal/4beanstalk/cloudsupper.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 523px;
   height: 517px;
   top: 91px;
@@ -1549,6 +1645,10 @@ p.dropcap:first-letter {
 /* line 685, ../sass/screen.scss */
 .cloudback {
   background: url(../../images/normal/4beanstalk/cloudsback.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 1794px;
   height: 560px;
 }
@@ -1582,6 +1682,10 @@ p.dropcap:first-letter {
 /* line 706, ../sass/screen.scss */
 .cloudfront {
   background: url(../../images/normal/4beanstalk/cloudfront.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 1689px;
   height: 987px;
 }
@@ -1615,6 +1719,10 @@ p.dropcap:first-letter {
 /* line 727, ../sass/screen.scss */
 .birda {
   background: url(../../images/normal/4beanstalk/birds_front_1.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 13px;
   height: 11px;
   top: 120px;
@@ -1635,6 +1743,10 @@ p.dropcap:first-letter {
 /* line 735, ../sass/screen.scss */
 .birdb {
   background: url(../../images/normal/4beanstalk/birds_front_2.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 11px;
   height: 6px;
   top: 120px;
@@ -1655,6 +1767,10 @@ p.dropcap:first-letter {
 /* line 743, ../sass/screen.scss */
 .birdc {
   background: url(../../images/normal/4beanstalk/birds_front_3.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 10px;
   height: 5px;
   top: 120px;
@@ -1675,6 +1791,10 @@ p.dropcap:first-letter {
 /* line 751, ../sass/screen.scss */
 .birdd {
   background: url(../../images/normal/4beanstalk/birds_back_1.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 18px;
   height: 6px;
   top: 100px;

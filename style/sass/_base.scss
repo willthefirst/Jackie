@@ -52,6 +52,8 @@
 
 @mixin responsive-bg($path, $position: top left) {
 	background: url(../../images/normal/#{$path}.png) no-repeat $position;
+	@include background-size(100% 100%);
+
 	@media screen and (-webkit-min-device-pixel-ratio: 2) {
 		background: url(../../images/retina/#{$path}_2x.png) no-repeat $position;
 		@include background-size(100% 100%);
