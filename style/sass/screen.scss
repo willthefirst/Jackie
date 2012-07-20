@@ -184,49 +184,6 @@
 
 	.start-1 {
 		@include bluesky;
-
-
-		/* @group animations */
-
-			.current {
-				&>.right-cloud {
-					@include animation(right-cloud, 5s, 1s, $function:ease-in, $fill-mode:forwards);
-				} 
-			}
-
-			@include keyframes(right-cloud) {
-				0% { @include translate3d(0, 0, 0); }
-				100% { @include translate3d(200%, 0, 0); }
-			}
-
-			.current > .left-cloud {
-				@include animation(left-cloud, 5s, 1s, $function:ease-in, $fill-mode:forwards);
-			}
-
-			@include keyframes(left-cloud) {
-				0% { @include translate3d(0, 0, 0); }
-				100% { @include translate3d(-200%, 0, 0); }
-			}
-
-			.current > .cloud-1 {
-				@include animation(cloud-1, 50s, 1s, $function:linear, $fill-mode:forwards);
-			}
-
-			@include keyframes(cloud-1) {
-				0% { @include translate3d(0, 0, 0); }
-				100% { @include translate3d(-400%, 0, 0); }
-			}
-
-			.current > .cloud-2 {
-				@include animation(cloud-2, 50s, 1s, $function:linear, $fill-mode:forwards);
-			}
-
-			@include keyframes(cloud-2) {
-				0% { @include translate3d(0, 0, 0); }
-				100% { @include translate3d(300%, 0, 0); }
-			}
-
-		/* @end */
 	}
 
 	.title {
@@ -283,6 +240,48 @@
 		top: 0px;
 	}
 
+
+
+	/* @group animations */
+
+		.current > .right-cloud {
+			@include animation(right-cloud, 5s, 1s, $function:ease-in, $fill-mode:forwards);
+		}
+
+		@include keyframes(right-cloud) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(200%, 0, 0); }
+		}
+
+		.current > .left-cloud {
+			@include animation(left-cloud, 5s, 1s, $function:ease-in, $fill-mode:forwards);
+		}
+
+		@include keyframes(left-cloud) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(-200%, 0, 0); }
+		}
+
+		.current > .cloud-1 {
+			@include animation(cloud-1, 50s, 1s, $function:linear, $fill-mode:forwards);
+		}
+
+		@include keyframes(cloud-1) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(-400%, 0, 0); }
+		}
+
+		.current > .cloud-2 {
+			@include animation(cloud-2, 50s, 1s, $function:linear, $fill-mode:forwards);
+		}
+
+		@include keyframes(cloud-2) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(300%, 0, 0); }
+		}
+
+	/* @end */
+
 /* @end */
 
 /* @group exposition-2 */
@@ -290,19 +289,19 @@
 	.exposition-2 {
 		@include bluesky(75%, 77%);
 
-		&>.a {
+		.a {
 			@include dimensions(400px, 400px);
 			left: 40px;
 			position: absolute;
 			top: 100px;
 		}
 
-		&>.b {
+		.b {
 			float: right;
 			opacity: 0;
 		}
 
-		&>.c {
+		.c {
 			@extend .a;
 			opacity: 0;
 
@@ -379,19 +378,19 @@
 
 		/* @end */
 
-		.exposition-2.current > .a > .b {
+		.current > .a > .b {
 			@include animation(in, 1s, 5s, $function:linear, $fill-mode:forwards);
 		}
 
-		.exposition-2.current > .a {
+		.current > .a {
 			@include animation(out, 1s, $second_text_go, $function:linear, $fill-mode:forwards);
 		}
 
-		.exposition-2.current > .c {
+		.current > .c {
 			@include animation(in, 1s, $second_text_go, $function:linear, $fill-mode:forwards);
 		}
 
-		.exposition-2.current > .house-right {
+		.current > .house-right {
 			@include animation(fall_right, $house_fall_speed, $house_fall_go, $function:ease-in, $fill-mode:forwards);
 		}
 
@@ -1011,55 +1010,54 @@
 
 	/* @end */
 
-/* @group giant-7 */
+// /* @group giant-7 */
 
-	.giant-7 {
-		@include responsive-bg(7giant/background, bottom left);
+// 	.giant-7 {
+// 		@include responsive-bg(7giant/background, bottom left);
+// 	}
 
-		.current {
-			&>.a {
-				@include responsive-bg(7giant/fee, bottom left);
-				@include dimensions(570px, 259px);
-			}
+// 	.clouds{
+// 		@include responsive-bg(7giant/clouds, bottom left);
+// 		@include dimensions(100%, 100%);
+// 	}
 
-			&>.b {
-				display: none;
-				@include responsive-bg(7giant/fi, bottom left);
-				@include dimensions(326px, 240px);
-			}
+// 	.a {
+// 		@include responsive-bg(7giant/fee, bottom left);
+// 		@include dimensions(570px, 259px);
+// 	}
 
-			&>.c {
-				display: none;
-				@include responsive-bg(7giant/fo, bottom left);
-				@include dimensions(100%, 100%);
-				@include dimensions(421px, 240px);
-			}
+// 	.b {
+// 		display: none;
+// 		@include responsive-bg(7giant/fi, bottom left);
+// 		@include dimensions(421px, 240px);
 
-			&>.d {
-				display: none;
-				@include responsive-bg(7giant/fum, bottom left);
-				@include dimensions(713px, 241px);
-			}
+// 	}
 
-			&>.e {
+// 	.c {
+// 		display: none;
+// 		@include responsive-bg(7giant/fo, bottom left);
+// 		@include dimensions(100%, 100%);
+// 		@include dimensions(421px, 240px);
+// 	}
 
-			}
-		}
-	}
+// 	.d {
+// 		display: none;
+// 		@include responsive-bg(7giant/fum, bottom left);
+// 		@include dimensions(713px, 241px);
+// 	}
 
-	.clouds{
-		@include responsive-bg(7giant/clouds, bottom left);
-		@include dimensions(100%, 100%);
-	}
+// 	.e {
 
-	.line {
-		display: block;
-		width: 100%;
-		border: 3px solid red;
-		bottom: 230px;
-	}
+// 	}
 
-/* @end */
+// 	.line {
+// 		display: block;
+// 		width: 100%;
+// 		border: 3px solid red;
+// 		bottom: 230px;
+// 	}
+
+// /* @end */
 
 
 
