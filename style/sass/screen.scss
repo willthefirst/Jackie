@@ -222,7 +222,7 @@
 	}
 
 	.titlej {
-		@include dimensions(273.45px,268.95px);
+		@include dimensions(273.45px, 268.95px);
 		@include responsive-bg(1start/frontj);
 		top: 148px;
 		left: 240px;
@@ -378,19 +378,19 @@
 
 		/* @end */
 
-		.current > .a > .b {
+		.exposition-2.current > .a > .b {
 			@include animation(in, 1s, 5s, $function:linear, $fill-mode:forwards);
 		}
 
-		.current > .a {
+		.exposition-2.current > .a {
 			@include animation(out, 1s, $second_text_go, $function:linear, $fill-mode:forwards);
 		}
 
-		.current > .c {
+		.exposition-2.current > .c {
 			@include animation(in, 1s, $second_text_go, $function:linear, $fill-mode:forwards);
 		}
 
-		.current > .house-right {
+		.exposition-2.current > .house-right {
 			@include animation(fall_right, $house_fall_speed, $house_fall_go, $function:ease-in, $fill-mode:forwards);
 		}
 
@@ -1005,59 +1005,143 @@
 			@include animation(out, .5s, 0s, $function:linear, $fill-mode:forwards);
 		}
 
-
 		/* @end */
 
 	/* @end */
 
-// /* @group giant-7 */
+/* @group giant-7 */
 
-// 	.giant-7 {
-// 		@include responsive-bg(7giant/background, bottom left);
-// 	}
+	.giant-7 {
+		@include responsive-bg(7giant/background, bottom left);
+	}
 
-// 	.clouds{
-// 		@include responsive-bg(7giant/clouds, bottom left);
-// 		@include dimensions(100%, 100%);
-// 	}
+	.clouds{
+		@include responsive-bg(7giant/clouds, bottom left);
+		@include dimensions(100%, 100%);
+	}
 
-// 	.a {
-// 		@include responsive-bg(7giant/fee, bottom left);
-// 		@include dimensions(570px, 259px);
-// 	}
+	.a {
+		@include responsive-bg(7giant/fee, bottom left);
+		@include dimensions(570px, 259px);
+		@include rotate3d(0,0,0, -30deg);
+		@include transform-origin(0%, 100%);
+		opacity: 1;
+		left: 215px;
+		top: -240px;
+	}
 
-// 	.b {
-// 		display: none;
-// 		@include responsive-bg(7giant/fi, bottom left);
-// 		@include dimensions(421px, 240px);
+	.b {
+		display: none;
+		@include responsive-bg(7giant/fi, bottom left);
+		@include dimensions(421px, 240px);
+		left: 280px;
+		top: -229px;
+	}
 
-// 	}
+	.c {
+		display: none;
+		@include responsive-bg(7giant/fo, bottom left);
+		@include dimensions(100%, 100%);
+		@include dimensions(421px, 240px);
+		left: 280px;
+		top: -233px;
+	}
 
-// 	.c {
-// 		display: none;
-// 		@include responsive-bg(7giant/fo, bottom left);
-// 		@include dimensions(100%, 100%);
-// 		@include dimensions(421px, 240px);
-// 	}
+	.d {
+		display: none;
+		@include responsive-bg(7giant/fum, bottom left);
+		@include dimensions(713px, 241px);
+		left: 165px;
+		top: -230px;
+	}
 
-// 	.d {
-// 		display: none;
-// 		@include responsive-bg(7giant/fum, bottom left);
-// 		@include dimensions(713px, 241px);
-// 	}
+	.line {
+		display: none;
+		display: block;
+		width: 100%;
+		border: 3px solid red;
+		bottom: 277px;
+	}
 
-// 	.e {
+	/* @group animations */
 
-// 	}
+		.giant-7.current > .a {
+			@include animation(wordfall-left, 3s, 1s, $function:ease-out, $fill-mode:forwards);
+		}
 
-// 	.line {
-// 		display: block;
-// 		width: 100%;
-// 		border: 3px solid red;
-// 		bottom: 230px;
-// 	}
+		.giant-7.current > .b {
+			@include animation(wordfall, 1s, 2s, $function:ease-in, $fill-mode:forwards);
+		}
 
-// /* @end */
+		.giant-7.current > .c {
+			@include animation(wordfall, 1s, 4s, $function:ease-in, $fill-mode:forwards);
+		}
+
+		.giant-7.current > .d {
+			@include animation(wordfall, 1s, 6s, $function:ease-in, $fill-mode:forwards);
+		}
+
+		@include keyframes(wordfall-left) {
+			0% {
+				@include create-transform($rotate3d:(0,0,0, -30deg), $trans-x:(0px), $trans-y:(0px));
+				@include animation-timing-function( cubic-bezier(0.935, -0.070, 1.000, 1.000));
+				opacity: 1;
+			}
+
+			//hit corner
+
+			30% {
+				@include create-transform($rotate3d:(0,0,0, -30deg),$trans-x:(-260px), $trans-y:(490px));
+			}
+
+			//land 1
+
+			33% {
+				@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(-20px), $trans-y:(490px));
+				@include animation-timing-function(ease-out);
+			}
+
+			//apex 1
+
+			45% {
+				@include create-transform($rotate3d:(0,0,0, -15deg),$trans-x:(-138px), $trans-y:(490px));
+				@include animation-timing-function(ease-in);
+			}
+
+			//land 2
+
+			60% {
+				@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(-20px), $trans-y:(490px));
+				@include animation-timing-function(ease-out);
+			}
+
+			//apex 2
+
+			70% {
+				@include create-transform($rotate3d:(0,0,0, -4deg),$trans-x:(-50px), $trans-y:(490px));
+				@include animation-timing-function(ease-in);
+			}
+
+			//land 3
+
+			80% {
+				@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(-20px), $trans-y:(490px));
+			}
+
+			90% {
+				@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(-20px), $trans-y:(490px));
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+				@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(-20px), $trans-y:(800px));
+			}
+		}
+
+	/* @end */
+
+/* @end */
 
 
 

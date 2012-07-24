@@ -4,6 +4,13 @@
 }
 
 @mixin keyframes($name) {
-	@-webkit-keyframes $name {@content;}
-	@-moz-keyframes $name {@content;}
+	@-webkit-keyframes #{$name} {@content;}
+	@-moz-keyframes #{$name} {@content;}
+}
+
+@mixin animation-timing-function($function) {
+	-webkit-animation-timing-function: $function;
+	-moz-animation-timing-function: $function;
+	-o-animation-timing-function: $function;
+	animation-timing-function: $function;
 }

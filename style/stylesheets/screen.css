@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -113,7 +113,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: center;
   -webkit-transition: opacity 1s linear;
   -moz-transition: opacity 1s linear;
-  -ms-transition: opacity 1s linear;
   -o-transition: opacity 1s linear;
   transition: opacity 1s linear;
   height: 5000px;
@@ -390,7 +389,6 @@ p.dropcap:first-letter {
   -webkit-transition: all 15s linear;
   -webkit-transition-delay: 0s;
   -moz-transition: all 15s linear 0s;
-  -ms-transition: all 15s linear 0s;
   -o-transition: all 15s linear 0s;
   transition: all 15s linear 0s;
   width: 100%;
@@ -441,7 +439,6 @@ p.dropcap:first-letter {
   -webkit-transition: all 50s linear;
   -webkit-transition-delay: 2s;
   -moz-transition: all 50s linear 2s;
-  -ms-transition: all 50s linear 2s;
   -o-transition: all 50s linear 2s;
   transition: all 50s linear 2s;
   width: 295.2px;
@@ -935,25 +932,25 @@ p.dropcap:first-letter {
 /* @group timing variables */
 /* @end */
 /* line 381, ../sass/screen.scss */
-.current > .a > .b, .exposition-2 .current > .c > .b {
+.exposition-2.current > .a > .b, .exposition-2.current > .c > .b {
   -webkit-animation: in 1s 5s  linear forwards;
   -moz-animation: in 1s 5s  linear forwards;
 }
 
 /* line 385, ../sass/screen.scss */
-.current > .a, .exposition-2 .current > .c {
+.exposition-2.current > .a, .exposition-2.current > .c {
   -webkit-animation: out 1s 8.5s  linear forwards;
   -moz-animation: out 1s 8.5s  linear forwards;
 }
 
 /* line 389, ../sass/screen.scss */
-.current > .c {
+.exposition-2.current > .c {
   -webkit-animation: in 1s 8.5s  linear forwards;
   -moz-animation: in 1s 8.5s  linear forwards;
 }
 
 /* line 393, ../sass/screen.scss */
-.current > .house-right {
+.exposition-2.current > .house-right {
   -webkit-animation: fall_right 2s 7s  ease-in forwards;
   -moz-animation: fall_right 2s 7s  ease-in forwards;
 }
@@ -2626,9 +2623,406 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @end */
+/* @group giant-7 */
+/* line 1014, ../sass/screen.scss */
+.giant-7 {
+  background: url(../../images/normal/7giant/background.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1014, ../sass/screen.scss */
+  .giant-7 {
+    background: url(../../images/retina/7giant/background_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+/* line 1018, ../sass/screen.scss */
+.clouds {
+  background: url(../../images/normal/7giant/clouds.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1018, ../sass/screen.scss */
+  .clouds {
+    background: url(../../images/retina/7giant/clouds_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+/* line 1023, ../sass/screen.scss */
+.a, .exposition-2 .c {
+  background: url(../../images/normal/7giant/fee.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 570px;
+  height: 259px;
+  -webkit-transform: rotate3d(0, 0, 0, -30deg);
+  -moz-transform: rotate3d(0, 0, 0, -30deg);
+  -ms-transform: rotate3d(0, 0, 0, -30deg);
+  -o-transform: rotate3d(0, 0, 0, -30deg);
+  transform: rotate3d(0, 0, 0, -30deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  opacity: 1;
+  left: 215px;
+  top: -240px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1023, ../sass/screen.scss */
+  .a, .exposition-2 .c {
+    background: url(../../images/retina/7giant/fee_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+/* line 1033, ../sass/screen.scss */
+.b {
+  display: none;
+  background: url(../../images/normal/7giant/fi.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 421px;
+  height: 240px;
+  left: 280px;
+  top: -229px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1033, ../sass/screen.scss */
+  .b {
+    background: url(../../images/retina/7giant/fi_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+/* line 1041, ../sass/screen.scss */
+.c {
+  display: none;
+  background: url(../../images/normal/7giant/fo.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  width: 421px;
+  height: 240px;
+  left: 280px;
+  top: -233px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1041, ../sass/screen.scss */
+  .c {
+    background: url(../../images/retina/7giant/fo_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+/* line 1050, ../sass/screen.scss */
+.d {
+  display: none;
+  background: url(../../images/normal/7giant/fum.png) no-repeat bottom left;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 713px;
+  height: 241px;
+  left: 165px;
+  top: -230px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1050, ../sass/screen.scss */
+  .d {
+    background: url(../../images/retina/7giant/fum_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+/* line 1058, ../sass/screen.scss */
+.line {
+  display: none;
+  display: block;
+  width: 100%;
+  border: 3px solid red;
+  bottom: 277px;
+}
+
+/* @group animations */
+/* line 1068, ../sass/screen.scss */
+.giant-7.current > .a, .exposition-2 .giant-7.current > .c {
+  -webkit-animation: wordfall-left 3s 1s  ease-out forwards;
+  -moz-animation: wordfall-left 3s 1s  ease-out forwards;
+}
+
+/* line 1072, ../sass/screen.scss */
+.giant-7.current > .b {
+  -webkit-animation: wordfall 1s 2s  ease-in forwards;
+  -moz-animation: wordfall 1s 2s  ease-in forwards;
+}
+
+/* line 1076, ../sass/screen.scss */
+.giant-7.current > .c {
+  -webkit-animation: wordfall 1s 4s  ease-in forwards;
+  -moz-animation: wordfall 1s 4s  ease-in forwards;
+}
+
+/* line 1080, ../sass/screen.scss */
+.giant-7.current > .d {
+  -webkit-animation: wordfall 1s 6s  ease-in forwards;
+  -moz-animation: wordfall 1s 6s  ease-in forwards;
+}
+
+@-webkit-keyframes wordfall-left {
+  /* line 1085, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -ms-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -o-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -webkit-animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    -moz-animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    -o-animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    opacity: 1;
+  }
+
+  /* line 1093, ../sass/screen.scss */
+  30% {
+    -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+  }
+
+  /* line 1099, ../sass/screen.scss */
+  33% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  /* line 1106, ../sass/screen.scss */
+  45% {
+    -webkit-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 1113, ../sass/screen.scss */
+  60% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  /* line 1120, ../sass/screen.scss */
+  70% {
+    -webkit-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 1127, ../sass/screen.scss */
+  80% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+  }
+
+  /* line 1131, ../sass/screen.scss */
+  90% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    opacity: 1;
+  }
+
+  /* line 1136, ../sass/screen.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+  }
+}
+
+@-moz-keyframes wordfall-left {
+  /* line 1085, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -ms-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -o-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
+    -webkit-animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    -moz-animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    -o-animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    animation-timing-function: cubic-bezier(0.935, -0.07, 1, 1);
+    opacity: 1;
+  }
+
+  /* line 1093, ../sass/screen.scss */
+  30% {
+    -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+    transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
+  }
+
+  /* line 1099, ../sass/screen.scss */
+  33% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  /* line 1106, ../sass/screen.scss */
+  45% {
+    -webkit-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 1113, ../sass/screen.scss */
+  60% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  /* line 1120, ../sass/screen.scss */
+  70% {
+    -webkit-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 1127, ../sass/screen.scss */
+  80% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+  }
+
+  /* line 1131, ../sass/screen.scss */
+  90% {
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
+    opacity: 1;
+  }
+
+  /* line 1136, ../sass/screen.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+    transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
+  }
+}
+
+/* @end */
+/* @end */
 /* @end */
 /* @group theft-8 */
-/* line 1088, ../sass/screen.scss */
+/* line 1172, ../sass/screen.scss */
 .basket {
   height: 600px;
   width: 300px;
@@ -2639,7 +3033,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 1097, ../sass/screen.scss */
+/* line 1181, ../sass/screen.scss */
 .sack {
   width: 300px;
   display: block;
@@ -2650,7 +3044,7 @@ p.dropcap:first-letter {
   z-index: 2;
 }
 
-/* line 1106, ../sass/screen.scss */
+/* line 1190, ../sass/screen.scss */
 .item1 {
   height: 200px;
   width: 200px;
@@ -2663,7 +3057,7 @@ p.dropcap:first-letter {
   z-index: 1;
 }
 
-/* line 1117, ../sass/screen.scss */
+/* line 1201, ../sass/screen.scss */
 .item2 {
   height: 200px;
   width: 200px;
@@ -2675,7 +3069,7 @@ p.dropcap:first-letter {
   right: -200px;
 }
 
-/* line 1127, ../sass/screen.scss */
+/* line 1211, ../sass/screen.scss */
 .item3 {
   height: 200px;
   width: 200px;
