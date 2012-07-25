@@ -1,0 +1,82 @@
+//review turn into radial gradient.
+
+@mixin bluesky ($x: 50%, $y: 50%) {
+	background: #e3e4e5;
+	/* Old browsers */
+	background: -moz-radial-gradient(#{$x} #{$y}, ellipse cover, #e3e4e5 0%, #155a93 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(radial, #{$x} #{$y}, 0px, #{$x} #{$y}, 100%, color-stop(0%, #e3e4e5), color-stop(100%, #155a93));
+	/* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(#{$x} #{$y}, ellipse cover, #e3e4e5 0%, #155a93 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(#{$x} #{$y}, ellipse cover, #e3e4e5 0%, #155a93 100%);
+	/* Opera 12+ */
+	background: -ms-radial-gradient(#{$x} #{$y}, ellipse cover, #e3e4e5 0%, #155a93 100%);
+	/* IE10+ */
+	background: radial-gradient(ellipse at #{$x} #{$y}, #e3e4e5 0%, #155a93 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e4e5', endColorstr='#155a93',GradientType=1 );
+	/* IE6-9 fallback on horizontal gradient */ 
+}
+
+@mixin scrollbg {
+	background: #31607d;
+	/* Old browsers */
+	background: -moz-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(radial, 50% 45%, 0px, 50% 45%, 100%, color-stop(10%, #31607d), color-stop(100%, #07102b));
+	/* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* Opera 12+ */
+	background: -ms-radial-gradient(50% 45%, ellipse cover, #31607d 10%, #07102b 100%);
+	/* IE10+ */
+	background: radial-gradient(ellipse at 50% 45%, #31607d 10%, #07102b 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#31607d', endColorstr='#07102b',GradientType=1 );
+	/* IE6-9 fallback on horizontal gradient */ 
+}
+
+@mixin full-frame {
+	height: 5000px;
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+}
+
+@mixin dimensions($width: 100%, $height: 100%) {
+	width: $width;
+	height: $height;
+}
+
+@mixin responsive-bg($path, $position: top left) {
+	background: url(../images/normal/#{$path}.png) no-repeat $position;
+	@include background-size(100% 100%);
+
+	@media screen and (-webkit-min-device-pixel-ratio: 2) {
+		background: url(../images/retina/#{$path}_2x.png) no-repeat $position;
+		@include background-size(100% 100%);
+	}
+}
+
+/* @group animation */
+
+	@mixin animation($name, $duration: 1s, $delay: 0s, $iterations:"", $function: linear, $fill-mode: forwards) {
+		-webkit-animation: $name $duration $delay #{$iterations} $function $fill-mode;
+		-moz-animation: $name $duration $delay #{$iterations} $function $fill-mode;
+	}
+
+	@mixin keyframes($name) {
+		@-webkit-keyframes #{$name} {@content;}
+		@-moz-keyframes #{$name} {@content;}
+	}
+
+	@mixin animation-timing-function($function) {
+		-webkit-animation-timing-function: $function;
+		-moz-animation-timing-function: $function;
+		-o-animation-timing-function: $function;
+		animation-timing-function: $function;
+	}
+
+/* @end */

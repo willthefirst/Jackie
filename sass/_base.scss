@@ -1,0 +1,172 @@
+/* @group fonts */
+
+	@font-face {
+	    font-family: 'Mardian Demo';
+	    src: url('../assets/fonts/mardiandemo-webfont.eot');
+	    src: url('../assets/fonts/mardiandemo-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../assets/fonts/mardiandemo-webfont.woff') format('woff'),
+	         url('../assets/fonts/mardiandemo-webfont.ttf') format('truetype'),
+	         url('../assets/fonts/mardiandemo-webfont.svg#MardianDemoRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'Esteban';
+	    src: url('../assets/fonts/esteban-regular-webfont.eot');
+	    src: url('../assets/fonts/esteban-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../assets/fonts/esteban-regular-webfont.woff') format('woff'),
+	         url('../assets/fonts/esteban-regular-webfont.ttf') format('truetype'),
+	         url('../assets/fonts/esteban-regular-webfont.svg#EstebanRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+/* @end */
+
+/* @group general */
+
+	.container {
+		@include stretch;
+		background: #000;
+	}
+
+	.frame {
+		@include full-frame;
+		left: 50%;
+		margin-left: -512px;
+		margin-top: -384px; 
+		overflow: hidden;
+		top: 50%;
+	}
+
+	.scene {
+		//temp
+		background-color: gray;
+		color: blue;
+		font-size: 650px;
+		text-align: center;
+		//@end
+
+		@include transition(opacity 1s linear);
+		@include full-frame;
+
+		div {
+			position: absolute;
+		}
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	p {
+		color: #fff;
+		font-family: 'Esteban', serif;
+		font-size: 36px;
+		line-height: 40px;
+		position: absolute;
+		text-align: left;
+		text-shadow: 0px 1px 2px #000;
+
+		&.dropcap {
+			&:first-letter {
+				float: left;
+				font-family: Mardian Demo, serif;
+				font-size: 200px;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 100px;
+				margin-right: 22px;
+				padding-left: 5px;
+			}
+		};
+	}
+
+	.glow {
+		@include animation(glow, 2s, 0s, infinite, linear, forwards);
+		color: #fff;
+		text-shadow: 0px -2px 5px #008CFF, 0px 2px 5px #008CFF;
+		font-weight: bold;
+	}
+
+	.btn-previous {
+		//temp
+		background-color: green;
+		border: solid 1px #000;
+		display: block;
+		font-size: 30px;
+		height: 40px;
+		left: 400px;
+		position: absolute;
+		text-align: center;
+		width: 60px;
+
+		//temp @end
+		margin-top: 10px;
+		z-index: 5;
+	}
+
+	.btn-next {
+		// temp
+		background-color: green;
+		border: solid 1px #000;
+		display: block;
+		font-size: 30px;
+		height: 40px;
+		left: 460px;
+		position: absolute;
+		text-align: center;
+		width: 60px;
+		//@end
+		margin-top: 10px;
+		z-index: 5;
+	}
+
+/* @end */
+
+/* @group general animations/interactions */
+
+	/* @group page-turning */
+
+		.hidden {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.current {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.previous {
+			opacity: 1;
+			visibility: visible;
+		}
+
+	/* @end  */
+
+	/* @group element showing/hiding */
+
+		@include keyframes(in) {
+			0% { opacity: 0; }
+			100% { opacity: 1; }
+		}
+
+		@include keyframes(out) {
+			0% { opacity: 1; }
+			100% { opacity: 0; }
+		}
+
+	/* @end */
+
+	@include keyframes(glow) {
+		0% { text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f; }
+		25% { text-shadow: 0px -2px 20px #ff0002, 0px 2px 20px #ff0002; }
+		50% { text-shadow: 0px -2px 5px #0025da, 0px 2px 5px #0025da; }
+		75% { text-shadow: 0px -2px 20px #ff9600, 0px 2px 20px #ff9600; }
+		100% { text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f; }
+
+	}
+
+/* @end */
