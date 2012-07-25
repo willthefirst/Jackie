@@ -178,12 +178,12 @@ var APP = {
 				};
 			};
 
-			var a = new Narrator($('.background > .a'), 2461, 2393);
+			var a = new Narrator($('.wrapper > .a'), 2461, 2393);
 			a.isOn = true;
-			var b = new Narrator($('.background > .b'), 2045, 1585);
-			var c = new Narrator($('.background > .c'), 1493, 1061);
-			var d = new Narrator($('.background > .d'), 1025, 517);
-			var e = new Narrator($('.background > .e'), 200, 0);
+			var b = new Narrator($('.wrapper > .b'), 2045, 1585);
+			var c = new Narrator($('.wrapper > .c'), 1493, 1061);
+			var d = new Narrator($('.wrapper > .d'), 1025, 517);
+			var e = new Narrator($('.wrapper > .e'), 200, 0);
 
 			var narrators = [a,b,c,d,e];
 			return narrators;
@@ -195,7 +195,7 @@ var APP = {
 
 	/* SCENE nextmorning_5 */
 
-	giant_7: {
+	theft_6: {
 
 		start: function(current) {},
 
@@ -205,7 +205,7 @@ var APP = {
 
 	/* SCENE flee-9 */
 
-	flee_9: {
+	giant_7: {
 
 		start: function(current) {},
 
@@ -213,7 +213,7 @@ var APP = {
 
 	},
 
-	chop_10: {
+	conversation_8: {
 
 		start: function(current) {},
 
@@ -221,19 +221,10 @@ var APP = {
 
 	},
 
-	fallen_11: {
+	end_9: {
 
 		start: function(current) {
 			$('.btn-next').show();
-		},
-
-		reset: function(current) {}
-	},
-
-	end_12: {
-
-		start: function(current) {
-			$('.btn-next').hide();
 		},
 
 		reset: function(current) {}
