@@ -6,7 +6,6 @@
 @import "compass/css3/background-size";
 @import "compass/css3/images";
 @import "mixins";
-@import "sprites";
 @import "base";
 
 /* @group start-1 page */
@@ -415,7 +414,25 @@
 /* @group nextmorning-4 */
 
 	.nextmorning-4 {
-		@extend .cowsale-3;
+		@include scrollbg;
+	}
+
+	.scroll-out {
+		@extend .scroll;
+		width: 640px;
+		left: 50%;
+		margin-left: -320px;
+	}
+
+	.scroll-left-bottom-out {
+		@extend .scroll-left-bottom;
+		left: 108px;
+	}
+
+	.scroll-right-out {
+		@extend .scroll-right;
+		left: 774px;
+		top: 127px;
 	}
 
 	.text4 {
@@ -444,7 +461,7 @@
 
 		/* @group animations */
 
-			&> .wrapper > {
+			&.current > .wrapper > {
 
 				/* @group lower clouds */
 
@@ -524,10 +541,69 @@
 						@include animation(out, .5s, 0s, $function:linear, $fill-mode:forwards);
 					}
 
-				/* @end */	
+				/* @end */
 
-			}
-				
+				/* @group z-indexes */
+
+
+
+				.castle {
+					z-index: 1;
+				}
+
+				.upperclouds, .birda, .birdb {
+					z-index: 2;
+				} 
+			}	
+			// 	.castle {
+			// 		@include responsive-bg(4beanstalk/castle, bottom left);
+			// 		@include dimensions(335px, 558px);
+			// 		top: 58px;
+			// 		right: -40px;
+			// 		z-index: 1;
+			// 	}
+
+			// 	.upperclouds {
+			// 		@include responsive-bg(4beanstalk/cloudsupper, bottom left);
+			// 		@include dimensions(523px, 517px);
+			// 		top: 91px;
+			// 		right: -108px;
+			// 		z-index: 2;
+			// 	}
+
+			// 	.birda {
+			// 		@include responsive-bg(4beanstalk/birds_front_1, bottom left);
+			// 		@include dimensions(13px, 11px);
+			// 		top: 120px;
+			// 		right: 100px;
+			// 		z-index: 2;
+			// 	}
+
+			// 	.birdb {
+			// 		@include responsive-bg(4beanstalk/birds_front_2, bottom left);
+			// 		@include dimensions(11px, 6px);
+			// 		top: 120px;
+			// 		right: 180px;
+			// 		z-index: 2;
+			// 	}
+
+			// 	.birdc {
+			// 		@include responsive-bg(4beanstalk/birds_front_3, bottom left);
+			// 		@include dimensions(10px, 5px);
+			// 		top: 120px;
+			// 		right: 200px;
+			// 		z-index: 0;
+			// 	}
+
+			// 	.birdd{
+			// 		@include responsive-bg(4beanstalk/birds_back_1, bottom left);
+			// 		@include dimensions(18px, 6px);
+			// 		top: 100px;
+			// 		right: 200px;
+			// 		z-index: 0;
+			// }
+			
+
 		/* @end */
 	
 	}
@@ -712,6 +788,54 @@
 			@include responsive-bg(4beanstalk/background, bottom left);
 			@include dimensions(100%, 3229px);
 
+			.castle {
+				@include responsive-bg(4beanstalk/castle, bottom left);
+				@include dimensions(335px, 558px);
+				top: 58px;
+				right: -40px;
+				z-index: 0;
+			}
+
+			.upperclouds {
+				@include responsive-bg(4beanstalk/cloudsupper, bottom left);
+				@include dimensions(523px, 517px);
+				top: 91px;
+				right: -108px;
+				z-index: 0;
+			}
+
+			.birda {
+				@include responsive-bg(4beanstalk/birds_front_1, bottom left);
+				@include dimensions(13px, 11px);
+				top: 120px;
+				right: 100px;
+				z-index: 0;
+			}
+
+			.birdb {
+				@include responsive-bg(4beanstalk/birds_front_2, bottom left);
+				@include dimensions(11px, 6px);
+				top: 120px;
+				right: 180px;
+				z-index: 0;
+			}
+
+			.birdc {
+				@include responsive-bg(4beanstalk/birds_front_3, bottom left);
+				@include dimensions(10px, 5px);
+				top: 120px;
+				right: 200px;
+				z-index: 0;
+			}
+
+			.birdd{
+				@include responsive-bg(4beanstalk/birds_back_1, bottom left);
+				@include dimensions(18px, 6px);
+				top: 100px;
+				right: 200px;
+				z-index: 0;
+			}
+
 			/* @group text */
 
 				.a {
@@ -780,22 +904,6 @@
 			right: 90px;
 		}
 
-		.castle {
-			@include responsive-bg(4beanstalk/castle, bottom left);
-			@include dimensions(335px, 558px);
-			top: 58px;
-			right: -40px;
-			z-index: 1;
-		}
-
-		.upperclouds {
-			@include responsive-bg(4beanstalk/cloudsupper, bottom left);
-			@include dimensions(523px, 517px);
-			top: 91px;
-			right: -108px;
-			z-index: 2;
-		}
-
 		.right {
 			right: -200%;
 		}
@@ -846,39 +954,15 @@
 			}
 		}
 
-		.birda {
-			@include responsive-bg(4beanstalk/birds_front_1, bottom left);
-			@include dimensions(13px, 11px);
-			top: 120px;
-			right: 100px;
-			z-index: 2;
-		}
-
-		.birdb {
-			@include responsive-bg(4beanstalk/birds_front_2, bottom left);
-			@include dimensions(11px, 6px);
-			top: 120px;
-			right: 180px;
-			z-index: 2;
-		}
-
-		.birdc {
-			@include responsive-bg(4beanstalk/birds_front_3, bottom left);
-			@include dimensions(10px, 5px);
-			top: 120px;
-			right: 200px;
-			z-index: 0;
-		}
-
-		.birdd{
-			@include responsive-bg(4beanstalk/birds_back_1, bottom left);
-			@include dimensions(18px, 6px);
-			top: 100px;
-			right: 200px;
-			z-index: 0;
-		}
-
 	/* @end */
+
+/* @end */
+
+/* @group theft-6 */
+
+	.theft-6 {
+		@extend .cowsale-3;
+	}
 
 /* @end */
 
@@ -1086,6 +1170,41 @@
 		// 	s1 {}
 		// }
 
+
+
 	/* @end */
+
+/* @end */
+
+/* @group conversation1-8 */
+
+	.conversation1-8 {
+		@extend .cowsale-3;
+	}
+
+/* @end */
+
+/* @group conversation2-8 */
+
+	.conversation2-9 {
+		@include scrollbg;
+	}
+
+/* @end */
+
+/* @group end-9 */
+
+	.end-9 {
+
+		background-color: #000;
+
+		&.current {
+			&> .a {
+				top: 100px;
+				left: 30px;
+				width: 500px;
+			}
+		}
+	}
 
 /* @end */

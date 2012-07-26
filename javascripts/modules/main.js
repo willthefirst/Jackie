@@ -197,7 +197,16 @@ var APP = {
 
 	theft_6: {
 
-		start: function(current) {},
+		start: function(current) {
+
+			//Deals with birds/castle z-index problem on fade from scene 5
+
+			$('.theft-6').css('z-index', '3');
+			setTimeout( function() {
+				$('.theft-6').css('z-index', '');
+			}, 1500 );
+
+		},
 
 		reset: function(current) {}
 
@@ -213,9 +222,18 @@ var APP = {
 
 	},
 
-	conversation_8: {
+	conversation1_8: {
+		start: function(current) {
+		},
 
-		start: function(current) {},
+		reset: function(current) {}
+	},
+
+	conversation2_9: {
+
+		start: function(current) {
+			$('.btn-next').show();
+		},
 
 		reset: function(current) {}
 
@@ -224,7 +242,7 @@ var APP = {
 	end_9: {
 
 		start: function(current) {
-			$('.btn-next').show();
+			$('.btn-next').hide();
 		},
 
 		reset: function(current) {}
