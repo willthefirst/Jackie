@@ -110,8 +110,6 @@ var APP = {
 			handleClick();
 		},
 
-
-
 		reset: function(current) {}
 
 	},
