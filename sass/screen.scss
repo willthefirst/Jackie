@@ -325,6 +325,10 @@
 					@include animation(expand, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
 				}
 			}
+
+			.beans.fly {
+				@include animation(fly, 1s, .1s, infinite, $function:ease-out, $fill-mode:forwards);
+			}
 		}
 
 	/* @end */
@@ -370,6 +374,13 @@
 	/* @group end */
 
 	/* @group elements */
+
+		.beans {
+			@include responsive-bg(general/beans, bottom left);
+			@include dimensions(298px, 181px);
+			bottom: -180px;
+			left: 250px;
+		}
 
 		.scroll {
 			@include responsive-bg(multitext/scroll, bottom left);
