@@ -327,7 +327,7 @@
 			}
 
 			.beans.fly {
-				@include animation(fly, 1s, .1s, infinite, $function:ease-out, $fill-mode:forwards);
+				@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
 			}
 		}
 
@@ -379,7 +379,7 @@
 			@include responsive-bg(general/beans, bottom left);
 			@include dimensions(298px, 181px);
 			bottom: -180px;
-			left: 250px;
+			left: 400px;
 		}
 
 		.scroll {

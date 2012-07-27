@@ -92,7 +92,25 @@ var APP = {
 
 	cowsale_3: {
 
-		start: function(current) {},
+		start: function(current) {
+			$button = $('.js_beans');
+			$beans = $('.beans');
+
+			var handleClick = function() {
+				$button.on('click', function() {
+					$beans.addClass('fly');
+					$button.off('click');
+					setTimeout(function() {
+						$beans.removeClass('fly');
+						handleClick();
+					}, 1500);
+				});
+			};
+
+			handleClick();
+		},
+
+
 
 		reset: function(current) {}
 

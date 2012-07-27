@@ -268,72 +268,64 @@ p.dropcap:first-letter {
 @-webkit-keyframes fly {
   /* line 164, ../sass/_base.scss */
   0% {
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-    -moz-animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-    -o-animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    -moz-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    -o-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    animation-timing-function: cubic-bezier(0, 0, 0, 1);
   }
 
   /* line 169, ../sass/_base.scss */
   50% {
-    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -webkit-animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
-    -moz-animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
-    -o-animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
-    animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 0);
+    -moz-animation-timing-function: cubic-bezier(0, 0, 1, 0);
+    -o-animation-timing-function: cubic-bezier(0, 0, 1, 0);
+    animation-timing-function: cubic-bezier(0, 0, 1, 0);
   }
 
   /* line 174, ../sass/_base.scss */
   100% {
-    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
   }
 }
 
 @-moz-keyframes fly {
   /* line 164, ../sass/_base.scss */
   0% {
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-    -moz-animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-    -o-animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    -moz-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    -o-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    animation-timing-function: cubic-bezier(0, 0, 0, 1);
   }
 
   /* line 169, ../sass/_base.scss */
   50% {
-    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    transform:  rotate3d(0, 0, 0, 0deg) translate(100px, -500px);
-    -webkit-animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
-    -moz-animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
-    -o-animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
-    animation-timing-function: cubic-bezier(0, 0.02, 1, 0);
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    transform:  rotate3d(0, 0, 0, 0deg) translateY(-500px);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 0);
+    -moz-animation-timing-function: cubic-bezier(0, 0, 1, 0);
+    -o-animation-timing-function: cubic-bezier(0, 0, 1, 0);
+    animation-timing-function: cubic-bezier(0, 0, 1, 0);
   }
 
   /* line 174, ../sass/_base.scss */
   100% {
-    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    -ms-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    -o-transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
-    transform:  rotate3d(0, 0, 0, 0deg) translate(400px, 600px);
+    -webkit-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    -moz-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    -ms-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    -o-transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
+    transform:  rotate3d(0, 0, 0, 0deg) translateY(600px);
   }
 }
 
@@ -1251,8 +1243,8 @@ p.dropcap:first-letter {
 }
 /* line 329, ../sass/screen.scss */
 .cowsale-3 .beans.fly, .theft-6 .beans.fly, .conversation1-8 .beans.fly {
-  -webkit-animation: fly 1s 0.1s infinite ease-out forwards;
-  -moz-animation: fly 1s 0.1s infinite ease-out forwards;
+  -webkit-animation: fly 1.5s 0.1s  linear forwards;
+  -moz-animation: fly 1.5s 0.1s  linear forwards;
 }
 
 /* @end */
@@ -1397,7 +1389,7 @@ p.dropcap:first-letter {
   width: 298px;
   height: 181px;
   bottom: -180px;
-  left: 250px;
+  left: 400px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 378, ../sass/screen.scss */

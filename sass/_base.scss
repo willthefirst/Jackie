@@ -162,17 +162,17 @@
 
 	@include keyframes(fly) {
 		0% {
-			@include animation-timing-function(ease-out);
-			@include animation-timing-function( cubic-bezier(0, 0, .4, 1));
+			@include animation-timing-function(cubic-bezier(0, 0, 0, 1));
 		}
 
+		//review rotate beans
 		50% {
-			@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(100px), $trans-y:(-500px));
-			@include animation-timing-function( cubic-bezier(0, .02, 1, 0));
+			@include create-transform($rotate3d:(0,0,0, 0deg), $trans-y:(-500px));
+			@include animation-timing-function(cubic-bezier(0, 0, 1, 0));
 		}
 
 		100% {
-			@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(400px), $trans-y:(600px));
+			@include create-transform($rotate3d:(0,0,0, 0deg), $trans-y:(600px));
 		}
 	}
 
