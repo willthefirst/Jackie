@@ -325,10 +325,6 @@
 					@include animation(expand, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
 				}
 			}
-
-			.beans.fly {
-				@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
-			}
 		}
 
 	/* @end */
@@ -410,11 +406,11 @@
 		}
 
 		.text {
-			width: 580px;
+			width: 520px;
 			color: #000;
 			text-shadow: none;
 			font-size: 20px;
-			margin: 80px 30px 20px 30px;
+			margin: 80px 30px 20px 70px;
 			line-height: 30px;
 		}
 
@@ -456,7 +452,6 @@
 		@extend .text;
 		width: 500px;
 		margin: 280px 50px 0 170px;
-		font-weight: bold;
 		font-size: 30px;
 	}
 
@@ -484,10 +479,6 @@
 						@include animation(right, 8s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 					}
 
-					.cloudback.top2 {
-						@include animation(left, 7s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
-					}
-
 					.cloudfront.top2 {
 						@include animation(right, 10s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 					}
@@ -500,25 +491,9 @@
 						@include animation(left, 12s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 					}
 
-					.cloudback.top {
-						@include animation(right, 7s, 0.1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
-					}
-
-					.cloudback.middle {
-						@include animation(left, 8s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
-					}
-
-					.cloudback.bottom {
-						@include animation(right, 11s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
-					}
-
 				/* @end */
 			
 				/* @group top */
-
-					.cloudsdivide {
-						@include animation(bouncebig, 3s, .1s, $iterations:infinite, $function:ease-in-out, $fill-mode:forwards);
-					}
 
 					.castleclouds {
 						@include animation(bouncesmall, 3s, .1s, $iterations:infinite, $function:ease-in-out, $fill-mode:forwards);
@@ -845,19 +820,7 @@
 		::-webkit-scrollbar {
 		    display: none;
 		}
-
-/* 		.beanstalk {
-			@include responsive-bg(4beanstalk/beanstalk, bottom left);
-			@include dimensions(1003px, 2463px);
-			bottom: 0;
-		}
- */
-		.cloudsdivide {
-			@include responsive-bg(4beanstalk/cloudsdivide, bottom left);
-			@include dimensions(100%, 1048px);
-			top: 350px;
-		}
-
+ 
 		.castleclouds {
 			@include responsive-bg(4beanstalk/castleclouds, bottom left);
 			@include dimensions(184px, 108px);
@@ -871,27 +834,6 @@
 
 		.left {
 			left: -200%;
-		}
-
-		.cloudback {
-			@include responsive-bg(4beanstalk/cloudsback, bottom left);
-			@include dimensions(1794px, 560px);
-
-			&.top {
-				bottom: 1500px;
-			}
-
-			&.top2 {
-				bottom: 1500px;
-			}
-
-			&.middle {
-				bottom: 1000px;
-			}
-
-			&.bottom {
-				bottom: 800px;
-			}
 		}
 
 		.cloudfront {
@@ -922,7 +864,21 @@
 /* @group theft-6 */
 
 	.theft-6 {
+
+		/* @group page-specific elements and animations */
+
 		@extend .cowsale-3;
+
+		p:first-letter {
+			margin-bottom: 50px;
+		}
+	}
+
+	.coins {
+		@include responsive-bg(general/coins, bottom left);
+		@include dimensions(250px, 239px);
+		bottom: -240px;
+		left: 400px;
 	}
 
 /* @end */

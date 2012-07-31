@@ -65,6 +65,17 @@ var APP = {
 		}
 	},
 
+	handleClick: function(button, flyer) {
+		button.on('click', function() {
+			flyer.addClass('fly');
+			button.off('click');
+			setTimeout(function() {
+				flyer.removeClass('fly');
+				APP.handleClick(button, flyer);
+			}, 1500);
+		});
+	},
+
 	/* SCENE start_1 */
 
 	start_1: {
@@ -96,18 +107,7 @@ var APP = {
 			$button = $('.js_beans');
 			$beans = $('.beans');
 
-			var handleClick = function() {
-				$button.on('click touchend', function() {
-					$beans.addClass('fly');
-					$button.off('click touchend');
-					setTimeout(function() {
-						$beans.removeClass('fly');
-						handleClick();
-					}, 1500);
-				});
-			};
-
-			handleClick();
+			APP.handleClick( $button , $beans );
 		},
 
 		reset: function(current) {}
@@ -129,6 +129,10 @@ var APP = {
 	beanstalk_5: {
 
 		start: function(current) {
+			this.pollForScroll();
+		},
+
+		pollForScroll: function() {
 			var narrators = this.narrators();
 			var $scene = $('.beanstalk-5');
 			$scene.scrollTop(2461);
@@ -152,9 +156,7 @@ var APP = {
 
 			setInterval(function() {
 				if ( didScroll() ) {
-
 					for(var i = 0; i < narrators.length; i++) {
-
 						var scrollIsInbound = narrators[i].bottom > oldScroll && oldScroll > narrators[i].top;
 						var scrollIsOutbound = narrators[i].bottom < oldScroll || oldScroll < narrators[i].top;
 
@@ -168,8 +170,6 @@ var APP = {
 					}
 				}
 			}, 250);
-
-
 		},
 
 		narrators: function() {
@@ -206,7 +206,6 @@ var APP = {
 		},
 
 		reset: function(current) {}
-
 	},
 
 	/* SCENE nextmorning_5 */
@@ -221,6 +220,10 @@ var APP = {
 			setTimeout( function() {
 				$('.theft-6').css('z-index', '');
 			}, 1500 );
+
+			$button_coins = $('.js_coins');
+			$coins = $('.coins');
+			APP.handleClick( $button_coins, $coins );
 
 		},
 

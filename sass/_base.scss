@@ -67,7 +67,6 @@
 		line-height: 40px;
 		position: absolute;
 		text-align: left;
-		text-shadow: 0px 1px 2px #000;
 
 		&.dropcap {
 			&:first-letter {
@@ -88,6 +87,7 @@
 		color: #fff;
 		text-shadow: 0px -2px 5px #008CFF, 0px 2px 5px #008CFF;
 		font-weight: bold;
+		cursor: pointer;
 	}
 
 	.btn-previous {
@@ -160,19 +160,22 @@
 
 	/* @end */
 
+	.fly {
+		@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
+	}
+
 	@include keyframes(fly) {
 		0% {
 			@include animation-timing-function(cubic-bezier(0, 0, 0, 1));
 		}
 
-		//review rotate beans
 		50% {
-			@include create-transform($rotate3d:(0,0,0, 0deg), $trans-y:(-500px));
+			@include create-transform($rotate3d:(0,0,1, 20deg), $trans-x:(-200px), $trans-y:(-500px));
 			@include animation-timing-function(cubic-bezier(0, 0, 1, 0));
 		}
 
 		100% {
-			@include create-transform($rotate3d:(0,0,0, 0deg), $trans-y:(600px));
+			@include create-transform($rotate3d:(0,0,0, 40deg), $trans-x:(400px), $trans-y:(600px));
 		}
 	}
 
@@ -182,7 +185,6 @@
 		50% { text-shadow: 0px -2px 5px #0025da, 0px 2px 5px #0025da; }
 		75% { text-shadow: 0px -2px 20px #ff9600, 0px 2px 20px #ff9600; }
 		100% { text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f; }
-
 	}
 
 /* @end */
