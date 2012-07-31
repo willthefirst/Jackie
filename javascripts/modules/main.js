@@ -97,9 +97,9 @@ var APP = {
 			$beans = $('.beans');
 
 			var handleClick = function() {
-				$button.on('click', function() {
+				$button.on('click touchend', function() {
 					$beans.addClass('fly');
-					$button.off('click');
+					$button.off('click touchend');
 					setTimeout(function() {
 						$beans.removeClass('fly');
 						handleClick();

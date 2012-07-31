@@ -556,8 +556,6 @@
 
 				/* @group z-indexes */
 
-
-
 				.castle {
 					z-index: 1;
 				}
@@ -566,55 +564,7 @@
 					z-index: 2;
 				} 
 			}	
-			// 	.castle {
-			// 		@include responsive-bg(4beanstalk/castle, bottom left);
-			// 		@include dimensions(335px, 558px);
-			// 		top: 58px;
-			// 		right: -40px;
-			// 		z-index: 1;
-			// 	}
-
-			// 	.upperclouds {
-			// 		@include responsive-bg(4beanstalk/cloudsupper, bottom left);
-			// 		@include dimensions(523px, 517px);
-			// 		top: 91px;
-			// 		right: -108px;
-			// 		z-index: 2;
-			// 	}
-
-			// 	.birda {
-			// 		@include responsive-bg(4beanstalk/birds_front_1, bottom left);
-			// 		@include dimensions(13px, 11px);
-			// 		top: 120px;
-			// 		right: 100px;
-			// 		z-index: 2;
-			// 	}
-
-			// 	.birdb {
-			// 		@include responsive-bg(4beanstalk/birds_front_2, bottom left);
-			// 		@include dimensions(11px, 6px);
-			// 		top: 120px;
-			// 		right: 180px;
-			// 		z-index: 2;
-			// 	}
-
-			// 	.birdc {
-			// 		@include responsive-bg(4beanstalk/birds_front_3, bottom left);
-			// 		@include dimensions(10px, 5px);
-			// 		top: 120px;
-			// 		right: 200px;
-			// 		z-index: 0;
-			// 	}
-
-			// 	.birdd{
-			// 		@include responsive-bg(4beanstalk/birds_back_1, bottom left);
-			// 		@include dimensions(18px, 6px);
-			// 		top: 100px;
-			// 		right: 200px;
-			// 		z-index: 0;
-			// }
 			
-
 		/* @end */
 	
 	}
@@ -896,12 +846,12 @@
 		    display: none;
 		}
 
-		.beanstalk {
+/* 		.beanstalk {
 			@include responsive-bg(4beanstalk/beanstalk, bottom left);
 			@include dimensions(1003px, 2463px);
 			bottom: 0;
 		}
-
+ */
 		.cloudsdivide {
 			@include responsive-bg(4beanstalk/cloudsdivide, bottom left);
 			@include dimensions(100%, 1048px);
