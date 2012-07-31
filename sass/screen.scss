@@ -472,24 +472,24 @@
 				/* @group lower clouds */
 
 					.cloudfront.top {
-						@include animation(left, 7s, 0.1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+						@include animation(left, 10s, 0.1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 					}
 
 					.cloudfront.top2 {
-						@include animation(right, 8s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+						@include animation(right, 12s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 					}
 
 					.cloudfront.top2 {
-						@include animation(right, 10s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+						@include animation(right, 14s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 					}
 
 					.cloudfront.middle {
-						@include animation(right, 8s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+						@include animation(right, 12s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 					}
 
 					.cloudfront.bottom {
-						@include animation(left, 12s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
-					}
+						@include animation(left, 16s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+					}	
 
 				/* @end */
 			
@@ -548,12 +548,14 @@
 
 		@include keyframes(left) {
 			0% { @include translate3d(0, 0, 0); }
-			100% { @include translate3d(-200%, 0, 0); }
+			50% { @include translate3d(-200%, 0, 0); }
+			100% { @include translate3d(200%, 0, 0); }
 		}
 
 		@include keyframes(right) {
 			0% { @include translate3d(0, 0, 0); }
-			100% { @include translate3d(200%, 0, 0); }
+			50% { @include translate3d(200%, 0, 0); }
+			100% { @include translate3d(-200%, 0, 0); }
 		}
 
 
@@ -718,6 +720,12 @@
 
 	/* @end */
 
+	// @import "normal/4beanstalk/birds/*.png";
+	// @import "retina/4beanstalk/birds_2x/*.png";
+
+	$birds: sprite-map("normal/4beanstalk/birds/*.png");
+
+
 	/* @group page-specific elements */
 
 		.wrapper {
@@ -740,8 +748,19 @@
 				z-index: 0;
 			}
 
+			// @include all-birds-sprites;
+			// @include all-birds_2x-sprites;
+
+			@media screen and (-webkit-min-device-pixel-ratio: 2) {
+				.birda {
+					background: $birds;
+					font-size: 300px;
+				}
+			}
+
+		
 			.birda {
-				@include responsive-bg(4beanstalk/birds_front_1, bottom left);
+				// @include responsive-bg(4beanstalk/birds_front_1, bottom left);
 				@include dimensions(13px, 11px);
 				top: 120px;
 				right: 100px;
