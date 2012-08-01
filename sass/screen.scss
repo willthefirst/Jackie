@@ -720,11 +720,9 @@
 
 	/* @end */
 
-	// @import "normal/4beanstalk/birds/*.png";
-	// @import "retina/4beanstalk/birds_2x/*.png";
 
 	$birds: sprite-map("normal/4beanstalk/birds/*.png");
-
+	$birds_2x: sprite-map("retina/4beanstalk/birds/*.png");
 
 	/* @group page-specific elements */
 
@@ -748,27 +746,59 @@
 				z-index: 0;
 			}
 
-			// @include all-birds-sprites;
-			// @include all-birds_2x-sprites;
-
 			@media screen and (-webkit-min-device-pixel-ratio: 2) {
 				.birda {
-					background: $birds;
-					font-size: 300px;
+					background: sprite($birds_2x, a) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, a);
+				}
+
+				.birdb {
+					background: sprite($birds_2x, b) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, b);
+				}
+
+				.birdc {
+					background: sprite($birds_2x, c) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, c);
+				}
+
+				.birdd {
+					background: sprite($birds_2x, d) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, d);
+				}
+			}
+
+			@media screen and (-webkit-max-device-pixel-ratio: 1.5) {
+				.birda {
+					background: sprite($birds, a) no-repeat;
+				}
+				
+				.birdb {
+					background: sprite($birds, b) no-repeat;
+				}
+
+				.birdc {
+					background: sprite($birds, c) no-repeat;
+				}
+
+				.birdd {
+					background: sprite($birds, d) no-repeat;
 				}
 			}
 
 		
 			.birda {
-				// @include responsive-bg(4beanstalk/birds_front_1, bottom left);
-				@include dimensions(13px, 11px);
+				@include dimensions(12px, 6px);
 				top: 120px;
 				right: 100px;
 				z-index: 0;
 			}
 
 			.birdb {
-				@include responsive-bg(4beanstalk/birds_front_2, bottom left);
 				@include dimensions(11px, 6px);
 				top: 120px;
 				right: 180px;
@@ -776,7 +806,6 @@
 			}
 
 			.birdc {
-				@include responsive-bg(4beanstalk/birds_front_3, bottom left);
 				@include dimensions(10px, 5px);
 				top: 120px;
 				right: 200px;
@@ -784,7 +813,6 @@
 			}
 
 			.birdd{
-				@include responsive-bg(4beanstalk/birds_back_1, bottom left);
 				@include dimensions(18px, 6px);
 				top: 100px;
 				right: 200px;
