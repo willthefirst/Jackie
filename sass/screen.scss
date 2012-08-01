@@ -19,178 +19,185 @@
 
 	@media screen and (-webkit-max-device-pixel-ratio: 1.5) {
 
-		/* @group start-1 */
+		.got {
 
-			.title { @include normal(1start/title); }
-			.background { @include normal(1start/background); }
-			.cloud-1 { @include normal(1start/cloud1); }
-			.cloud-2 { @include normal(1start/cloud2, bottom left); }
-			.titlej { @include normal(1start/frontj); }
-			.right-cloud { @include normal(1start/right-cloud, top right); }
-			.left-cloud { @include normal(1start/left-cloud); }
-
-		/* @end */
-
-		/* @group exposition-2 */
-
-			.house-right { @include normal(2exposition/house_right); }
-			.house-left { @include normal(2exposition/house_left, bottom left); }
-			.cloud { @include normal(2exposition/cloud, bottom left); }
-			.sign { @include normal(2exposition/sign, bottom left); }
-			.grass-top { @include normal(2exposition/grass_top, bottom left); }
-			.grass-bottom{ @include normal(2exposition/grass_bottom, bottom left); }
-
-		/* @end */
-
-		/* @group cowsale-3 */
-
-			.beans { @include normal(general/beans, bottom left); }
-
-		/* @end */
-
-		/* @group scroll */
-
-			.scroll { @include normal(multitext/scroll); }
-			.scroll-left-bottom { @include normal(multitext/left_shadow, bottom left); }
-			.scroll-left-top { @include normal(multitext/left_noshadow, bottom left); }
-			.scroll-right { @include normal(multitext/right_shadow, bottom left); }
-
-		/* @end */
-
-		/* @group beanstalk-5 */
-
-			.wrapper { @include normal(4beanstalk/background, bottom left); }
-			.castle { @include normal(4beanstalk/castle); }
-			.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
-			.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
-			.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
-			
-			.birda { 
-				background: sprite($birds, a) no-repeat;
-			 }
-			
-			.birdb { 
-				background: sprite($birds, b) no-repeat;
-			 }
-			
-			.birdc { 
-				background: sprite($birds, c) no-repeat;
-			}
-			
-			.birdd { 
-				background: sprite($birds, d) no-repeat;
-			 }
-
-		/* @end */
-
-		/* @group theft-6 */
-
-			.coins { @include normal(general/coins, bottom left); }
-
-		/* @end */
-
-		/* @group giant-7 */
-
-			.giant-7 { @include normal(7giant/background, bottom left); }
-			.fee { @include normal(7giant/fee, bottom left); }
-			.fi { @include normal(7giant/fi, bottom left); }
-			.fo { @include normal(7giant/fo, bottom left); }
-			.fum { @include normal(7giant/fum, bottom left); }
-			.clouds { @include normal(7giant/clouds, bottom left); }
-
-		/* @end */
+			/* @group start-1 */
+		
+				&.title { @include normal(1start/title); }
+				&.background { @include normal(1start/background); }
+				&.cloud-1 { @include normal(1start/cloud1); }
+				&.cloud-2 { @include normal(1start/cloud2, bottom left); }
+				&.titlej { @include normal(1start/frontj); }
+				&.right-cloud { @include normal(1start/right-cloud, top right); }
+				&.left-cloud { @include normal(1start/left-cloud); }
+	
+			/* @end */
+	
+			/* @group exposition-2 */
+	
+				&.house-right { @include normal(2exposition/house_right); }
+				&.house-left { @include normal(2exposition/house_left, bottom left); }
+				&.cloud { @include normal(2exposition/cloud, bottom left); }
+				&.sign { @include normal(2exposition/sign, bottom left); }
+				&.grass-top { @include normal(2exposition/grass_top, bottom left); }
+				&.grass-bottom{ @include normal(2exposition/grass_bottom, bottom left); }
+	
+			/* @end */
+	
+			/* @group cowsale-3 */
+	
+				&.beans { @include normal(general/beans, bottom left); }
+	
+			/* @end */
+	
+			/* @group scroll */
+	
+				&.scroll { @include normal(multitext/scroll); }
+				&.scroll-left-bottom { @include normal(multitext/left_shadow, bottom left); }
+				&.scroll-left-top { @include normal(multitext/left_noshadow, bottom left); }
+				&.scroll-right { @include normal(multitext/right_shadow, bottom left); }
+	
+			/* @end */
+	
+			/* @group beanstalk-5 */
+	
+				&.wrapper { @include normal(4beanstalk/background, bottom left); }
+				&.castle { @include normal(4beanstalk/castle); }
+				&.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
+				&.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
+				&.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
+				
+				&.birda { 
+					background: sprite($birds, a) no-repeat;
+				 }
+				
+				&.birdb { 
+					background: sprite($birds, b) no-repeat;
+				 }
+				
+				&.birdc { 
+					background: sprite($birds, c) no-repeat;
+				}
+				
+				&.birdd { 
+					background: sprite($birds, d) no-repeat;
+				 }
+	
+			/* @end */
+	
+			/* @group theft-6 */
+	
+				&.coins { @include normal(general/coins, bottom left); }
+	
+			/* @end */
+	
+			/* @group giant-7 */
+	
+				&.giant-bg { @include normal(7giant/background, bottom left); }
+				&.fee { @include normal(7giant/fee, bottom left); }
+				&.fi { @include normal(7giant/fi, bottom left); }
+				&.fo { @include normal(7giant/fo, bottom left); }
+				&.fum { @include normal(7giant/fum, bottom left); }
+				&.clouds { @include normal(7giant/clouds, bottom left); }
+	
+			/* @end */
+		}
 	}
 
 	@media screen and (-webkit-min-device-pixel-ratio: 2) {
 
-		/* @group start-1 */
+		.got {
 
-			.title { @include retina(1start/title); }
-			.background { @include retina(1start/background); }
-			.cloud-1 { @include retina(1start/cloud1); }
-			.cloud-2 { @include retina(1start/cloud2, bottom left); }
-			.titlej { @include retina(1start/frontj); }
-			.right-cloud { @include retina(1start/right-cloud, top right); }
-			.left-cloud { @include retina(1start/left-cloud); }
+			/* @group start-1 */
 
-		/* @end */
+				&.title { @include retina(1start/title); }
+				&.background { @include retina(1start/background); }
+				&.cloud-1 { @include retina(1start/cloud1); }
+				&.cloud-2 { @include retina(1start/cloud2, bottom left); }
+				&.titlej { @include retina(1start/frontj); }
+				&.right-cloud { @include retina(1start/right-cloud, top right); }
+				&.left-cloud { @include retina(1start/left-cloud); }
 
-		/* @group exposition-2 */
+			/* @end */
 
-			.house-right { @include retina(2exposition/house_right); }
-			.house-left { @include retina(2exposition/house_left, bottom left); }
-			.cloud { @include retina(2exposition/cloud, bottom left); }
-			.sign { @include retina(2exposition/sign, bottom left); }
-			.grass-top { @include retina(2exposition/grass_top, bottom left); }
-			.grass-bottom{ @include retina(2exposition/grass_bottom, bottom left); }
+			/* @group exposition-2 */
 
-		/* @end */
+				&.house-right { @include retina(2exposition/house_right); }
+				&.house-left { @include retina(2exposition/house_left, bottom left); }
+				&.cloud { @include retina(2exposition/cloud, bottom left); }
+				&.sign { @include retina(2exposition/sign, bottom left); }
+				&.grass-top { @include retina(2exposition/grass_top, bottom left); }
+				&.grass-bottom{ @include retina(2exposition/grass_bottom, bottom left); }
 
-		/* @group cowsale-3 */
+			/* @end */
 
-			.beans { @include retina(general/beans, bottom left); }
+			/* @group cowsale-3 */
 
-		/* @end */
+				&.beans { @include retina(general/beans, bottom left); }
 
-		/* @group scroll */
+			/* @end */
 
-			.scroll { @include retina(multitext/scroll); }
-			.scroll-left-bottom { @include retina(multitext/left_shadow, bottom left); }
-			.scroll-left-top { @include retina(multitext/left_noshadow, bottom left); }
-			.scroll-right { @include retina(multitext/right_shadow, bottom left); }
+			/* @group scroll */
 
-		/* @end */
+				&.scroll { @include retina(multitext/scroll); }
+				&.scroll-left-bottom { @include retina(multitext/left_shadow, bottom left); }
+				&.scroll-left-top { @include retina(multitext/left_noshadow, bottom left); }
+				&.scroll-right { @include retina(multitext/right_shadow, bottom left); }
 
-		/* @group beanstalk-5 */
+			/* @end */
 
-			.wrapper { @include retina(4beanstalk/background, bottom left); }
-			.castle { @include retina(4beanstalk/castle); }
-			.upperclouds { @include retina(4beanstalk/cloudsupper, bottom left); }
-			.castleclouds { @include retina(4beanstalk/castleclouds, bottom left); }
-			.cloudfront { @include retina(4beanstalk/cloudfront, bottom left); }
-			
-			.birda { 
-				background: sprite($birds_2x, a) no-repeat;
-				@include background-size(18px 28px);
-				background-position: sprite-position($birds, a);				
-			 }
-			
-			.birdb { 
-				background: sprite($birds_2x, b) no-repeat;
-				@include background-size(18px 28px);
-				background-position: sprite-position($birds, b);
-			 }
-			
-			.birdc { 
-				background: sprite($birds_2x, c) no-repeat;
-				@include background-size(18px 28px);
-				background-position: sprite-position($birds, c);	
-			}
-			
-			.birdd { 
-				background: sprite($birds_2x, d) no-repeat;
-				@include background-size(18px 28px);
-				background-position: sprite-position($birds, d);
-			 }
+			/* @group beanstalk-5 */
 
-		/* @end */
+				&.wrapper { @include retina(4beanstalk/background, bottom left); }
+				&.castle { @include retina(4beanstalk/castle); }
+				&.upperclouds { @include retina(4beanstalk/cloudsupper, bottom left); }
+				&.castleclouds { @include retina(4beanstalk/castleclouds, bottom left); }
+				&.cloudfront { @include retina(4beanstalk/cloudfront, bottom left); }
+				
+				&.birda { 
+					background: sprite($birds_2x, a) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, a);				
+				 }
+				
+				&.birdb { 
+					background: sprite($birds_2x, b) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, b);
+				 }
+				
+				&.birdc { 
+					background: sprite($birds_2x, c) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, c);	
+				}
+				
+				&.birdd { 
+					background: sprite($birds_2x, d) no-repeat;
+					@include background-size(18px 28px);
+					background-position: sprite-position($birds, d);
+				 }
 
-		/* @group theft-6 */
+			/* @end */
 
-			.coins { @include retina(general/coins, bottom left); }
+			/* @group theft-6 */
 
-		/* @end */
+				&.coins { @include retina(general/coins, bottom left); }
 
-		/* @group giant-7 */
+			/* @end */
 
-			.giant-7 { @include retina(7giant/background, bottom left); }
-			.fee { @include retina(7giant/fee, bottom left); }
-			.fi { @include retina(7giant/fi, bottom left); }
-			.fo { @include retina(7giant/fo, bottom left); }
-			.fum { @include retina(7giant/fum, bottom left); }
-			.clouds { @include retina(7giant/clouds, bottom left); }
+			/* @group giant-7 */
 
-		/* @end */
+				&.giant-bg { @include retina(7giant/background, bottom left); }
+				&.fee { @include retina(7giant/fee, bottom left); }
+				&.fi { @include retina(7giant/fi, bottom left); }
+				&.fo { @include retina(7giant/fo, bottom left); }
+				&.fum { @include retina(7giant/fum, bottom left); }
+				&.clouds { @include retina(7giant/clouds, bottom left); }
+
+			/* @end */
+
+		}
 
 	}
 
@@ -1186,6 +1193,10 @@
 	/* @end */
 
 	/* @group elements */
+
+		.giant-bg {
+			@include dimensions(1024px, 768px);
+		}
 
 		.fee {
 			@include dimensions(570px, 259px);

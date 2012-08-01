@@ -33,6 +33,8 @@ var APP = {
 
 			page.$next     = page.$current.next();
 			page.$previous = page.$current.prev();
+
+			page.$next.children('.get').toggleClass('get got');
 		},
 
 		stepForward: function() {

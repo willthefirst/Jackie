@@ -390,530 +390,484 @@ p.dropcap:first-letter {
 /* @end */
 /* @group media query for images, lazy loading */
 @media screen and (-webkit-max-device-pixel-ratio: 1.5) {
-  /* @group start-1 */
-  /* line 24, ../sass/screen.scss */
-  .title {
+  /* line 22, ../sass/screen.scss */
+  .got {
+    /* @group start-1 */
+    /* @end */
+    /* @group exposition-2 */
+    /* @end */
+    /* @group cowsale-3 */
+    /* @end */
+    /* @group scroll */
+    /* @end */
+    /* @group beanstalk-5 */
+    /* @end */
+    /* @group theft-6 */
+    /* @end */
+    /* @group giant-7 */
+    /* @end */
+  }
+  /* line 26, ../sass/screen.scss */
+  .got.title {
     background: url(../images/normal/1start/title.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 25, ../sass/screen.scss */
-  .background {
+  /* line 27, ../sass/screen.scss */
+  .got.background {
     background: url(../images/normal/1start/background.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 26, ../sass/screen.scss */
-  .cloud-1 {
+  /* line 28, ../sass/screen.scss */
+  .got.cloud-1 {
     background: url(../images/normal/1start/cloud1.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 27, ../sass/screen.scss */
-  .cloud-2 {
+  /* line 29, ../sass/screen.scss */
+  .got.cloud-2 {
     background: url(../images/normal/1start/cloud2.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 28, ../sass/screen.scss */
-  .titlej {
+  /* line 30, ../sass/screen.scss */
+  .got.titlej {
     background: url(../images/normal/1start/frontj.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 29, ../sass/screen.scss */
-  .right-cloud {
+  /* line 31, ../sass/screen.scss */
+  .got.right-cloud {
     background: url(../images/normal/1start/right-cloud.png) no-repeat top right;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 30, ../sass/screen.scss */
-  .left-cloud {
+  /* line 32, ../sass/screen.scss */
+  .got.left-cloud {
     background: url(../images/normal/1start/left-cloud.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group exposition-2 */
-  /* line 36, ../sass/screen.scss */
-  .house-right {
+  /* line 38, ../sass/screen.scss */
+  .got.house-right {
     background: url(../images/normal/2exposition/house_right.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 37, ../sass/screen.scss */
-  .house-left {
+  /* line 39, ../sass/screen.scss */
+  .got.house-left {
     background: url(../images/normal/2exposition/house_left.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 38, ../sass/screen.scss */
-  .cloud {
+  /* line 40, ../sass/screen.scss */
+  .got.cloud {
     background: url(../images/normal/2exposition/cloud.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 39, ../sass/screen.scss */
-  .sign {
+  /* line 41, ../sass/screen.scss */
+  .got.sign {
     background: url(../images/normal/2exposition/sign.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 40, ../sass/screen.scss */
-  .grass-top {
+  /* line 42, ../sass/screen.scss */
+  .got.grass-top {
     background: url(../images/normal/2exposition/grass_top.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 41, ../sass/screen.scss */
-  .grass-bottom {
+  /* line 43, ../sass/screen.scss */
+  .got.grass-bottom {
     background: url(../images/normal/2exposition/grass_bottom.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group cowsale-3 */
-  /* line 47, ../sass/screen.scss */
-  .beans {
+  /* line 49, ../sass/screen.scss */
+  .got.beans {
     background: url(../images/normal/general/beans.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group scroll */
-  /* line 53, ../sass/screen.scss */
-  .scroll, .scroll-out {
+  /* line 55, ../sass/screen.scss */
+  .got.scroll, .got.scroll-out {
     background: url(../images/normal/multitext/scroll.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 54, ../sass/screen.scss */
-  .scroll-left-bottom, .scroll-left-top, .scroll-left-bottom-out {
+  /* line 56, ../sass/screen.scss */
+  .got.scroll-left-bottom, .got.scroll-left-top, .got.scroll-left-bottom-out {
     background: url(../images/normal/multitext/left_shadow.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 55, ../sass/screen.scss */
-  .scroll-left-top {
+  /* line 57, ../sass/screen.scss */
+  .got.scroll-left-top {
     background: url(../images/normal/multitext/left_noshadow.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 56, ../sass/screen.scss */
-  .scroll-right, .scroll-right-out {
+  /* line 58, ../sass/screen.scss */
+  .got.scroll-right, .got.scroll-right-out {
     background: url(../images/normal/multitext/right_shadow.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group beanstalk-5 */
-  /* line 62, ../sass/screen.scss */
-  .wrapper {
+  /* line 64, ../sass/screen.scss */
+  .got.wrapper {
     background: url(../images/normal/4beanstalk/background.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 63, ../sass/screen.scss */
-  .castle {
+  /* line 65, ../sass/screen.scss */
+  .got.castle {
     background: url(../images/normal/4beanstalk/castle.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 64, ../sass/screen.scss */
-  .upperclouds {
+  /* line 66, ../sass/screen.scss */
+  .got.upperclouds {
     background: url(../images/normal/4beanstalk/cloudsupper.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 65, ../sass/screen.scss */
-  .castleclouds {
+  /* line 67, ../sass/screen.scss */
+  .got.castleclouds {
     background: url(../images/normal/4beanstalk/castleclouds.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 66, ../sass/screen.scss */
-  .cloudfront {
+  /* line 68, ../sass/screen.scss */
+  .got.cloudfront {
     background: url(../images/normal/4beanstalk/cloudfront.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 68, ../sass/screen.scss */
-  .birda {
+  /* line 70, ../sass/screen.scss */
+  .got.birda {
     background: url('../images/normal/4beanstalk/birds-sf7627faed9.png') 0 0 no-repeat;
   }
-
-  /* line 72, ../sass/screen.scss */
-  .birdb {
+  /* line 74, ../sass/screen.scss */
+  .got.birdb {
     background: url('../images/normal/4beanstalk/birds-sf7627faed9.png') 0 -6px no-repeat;
   }
-
-  /* line 76, ../sass/screen.scss */
-  .birdc {
+  /* line 78, ../sass/screen.scss */
+  .got.birdc {
     background: url('../images/normal/4beanstalk/birds-sf7627faed9.png') 0 -17px no-repeat;
   }
-
-  /* line 80, ../sass/screen.scss */
-  .birdd {
+  /* line 82, ../sass/screen.scss */
+  .got.birdd {
     background: url('../images/normal/4beanstalk/birds-sf7627faed9.png') 0 -23px no-repeat;
   }
-
-  /* @end */
-  /* @group theft-6 */
-  /* line 88, ../sass/screen.scss */
-  .coins {
+  /* line 90, ../sass/screen.scss */
+  .got.coins {
     background: url(../images/normal/general/coins.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group giant-7 */
-  /* line 94, ../sass/screen.scss */
-  .giant-7 {
+  /* line 96, ../sass/screen.scss */
+  .got.giant-bg {
     background: url(../images/normal/7giant/background.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 95, ../sass/screen.scss */
-  .fee {
+  /* line 97, ../sass/screen.scss */
+  .got.fee {
     background: url(../images/normal/7giant/fee.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 96, ../sass/screen.scss */
-  .fi {
+  /* line 98, ../sass/screen.scss */
+  .got.fi {
     background: url(../images/normal/7giant/fi.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 97, ../sass/screen.scss */
-  .fo {
+  /* line 99, ../sass/screen.scss */
+  .got.fo {
     background: url(../images/normal/7giant/fo.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 98, ../sass/screen.scss */
-  .fum {
+  /* line 100, ../sass/screen.scss */
+  .got.fum {
     background: url(../images/normal/7giant/fum.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 99, ../sass/screen.scss */
-  .clouds {
+  /* line 101, ../sass/screen.scss */
+  .got.clouds {
     background: url(../images/normal/7giant/clouds.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* @group start-1 */
-  /* line 108, ../sass/screen.scss */
-  .title {
+  /* line 109, ../sass/screen.scss */
+  .got {
+    /* @group start-1 */
+    /* @end */
+    /* @group exposition-2 */
+    /* @end */
+    /* @group cowsale-3 */
+    /* @end */
+    /* @group scroll */
+    /* @end */
+    /* @group beanstalk-5 */
+    /* @end */
+    /* @group theft-6 */
+    /* @end */
+    /* @group giant-7 */
+    /* @end */
+  }
+  /* line 113, ../sass/screen.scss */
+  .got.title {
     background: url(../images/retina/1start/title_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 109, ../sass/screen.scss */
-  .background {
+  /* line 114, ../sass/screen.scss */
+  .got.background {
     background: url(../images/retina/1start/background_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 110, ../sass/screen.scss */
-  .cloud-1 {
+  /* line 115, ../sass/screen.scss */
+  .got.cloud-1 {
     background: url(../images/retina/1start/cloud1_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 111, ../sass/screen.scss */
-  .cloud-2 {
+  /* line 116, ../sass/screen.scss */
+  .got.cloud-2 {
     background: url(../images/retina/1start/cloud2_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 112, ../sass/screen.scss */
-  .titlej {
+  /* line 117, ../sass/screen.scss */
+  .got.titlej {
     background: url(../images/retina/1start/frontj_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 113, ../sass/screen.scss */
-  .right-cloud {
+  /* line 118, ../sass/screen.scss */
+  .got.right-cloud {
     background: url(../images/retina/1start/right-cloud_2x.png) no-repeat top right;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 114, ../sass/screen.scss */
-  .left-cloud {
+  /* line 119, ../sass/screen.scss */
+  .got.left-cloud {
     background: url(../images/retina/1start/left-cloud_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group exposition-2 */
-  /* line 120, ../sass/screen.scss */
-  .house-right {
+  /* line 125, ../sass/screen.scss */
+  .got.house-right {
     background: url(../images/retina/2exposition/house_right_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 121, ../sass/screen.scss */
-  .house-left {
+  /* line 126, ../sass/screen.scss */
+  .got.house-left {
     background: url(../images/retina/2exposition/house_left_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 122, ../sass/screen.scss */
-  .cloud {
+  /* line 127, ../sass/screen.scss */
+  .got.cloud {
     background: url(../images/retina/2exposition/cloud_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 123, ../sass/screen.scss */
-  .sign {
+  /* line 128, ../sass/screen.scss */
+  .got.sign {
     background: url(../images/retina/2exposition/sign_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 124, ../sass/screen.scss */
-  .grass-top {
+  /* line 129, ../sass/screen.scss */
+  .got.grass-top {
     background: url(../images/retina/2exposition/grass_top_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 125, ../sass/screen.scss */
-  .grass-bottom {
+  /* line 130, ../sass/screen.scss */
+  .got.grass-bottom {
     background: url(../images/retina/2exposition/grass_bottom_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group cowsale-3 */
-  /* line 131, ../sass/screen.scss */
-  .beans {
+  /* line 136, ../sass/screen.scss */
+  .got.beans {
     background: url(../images/retina/general/beans_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group scroll */
-  /* line 137, ../sass/screen.scss */
-  .scroll, .scroll-out {
+  /* line 142, ../sass/screen.scss */
+  .got.scroll, .got.scroll-out {
     background: url(../images/retina/multitext/scroll_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 138, ../sass/screen.scss */
-  .scroll-left-bottom, .scroll-left-top, .scroll-left-bottom-out {
+  /* line 143, ../sass/screen.scss */
+  .got.scroll-left-bottom, .got.scroll-left-top, .got.scroll-left-bottom-out {
     background: url(../images/retina/multitext/left_shadow_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 139, ../sass/screen.scss */
-  .scroll-left-top {
+  /* line 144, ../sass/screen.scss */
+  .got.scroll-left-top {
     background: url(../images/retina/multitext/left_noshadow_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 140, ../sass/screen.scss */
-  .scroll-right, .scroll-right-out {
+  /* line 145, ../sass/screen.scss */
+  .got.scroll-right, .got.scroll-right-out {
     background: url(../images/retina/multitext/right_shadow_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group beanstalk-5 */
-  /* line 146, ../sass/screen.scss */
-  .wrapper {
+  /* line 151, ../sass/screen.scss */
+  .got.wrapper {
     background: url(../images/retina/4beanstalk/background_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 147, ../sass/screen.scss */
-  .castle {
+  /* line 152, ../sass/screen.scss */
+  .got.castle {
     background: url(../images/retina/4beanstalk/castle_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 148, ../sass/screen.scss */
-  .upperclouds {
+  /* line 153, ../sass/screen.scss */
+  .got.upperclouds {
     background: url(../images/retina/4beanstalk/cloudsupper_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 149, ../sass/screen.scss */
-  .castleclouds {
+  /* line 154, ../sass/screen.scss */
+  .got.castleclouds {
     background: url(../images/retina/4beanstalk/castleclouds_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 150, ../sass/screen.scss */
-  .cloudfront {
+  /* line 155, ../sass/screen.scss */
+  .got.cloudfront {
     background: url(../images/retina/4beanstalk/cloudfront_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 152, ../sass/screen.scss */
-  .birda {
+  /* line 157, ../sass/screen.scss */
+  .got.birda {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 0 no-repeat;
     -webkit-background-size: 18px 28px;
     -moz-background-size: 18px 28px;
@@ -921,9 +875,8 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 0;
   }
-
-  /* line 158, ../sass/screen.scss */
-  .birdb {
+  /* line 163, ../sass/screen.scss */
+  .got.birdb {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 -11px no-repeat;
     -webkit-background-size: 18px 28px;
     -moz-background-size: 18px 28px;
@@ -931,9 +884,8 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 -6px;
   }
-
-  /* line 164, ../sass/screen.scss */
-  .birdc {
+  /* line 169, ../sass/screen.scss */
+  .got.birdc {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 -32px no-repeat;
     -webkit-background-size: 18px 28px;
     -moz-background-size: 18px 28px;
@@ -941,9 +893,8 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 -17px;
   }
-
-  /* line 170, ../sass/screen.scss */
-  .birdd {
+  /* line 175, ../sass/screen.scss */
+  .got.birdd {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 -44px no-repeat;
     -webkit-background-size: 18px 28px;
     -moz-background-size: 18px 28px;
@@ -951,80 +902,67 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 -23px;
   }
-
-  /* @end */
-  /* @group theft-6 */
-  /* line 180, ../sass/screen.scss */
-  .coins {
+  /* line 185, ../sass/screen.scss */
+  .got.coins {
     background: url(../images/retina/general/coins_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
-  /* @group giant-7 */
-  /* line 186, ../sass/screen.scss */
-  .giant-7 {
+  /* line 191, ../sass/screen.scss */
+  .got.giant-bg {
     background: url(../images/retina/7giant/background_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 187, ../sass/screen.scss */
-  .fee {
+  /* line 192, ../sass/screen.scss */
+  .got.fee {
     background: url(../images/retina/7giant/fee_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 188, ../sass/screen.scss */
-  .fi {
+  /* line 193, ../sass/screen.scss */
+  .got.fi {
     background: url(../images/retina/7giant/fi_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 189, ../sass/screen.scss */
-  .fo {
+  /* line 194, ../sass/screen.scss */
+  .got.fo {
     background: url(../images/retina/7giant/fo_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 190, ../sass/screen.scss */
-  .fum {
+  /* line 195, ../sass/screen.scss */
+  .got.fum {
     background: url(../images/retina/7giant/fum_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* line 191, ../sass/screen.scss */
-  .clouds {
+  /* line 196, ../sass/screen.scss */
+  .got.clouds {
     background: url(../images/retina/7giant/clouds_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-
-  /* @end */
 }
 /* @end  */
 /* @group start-1 page */
 /* @group page-specific elements and animations */
-/* line 203, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .start-1 {
   background: #e3e4e5;
   /* Old browsers */
@@ -1043,22 +981,22 @@ p.dropcap:first-letter {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e4e5', endColorstr='#155a93',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 207, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .start-1.current > .right-cloud {
   -webkit-animation: right-cloud 5s 1s  ease-in forwards;
   -moz-animation: right-cloud 5s 1s  ease-in forwards;
 }
-/* line 211, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .start-1.current > .left-cloud {
   -webkit-animation: left-cloud 5s 1s  ease-in forwards;
   -moz-animation: left-cloud 5s 1s  ease-in forwards;
 }
-/* line 215, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .start-1.current > .cloud-1 {
   -webkit-animation: cloud-1 50s 1s  linear forwards;
   -moz-animation: cloud-1 50s 1s  linear forwards;
 }
-/* line 219, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .start-1.current > .cloud-2 {
   -webkit-animation: cloud-2 50s 1s  linear forwards;
   -moz-animation: cloud-2 50s 1s  linear forwards;
@@ -1067,7 +1005,7 @@ p.dropcap:first-letter {
 /* @group end */
 /* @group keyframes */
 @-webkit-keyframes right-cloud {
-  /* line 230, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1076,7 +1014,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 231, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -1087,7 +1025,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes right-cloud {
-  /* line 230, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1096,7 +1034,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 231, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -1107,7 +1045,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes left-cloud {
-  /* line 235, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1116,7 +1054,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 236, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -1127,7 +1065,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes left-cloud {
-  /* line 235, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1136,7 +1074,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 236, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -1147,7 +1085,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes cloud-1 {
-  /* line 240, ../sass/screen.scss */
+  /* line 247, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1156,7 +1094,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 241, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-400%, 0, 0);
     -moz-transform: translate3d(-400%, 0, 0);
@@ -1167,7 +1105,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud-1 {
-  /* line 240, ../sass/screen.scss */
+  /* line 247, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1176,7 +1114,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 241, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-400%, 0, 0);
     -moz-transform: translate3d(-400%, 0, 0);
@@ -1187,7 +1125,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes cloud-2 {
-  /* line 245, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1196,7 +1134,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 246, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(300%, 0, 0);
     -moz-transform: translate3d(300%, 0, 0);
@@ -1207,7 +1145,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud-2 {
-  /* line 245, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1216,7 +1154,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 246, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(300%, 0, 0);
     -moz-transform: translate3d(300%, 0, 0);
@@ -1228,7 +1166,7 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 253, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .title {
   width: 577.6px;
   height: 533px;
@@ -1236,14 +1174,14 @@ p.dropcap:first-letter {
   margin-left: -280.5px;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .background {
   width: 1024px;
   height: 462px;
   bottom: -2px;
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .cloud-1 {
   width: 230px;
   height: 178px;
@@ -1251,7 +1189,7 @@ p.dropcap:first-letter {
   right: 75px;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .cloud-2 {
   width: 295.2px;
   height: 120px;
@@ -1259,7 +1197,7 @@ p.dropcap:first-letter {
   left: 120px;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .titlej {
   width: 273.45px;
   height: 268.95px;
@@ -1267,14 +1205,14 @@ p.dropcap:first-letter {
   left: 240px;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .right-cloud {
   width: 890px;
   height: 460px;
   right: 0;
 }
 
-/* line 287, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .left-cloud {
   width: 950px;
   height: 640px;
@@ -1285,7 +1223,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group exposition-2 */
 /* @group page-specific elements and animations */
-/* line 300, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .exposition-2 {
   background: #e3e4e5;
   /* Old browsers */
@@ -1306,7 +1244,7 @@ p.dropcap:first-letter {
   /* @group timing variables */
   /* @end */
 }
-/* line 303, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .exposition-2 .a, .exposition-2 .c {
   width: 400px;
   height: 400px;
@@ -1314,52 +1252,52 @@ p.dropcap:first-letter {
   position: absolute;
   top: 100px;
 }
-/* line 310, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .exposition-2 .b {
   float: right;
   opacity: 0;
 }
-/* line 315, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .exposition-2 .c {
   opacity: 0;
 }
-/* line 319, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .exposition-2 .c:first-letter {
   line-height: 120px;
   margin-bottom: 20px;
   margin-right: 40px;
 }
-/* line 338, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .exposition-2.current > .a > .b, .exposition-2.current > .c > .b {
   -webkit-animation: in 1s 5s  linear forwards;
   -moz-animation: in 1s 5s  linear forwards;
 }
-/* line 342, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .exposition-2.current > .a, .exposition-2.current > .c {
   -webkit-animation: out 1s 8.5s  linear forwards;
   -moz-animation: out 1s 8.5s  linear forwards;
 }
-/* line 346, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .exposition-2.current > .c {
   -webkit-animation: in 1s 8.5s  linear forwards;
   -moz-animation: in 1s 8.5s  linear forwards;
 }
-/* line 350, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .exposition-2.current > .house-right {
   -webkit-animation: fall_right 2s 7s  ease-in forwards;
   -moz-animation: fall_right 2s 7s  ease-in forwards;
 }
-/* line 354, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .exposition-2.current > .house-left {
   -webkit-animation: fall_left 2s 7s  ease-in forwards;
   -moz-animation: fall_left 2s 7s  ease-in forwards;
 }
-/* line 358, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .exposition-2.current > .sign {
   -webkit-animation: sign 0.3s 9s  ease-in forwards;
   -moz-animation: sign 0.3s 9s  ease-in forwards;
 }
-/* line 362, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .exposition-2.current > .cloud {
   -webkit-animation: cloud 60s 0.1s  linear forwards;
   -moz-animation: cloud 60s 0.1s  linear forwards;
@@ -1368,7 +1306,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group keyframes */
 @-webkit-keyframes fall_right {
-  /* line 373, ../sass/screen.scss */
+  /* line 380, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1378,7 +1316,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 378, ../sass/screen.scss */
+  /* line 385, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1388,7 +1326,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 383, ../sass/screen.scss */
+  /* line 390, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1400,7 +1338,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fall_right {
-  /* line 373, ../sass/screen.scss */
+  /* line 380, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1410,7 +1348,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 378, ../sass/screen.scss */
+  /* line 385, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1420,7 +1358,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 383, ../sass/screen.scss */
+  /* line 390, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1432,7 +1370,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fall_left {
-  /* line 390, ../sass/screen.scss */
+  /* line 397, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1442,7 +1380,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 395, ../sass/screen.scss */
+  /* line 402, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1452,7 +1390,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 400, ../sass/screen.scss */
+  /* line 407, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1464,7 +1402,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fall_left {
-  /* line 390, ../sass/screen.scss */
+  /* line 397, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1474,7 +1412,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 395, ../sass/screen.scss */
+  /* line 402, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1484,7 +1422,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 400, ../sass/screen.scss */
+  /* line 407, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1496,7 +1434,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes sign {
-  /* line 407, ../sass/screen.scss */
+  /* line 414, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -1507,7 +1445,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes sign {
-  /* line 407, ../sass/screen.scss */
+  /* line 414, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -1518,7 +1456,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes cloud {
-  /* line 413, ../sass/screen.scss */
+  /* line 420, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-300%, 0, 0);
     -moz-transform: translate3d(-300%, 0, 0);
@@ -1529,7 +1467,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud {
-  /* line 413, ../sass/screen.scss */
+  /* line 420, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-300%, 0, 0);
     -moz-transform: translate3d(-300%, 0, 0);
@@ -1541,7 +1479,7 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 422, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .house-right {
   -webkit-transform-origin: 50% 95%;
   -moz-transform-origin: 50% 95%;
@@ -1554,7 +1492,7 @@ p.dropcap:first-letter {
   width: 160px;
 }
 
-/* line 430, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .house-left {
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
@@ -1567,7 +1505,7 @@ p.dropcap:first-letter {
   width: 415.53px;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .cloud {
   height: 299.46px;
   right: -100px;
@@ -1575,7 +1513,7 @@ p.dropcap:first-letter {
   width: 395.87px;
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .sign {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1593,14 +1531,14 @@ p.dropcap:first-letter {
   width: 173px;
 }
 
-/* line 454, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .grass-top {
   bottom: 0;
   height: 485px;
   width: 100%;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .grass-bottom {
   bottom: 0;
   height: 188px;
@@ -1611,7 +1549,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group cowsale-3 */
 /* @group page-specific elements and animations */
-/* line 474, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .cowsale-3, .theft-6, .conversation1-8 {
   background: #31607d;
   /* Old browsers */
@@ -1630,22 +1568,22 @@ p.dropcap:first-letter {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#31607d', endColorstr='#07102b',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 478, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 .cowsale-3.current > .scroll-left-top, .current.theft-6 > .scroll-left-top, .current.conversation1-8 > .scroll-left-top {
   -webkit-animation: moveleft 1.5s 1s  ease-out forwards;
   -moz-animation: moveleft 1.5s 1s  ease-out forwards;
 }
-/* line 482, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 .cowsale-3.current > .scroll-left-bottom, .current.theft-6 > .scroll-left-bottom, .current.conversation1-8 > .scroll-left-bottom, .cowsale-3.current > .scroll-left-top, .current.theft-6 > .scroll-left-top, .current.conversation1-8 > .scroll-left-top, .cowsale-3.current > .scroll-left-bottom-out, .current.theft-6 > .scroll-left-bottom-out, .current.conversation1-8 > .scroll-left-bottom-out {
   -webkit-animation: moveleft 1.5s 1s  ease-out forwards;
   -moz-animation: moveleft 1.5s 1s  ease-out forwards;
 }
-/* line 486, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .cowsale-3.current > .scroll-right, .current.theft-6 > .scroll-right, .current.conversation1-8 > .scroll-right, .cowsale-3.current > .scroll-right-out, .current.theft-6 > .scroll-right-out, .current.conversation1-8 > .scroll-right-out {
   -webkit-animation: moveright 1.5s 1s  ease-out forwards;
   -moz-animation: moveright 1.5s 1s  ease-out forwards;
 }
-/* line 490, ../sass/screen.scss */
+/* line 497, ../sass/screen.scss */
 .cowsale-3.current > .scroll, .current.theft-6 > .scroll, .current.conversation1-8 > .scroll, .cowsale-3.current > .scroll-out, .current.theft-6 > .scroll-out, .current.conversation1-8 > .scroll-out {
   -webkit-animation: expand 1.5s 1s  ease-out forwards;
   -moz-animation: expand 1.5s 1s  ease-out forwards;
@@ -1654,7 +1592,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group keyframes */
 @-webkit-keyframes moveright {
-  /* line 501, ../sass/screen.scss */
+  /* line 508, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -1663,7 +1601,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 505, ../sass/screen.scss */
+  /* line 512, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(315px, 0px, 0px);
     -moz-transform: translate3d(315px, 0px, 0px);
@@ -1674,7 +1612,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes moveright {
-  /* line 501, ../sass/screen.scss */
+  /* line 508, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -1683,7 +1621,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 505, ../sass/screen.scss */
+  /* line 512, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(315px, 0px, 0px);
     -moz-transform: translate3d(315px, 0px, 0px);
@@ -1694,7 +1632,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes moveleft {
-  /* line 511, ../sass/screen.scss */
+  /* line 518, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -1703,7 +1641,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 515, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-310px, 0px, 0px);
     -moz-transform: translate3d(-310px, 0px, 0px);
@@ -1714,7 +1652,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes moveleft {
-  /* line 511, ../sass/screen.scss */
+  /* line 518, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -1723,7 +1661,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 515, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-310px, 0px, 0px);
     -moz-transform: translate3d(-310px, 0px, 0px);
@@ -1734,7 +1672,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes expand {
-  /* line 521, ../sass/screen.scss */
+  /* line 528, ../sass/screen.scss */
   0% {
     -webkit-background-size: 640px, 100%;
     -moz-background-size: 640px, 100%;
@@ -1745,7 +1683,7 @@ p.dropcap:first-letter {
     margin-left: -20px;
   }
 
-  /* line 528, ../sass/screen.scss */
+  /* line 535, ../sass/screen.scss */
   100% {
     -webkit-background-size: 640px, 100%;
     -moz-background-size: 640px, 100%;
@@ -1758,7 +1696,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes expand {
-  /* line 521, ../sass/screen.scss */
+  /* line 528, ../sass/screen.scss */
   0% {
     -webkit-background-size: 640px, 100%;
     -moz-background-size: 640px, 100%;
@@ -1769,7 +1707,7 @@ p.dropcap:first-letter {
     margin-left: -20px;
   }
 
-  /* line 528, ../sass/screen.scss */
+  /* line 535, ../sass/screen.scss */
   100% {
     -webkit-background-size: 640px, 100%;
     -moz-background-size: 640px, 100%;
@@ -1783,7 +1721,7 @@ p.dropcap:first-letter {
 
 /* @group end */
 /* @group elements */
-/* line 540, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 .beans {
   width: 298px;
   height: 181px;
@@ -1791,7 +1729,7 @@ p.dropcap:first-letter {
   left: 400px;
 }
 
-/* line 546, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 .scroll, .scroll-out {
   width: 0px;
   height: 502px;
@@ -1799,7 +1737,7 @@ p.dropcap:first-letter {
   overflow: hidden;
 }
 
-/* line 552, ../sass/screen.scss */
+/* line 559, ../sass/screen.scss */
 .scroll-left-bottom, .scroll-left-top, .scroll-left-bottom-out {
   width: 136px;
   height: 553px;
@@ -1807,13 +1745,13 @@ p.dropcap:first-letter {
   top: 136px;
 }
 
-/* line 558, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 .scroll-left-top {
   width: 97px;
   height: 553px;
 }
 
-/* line 563, ../sass/screen.scss */
+/* line 570, ../sass/screen.scss */
 .scroll-right, .scroll-right-out {
   width: 139px;
   height: 553px;
@@ -1821,7 +1759,7 @@ p.dropcap:first-letter {
   top: 127px;
 }
 
-/* line 569, ../sass/screen.scss */
+/* line 576, ../sass/screen.scss */
 .text, .text4, .intrigue {
   width: 520px;
   color: #000;
@@ -1834,7 +1772,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @end */
 /* @group nextmorning-4 */
-/* line 584, ../sass/screen.scss */
+/* line 591, ../sass/screen.scss */
 .nextmorning-4 {
   background: #31607d;
   /* Old browsers */
@@ -1854,31 +1792,31 @@ p.dropcap:first-letter {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 588, ../sass/screen.scss */
+/* line 595, ../sass/screen.scss */
 .scroll-out {
   width: 640px;
   left: 50%;
   margin-left: -320px;
 }
 
-/* line 595, ../sass/screen.scss */
+/* line 602, ../sass/screen.scss */
 .scroll-left-bottom-out {
   left: 108px;
 }
 
-/* line 600, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 .scroll-right-out {
   left: 774px;
   top: 127px;
 }
 
-/* line 606, ../sass/screen.scss */
+/* line 613, ../sass/screen.scss */
 .text4 {
   width: 300px;
   margin-left: 200px;
 }
 
-/* line 612, ../sass/screen.scss */
+/* line 619, ../sass/screen.scss */
 .intrigue {
   width: 500px;
   margin: 280px 50px 0 170px;
@@ -1887,14 +1825,14 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group beanstalk-5 */
-/* line 625, ../sass/screen.scss */
+/* line 632, ../sass/screen.scss */
 .beanstalk-5 {
   overflow-y: scroll;
   overflow-x: hidden;
   /* @group animations */
   /* @end */
 }
-/* line 631, ../sass/screen.scss */
+/* line 638, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > {
   /* @group lower clouds */
   /* @end */
@@ -1905,78 +1843,78 @@ p.dropcap:first-letter {
   /* @group z-indexes */
   /* @end */
 }
-/* line 635, ../sass/screen.scss */
+/* line 642, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .cloudfront.top {
   -webkit-animation: left 10s 0.1s infinite linear forwards;
   -moz-animation: left 10s 0.1s infinite linear forwards;
 }
-/* line 639, ../sass/screen.scss */
+/* line 646, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .cloudfront.top2 {
   -webkit-animation: right 12s 1s infinite linear forwards;
   -moz-animation: right 12s 1s infinite linear forwards;
 }
-/* line 643, ../sass/screen.scss */
+/* line 650, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .cloudfront.top2 {
   -webkit-animation: right 14s 1s infinite linear forwards;
   -moz-animation: right 14s 1s infinite linear forwards;
 }
-/* line 647, ../sass/screen.scss */
+/* line 654, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .cloudfront.middle {
   -webkit-animation: right 12s 0.1s infinite linear forwards;
   -moz-animation: right 12s 0.1s infinite linear forwards;
 }
-/* line 651, ../sass/screen.scss */
+/* line 658, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .cloudfront.bottom {
   -webkit-animation: left 16s 0.1s infinite linear forwards;
   -moz-animation: left 16s 0.1s infinite linear forwards;
 }
-/* line 659, ../sass/screen.scss */
+/* line 666, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .castleclouds {
   -webkit-animation: bouncesmall 3s 0.1s infinite ease-in-out forwards;
   -moz-animation: bouncesmall 3s 0.1s infinite ease-in-out forwards;
 }
-/* line 663, ../sass/screen.scss */
+/* line 670, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .birda {
   -webkit-animation: fly1 3s 0.1s infinite linear forwards;
   -moz-animation: fly1 3s 0.1s infinite linear forwards;
 }
-/* line 667, ../sass/screen.scss */
+/* line 674, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .birdb {
   -webkit-animation: fly2 3s 0.1s infinite linear forwards;
   -moz-animation: fly2 3s 0.1s infinite linear forwards;
 }
-/* line 671, ../sass/screen.scss */
+/* line 678, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .birdc {
   -webkit-animation: fly3 3s 0.1s infinite linear forwards;
   -moz-animation: fly3 3s 0.1s infinite linear forwards;
 }
-/* line 675, ../sass/screen.scss */
+/* line 682, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .birdd {
   -webkit-animation: fly4 4s 0.1s infinite linear forwards;
   -moz-animation: fly4 4s 0.1s infinite linear forwards;
 }
-/* line 683, ../sass/screen.scss */
+/* line 690, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .on {
   -webkit-animation: in 1s 0s  linear forwards;
   -moz-animation: in 1s 0s  linear forwards;
 }
-/* line 687, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .off {
   -webkit-animation: out 0.5s 0s  linear forwards;
   -moz-animation: out 0.5s 0s  linear forwards;
 }
-/* line 695, ../sass/screen.scss */
+/* line 702, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .castle {
   z-index: 1;
 }
-/* line 699, ../sass/screen.scss */
+/* line 706, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .upperclouds, .beanstalk-5.current > .wrapper > .birda, .beanstalk-5.current > .wrapper > .birdb {
   z-index: 2;
 }
 
 /* @group keyframes */
 @-webkit-keyframes left {
-  /* line 713, ../sass/screen.scss */
+  /* line 720, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1985,7 +1923,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 714, ../sass/screen.scss */
+  /* line 721, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -1994,7 +1932,7 @@ p.dropcap:first-letter {
     transform: translate3d(-200%, 0, 0);
   }
 
-  /* line 715, ../sass/screen.scss */
+  /* line 722, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2005,7 +1943,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes left {
-  /* line 713, ../sass/screen.scss */
+  /* line 720, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2014,7 +1952,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 714, ../sass/screen.scss */
+  /* line 721, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -2023,7 +1961,7 @@ p.dropcap:first-letter {
     transform: translate3d(-200%, 0, 0);
   }
 
-  /* line 715, ../sass/screen.scss */
+  /* line 722, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2034,7 +1972,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes right {
-  /* line 719, ../sass/screen.scss */
+  /* line 726, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2043,7 +1981,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 720, ../sass/screen.scss */
+  /* line 727, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2052,7 +1990,7 @@ p.dropcap:first-letter {
     transform: translate3d(200%, 0, 0);
   }
 
-  /* line 721, ../sass/screen.scss */
+  /* line 728, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -2063,7 +2001,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes right {
-  /* line 719, ../sass/screen.scss */
+  /* line 726, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2072,7 +2010,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 720, ../sass/screen.scss */
+  /* line 727, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2081,7 +2019,7 @@ p.dropcap:first-letter {
     transform: translate3d(200%, 0, 0);
   }
 
-  /* line 721, ../sass/screen.scss */
+  /* line 728, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -2092,7 +2030,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly1 {
-  /* line 726, ../sass/screen.scss */
+  /* line 733, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
     -moz-transform: rotate3d(0, 1, 0, 90deg);
@@ -2102,7 +2040,7 @@ p.dropcap:first-letter {
     right: 115px;
   }
 
-  /* line 731, ../sass/screen.scss */
+  /* line 738, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2112,12 +2050,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 736, ../sass/screen.scss */
+  /* line 743, ../sass/screen.scss */
   49% {
     z-index: 2;
   }
 
-  /* line 740, ../sass/screen.scss */
+  /* line 747, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2128,7 +2066,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 746, ../sass/screen.scss */
+  /* line 753, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2138,12 +2076,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   99% {
     z-index: 0;
   }
 
-  /* line 755, ../sass/screen.scss */
+  /* line 762, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2156,7 +2094,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly1 {
-  /* line 726, ../sass/screen.scss */
+  /* line 733, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
     -moz-transform: rotate3d(0, 1, 0, 90deg);
@@ -2166,7 +2104,7 @@ p.dropcap:first-letter {
     right: 115px;
   }
 
-  /* line 731, ../sass/screen.scss */
+  /* line 738, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2176,12 +2114,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 736, ../sass/screen.scss */
+  /* line 743, ../sass/screen.scss */
   49% {
     z-index: 2;
   }
 
-  /* line 740, ../sass/screen.scss */
+  /* line 747, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2192,7 +2130,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 746, ../sass/screen.scss */
+  /* line 753, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2202,12 +2140,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   99% {
     z-index: 0;
   }
 
-  /* line 755, ../sass/screen.scss */
+  /* line 762, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2220,7 +2158,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly2 {
-  /* line 763, ../sass/screen.scss */
+  /* line 770, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2230,12 +2168,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 768, ../sass/screen.scss */
+  /* line 775, ../sass/screen.scss */
   24% {
     z-index: 2;
   }
 
-  /* line 772, ../sass/screen.scss */
+  /* line 779, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2246,7 +2184,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 778, ../sass/screen.scss */
+  /* line 785, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2256,12 +2194,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 783, ../sass/screen.scss */
+  /* line 790, ../sass/screen.scss */
   74% {
     z-index: 0;
   }
 
-  /* line 787, ../sass/screen.scss */
+  /* line 794, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2272,7 +2210,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 793, ../sass/screen.scss */
+  /* line 800, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2284,7 +2222,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly2 {
-  /* line 763, ../sass/screen.scss */
+  /* line 770, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2294,12 +2232,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 768, ../sass/screen.scss */
+  /* line 775, ../sass/screen.scss */
   24% {
     z-index: 2;
   }
 
-  /* line 772, ../sass/screen.scss */
+  /* line 779, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2310,7 +2248,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 778, ../sass/screen.scss */
+  /* line 785, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2320,12 +2258,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 783, ../sass/screen.scss */
+  /* line 790, ../sass/screen.scss */
   74% {
     z-index: 0;
   }
 
-  /* line 787, ../sass/screen.scss */
+  /* line 794, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2336,7 +2274,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 793, ../sass/screen.scss */
+  /* line 800, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2348,7 +2286,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly3 {
-  /* line 800, ../sass/screen.scss */
+  /* line 807, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2359,7 +2297,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 806, ../sass/screen.scss */
+  /* line 813, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2369,12 +2307,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 811, ../sass/screen.scss */
+  /* line 818, ../sass/screen.scss */
   49% {
     z-index: 0;
   }
 
-  /* line 815, ../sass/screen.scss */
+  /* line 822, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2385,7 +2323,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 821, ../sass/screen.scss */
+  /* line 828, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2395,12 +2333,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 826, ../sass/screen.scss */
+  /* line 833, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 830, ../sass/screen.scss */
+  /* line 837, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -2413,7 +2351,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly3 {
-  /* line 800, ../sass/screen.scss */
+  /* line 807, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2424,7 +2362,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 806, ../sass/screen.scss */
+  /* line 813, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2434,12 +2372,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 811, ../sass/screen.scss */
+  /* line 818, ../sass/screen.scss */
   49% {
     z-index: 0;
   }
 
-  /* line 815, ../sass/screen.scss */
+  /* line 822, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2450,7 +2388,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 821, ../sass/screen.scss */
+  /* line 828, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2460,12 +2398,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 826, ../sass/screen.scss */
+  /* line 833, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 830, ../sass/screen.scss */
+  /* line 837, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -2478,7 +2416,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly4 {
-  /* line 838, ../sass/screen.scss */
+  /* line 845, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2489,7 +2427,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 844, ../sass/screen.scss */
+  /* line 851, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2500,7 +2438,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 850, ../sass/screen.scss */
+  /* line 857, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2510,7 +2448,7 @@ p.dropcap:first-letter {
     right: 110px;
   }
 
-  /* line 855, ../sass/screen.scss */
+  /* line 862, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2521,12 +2459,12 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 861, ../sass/screen.scss */
+  /* line 868, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 865, ../sass/screen.scss */
+  /* line 872, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -2539,7 +2477,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly4 {
-  /* line 838, ../sass/screen.scss */
+  /* line 845, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2550,7 +2488,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 844, ../sass/screen.scss */
+  /* line 851, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2561,7 +2499,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 850, ../sass/screen.scss */
+  /* line 857, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2571,7 +2509,7 @@ p.dropcap:first-letter {
     right: 110px;
   }
 
-  /* line 855, ../sass/screen.scss */
+  /* line 862, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2582,12 +2520,12 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 861, ../sass/screen.scss */
+  /* line 868, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 865, ../sass/screen.scss */
+  /* line 872, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -2600,7 +2538,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes bouncebig {
-  /* line 873, ../sass/screen.scss */
+  /* line 880, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2609,7 +2547,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 874, ../sass/screen.scss */
+  /* line 881, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -20px, 0);
     -moz-transform: translate3d(0, -20px, 0);
@@ -2618,7 +2556,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -20px, 0);
   }
 
-  /* line 875, ../sass/screen.scss */
+  /* line 882, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2629,7 +2567,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes bouncebig {
-  /* line 873, ../sass/screen.scss */
+  /* line 880, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2638,7 +2576,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 874, ../sass/screen.scss */
+  /* line 881, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -20px, 0);
     -moz-transform: translate3d(0, -20px, 0);
@@ -2647,7 +2585,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -20px, 0);
   }
 
-  /* line 875, ../sass/screen.scss */
+  /* line 882, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2658,7 +2596,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes bouncesmall {
-  /* line 879, ../sass/screen.scss */
+  /* line 886, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2667,7 +2605,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 880, ../sass/screen.scss */
+  /* line 887, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -10px, 0);
     -moz-transform: translate3d(0, -10px, 0);
@@ -2676,7 +2614,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -10px, 0);
   }
 
-  /* line 881, ../sass/screen.scss */
+  /* line 888, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2687,7 +2625,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes bouncesmall {
-  /* line 879, ../sass/screen.scss */
+  /* line 886, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2696,7 +2634,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 880, ../sass/screen.scss */
+  /* line 887, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, -10px, 0);
     -moz-transform: translate3d(0, -10px, 0);
@@ -2705,7 +2643,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, -10px, 0);
   }
 
-  /* line 881, ../sass/screen.scss */
+  /* line 888, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2717,14 +2655,14 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group page-specific elements */
-/* line 888, ../sass/screen.scss */
+/* line 895, ../sass/screen.scss */
 .wrapper {
   width: 100%;
   height: 3229px;
   /* @group text */
   /* @end */
 }
-/* line 893, ../sass/screen.scss */
+/* line 900, ../sass/screen.scss */
 .wrapper .a, .wrapper .exposition-2 .c, .exposition-2 .wrapper .c {
   bottom: 410px;
   right: 50px;
@@ -2732,21 +2670,21 @@ p.dropcap:first-letter {
   height: auto;
   opacity: 1;
 }
-/* line 900, ../sass/screen.scss */
+/* line 907, ../sass/screen.scss */
 .wrapper .b {
   bottom: 1000px;
   right: 40px;
   color: #228529;
   opacity: 0;
 }
-/* line 907, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 .wrapper .c {
   bottom: 1600px;
   left: 300px;
   color: #228529;
   opacity: 0;
 }
-/* line 914, ../sass/screen.scss */
+/* line 921, ../sass/screen.scss */
 .wrapper .d {
   bottom: 2039px;
   right: 340px;
@@ -2758,7 +2696,7 @@ p.dropcap:first-letter {
   color: #228529;
   opacity: 0;
 }
-/* line 922, ../sass/screen.scss */
+/* line 929, ../sass/screen.scss */
 .wrapper .e {
   top: 70px;
   left: 40px;
@@ -2768,12 +2706,12 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 936, ../sass/screen.scss */
+/* line 943, ../sass/screen.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 940, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 .castle {
   width: 335px;
   height: 558px;
@@ -2782,7 +2720,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 947, ../sass/screen.scss */
+/* line 954, ../sass/screen.scss */
 .upperclouds {
   width: 523px;
   height: 517px;
@@ -2791,7 +2729,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 954, ../sass/screen.scss */
+/* line 961, ../sass/screen.scss */
 .birda {
   width: 12px;
   height: 6px;
@@ -2800,7 +2738,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 961, ../sass/screen.scss */
+/* line 968, ../sass/screen.scss */
 .birdb {
   width: 11px;
   height: 6px;
@@ -2809,7 +2747,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 968, ../sass/screen.scss */
+/* line 975, ../sass/screen.scss */
 .birdc {
   width: 10px;
   height: 5px;
@@ -2818,7 +2756,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 975, ../sass/screen.scss */
+/* line 982, ../sass/screen.scss */
 .birdd {
   width: 18px;
   height: 6px;
@@ -2827,7 +2765,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 982, ../sass/screen.scss */
+/* line 989, ../sass/screen.scss */
 .castleclouds {
   width: 184px;
   height: 108px;
@@ -2835,34 +2773,34 @@ p.dropcap:first-letter {
   right: 90px;
 }
 
-/* line 988, ../sass/screen.scss */
+/* line 995, ../sass/screen.scss */
 .right {
   right: -200%;
 }
 
-/* line 992, ../sass/screen.scss */
+/* line 999, ../sass/screen.scss */
 .left {
   left: -200%;
 }
 
-/* line 996, ../sass/screen.scss */
+/* line 1003, ../sass/screen.scss */
 .cloudfront {
   width: 1689px;
   height: 987px;
 }
-/* line 999, ../sass/screen.scss */
+/* line 1006, ../sass/screen.scss */
 .cloudfront.top {
   bottom: 1500px;
 }
-/* line 1003, ../sass/screen.scss */
+/* line 1010, ../sass/screen.scss */
 .cloudfront.top2 {
   bottom: 1500px;
 }
-/* line 1007, ../sass/screen.scss */
+/* line 1014, ../sass/screen.scss */
 .cloudfront.middle {
   bottom: 1000px;
 }
-/* line 1011, ../sass/screen.scss */
+/* line 1018, ../sass/screen.scss */
 .cloudfront.bottom {
   bottom: 800px;
 }
@@ -2870,16 +2808,16 @@ p.dropcap:first-letter {
 /* @end */
 /* @end */
 /* @group theft-6 */
-/* line 1022, ../sass/screen.scss */
+/* line 1029, ../sass/screen.scss */
 .theft-6 {
   /* @group page-specific elements and animations */
 }
-/* line 1028, ../sass/screen.scss */
+/* line 1035, ../sass/screen.scss */
 .theft-6 p:first-letter {
   margin-bottom: 50px;
 }
 
-/* line 1033, ../sass/screen.scss */
+/* line 1040, ../sass/screen.scss */
 .coins {
   width: 250px;
   height: 239px;
@@ -2890,22 +2828,22 @@ p.dropcap:first-letter {
 /* @end */
 /* @group giant-7 */
 /* @group page-specific elements and animations */
-/* line 1048, ../sass/screen.scss */
+/* line 1055, ../sass/screen.scss */
 .giant-7.current .fee {
   -webkit-animation: wordfall-left 3s 1s  cubic-bezier(0.935, 0, 1, 1) forwards;
   -moz-animation: wordfall-left 3s 1s  cubic-bezier(0.935, 0, 1, 1) forwards;
 }
-/* line 1052, ../sass/screen.scss */
+/* line 1059, ../sass/screen.scss */
 .giant-7.current .fi {
   -webkit-animation: wordfall-right 3s 3s  ease-out forwards;
   -moz-animation: wordfall-right 3s 3s  ease-out forwards;
 }
-/* line 1056, ../sass/screen.scss */
+/* line 1063, ../sass/screen.scss */
 .giant-7.current .fo {
   -webkit-animation: wordfall-left 3s 5s  ease-out forwards;
   -moz-animation: wordfall-left 3s 5s  ease-out forwards;
 }
-/* line 1060, ../sass/screen.scss */
+/* line 1067, ../sass/screen.scss */
 .giant-7.current .fum {
   -webkit-animation: wordfall-right 3s 7s  ease-out forwards;
   -moz-animation: wordfall-right 3s 7s  ease-out forwards;
@@ -2914,7 +2852,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group keyframes */
 @-webkit-keyframes wordfall-left {
-  /* line 1071, ../sass/screen.scss */
+  /* line 1078, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
@@ -2928,7 +2866,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1079, ../sass/screen.scss */
+  /* line 1086, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
@@ -2937,7 +2875,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
   }
 
-  /* line 1085, ../sass/screen.scss */
+  /* line 1092, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -2950,7 +2888,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1092, ../sass/screen.scss */
+  /* line 1099, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
@@ -2963,7 +2901,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1099, ../sass/screen.scss */
+  /* line 1106, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -2976,7 +2914,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1106, ../sass/screen.scss */
+  /* line 1113, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
@@ -2989,7 +2927,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1113, ../sass/screen.scss */
+  /* line 1120, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -2998,7 +2936,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
   }
 
-  /* line 1117, ../sass/screen.scss */
+  /* line 1124, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3008,7 +2946,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1122, ../sass/screen.scss */
+  /* line 1129, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
@@ -3020,7 +2958,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes wordfall-left {
-  /* line 1071, ../sass/screen.scss */
+  /* line 1078, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
@@ -3034,7 +2972,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1079, ../sass/screen.scss */
+  /* line 1086, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
@@ -3043,7 +2981,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
   }
 
-  /* line 1085, ../sass/screen.scss */
+  /* line 1092, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3056,7 +2994,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1092, ../sass/screen.scss */
+  /* line 1099, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
@@ -3069,7 +3007,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1099, ../sass/screen.scss */
+  /* line 1106, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3082,7 +3020,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1106, ../sass/screen.scss */
+  /* line 1113, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
@@ -3095,7 +3033,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1113, ../sass/screen.scss */
+  /* line 1120, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3104,7 +3042,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
   }
 
-  /* line 1117, ../sass/screen.scss */
+  /* line 1124, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3114,7 +3052,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1122, ../sass/screen.scss */
+  /* line 1129, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
@@ -3126,7 +3064,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes wordfall-right {
-  /* line 1129, ../sass/screen.scss */
+  /* line 1136, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
@@ -3140,7 +3078,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1137, ../sass/screen.scss */
+  /* line 1144, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
@@ -3149,7 +3087,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
   }
 
-  /* line 1143, ../sass/screen.scss */
+  /* line 1150, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3162,7 +3100,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1150, ../sass/screen.scss */
+  /* line 1157, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
@@ -3175,7 +3113,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1157, ../sass/screen.scss */
+  /* line 1164, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3188,7 +3126,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1164, ../sass/screen.scss */
+  /* line 1171, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
@@ -3201,7 +3139,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1171, ../sass/screen.scss */
+  /* line 1178, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3210,7 +3148,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
   }
 
-  /* line 1175, ../sass/screen.scss */
+  /* line 1182, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3220,7 +3158,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1180, ../sass/screen.scss */
+  /* line 1187, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 800px);
@@ -3232,7 +3170,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes wordfall-right {
-  /* line 1129, ../sass/screen.scss */
+  /* line 1136, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
@@ -3246,7 +3184,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1137, ../sass/screen.scss */
+  /* line 1144, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
@@ -3255,7 +3193,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
   }
 
-  /* line 1143, ../sass/screen.scss */
+  /* line 1150, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3268,7 +3206,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1150, ../sass/screen.scss */
+  /* line 1157, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
@@ -3281,7 +3219,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1157, ../sass/screen.scss */
+  /* line 1164, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3294,7 +3232,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1164, ../sass/screen.scss */
+  /* line 1171, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
@@ -3307,7 +3245,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1171, ../sass/screen.scss */
+  /* line 1178, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3316,7 +3254,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
   }
 
-  /* line 1175, ../sass/screen.scss */
+  /* line 1182, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3326,7 +3264,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1180, ../sass/screen.scss */
+  /* line 1187, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 800px);
@@ -3339,7 +3277,13 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 1190, ../sass/screen.scss */
+/* line 1197, ../sass/screen.scss */
+.giant-bg {
+  width: 1024px;
+  height: 768px;
+}
+
+/* line 1201, ../sass/screen.scss */
 .fee {
   width: 570px;
   height: 259px;
@@ -3352,7 +3296,7 @@ p.dropcap:first-letter {
   top: -240px;
 }
 
-/* line 1197, ../sass/screen.scss */
+/* line 1208, ../sass/screen.scss */
 .fi {
   width: 421px;
   height: 240px;
@@ -3370,7 +3314,7 @@ p.dropcap:first-letter {
   top: -229px;
 }
 
-/* line 1205, ../sass/screen.scss */
+/* line 1216, ../sass/screen.scss */
 .fo {
   width: 100%;
   height: 100%;
@@ -3380,7 +3324,7 @@ p.dropcap:first-letter {
   top: -233px;
 }
 
-/* line 1212, ../sass/screen.scss */
+/* line 1223, ../sass/screen.scss */
 .fum {
   width: 713px;
   height: 241px;
@@ -3388,13 +3332,13 @@ p.dropcap:first-letter {
   top: -230px;
 }
 
-/* line 1218, ../sass/screen.scss */
+/* line 1229, ../sass/screen.scss */
 .clouds {
   width: 100%;
   height: 100%;
 }
 
-/* line 1222, ../sass/screen.scss */
+/* line 1233, ../sass/screen.scss */
 .landleft {
   -webkit-transform-origin: 0% 100%;
   -moz-transform-origin: 0% 100%;
@@ -3403,7 +3347,7 @@ p.dropcap:first-letter {
   transform-origin: 0% 100%;
 }
 
-/* line 1226, ../sass/screen.scss */
+/* line 1237, ../sass/screen.scss */
 .landright {
   -webkit-transform-origin: 100% 100%;
   -moz-transform-origin: 100% 100%;
@@ -3417,7 +3361,7 @@ p.dropcap:first-letter {
 /* @group conversation1-8 */
 /* @end */
 /* @group conversation2-8 */
-/* line 1244, ../sass/screen.scss */
+/* line 1255, ../sass/screen.scss */
 .conversation2-9 {
   background: #31607d;
   /* Old browsers */
@@ -3439,11 +3383,11 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group end-9 */
-/* line 1252, ../sass/screen.scss */
+/* line 1263, ../sass/screen.scss */
 .end-9 {
   background-color: #000;
 }
-/* line 1257, ../sass/screen.scss */
+/* line 1268, ../sass/screen.scss */
 .end-9.current > .a, .exposition-2 .end-9.current > .c {
   top: 100px;
   left: 30px;
