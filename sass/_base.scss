@@ -41,13 +41,6 @@
 	}
 
 	.scene {
-		//temp
-		background-color: gray;
-		color: blue;
-		font-size: 650px;
-		text-align: center;
-		//@end
-
 		@include transition(opacity 1s linear);
 		@include full-frame;
 

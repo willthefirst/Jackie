@@ -60,6 +60,16 @@
 	}
 }
 
+@mixin normal($path, $position: top left) {
+	background: url(../images/normal/#{$path}.png) no-repeat $position;
+	@include background-size(100% 100%);
+}
+
+@mixin retina($path, $position: top left) {
+	background: url(../images/retina/#{$path}_2x.png) no-repeat $position;
+	@include background-size(100% 100%);
+}
+
 /* @group animation */
 
 	@mixin animation($name, $duration: 1s, $delay: 0s, $iterations:"", $function: linear, $fill-mode: forwards) {

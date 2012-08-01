@@ -8,6 +8,194 @@
 @import "mixins";
 @import "base";
 
+/* @group sprites */
+
+	$birds: sprite-map("normal/4beanstalk/birds/*.png");
+	$birds_2x: sprite-map("retina/4beanstalk/birds/*.png");
+
+/* @end */
+
+/* @group media query for images, lazy loading */
+
+	@media screen and (-webkit-max-device-pixel-ratio: 1.5) {
+
+		/* @group start-1 */
+
+			.title { @include normal(1start/title); }
+			.background { @include normal(1start/background); }
+			.cloud-1 { @include normal(1start/cloud1); }
+			.cloud-2 { @include normal(1start/cloud2, bottom left); }
+			.titlej { @include normal(1start/frontj); }
+			.right-cloud { @include normal(1start/right-cloud, top right); }
+			.left-cloud { @include normal(1start/left-cloud); }
+
+		/* @end */
+
+		/* @group exposition-2 */
+
+			.house-right { @include normal(2exposition/house_right); }
+			.house-left { @include normal(2exposition/house_left, bottom left); }
+			.cloud { @include normal(2exposition/cloud, bottom left); }
+			.sign { @include normal(2exposition/sign, bottom left); }
+			.grass-top { @include normal(2exposition/grass_top, bottom left); }
+			.grass-bottom{ @include normal(2exposition/grass_bottom, bottom left); }
+
+		/* @end */
+
+		/* @group cowsale-3 */
+
+			.beans { @include normal(general/beans, bottom left); }
+
+		/* @end */
+
+		/* @group scroll */
+
+			.scroll { @include normal(multitext/scroll); }
+			.scroll-left-bottom { @include normal(multitext/left_shadow, bottom left); }
+			.scroll-left-top { @include normal(multitext/left_noshadow, bottom left); }
+			.scroll-right { @include normal(multitext/right_shadow, bottom left); }
+
+		/* @end */
+
+		/* @group beanstalk-5 */
+
+			.wrapper { @include normal(4beanstalk/background, bottom left); }
+			.castle { @include normal(4beanstalk/castle); }
+			.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
+			.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
+			.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
+			
+			.birda { 
+				background: sprite($birds, a) no-repeat;
+			 }
+			
+			.birdb { 
+				background: sprite($birds, b) no-repeat;
+			 }
+			
+			.birdc { 
+				background: sprite($birds, c) no-repeat;
+			}
+			
+			.birdd { 
+				background: sprite($birds, d) no-repeat;
+			 }
+
+		/* @end */
+
+		/* @group theft-6 */
+
+			.coins { @include normal(general/coins, bottom left); }
+
+		/* @end */
+
+		/* @group giant-7 */
+
+			.giant-7 { @include normal(7giant/background, bottom left); }
+			.fee { @include normal(7giant/fee, bottom left); }
+			.fi { @include normal(7giant/fi, bottom left); }
+			.fo { @include normal(7giant/fo, bottom left); }
+			.fum { @include normal(7giant/fum, bottom left); }
+			.clouds { @include normal(7giant/clouds, bottom left); }
+
+		/* @end */
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio: 2) {
+
+		/* @group start-1 */
+
+			.title { @include retina(1start/title); }
+			.background { @include retina(1start/background); }
+			.cloud-1 { @include retina(1start/cloud1); }
+			.cloud-2 { @include retina(1start/cloud2, bottom left); }
+			.titlej { @include retina(1start/frontj); }
+			.right-cloud { @include retina(1start/right-cloud, top right); }
+			.left-cloud { @include retina(1start/left-cloud); }
+
+		/* @end */
+
+		/* @group exposition-2 */
+
+			.house-right { @include retina(2exposition/house_right); }
+			.house-left { @include retina(2exposition/house_left, bottom left); }
+			.cloud { @include retina(2exposition/cloud, bottom left); }
+			.sign { @include retina(2exposition/sign, bottom left); }
+			.grass-top { @include retina(2exposition/grass_top, bottom left); }
+			.grass-bottom{ @include retina(2exposition/grass_bottom, bottom left); }
+
+		/* @end */
+
+		/* @group cowsale-3 */
+
+			.beans { @include retina(general/beans, bottom left); }
+
+		/* @end */
+
+		/* @group scroll */
+
+			.scroll { @include retina(multitext/scroll); }
+			.scroll-left-bottom { @include retina(multitext/left_shadow, bottom left); }
+			.scroll-left-top { @include retina(multitext/left_noshadow, bottom left); }
+			.scroll-right { @include retina(multitext/right_shadow, bottom left); }
+
+		/* @end */
+
+		/* @group beanstalk-5 */
+
+			.wrapper { @include retina(4beanstalk/background, bottom left); }
+			.castle { @include retina(4beanstalk/castle); }
+			.upperclouds { @include retina(4beanstalk/cloudsupper, bottom left); }
+			.castleclouds { @include retina(4beanstalk/castleclouds, bottom left); }
+			.cloudfront { @include retina(4beanstalk/cloudfront, bottom left); }
+			
+			.birda { 
+				background: sprite($birds_2x, a) no-repeat;
+				@include background-size(18px 28px);
+				background-position: sprite-position($birds, a);				
+			 }
+			
+			.birdb { 
+				background: sprite($birds_2x, b) no-repeat;
+				@include background-size(18px 28px);
+				background-position: sprite-position($birds, b);
+			 }
+			
+			.birdc { 
+				background: sprite($birds_2x, c) no-repeat;
+				@include background-size(18px 28px);
+				background-position: sprite-position($birds, c);	
+			}
+			
+			.birdd { 
+				background: sprite($birds_2x, d) no-repeat;
+				@include background-size(18px 28px);
+				background-position: sprite-position($birds, d);
+			 }
+
+		/* @end */
+
+		/* @group theft-6 */
+
+			.coins { @include retina(general/coins, bottom left); }
+
+		/* @end */
+
+		/* @group giant-7 */
+
+			.giant-7 { @include retina(7giant/background, bottom left); }
+			.fee { @include retina(7giant/fee, bottom left); }
+			.fi { @include retina(7giant/fi, bottom left); }
+			.fo { @include retina(7giant/fo, bottom left); }
+			.fum { @include retina(7giant/fum, bottom left); }
+			.clouds { @include retina(7giant/clouds, bottom left); }
+
+		/* @end */
+
+	}
+
+/* @end  */
+
 /* @group start-1 page */
 
 	/* @group page-specific elements and animations */
@@ -64,53 +252,40 @@
 
 		.title {
 			@include dimensions(577.6px, 533px);
-			@include responsive-bg(1start/title, top left);
 			left: 50%;
 			margin-left: -280.5px;		
 		}
 
-		.mountain {
-			@include dimensions(100%, 225px);
-			@include responsive-bg(1start/mountain, bottom left);
+		.background {
+			@include dimensions(1024px, 462px);
 			bottom: -2px;
-		}
-
-		.sky {
-			@include dimensions(100%, 550px);
-			@include responsive-bg(1start/sky, bottom left);
-			bottom: -100px;
 		}
 
 		.cloud-1 {
 			@include dimensions(230px, 178px);
-			@include responsive-bg(1start/cloud1);
 			bottom: 225px;
 			right: 75px;
 		}
 
 		.cloud-2 {
 			@include dimensions(295.2px, 120px);
-			@include responsive-bg(1start/cloud2, bottom left);
 			top: 170px;
 			left: 120px;
 		}
 
 		.titlej {
 			@include dimensions(273.45px, 268.95px);
-			@include responsive-bg(1start/frontj);
 			top: 148px;
 			left: 240px;
 		}
 
 		.right-cloud {
 			@include dimensions(890px, 460px);
-			@include responsive-bg(1start/right-cloud, top right);
 			right: 0;
 		}
 
 		.left-cloud {
 			@include dimensions(950px, 640px);
-			@include responsive-bg(1start/left-cloud);
 			top: 0px;
 		}
 
@@ -245,7 +420,6 @@
 	/* @group elements */
 
 		.house-right {
-			@include responsive-bg(2exposition/house_right, bottom left);
 			@include transform-origin(50%, 95%);
 			bottom: 111px;
 			height: 419px;
@@ -254,7 +428,6 @@
 		 }
 
 		.house-left {
-			@include responsive-bg(2exposition/house_left, bottom left);
 			@include transform-origin(50%, 100%);
 			bottom: 173px;
 			height: 458.08px;
@@ -263,7 +436,6 @@
 		 }
 
 		.cloud {
-			@include responsive-bg(2exposition/cloud, bottom left);
 			height: 299.46px;
 			right: -100px;
 			top: 20px;
@@ -271,8 +443,6 @@
 		 }
 
 		.sign {
-			@include background-size(100% 100%);
-			@include responsive-bg(2exposition/sign, bottom left);
 			@include transform(rotate(240deg));
 			@include transform-origin(90%, 93%);
 			bottom: 177px;
@@ -282,16 +452,12 @@
 		}
 
 		.grass-top {
-			@include background-size(100% 100%);
-			@include responsive-bg(2exposition/grass_top, bottom left);
 			bottom: 0;
 			height: 485px;
 			width: 100%;
 		}
 
 		.grass-bottom {
-			@include background-size(100% 100%);
-			@include responsive-bg(2exposition/grass_bottom, bottom left);
 			bottom: 0;
 			height: 188px;
 			width: 100%;
@@ -372,21 +538,18 @@
 	/* @group elements */
 
 		.beans {
-			@include responsive-bg(general/beans, bottom left);
 			@include dimensions(298px, 181px);
 			bottom: -180px;
 			left: 400px;
 		}
 
 		.scroll {
-			@include responsive-bg(multitext/scroll, bottom left);
 			@include dimensions(0px, 502px);
 			top: 143px;
 			overflow: hidden;
 		}
 
 		.scroll-left-bottom {
-			@include responsive-bg(multitext/left_shadow, bottom left);
 			@include dimensions(136px, 553px);
 			left: 418px;
 			top: 136px;
@@ -394,12 +557,10 @@
 
 		.scroll-left-top {
 			@extend .scroll-left-bottom;
-			@include responsive-bg(multitext/left_noshadow, bottom left);
 			@include dimensions(97px, 553px);
 		}
 
 		.scroll-right {
-			@include responsive-bg(multitext/right_shadow, bottom left);
 			@include dimensions(139px, 553px);
 			left: 459px;
 			top: 127px;
@@ -538,6 +699,8 @@
 				.upperclouds, .birda, .birdb {
 					z-index: 2;
 				} 
+
+				/* @end */
 			}	
 			
 		/* @end */
@@ -720,104 +883,10 @@
 
 	/* @end */
 
-
-	$birds: sprite-map("normal/4beanstalk/birds/*.png");
-	$birds_2x: sprite-map("retina/4beanstalk/birds/*.png");
-
 	/* @group page-specific elements */
 
 		.wrapper {
-			@include responsive-bg(4beanstalk/background, bottom left);
 			@include dimensions(100%, 3229px);
-
-			.castle {
-				@include responsive-bg(4beanstalk/castle, bottom left);
-				@include dimensions(335px, 558px);
-				top: 58px;
-				right: -40px;
-				z-index: 0;
-			}
-
-			.upperclouds {
-				@include responsive-bg(4beanstalk/cloudsupper, bottom left);
-				@include dimensions(523px, 517px);
-				top: 91px;
-				right: -108px;
-				z-index: 0;
-			}
-
-			@media screen and (-webkit-min-device-pixel-ratio: 2) {
-				.birda {
-					background: sprite($birds_2x, a) no-repeat;
-					@include background-size(18px 28px);
-					background-position: sprite-position($birds, a);
-				}
-
-				.birdb {
-					background: sprite($birds_2x, b) no-repeat;
-					@include background-size(18px 28px);
-					background-position: sprite-position($birds, b);
-				}
-
-				.birdc {
-					background: sprite($birds_2x, c) no-repeat;
-					@include background-size(18px 28px);
-					background-position: sprite-position($birds, c);
-				}
-
-				.birdd {
-					background: sprite($birds_2x, d) no-repeat;
-					@include background-size(18px 28px);
-					background-position: sprite-position($birds, d);
-				}
-			}
-
-			@media screen and (-webkit-max-device-pixel-ratio: 1.5) {
-				.birda {
-					background: sprite($birds, a) no-repeat;
-				}
-				
-				.birdb {
-					background: sprite($birds, b) no-repeat;
-				}
-
-				.birdc {
-					background: sprite($birds, c) no-repeat;
-				}
-
-				.birdd {
-					background: sprite($birds, d) no-repeat;
-				}
-			}
-
-		
-			.birda {
-				@include dimensions(12px, 6px);
-				top: 120px;
-				right: 100px;
-				z-index: 0;
-			}
-
-			.birdb {
-				@include dimensions(11px, 6px);
-				top: 120px;
-				right: 180px;
-				z-index: 0;
-			}
-
-			.birdc {
-				@include dimensions(10px, 5px);
-				top: 120px;
-				right: 200px;
-				z-index: 0;
-			}
-
-			.birdd{
-				@include dimensions(18px, 6px);
-				top: 100px;
-				right: 200px;
-				z-index: 0;
-			}
 
 			/* @group text */
 
@@ -867,9 +936,50 @@
 		::-webkit-scrollbar {
 		    display: none;
 		}
+
+		.castle {
+			@include dimensions(335px, 558px);
+			top: 58px;
+			right: -40px;
+			z-index: 0;
+		}
+
+		.upperclouds {
+			@include dimensions(523px, 517px);
+			top: 91px;
+			right: -108px;
+			z-index: 0;
+		}
+		
+		.birda {
+			@include dimensions(12px, 6px);
+			top: 120px;
+			right: 100px;
+			z-index: 0;
+		}
+
+		.birdb {
+			@include dimensions(11px, 6px);
+			top: 120px;
+			right: 180px;
+			z-index: 0;
+		}
+
+		.birdc {
+			@include dimensions(10px, 5px);
+			top: 120px;
+			right: 200px;
+			z-index: 0;
+		}
+
+		.birdd{
+			@include dimensions(18px, 6px);
+			top: 100px;
+			right: 200px;
+			z-index: 0;
+		}
  
 		.castleclouds {
-			@include responsive-bg(4beanstalk/castleclouds, bottom left);
 			@include dimensions(184px, 108px);
 			top: 58px;
 			right: 90px;
@@ -884,7 +994,6 @@
 		}
 
 		.cloudfront {
-			@include responsive-bg(4beanstalk/cloudfront, bottom left);
 			@include dimensions(1689px, 987px);
 
 			&.top {
@@ -922,7 +1031,6 @@
 	}
 
 	.coins {
-		@include responsive-bg(general/coins, bottom left);
 		@include dimensions(250px, 239px);
 		bottom: -240px;
 		left: 400px;
@@ -935,54 +1043,21 @@
 	/* @group page-specific elements and animations */
 
 		.giant-7 {
-			@include responsive-bg(7giant/background, bottom left);
-
-			.a {
-				@include responsive-bg(7giant/fee, bottom left);
-				@include dimensions(570px, 259px);
-				@include rotate3d(0,0,0, -30deg);
-				left: 215px;
-				top: -240px;
-			}
-
-			.b {
-				@include responsive-bg(7giant/fi, bottom left);
-				@include dimensions(421px, 240px);
-				@include transform-origin(100%, 100%);
-				@include rotate3d(0,0,0, 30deg);
-				left: 280px;
-				top: -229px;
-			}
-
-			.c {
-				@include responsive-bg(7giant/fo, bottom left);
-				@include dimensions(100%, 100%);
-				@include dimensions(421px, 240px);
-				left: 280px;
-				top: -233px;
-			}
-
-			.d {
-				@include responsive-bg(7giant/fum, bottom left);
-				@include dimensions(713px, 241px);
-				left: 165px;
-				top: -230px;
-			}
 
 			&.current {
-				.a {
+				.fee {
 					@include animation(wordfall-left, 3s, 1s, $function:cubic-bezier(0.935, 0, 1.000, 1.000), $fill-mode:forwards);
 				}
 
-				.b {
+				.fi {
 					@include animation(wordfall-right, 3s, 3s, $function:ease-out, $fill-mode:forwards);
 				}
 
-				.c {
+				.fo {
 					@include animation(wordfall-left, 3s, 5s, $function:ease-out, $fill-mode:forwards);
 				}
 
-				.d {
+				.fum {
 					@include animation(wordfall-right, 3s, 7s, $function:ease-out, $fill-mode:forwards);
 				}
 			}
@@ -1112,8 +1187,35 @@
 
 	/* @group elements */
 
+		.fee {
+			@include dimensions(570px, 259px);
+			@include rotate3d(0,0,0, -30deg);
+			left: 215px;
+			top: -240px;
+		}
+
+		.fi {
+			@include dimensions(421px, 240px);
+			@include transform-origin(100%, 100%);
+			@include rotate3d(0,0,0, 30deg);
+			left: 280px;
+			top: -229px;
+		}
+
+		.fo {
+			@include dimensions(100%, 100%);
+			@include dimensions(421px, 240px);
+			left: 280px;
+			top: -233px;
+		}
+
+		.fum {
+			@include dimensions(713px, 241px);
+			left: 165px;
+			top: -230px;
+		}
+
 		.clouds{
-			@include responsive-bg(7giant/clouds, bottom left);
 			@include dimensions(100%, 100%);
 		}
 
@@ -1124,17 +1226,6 @@
 		.landright {
 			@include transform-origin(100%, 100%);
 		}
-			
-		// review
-		// $ico-sprite-dimensions: true;
-		// @import "normal/7giant/sheds/*.png";
-		// @include all-sheds-sprites;
-
-		// .sheds- {
-		// 	s1 {}
-		// }
-
-
 
 	/* @end */
 
