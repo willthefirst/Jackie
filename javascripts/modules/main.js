@@ -27,7 +27,7 @@ var APP = {
 			var page = APP.paginate;
 			page.$current = current;
 
-			/* Initiate scene-specific JS */
+			/* Start scene-specific JS */
 			var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
 			APP[scene].start(page.$current);
 
@@ -41,6 +41,11 @@ var APP = {
 			var page = APP.paginate;
 
 			var a = page.$current;
+
+			/* Reset scene-specific JS */
+			var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
+			APP[scene].reset(a);
+
 			page.$previous.toggleClass('previous hidden');
 			page.$next.toggleClass('current hidden');
 
@@ -54,6 +59,10 @@ var APP = {
 		stepBack: function() {
 			var page = APP.paginate;
 			var a = page.$current;
+
+			/* Reset scene-specific JS */
+			var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
+			APP[scene].reset(a);
 
 			a.css('opacity','0');
 			page.$previous.toggleClass('current previous');
@@ -233,14 +242,23 @@ var APP = {
 
 	},
 
-	/* SCENE flee-9 */
+	/* SCENE giant-7 */
 
 	giant_7: {
 
-		start: function(current) {},
+		goToNext: function() {
+			this.timeoutID = window.setTimeout( function() {
+				$('.btn-next').trigger('click');
+			}, 10000);
+		},
+		
+		start: function(current) {
+			this.goToNext();
+		},
 
-		reset: function(current) {}
-
+		reset: function(current) {
+			window.clearTimeout(this.timeoutID);
+		}
 	},
 
 	conversation1_8: {

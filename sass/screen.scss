@@ -19,6 +19,9 @@
 
 	@media screen and (-webkit-max-device-pixel-ratio: 1.5) {
 
+		.btn-previous { @include normal(general/left); }
+		.btn-next { @include normal(general/right); }
+
 		.got {
 
 			/* @group start-1 */
@@ -491,11 +494,11 @@
 				}
 
 				&> .scroll-right {
-					@include animation(moveright, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
+					@include animation(moveleftthenright, 3s, 1s, $function:ease-out, $fill-mode:forwards);
 				}
 
 				&> .scroll {
-					@include animation(expand, 1.5s, 1s, $function:ease-out, $fill-mode:forwards);
+					@include animation(expand, 1.5s, 2.5s, $function:ease-out, $fill-mode:forwards);
 				}
 			}
 		}
@@ -504,9 +507,13 @@
 
 	/* @group keyframes */
 
-		@include keyframes(moveright) {
+		@include keyframes(moveleftthenright) {
 			0% {
 				@include translate3d( 0px, 0px, 0px );
+			}
+
+			50% {
+				@include translate3d( -310px, 0px, 0px );
 			}
 
 			100% {
@@ -526,17 +533,11 @@
 
 		@include keyframes(expand) {
 			0% {
-				@include background-size(640px, 100%);
-				width: 20px;
-				left: 50%;
-				margin-left: -20px;
+				width: 40px;
 			}
 
 			100% {
-				@include background-size(640px, 100%);
 				width: 640px;
-				left: 50%;
-				margin-left: -320px;
 			}
 		}
 
@@ -550,10 +551,12 @@
 			left: 400px;
 		}
 
-		.scroll {
+		.scroll.in {
+			@include background-size(640px, 502px);
 			@include dimensions(0px, 502px);
 			top: 143px;
 			overflow: hidden;
+			margin-left: 191px;
 		}
 
 		.scroll-left-bottom {
@@ -595,8 +598,10 @@
 	.scroll-out {
 		@extend .scroll;
 		width: 640px;
-		left: 50%;
-		margin-left: -320px;
+		height: 502px;
+		top: 143px;
+		overflow: hidden;
+		margin-left: 191px;
 	}
 
 	.scroll-left-bottom-out {

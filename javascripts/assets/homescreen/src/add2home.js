@@ -164,6 +164,11 @@ var addToHome = (function (w) {
 		closeButton = balloon.querySelector('.addToHomeClose');
 		if ( closeButton ) closeButton.addEventListener('click', clicked, false);
 
+		//Will's addition for Jackie
+
+		$('.btn-next').hide();
+		$('.btn-previous').hide();
+
 		setTimeout(show, options.startDelay);
 	}
 
