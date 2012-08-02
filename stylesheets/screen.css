@@ -161,20 +161,20 @@ p.dropcap:first-letter {
 
 /* line 86, ../sass/_base.scss */
 .btn-previous {
-  width: 49px;
-  height: 36px;
+  width: 81px;
+  height: 60px;
   left: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
   position: absolute;
   z-index: 5;
 }
 
-/* line 95, ../sass/_base.scss */
+/* line 94, ../sass/_base.scss */
 .btn-next {
-  width: 49px;
-  height: 36px;
+  width: 81px;
+  height: 60px;
   right: 20px;
-  margin-top: 100px;
+  margin-top: 30px;
   position: absolute;
   z-index: 5;
 }
@@ -182,19 +182,19 @@ p.dropcap:first-letter {
 /* @end */
 /* @group general animations/interactions */
 /* @group page-turning */
-/* line 109, ../sass/_base.scss */
+/* line 108, ../sass/_base.scss */
 .hidden {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 114, ../sass/_base.scss */
+/* line 113, ../sass/_base.scss */
 .current {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 119, ../sass/_base.scss */
+/* line 118, ../sass/_base.scss */
 .previous {
   opacity: 1;
   visibility: visible;
@@ -203,62 +203,62 @@ p.dropcap:first-letter {
 /* @end  */
 /* @group element showing/hiding */
 @-webkit-keyframes in {
-  /* line 129, ../sass/_base.scss */
+  /* line 128, ../sass/_base.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 130, ../sass/_base.scss */
+  /* line 129, ../sass/_base.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes in {
-  /* line 129, ../sass/_base.scss */
+  /* line 128, ../sass/_base.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 130, ../sass/_base.scss */
+  /* line 129, ../sass/_base.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes out {
-  /* line 134, ../sass/_base.scss */
+  /* line 133, ../sass/_base.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 135, ../sass/_base.scss */
+  /* line 134, ../sass/_base.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes out {
-  /* line 134, ../sass/_base.scss */
+  /* line 133, ../sass/_base.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 135, ../sass/_base.scss */
+  /* line 134, ../sass/_base.scss */
   100% {
     opacity: 0;
   }
 }
 
 /* @end */
-/* line 140, ../sass/_base.scss */
+/* line 139, ../sass/_base.scss */
 .fly {
   -webkit-animation: fly 1.5s 0.1s  linear forwards;
   -moz-animation: fly 1.5s 0.1s  linear forwards;
 }
 
 @-webkit-keyframes fly {
-  /* line 145, ../sass/_base.scss */
+  /* line 144, ../sass/_base.scss */
   0% {
     -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 1);
     -moz-animation-timing-function: cubic-bezier(0, 0, 0, 1);
@@ -266,7 +266,7 @@ p.dropcap:first-letter {
     animation-timing-function: cubic-bezier(0, 0, 0, 1);
   }
 
-  /* line 149, ../sass/_base.scss */
+  /* line 148, ../sass/_base.scss */
   50% {
     -webkit-transform:  rotate3d(0, 0, 1, 20deg) translate(-200px, -500px);
     -moz-transform:  rotate3d(0, 0, 1, 20deg) translate(-200px, -500px);
@@ -279,7 +279,7 @@ p.dropcap:first-letter {
     animation-timing-function: cubic-bezier(0, 0, 1, 0);
   }
 
-  /* line 154, ../sass/_base.scss */
+  /* line 153, ../sass/_base.scss */
   100% {
     -webkit-transform:  rotate3d(0, 0, 0, 40deg) translate(400px, 600px);
     -moz-transform:  rotate3d(0, 0, 0, 40deg) translate(400px, 600px);
@@ -290,7 +290,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly {
-  /* line 145, ../sass/_base.scss */
+  /* line 144, ../sass/_base.scss */
   0% {
     -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 1);
     -moz-animation-timing-function: cubic-bezier(0, 0, 0, 1);
@@ -298,7 +298,7 @@ p.dropcap:first-letter {
     animation-timing-function: cubic-bezier(0, 0, 0, 1);
   }
 
-  /* line 149, ../sass/_base.scss */
+  /* line 148, ../sass/_base.scss */
   50% {
     -webkit-transform:  rotate3d(0, 0, 1, 20deg) translate(-200px, -500px);
     -moz-transform:  rotate3d(0, 0, 1, 20deg) translate(-200px, -500px);
@@ -311,7 +311,7 @@ p.dropcap:first-letter {
     animation-timing-function: cubic-bezier(0, 0, 1, 0);
   }
 
-  /* line 154, ../sass/_base.scss */
+  /* line 153, ../sass/_base.scss */
   100% {
     -webkit-transform:  rotate3d(0, 0, 0, 40deg) translate(400px, 600px);
     -moz-transform:  rotate3d(0, 0, 0, 40deg) translate(400px, 600px);
@@ -322,54 +322,54 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes glow {
-  /* line 160, ../sass/_base.scss */
+  /* line 159, ../sass/_base.scss */
   0% {
     text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
   }
 
-  /* line 161, ../sass/_base.scss */
+  /* line 160, ../sass/_base.scss */
   25% {
     text-shadow: 0px -2px 20px #ff0002, 0px 2px 20px #ff0002;
   }
 
-  /* line 162, ../sass/_base.scss */
+  /* line 161, ../sass/_base.scss */
   50% {
     text-shadow: 0px -2px 5px #0025da, 0px 2px 5px #0025da;
   }
 
-  /* line 163, ../sass/_base.scss */
+  /* line 162, ../sass/_base.scss */
   75% {
     text-shadow: 0px -2px 20px #ff9600, 0px 2px 20px #ff9600;
   }
 
-  /* line 164, ../sass/_base.scss */
+  /* line 163, ../sass/_base.scss */
   100% {
     text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
   }
 }
 
 @-moz-keyframes glow {
-  /* line 160, ../sass/_base.scss */
+  /* line 159, ../sass/_base.scss */
   0% {
     text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
   }
 
-  /* line 161, ../sass/_base.scss */
+  /* line 160, ../sass/_base.scss */
   25% {
     text-shadow: 0px -2px 20px #ff0002, 0px 2px 20px #ff0002;
   }
 
-  /* line 162, ../sass/_base.scss */
+  /* line 161, ../sass/_base.scss */
   50% {
     text-shadow: 0px -2px 5px #0025da, 0px 2px 5px #0025da;
   }
 
-  /* line 163, ../sass/_base.scss */
+  /* line 162, ../sass/_base.scss */
   75% {
     text-shadow: 0px -2px 20px #ff9600, 0px 2px 20px #ff9600;
   }
 
-  /* line 164, ../sass/_base.scss */
+  /* line 163, ../sass/_base.scss */
   100% {
     text-shadow: 0px -2px 5px #0c902f, 0px 2px 5px #0c902f;
   }
