@@ -109,6 +109,9 @@
 
 	@media screen and (-webkit-min-device-pixel-ratio: 2) {
 
+		.btn-previous { @include retina(general/left); }
+		.btn-next { @include retina(general/right); }
+
 		.got {
 
 			/* @group start-1 */
@@ -733,7 +736,6 @@
 			100% { @include translate3d(-200%, 0, 0); }
 		}
 
-
 		@include keyframes(fly1) {
 			0% {
 				@include rotate3d(0, 1, 0, 90deg);
@@ -944,6 +946,11 @@
 	/* @end */
 
 	/* @group elements */
+
+		.btn-next-temp {
+			@extend .btn-next;
+			display: none;
+		}
 	
 		::-webkit-scrollbar {
 		    display: none;

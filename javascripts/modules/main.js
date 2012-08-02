@@ -139,8 +139,19 @@ var APP = {
 
 	beanstalk_5: {
 
+		$scene: $('.beanstalk-5'),
+
 		start: function(current) {
 			this.pollForScroll();
+			$('.btn-next-temp').show();
+			$('.btn-next-temp').on('click', this.sendToTop);
+		},
+
+		sendToTop: function() {
+			console.log(APP.beanstalk_5.$scene);
+			APP.beanstalk_5.$scene.animate({
+				scrollTop: 0
+			}, 2000);
 		},
 
 		pollForScroll: function() {
@@ -172,10 +183,20 @@ var APP = {
 						var scrollIsOutbound = narrators[i].bottom < oldScroll || oldScroll < narrators[i].top;
 
 						if (!narrators[i].isOn && scrollIsInbound) {
+
+							if(narrators[i].paragraph.hasClass('btn-next-temp')) {
+								narrators[i].paragraph.show();
+							}
+
 							narrators[i].on();
 						}
 
 						else if (narrators[i].isOn && scrollIsOutbound) {
+
+							if(narrators[i].paragraph.hasClass('btn-next-temp')) {
+								narrators[i].paragraph.hide();
+							}
+
 							narrators[i].off();
 						}
 					}
@@ -211,12 +232,15 @@ var APP = {
 			var c = new Narrator($('.wrapper > .c'), 1493, 1061);
 			var d = new Narrator($('.wrapper > .d'), 1025, 517);
 			var e = new Narrator($('.wrapper > .e'), 200, 0);
+			var f = new Narrator($('.btn-next-temp'), 2461, 200);
 
-			var narrators = [a,b,c,d,e];
+			var narrators = [a,b,c,d,e,f];
 			return narrators;
 		},
 
-		reset: function(current) {}
+		reset: function(current) {
+			$('.btn-next-temp').hide();
+		}
 	},
 
 	/* SCENE nextmorning_5 */
