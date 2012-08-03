@@ -142,6 +142,7 @@ var APP = {
 		$scene: $('.beanstalk-5'),
 
 		start: function(current) {
+			console.log('s');
 			this.pollForScroll();
 			$('.btn-next-temp').show();
 			$('.btn-next-temp').on('click', this.sendToTop);
@@ -151,14 +152,13 @@ var APP = {
 		sendToTop: function() {
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 0
-			}, 2000);
+			}, 4000);
 		},
 
 		sendToBottom: function() {
-			console.log('band');
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 2461
-			}, 2000);
+			}, 4000);
 		},
 
 		pollForScroll: function() {
@@ -173,6 +173,7 @@ var APP = {
 
 				if ($scene.scrollTop() !== oldScroll) {
 					oldScroll = $scene.scrollTop();
+					console.log(oldScroll);
 					x = true;
 				}
 				
@@ -190,19 +191,10 @@ var APP = {
 						var scrollIsOutbound = narrators[i].bottom < oldScroll || oldScroll < narrators[i].top;
 
 						if (!narrators[i].isOn && scrollIsInbound) {
-
-							if(narrators[i].paragraph.hasClass('btn-next-temp') || narrators[i].paragraph.hasClass('btn-previous-temp')) {
-								narrators[i].paragraph.show();
-							}
-
 							narrators[i].on();
 						}
 
 						else if (narrators[i].isOn && scrollIsOutbound) {
-							if(narrators[i].paragraph.hasClass('btn-next-temp') || narrators[i].paragraph.hasClass('btn-previous-temp')) {
-								narrators[i].paragraph.hide();
-							}
-
 							narrators[i].off();
 						}
 					}
@@ -213,36 +205,69 @@ var APP = {
 		narrators: function() {
 
 			// Narrator constructor: narrators are paragraphs with specific scroll boundaries.
-			var Narrator = function(paragraph, bottom, top) {
-				this.paragraph = paragraph;
+			var Narrator = function(type, selector, bottom, top) {
+				this.type = type;
+				this.selector = selector;
 				this.top = top;
 				this.bottom = bottom;
 				this.isOn = false;
 
-				this.on = function() {
-					paragraph.addClass('on');
-					paragraph.removeClass('off');
-					this.isOn = true;
-				};
+				if (type === "animation") {
+					this.on = function() {
+						selector.addClass('go');
+						selector.removeClass('stop');
+						this.isOn = true;
+					};
 
-				this.off = function() {
-					paragraph.addClass('off');
-					paragraph.removeClass('on');
-					this.isOn = false;
-				};
+					this.off = function() {
+						selector.addClass('stop');
+						selector.removeClass('go');
+						this.isOn = false;
+					};
+				}
+
+				else if (type === "button") {
+					this.on = function() {
+						selector.show();
+						this.isOn = true;
+					};
+
+					this.off = function() {
+						selector.hide();
+						this.isOn = false;
+					};
+				}
+
+				else {
+					this.on = function() {
+						selector.addClass('on');
+						selector.removeClass('off');
+						this.isOn = true;
+					};
+
+					this.off = function() {
+						selector.addClass('off');
+						selector.removeClass('on');
+						this.isOn = false;
+					};
+				}
 			};
 
-			var a = new Narrator($('.wrapper > .a'), 2461, 2393);
+			var a = new Narrator('text', $('.wrapper > .a'), 2461, 2393);
 			a.isOn = true;
-			var b = new Narrator($('.wrapper > .b'), 2045, 1585);
-			var c = new Narrator($('.wrapper > .c'), 1493, 1061);
-			var d = new Narrator($('.wrapper > .d'), 1025, 517);
-			var e = new Narrator($('.wrapper > .e'), 200, 0);
-			var f = new Narrator($('.btn-next-temp'), 2461, 200);
-			var g = new Narrator($('.btn-previous-temp'), 200, 0);
+			var b = new Narrator('text', $('.wrapper > .b'), 2045, 1585);
+			var c = new Narrator('text', $('.wrapper > .c'), 1493, 1061);
+			var d = new Narrator('text', $('.wrapper > .d'), 1025, 517);
+			var e = new Narrator('text', $('.wrapper > .e'), 200, 0);
+			var f = new Narrator('button', $('.btn-next-temp'), 2461, 200);
+			var g = new Narrator('button', $('.btn-previous-temp'), 200, 0);
+			var h = new Narrator('animation', $('.bottom'), 2384, 549);
+			var i = new Narrator('animation', $('.middle'), 2285, 525);
+			var j = new Narrator('animation', $('.top'), 1650, 70);
+			var k = new Narrator('animation', $('.top2'), 1650, 70);
+			var birds = new Narrator('animation', $('.birds'), 249, 0);
 
-
-			var narrators = [a,b,c,d,e,f,g];
+			var narrators = [a,b,c,d,e,f,g,h,i,j,k,birds];
 			return narrators;
 		},
 
@@ -304,14 +329,23 @@ var APP = {
 	conversation2_9: {
 
 		start: function(current) {
-			$('.btn-next').show();
 		},
 
 		reset: function(current) {}
 
 	},
 
-	end_9: {
+	recap_9: {
+
+		start: function(current) {
+			$('.btn-next').show();
+		},
+
+		reset: function(current) {}
+	},
+
+
+	end_10: {
 
 		start: function(current) {
 			$('.btn-next').hide();
