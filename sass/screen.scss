@@ -951,6 +951,11 @@
 			@extend .btn-next;
 			display: none;
 		}
+
+		.btn-previous-temp {
+			@extend .btn-previous;
+			display: none;
+		}
 	
 		::-webkit-scrollbar {
 		    display: none;

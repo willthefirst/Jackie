@@ -145,12 +145,19 @@ var APP = {
 			this.pollForScroll();
 			$('.btn-next-temp').show();
 			$('.btn-next-temp').on('click', this.sendToTop);
+			$('.btn-previous-temp').on('click', this.sendToBottom);
 		},
 
 		sendToTop: function() {
-			console.log(APP.beanstalk_5.$scene);
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 0
+			}, 2000);
+		},
+
+		sendToBottom: function() {
+			console.log('band');
+			APP.beanstalk_5.$scene.animate({
+				scrollTop: 2461
 			}, 2000);
 		},
 
@@ -184,7 +191,7 @@ var APP = {
 
 						if (!narrators[i].isOn && scrollIsInbound) {
 
-							if(narrators[i].paragraph.hasClass('btn-next-temp')) {
+							if(narrators[i].paragraph.hasClass('btn-next-temp') || narrators[i].paragraph.hasClass('btn-previous-temp')) {
 								narrators[i].paragraph.show();
 							}
 
@@ -192,8 +199,7 @@ var APP = {
 						}
 
 						else if (narrators[i].isOn && scrollIsOutbound) {
-
-							if(narrators[i].paragraph.hasClass('btn-next-temp')) {
+							if(narrators[i].paragraph.hasClass('btn-next-temp') || narrators[i].paragraph.hasClass('btn-previous-temp')) {
 								narrators[i].paragraph.hide();
 							}
 
@@ -233,13 +239,16 @@ var APP = {
 			var d = new Narrator($('.wrapper > .d'), 1025, 517);
 			var e = new Narrator($('.wrapper > .e'), 200, 0);
 			var f = new Narrator($('.btn-next-temp'), 2461, 200);
+			var g = new Narrator($('.btn-previous-temp'), 200, 0);
 
-			var narrators = [a,b,c,d,e,f];
+
+			var narrators = [a,b,c,d,e,f,g];
 			return narrators;
 		},
 
 		reset: function(current) {
 			$('.btn-next-temp').hide();
+			$('.btn-previous-temp').hide();
 		}
 	},
 
