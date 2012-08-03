@@ -142,7 +142,6 @@ var APP = {
 		$scene: $('.beanstalk-5'),
 
 		start: function(current) {
-			console.log('s');
 			this.pollForScroll();
 			$('.btn-next-temp').show();
 			$('.btn-next-temp').on('click', this.sendToTop);
@@ -157,14 +156,14 @@ var APP = {
 
 		sendToBottom: function() {
 			APP.beanstalk_5.$scene.animate({
-				scrollTop: 2461
+				scrollTop: 2464
 			}, 4000);
 		},
 
 		pollForScroll: function() {
 			var narrators = this.narrators();
 			var $scene = $('.beanstalk-5');
-			$scene.scrollTop(2461);
+			$scene.scrollTop(2464);
 
 			var oldScroll = 0;
 
@@ -253,21 +252,23 @@ var APP = {
 				}
 			};
 
-			var a = new Narrator('text', $('.wrapper > .a'), 2461, 2393);
+			var a = new Narrator('text', $('.wrapper > .a'), 2465, 2393);
 			a.isOn = true;
 			var b = new Narrator('text', $('.wrapper > .b'), 2045, 1585);
 			var c = new Narrator('text', $('.wrapper > .c'), 1493, 1061);
 			var d = new Narrator('text', $('.wrapper > .d'), 1025, 517);
-			var e = new Narrator('text', $('.wrapper > .e'), 200, 0);
-			var f = new Narrator('button', $('.btn-next-temp'), 2461, 200);
-			var g = new Narrator('button', $('.btn-previous-temp'), 200, 0);
+			var e = new Narrator('text', $('.wrapper > .e'), 200, -1);
+			var f = new Narrator('button', $('.btn-next-temp'), 2465, 200);
+			var g = new Narrator('button', $('.btn-previous-temp'), 200, -1);
 			var h = new Narrator('animation', $('.bottom'), 2384, 549);
 			var i = new Narrator('animation', $('.middle'), 2285, 525);
 			var j = new Narrator('animation', $('.top'), 1650, 70);
 			var k = new Narrator('animation', $('.top2'), 1650, 70);
-			var birds = new Narrator('animation', $('.birds'), 249, 0);
+			var l = new Narrator('animation', $('.up-arrow'), 2465, 1500);
+			var m = new Narrator('animation', $('.castleclouds'), 249, -1);
+			var birds = new Narrator('animation', $('.birds'), 249, -1);
 
-			var narrators = [a,b,c,d,e,f,g,h,i,j,k,birds];
+			var narrators = [a,b,c,d,e,f,g,h,i,j,k,l,m,birds];
 			return narrators;
 		},
 

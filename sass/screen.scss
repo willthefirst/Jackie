@@ -66,6 +66,7 @@
 	
 				&.wrapper { background: url(../images/normal/4beanstalk/background.jpeg) no-repeat bottom left; background-size: 1024px 3228px;}
 				&.castle { @include normal(4beanstalk/castle); }
+				&.up-arrow { @include normal(general/up); }
 				&.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
 				&.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
 				&.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
@@ -156,6 +157,7 @@
 
 				&.wrapper { background: url(../images/retina/4beanstalk/background_2x.jpeg) no-repeat bottom left; background-size: 1024px 3228px;}
 				&.castle { @include retina(4beanstalk/castle); }
+				&.up-arrow { @include retina(general/up); }
 				&.upperclouds { @include retina(4beanstalk/cloudsupper, bottom left); }
 				&.castleclouds { @include retina(4beanstalk/castleclouds, bottom left); }
 				&.cloudfront { @include retina(4beanstalk/cloudfront, bottom left); }
@@ -215,7 +217,7 @@
 
 		.start-1 {
 			@include bluesky;
-
+			
 			&.current {
 				&> .right-cloud {
 					@include animation(right-cloud, 5s, 1s, $function:ease-in, $fill-mode:forwards);
@@ -662,7 +664,11 @@
 	
 							&.bottom {
 								@include animation(left, 16s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
-							}	
+							}
+
+							&.up-arrow {
+								@include animation(bouncesmall, 1s, .1s, $iterations:infinite, $function:ease-in, $fill-mode:forwards);
+							}
 	
 						/* @end */
 					
@@ -881,15 +887,9 @@
 			}
 		}
 
-		@include keyframes(bouncebig) {
-			0% { @include translate3d(0, 0, 0); }
-			50% { @include translate3d(0, -20px, 0); }
-			100% { @include translate3d(0, 0, 0); }
-		}
-
 		@include keyframes(bouncesmall) {
 			0% { @include translate3d(0, 0, 0); }
-			50% { @include translate3d(0, -10px, 0); }
+			50% { @include translate3d(0, 10px, 0); }
 			100% { @include translate3d(0, 0, 0); }
 		}
 
@@ -903,8 +903,11 @@
 			/* @group text */
 
 				.a {
-					bottom: 410px;
-					right: 50px;
+					bottom: 460px;
+					font-size: 30px;
+					line-height: 36px;
+					text-align: right;
+					right: 110px;
 					@include dimensions(500px, auto);
 					opacity: 1;
 				}
@@ -944,6 +947,12 @@
 	/* @end */
 
 	/* @group elements */
+
+		.up-arrow {
+			@include dimensions(28px, 80px);
+			bottom: 680px;
+			left: 380px;
+		}
 
 		.btn-next-temp {
 			@extend .btn-next;
