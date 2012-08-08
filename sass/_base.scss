@@ -26,6 +26,10 @@
 
 /* @group general */
 
+	body {
+		-webkit-user-select: none;
+	}
+
 	.container {
 		@include stretch;
 		background: #000;
@@ -84,21 +88,31 @@
 	}
 
 	.btn-previous {
+		@include single-transition(all, .1s, linear);
 		@include dimensions(81px , 60px);
 		left: 20px;
 		margin-top: 30px;
 		position: absolute;
 		z-index: 3;
 		cursor: pointer;
+		
+		&.pressed {
+			@include translate3d(-4px, 2px, 0px);
+		}
 	}
 
 	.btn-next {
+		@include single-transition(all, .1s, linear);
 		@include dimensions(81px , 60px);
 		right: 20px;
 		margin-top: 30px;
 		position: absolute;
 		z-index: 3;
 		cursor: pointer;
+
+		&.pressed {
+			@include translate3d(4px, 2px, 0px);
+		}
 	}
 
 /* @end */

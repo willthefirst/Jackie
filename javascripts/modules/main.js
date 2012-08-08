@@ -18,9 +18,38 @@ var APP = {
 
 			page.newPage($('.current'));
 
-			/* Navigation */
-			$('.btn-next').on('click', page.stepForward);
-			$('.btn-previous').on('click', page.stepBack);
+			var UA = navigator.userAgent,
+				event = (UA.match(/iPad/i)) ? "touchstart" : "click";
+
+			if (UA.indexOf("iPad") != -1) {
+				$('.btn-next').on({
+					touchstart: function() {
+						$(this).addClass('pressed');
+					},
+					touchend: page.stepForward
+				});
+				$('.btn-previous').on({
+					touchstart: function() {
+						console.log('band');
+						$(this).addClass('pressed');
+					},
+					touchend: page.stepBack
+				});
+			}
+			else {
+				$('.btn-next').on({
+					mousedown: function() {
+						$(this).addClass('pressed');
+					},
+					mouseup: page.stepForward
+				});
+				$('.btn-previous').on({
+					mousedown: function() {
+						$(this).addClass('pressed');
+					},
+					mouseup: page.stepBack
+				});
+			}
 		},
 
 		newPage: function(current) {
@@ -38,6 +67,9 @@ var APP = {
 		},
 
 		stepForward: function() {
+
+			$('.btn-next').removeClass('pressed');
+
 			var page = APP.paginate;
 
 			var a = page.$current;
@@ -57,6 +89,9 @@ var APP = {
 		},
 
 		stepBack: function() {
+
+			$('.btn-previous').removeClass('pressed');
+
 			var page = APP.paginate;
 			var a = page.$current;
 
@@ -144,17 +179,55 @@ var APP = {
 		start: function(current) {
 			this.pollForScroll();
 			$('.btn-next-temp').show();
-			$('.btn-next-temp').on('click', this.sendToTop);
-			$('.btn-previous-temp').on('click', this.sendToBottom);
+			// $('.btn-next-temp').on('click', this.sendToTop);
+			// $('.btn-previous-temp').on('click', this.sendToBottom);
+
+			var UA = navigator.userAgent,
+				event = (UA.match(/iPad/i)) ? "touchstart" : "click";
+
+
+			if (UA.indexOf("iPad") != -1) {
+				$('.btn-next-temp').on({
+					touchstart: function() {
+						$(this).addClass('pressed');
+					},
+					touchend: this.sendToTop
+				});
+				$('.btn-previous-temp').on({
+					touchstart: function() {
+						console.log('band');
+						$(this).addClass('pressed');
+					},
+					touchend: this.sendToBottom
+				});
+			}
+			else {
+				$('.btn-next-temp').on({
+					mousedown: function() {
+						$(this).addClass('pressed');
+					},
+					mouseup: this.sendToTop
+				});
+				$('.btn-previous-temp').on({
+					mousedown: function() {
+						$(this).addClass('pressed');
+					},
+					mouseup: this.sendToBottom
+				});
+			}
 		},
 
 		sendToTop: function() {
+			$('.btn-next-temp').removeClass('pressed');
+
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 0
 			}, 4000);
 		},
 
 		sendToBottom: function() {
+			$('.btn-previous-temp').removeClass('pressed');
+
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 2464
 			}, 4000);
@@ -172,7 +245,6 @@ var APP = {
 
 				if ($scene.scrollTop() !== oldScroll) {
 					oldScroll = $scene.scrollTop();
-					console.log(oldScroll);
 					x = true;
 				}
 				
