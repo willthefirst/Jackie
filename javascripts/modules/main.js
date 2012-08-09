@@ -349,7 +349,6 @@ var APP = {
 			APP.beanstalk_5.$previous_temp.hide();
 			$('.btn-next').show();
 			$('.btn-previous').show();
-			console.log('bam');
 		}
 	},
 
@@ -395,7 +394,7 @@ var APP = {
 		},
 		
 		start: function(current) {
-			this.goToNext();
+			// this.goToNext();
 		},
 
 		reset: function(current) {

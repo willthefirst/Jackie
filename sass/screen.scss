@@ -13,6 +13,9 @@
 	$birds: sprite-map("normal/4beanstalk/birds/*.png");
 	$birds_2x: sprite-map("retina/4beanstalk/birds/*.png");
 
+	$sheds: sprite-map("normal/7giant/sheds/*.png");
+	$sheds_2x: sprite-map("retina/7giant/sheds/*.png");
+
 /* @end */
 
 /* @group media query for images, lazy loading */
@@ -71,22 +74,10 @@
 				&.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
 				&.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
 				&.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
-				
-				&.birda { 
-					background: sprite($birds, a) no-repeat;
-				 }
-				
-				&.birdb { 
-					background: sprite($birds, b) no-repeat;
-				 }
-				
-				&.birdc { 
-					background: sprite($birds, c) no-repeat;
-				}
-				
-				&.birdd { 
-					background: sprite($birds, d) no-repeat;
-				 }
+				&.birda { background: sprite($birds, a) no-repeat; }
+				&.birdb { background: sprite($birds, b) no-repeat; }
+				&.birdc { background: sprite($birds, c) no-repeat; }
+				&.birdd { background: sprite($birds, d) no-repeat; }
 	
 			/* @end */
 	
@@ -107,6 +98,12 @@
 				&.fo { @include normal(7giant/fo, bottom left); }
 				&.fum { @include normal(7giant/fum, bottom left); }
 				&.clouds { @include normal(7giant/clouds, bottom left); }
+				&.s1 { background: sprite($sheds, s1) no-repeat; }
+				&.s2 { background: sprite($sheds, s2) no-repeat; }
+				&.s4 { background: sprite($sheds, s4) no-repeat; }
+				&.s5 { background: sprite($sheds, s5) no-repeat; }
+				&.s6 { background: sprite($sheds, s6) no-repeat; }
+				&.s7 { background: sprite($sheds, s7) no-repeat; }
 	
 			/* @end */
 		}
@@ -211,6 +208,43 @@
 				&.fo { @include retina(7giant/fo, bottom left); }
 				&.fum { @include retina(7giant/fum, bottom left); }
 				&.clouds { @include retina(7giant/clouds, bottom left); }
+
+				&.s1 { 
+					background: sprite($sheds_2x, s1) no-repeat;
+					@include background-size(87px, 224px);
+					background-position: sprite-position($sheds, s1);				
+				}
+				
+				&.s2 { 
+					background: sprite($sheds_2x, s2) no-repeat;
+					@include background-size(87px, 224px);
+					background-position: sprite-position($sheds, s2);
+				}
+				
+				&.s4 { 
+					background: sprite($sheds_2x, s4) no-repeat;
+					@include background-size(87px, 224px);
+					background-position: sprite-position($sheds, s4);
+				}			
+
+				&.s5 { 
+					background: sprite($sheds_2x, s5) no-repeat;
+					@include background-size(87px, 224px);
+					background-position: sprite-position($sheds, s5);
+				}
+				
+				&.s6 { 
+					background: sprite($sheds_2x, s6) no-repeat;
+					@include background-size(87px, 224px);
+					background-position: sprite-position($sheds, s6);	
+				}
+				
+				&.s7 { 
+					background: sprite($sheds_2x, s7) no-repeat;
+					@include background-size(87px, 224px);
+					background-position: sprite-position($sheds, s7);
+				}
+
 
 			/* @end */
 
@@ -1120,21 +1154,56 @@
 
 		.giant-7 {
 
+			$fee: 1s;
+			$fi: 3s;
+			$fo: 5s;
+			$fum: 7s;
+			$s1: $fee + 1s;
+			$s2: $fi + 1s;
+			$s4: $fo + 0.9s;
+			$s6: $fo + 1s;
+			$s5: $fum + 1.05s;
+			$s7: $fum + 0.9s;
+
 			&.current {
 				.fee {
-					@include animation(wordfall-left, 3s, 1s, $function:cubic-bezier(0.935, 0, 1.000, 1.000), $fill-mode:forwards);
+					@include animation(wordfall-left, 3s, $fee, $function:cubic-bezier(0.935, 0, 1.000, 1.000), $fill-mode:forwards);
 				}
 
 				.fi {
-					@include animation(wordfall-right, 3s, 3s, $function:ease-out, $fill-mode:forwards);
+					@include animation(wordfall-right, 3s, $fi, $function:ease-out, $fill-mode:forwards);
 				}
 
 				.fo {
-					@include animation(wordfall-left, 3s, 5s, $function:ease-out, $fill-mode:forwards);
+					@include animation(wordfall-left, 3s, $fo, $function:ease-out, $fill-mode:forwards);
 				}
 
 				.fum {
-					@include animation(wordfall-right, 3s, 7s, $function:ease-out, $fill-mode:forwards);
+					@include animation(wordfall-right, 3s, $fum, $function:ease-out, $fill-mode:forwards);
+				}
+
+				.s1 {
+					@include animation(shed-left, 1s, $s1, $function:linear, $fill-mode:forwards);
+				}
+
+				.s2 {
+					@include animation(shed-right, 1s, $s2, $function:linear, $fill-mode:forwards);
+				}
+
+				.s4 {
+					@include animation(shed-left, 1s, $s4, $function:linear, $fill-mode:forwards);
+				}
+
+				.s5 {
+					@include animation(shed-left, 1s, $s5, $function:linear, $fill-mode:forwards);
+				}
+
+				.s6 {
+					@include animation(shed-left, 1s, $s6, $function:linear, $fill-mode:forwards);
+				}
+
+				.s7 {
+					@include animation(shed-right, 1s, $s7, $function:linear, $fill-mode:forwards);
 				}
 			}
 		}
@@ -1259,6 +1328,34 @@
 			}
 		}
 
+
+		@include keyframes(shed-left) {
+			0% {
+				z-index: 0;
+				@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(0px), $trans-y:(0px));
+			}
+
+			100% {
+				@include create-transform($rotate3d:(0,0,1, -180deg),$trans-x:(50px), $trans-y:(-400px));
+
+				// @include translate(-20px, 400px, 0);
+			}
+		}
+
+		@include keyframes(shed-right) {
+			0% {
+				z-index: 0;
+				@include create-transform($rotate3d:(0,0,0, 0deg),$trans-x:(0px), $trans-y:(0px));
+			}
+
+			100% {
+
+				@include create-transform($rotate3d:(0,0,1, 180deg),$trans-x:(-50px), $trans-y:(-400px));
+
+				// @include translate3d(20px, 400px, 0);
+			}
+		}
+
 	/* @end */
 
 	/* @group elements */
@@ -1305,6 +1402,60 @@
 
 		.landright {
 			@include transform-origin(100%, 100%);
+		}
+
+		//.s1 for fee
+
+		.s1 {
+			z-index: -1;	
+			@include dimensions(31px, 18px);
+			left: 249px;
+			top: 456px;
+		}
+
+		//.s2 for fi
+
+		.s2 {
+			z-index: -1;	
+			@include dimensions(20px, 13px);
+			left: 649px;
+			top: 466px;			
+		}
+
+		//.4 for fo
+
+		.s4 {
+			z-index: -1;	
+			@include dimensions(8px, 17px);
+			left: 336px;
+			top: 466px;		
+		}
+
+		//.s5 for fum
+
+		.s5 {
+			z-index: -1;	
+			@include dimensions(76px, 46px);
+			left: 235px;
+			top: 440px;			
+		}
+
+		//.s6 for fo
+
+		.s6 {
+			z-index: -1;	
+			@include dimensions(28px, 35px);
+			left: 336px;
+			top: 399px;			
+		}
+
+		//.s7 for fum
+
+		.s7 {
+			z-index: -1;	
+			@include dimensions(87px, 78px);
+			left: 789px;
+			top: 399px;			
 		}
 
 	/* @end */
