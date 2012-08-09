@@ -349,21 +349,26 @@
 
 			/* @group timing variables */
 
-				$first_text_go: 5s;
-				$house_fall_go: $first_text_go + 2;
-				$house_fall_speed: 2s;
+				$first_text_go: 0.1s;
+				$house_fall_go: $first_text_go + 0.5;
+				$house_fall_speed: 1.5s;
 				$second_text_go: $house_fall_go + 1.5;
 				$sign_go: $house_fall_go + 2;
-				$cow_go: $sign_go + 1;
+				$cow_go: $sign_go;
 
 			/* @end */
 
 			&.current {
-
+				&> .cloud {
+						@include animation(cloud, 60s, 0.1s, $function:linear, $fill-mode:forwards);
+					}
+			}
+	
+			&.next {
 				&> .a > .b {
-					@include animation(in, 1s, 5s, $function:linear, $fill-mode:forwards);
+					@include animation(in, 1s, $first_text_go, $function:linear, $fill-mode:forwards);
 				}
-
+				
 				&> .a {
 					@include animation(out, 1s, $second_text_go, $function:linear, $fill-mode:forwards);
 				}
@@ -384,12 +389,8 @@
 					@include animation(sign, .3s, $sign_go, $function:ease-in, $fill-mode:forwards);
 				}
 
-				&> .cloud {
-					@include animation(cloud, 60s, 0.1s, $function:linear, $fill-mode:forwards);
-				}
-
 				&> .cow {
-					@include animation(cow, 0.5s, $cow_go, $function:ease-in, $fill-mode:forwards);
+					@include animation(cow, 1s, $cow_go, $function:cubic-bezier(.77, .02, 1, 1), $fill-mode:forwards);
 				}
 			}
 		}

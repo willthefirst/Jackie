@@ -30,6 +30,11 @@
 		-webkit-user-select: none;
 	}
 
+	//review
+	.dummy {
+		display: none;
+	}
+
 	.container {
 		@include stretch;
 		background: #000;

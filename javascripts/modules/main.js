@@ -127,11 +127,39 @@ var APP = {
 
 	exposition_2: {
 
+		$next_temp: $('.btn-next-temp'),
+		$btn_next: $('.btn-next'),
+
 		start: function(current) {
 			$('.btn-previous').show();
+
+			var down = APP.events.down;
+			var up = APP.events.up;
+
+			this.$next_temp.show();
+			this.$btn_next.hide();
+
+			this.$next_temp.on(down, function() {
+				$(this).addClass('pressed');
+			});
+
+			this.$next_temp.on(up, this.houseFall);
+		},
+
+		houseFall: function() {
+			APP.exposition_2.$next_temp.removeClass('pressed');
+			$('.exposition-2').addClass('next');
+			APP.exposition_2.$btn_next.show();
+			APP.exposition_2.$next_temp.hide();
 		},
 
 		reset: function(current) {
+			this.$next_temp.hide();
+			this.$btn_next.show();
+
+			setTimeout(function() {
+				$('.exposition-2').removeClass('next');
+			}, 1400);
 		}
 	},
 
@@ -165,50 +193,30 @@ var APP = {
 	beanstalk_5: {
 
 		$scene: $('.beanstalk-5'),
+		$next_temp: $('.btn-next-temp'),
+		$previous_temp: $('.btn-previous-temp'),
 
 		start: function(current) {
+			var down = APP.events.down;
+			var up = APP.events.up;
+
 			this.pollForScroll();
-			$('.btn-next-temp').show();
-			// $('.btn-next-temp').on('click', this.sendToTop);
-			// $('.btn-previous-temp').on('click', this.sendToBottom);
+			this.$next_temp.show();
 
-			var UA = navigator.userAgent,
-				event = (UA.match(/iPad/i)) ? "touchstart" : "click";
+			this.$next_temp.on(down, function() {
+				$(this).addClass('pressed');
+			});
 
+			this.$previous_temp.on(down, function() {
+				$(this).addClass('pressed');
+			});
 
-			if (UA.indexOf("iPad") != -1) {
-				$('.btn-next-temp').on({
-					touchstart: function() {
-						$(this).addClass('pressed');
-					},
-					touchend: this.sendToTop
-				});
-				$('.btn-previous-temp').on({
-					touchstart: function() {
-						console.log('band');
-						$(this).addClass('pressed');
-					},
-					touchend: this.sendToBottom
-				});
-			}
-			else {
-				$('.btn-next-temp').on({
-					mousedown: function() {
-						$(this).addClass('pressed');
-					},
-					mouseup: this.sendToTop
-				});
-				$('.btn-previous-temp').on({
-					mousedown: function() {
-						$(this).addClass('pressed');
-					},
-					mouseup: this.sendToBottom
-				});
-			}
+			this.$next_temp.on(up, this.sendToTop);
+			this.$previous_temp.on(up, this.sendToBottom);
 		},
 
 		sendToTop: function() {
-			$('.btn-next-temp').removeClass('pressed');
+			APP.beanstalk_5.$next_temp.removeClass('pressed');
 
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 0
@@ -216,7 +224,7 @@ var APP = {
 		},
 
 		sendToBottom: function() {
-			$('.btn-previous-temp').removeClass('pressed');
+			APP.beanstalk_5.$previous_temp.removeClass('pressed');
 
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 2464
@@ -225,16 +233,15 @@ var APP = {
 
 		pollForScroll: function() {
 			var narrators = this.narrators();
-			var $scene = $('.beanstalk-5');
-			$scene.scrollTop(2464);
+			APP.beanstalk_5.$scene.scrollTop(2464);
 
 			var oldScroll = 0;
 
 			var didScroll = function() {
 				x = false;
 
-				if ($scene.scrollTop() !== oldScroll) {
-					oldScroll = $scene.scrollTop();
+				if (APP.beanstalk_5.$scene.scrollTop() !== oldScroll) {
+					oldScroll = APP.beanstalk_5.$scene.scrollTop();
 					x = true;
 				}
 				
@@ -328,15 +335,21 @@ var APP = {
 			var k = new Narrator('animation', $('.top2'), 1650, 70);
 			var l = new Narrator('animation', $('.up-arrow'), 2465, 1500);
 			var m = new Narrator('animation', $('.castleclouds'), 249, -1);
+			var n = new Narrator('button', $('.btn-next'), 200, -1);
+			n.isOn = true;
+			var o = new Narrator('button', $('.btn-previous'), 2465, 200);
 			var birds = new Narrator('animation', $('.birds'), 249, -1);
 
-			var narrators = [a,b,c,d,e,f,g,h,i,j,k,l,m,birds];
+			var narrators = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,birds];
 			return narrators;
 		},
 
 		reset: function(current) {
-			$('.btn-next-temp').hide();
-			$('.btn-previous-temp').hide();
+			APP.beanstalk_5.$next_temp.hide();
+			APP.beanstalk_5.$previous_temp.hide();
+			$('.btn-next').show();
+			$('.btn-previous').show();
+			console.log('bam');
 		}
 	},
 
@@ -348,7 +361,7 @@ var APP = {
 
 			//Deals with birds/castle z-index problem on fade from scene 5
 
-			$('.theft-6').css('z-index', '3');
+			$('.theft-6').css('z-index', '2');
 			setTimeout( function() {
 				$('.theft-6').css('z-index', '');
 			}, 1500 );
