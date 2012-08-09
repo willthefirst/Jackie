@@ -19,8 +19,8 @@
 
 	@media screen and (-webkit-max-device-pixel-ratio: 1.5) {
 
-		.btn-previous { @include normal(general/left); }
-		.btn-next { @include normal(general/right); }
+		.btn-previous { @include normal(general/left); &.pressed { @include normal(general/left-dark); } }
+		.btn-next { @include normal(general/right); &.pressed { @include normal(general/right-dark); } }
 
 		.got {
 
@@ -43,7 +43,8 @@
 				&.cloud { @include normal(2exposition/cloud, bottom left); }
 				&.sign { @include normal(2exposition/sign, bottom left); }
 				&.grass-top { @include normal(2exposition/grass_top, bottom left); }
-				&.grass-bottom{ @include normal(2exposition/grass_bottom, bottom left); }
+				&.grass-bottom { @include normal(2exposition/grass_bottom, bottom left); }
+				&.cow { @include normal(2exposition/cow, bottom left); }
 	
 			/* @end */
 	
@@ -92,6 +93,9 @@
 			/* @group theft-6 */
 	
 				&.coins { @include normal(general/coins, bottom left); }
+				&.egg { @include normal(general/egg, bottom left); }
+				&.goose { @include normal(general/goose, bottom left); }
+				&.harp { @include normal(general/harp, bottom left); }
 	
 			/* @end */
 	
@@ -110,8 +114,8 @@
 
 	@media screen and (-webkit-min-device-pixel-ratio: 2) {
 
-		.btn-previous { @include retina(general/left); }
-		.btn-next { @include retina(general/right); }
+		.btn-previous { @include retina(general/left); &.pressed { @include retina(general/left-dark); } }
+		.btn-next { @include retina(general/right); &.pressed { @include retina(general/right-dark); } }
 
 		.got {
 
@@ -135,6 +139,7 @@
 				&.sign { @include retina(2exposition/sign, bottom left); }
 				&.grass-top { @include retina(2exposition/grass_top, bottom left); }
 				&.grass-bottom{ @include retina(2exposition/grass_bottom, bottom left); }
+				&.cow { @include retina(2exposition/cow, bottom left); }
 
 			/* @end */
 
@@ -191,6 +196,10 @@
 			/* @group theft-6 */
 
 				&.coins { @include retina(general/coins, bottom left); }
+				&.coins { @include retina(general/coins, bottom left); }
+				&.egg { @include retina(general/egg, bottom left); }
+				&.goose { @include retina(general/goose, bottom left); }
+				&.harp { @include retina(general/harp, bottom left); }
 
 			/* @end */
 
@@ -345,6 +354,7 @@
 				$house_fall_speed: 2s;
 				$second_text_go: $house_fall_go + 1.5;
 				$sign_go: $house_fall_go + 2;
+				$cow_go: $sign_go + 1;
 
 			/* @end */
 
@@ -376,6 +386,10 @@
 
 				&> .cloud {
 					@include animation(cloud, 60s, 0.1s, $function:linear, $fill-mode:forwards);
+				}
+
+				&> .cow {
+					@include animation(cow, 0.5s, $cow_go, $function:ease-in, $fill-mode:forwards);
 				}
 			}
 		}
@@ -430,9 +444,21 @@
 			}
 		}
 
+		@include keyframes(cow) {
+			100% {
+				@include translate3d(0, 690px, 0);
+			}
+		}
+
 	/* @end */
 
 	/* @group elements */
+
+		.cow {
+			@include dimensions(187px, 115px);
+			bottom: 760px;
+			right: 350px;
+		}
 
 		.house-right {
 			@include transform-origin(50%, 95%);
@@ -1064,6 +1090,24 @@
 	.coins {
 		@include dimensions(250px, 239px);
 		bottom: -240px;
+		left: 400px;
+	}
+
+	.goose {
+		@include dimensions(151px, 324px);
+		bottom: -326px;
+		left: 400px;
+	}
+
+	.egg {
+		@include dimensions(114px, 154px);
+		bottom: -155px;
+		left: 400px;
+	}
+
+	.harp {
+		@include dimensions(165px, 342px);
+		bottom: -345px;
 		left: 400px;
 	}
 

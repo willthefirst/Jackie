@@ -1,7 +1,21 @@
 var APP = {
 
 	init: function() {
+		APP.clickOrTouch();
 		APP.paginate.init();
+	},
+
+	events: {
+		down: 'mousedown',
+		up: 'mouseup'
+	},
+
+	clickOrTouch: function() {
+		var UA = navigator.userAgent;
+		if (UA.indexOf("iPad") != -1) {
+			APP.events.down = 'touchstart';
+			APP.events.up = 'touchend';
+		}
 	},
 
 	/* GENERAL Page turning and transitions */
@@ -15,41 +29,15 @@ var APP = {
 		init: function() {
 
 			var page = APP.paginate;
-
+			var down = APP.events.down;
+			var up = APP.events.up;
 			page.newPage($('.current'));
 
-			var UA = navigator.userAgent,
-				event = (UA.match(/iPad/i)) ? "touchstart" : "click";
-
-			if (UA.indexOf("iPad") != -1) {
-				$('.btn-next').on({
-					touchstart: function() {
-						$(this).addClass('pressed');
-					},
-					touchend: page.stepForward
-				});
-				$('.btn-previous').on({
-					touchstart: function() {
-						console.log('band');
-						$(this).addClass('pressed');
-					},
-					touchend: page.stepBack
-				});
-			}
-			else {
-				$('.btn-next').on({
-					mousedown: function() {
-						$(this).addClass('pressed');
-					},
-					mouseup: page.stepForward
-				});
-				$('.btn-previous').on({
-					mousedown: function() {
-						$(this).addClass('pressed');
-					},
-					mouseup: page.stepBack
-				});
-			}
+			$('.btn-next,.btn-previous').on(down, function() {
+				$(this).addClass('pressed');
+			});
+			$('.btn-next').on(up, page.stepForward);
+			$('.btn-previous').on(up, page.stepBack);
 		},
 
 		newPage: function(current) {
@@ -112,13 +100,15 @@ var APP = {
 	},
 
 	handleClick: function(button, flyer) {
-		button.on('click', function() {
+		var down = APP.events.down;
+
+		button.on(down, function() {
 			flyer.addClass('fly');
-			button.off('click');
+			button.off(down);
 			setTimeout(function() {
 				flyer.removeClass('fly');
 				APP.handleClick(button, flyer);
-			}, 1500);
+			}, 1800);
 		});
 	},
 
@@ -153,7 +143,7 @@ var APP = {
 			$button = $('.js_beans');
 			$beans = $('.beans');
 
-			APP.handleClick( $button , $beans );
+			APP.handleClick($button , $beans);
 		},
 
 		reset: function(current) {}
@@ -364,8 +354,14 @@ var APP = {
 			}, 1500 );
 
 			$button_coins = $('.js_coins');
+			$button_gooseandegg = $('.js_gooseandegg');
+			$button_harp = $('.js_harp');
 			$coins = $('.coins');
+			$goose = $('.goose, .egg');
+			$harp = $('.harp');
 			APP.handleClick( $button_coins, $coins );
+			APP.handleClick( $button_gooseandegg, $goose );
+			APP.handleClick( $button_harp, $harp );
 
 		},
 
@@ -378,8 +374,10 @@ var APP = {
 	giant_7: {
 
 		goToNext: function() {
+			var up = APP.events.up;
+			
 			this.timeoutID = window.setTimeout( function() {
-				$('.btn-next').trigger('click');
+				$('.btn-next').trigger(up);
 			}, 10000);
 		},
 		

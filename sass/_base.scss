@@ -80,11 +80,19 @@
 	}
 
 	.glow {
-		@include animation(glow, 2s, 0s, infinite, linear, forwards);
+		@include animation(glow, 2.5s, 0s, infinite, linear, forwards);
 		color: #fff;
 		text-shadow: 0px -2px 5px #008CFF, 0px 2px 5px #008CFF;
 		font-weight: bold;
 		cursor: pointer;
+
+		&.js_harp {
+			@include animation(glow, 2.5s, 2s, infinite, linear, forwards);
+		}
+
+		&.js_gooseandegg {
+			@include animation(glow, 2.5s, 1s, infinite, linear, forwards);
+		}
 	}
 
 	.btn-previous {
@@ -154,6 +162,10 @@
 
 	.fly {
 		@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
+
+		&.egg {
+			@include animation(fly, 1.5s, .3s, $fill-mode:forwards);
+		}
 	}
 
 	@include keyframes(fly) {
