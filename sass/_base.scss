@@ -166,10 +166,14 @@
 	/* @end */
 
 	.fly {
-		@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
+		@include animation(fly, 1.5s, 0s, $fill-mode:forwards);
 
 		&.egg {
 			@include animation(fly, 1.5s, .3s, $fill-mode:forwards);
+		}
+
+		&.coins {
+			@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
 		}
 	}
 

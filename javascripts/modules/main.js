@@ -218,6 +218,10 @@ var APP = {
 		sendToTop: function() {
 			APP.beanstalk_5.$next_temp.removeClass('pressed');
 
+			setTimeout(function() {
+				APP.beanstalk_5.$next_temp.hide();
+			}, 300);
+
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 0
 			}, 4000);
@@ -225,6 +229,10 @@ var APP = {
 
 		sendToBottom: function() {
 			APP.beanstalk_5.$previous_temp.removeClass('pressed');
+
+			setTimeout(function() {
+				APP.beanstalk_5.$previous_temp.hide();
+			}, 300);
 
 			APP.beanstalk_5.$scene.animate({
 				scrollTop: 2464
@@ -368,7 +376,7 @@ var APP = {
 			$button_coins = $('.js_coins');
 			$button_gooseandegg = $('.js_gooseandegg');
 			$button_harp = $('.js_harp');
-			$coins = $('.coins');
+			$coins = $('.coins, .coins2');
 			$goose = $('.goose, .egg');
 			$harp = $('.harp');
 			APP.handleClick( $button_coins, $coins );
@@ -394,7 +402,7 @@ var APP = {
 		},
 		
 		start: function(current) {
-			// this.goToNext();
+			this.goToNext();
 		},
 
 		reset: function(current) {

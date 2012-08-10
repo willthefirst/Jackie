@@ -16,6 +16,9 @@
 	$sheds: sprite-map("normal/7giant/sheds/*.png");
 	$sheds_2x: sprite-map("retina/7giant/sheds/*.png");
 
+	$stars: sprite-map("normal/10end/stars/*.png");
+	$stars_2x: sprite-map("retina/10end/stars/*.png");
+
 /* @end */
 
 /* @group media query for images, lazy loading */
@@ -84,6 +87,7 @@
 			/* @group theft-6 */
 	
 				&.coins { @include normal(general/coins, bottom left); }
+				&.coins2 { @include normal(general/coins2, bottom left); }
 				&.egg { @include normal(general/egg, bottom left); }
 				&.goose { @include normal(general/goose, bottom left); }
 				&.harp { @include normal(general/harp, bottom left); }
@@ -105,6 +109,18 @@
 				&.s6 { background: sprite($sheds, s6) no-repeat; }
 				&.s7 { background: sprite($sheds, s7) no-repeat; }
 	
+			/* @end */
+
+			/* @group end-10 */
+			
+				&.end-mountain { @include normal(10end/mountain, bottom left); }
+				&.end-bg { @include normal(10end/background, bottom left); }
+				&.theend { @include normal(10end/theend, bottom left); }
+				&.smallerstars { @include normal(10end/smallerstars, bottom left); }
+				&.big-star { background: sprite($stars, big) no-repeat; }
+				&.small-star { background: sprite($stars, small) no-repeat; }
+				&.read-again { @include normal(10end/readagain, bottom left); }
+			
 			/* @end */
 		}
 	}
@@ -194,6 +210,7 @@
 
 				&.coins { @include retina(general/coins, bottom left); }
 				&.coins { @include retina(general/coins, bottom left); }
+				&.coins2 { @include retina(general/coins2, bottom left); }
 				&.egg { @include retina(general/egg, bottom left); }
 				&.goose { @include retina(general/goose, bottom left); }
 				&.harp { @include retina(general/harp, bottom left); }
@@ -245,7 +262,28 @@
 					background-position: sprite-position($sheds, s7);
 				}
 
+			/* @end */
 
+			/* @group end-10 */
+			
+				&.end-mountain { @include retina(10end/mountain, bottom left); }
+				&.end-bg { @include retina(10end/background, bottom left); }
+				&.theend { @include retina(10end/theend, bottom left); }
+				&.smallerstars { @include retina(10end/smallerstars, bottom left); }
+				&.big-star { 
+					background: sprite($stars_2x, big_2x) no-repeat;
+					@include background-size(68px, 103px);
+					background-position: sprite-position($stars, big);	
+				}
+				
+				&.small-star { 
+					background: sprite($stars_2x, small_2x) no-repeat;
+					@include background-size(68px, 103px);
+					background-position: sprite-position($stars, small);
+				}
+
+				&.read-again { @include retina(10end/readagain, bottom left); }
+			
 			/* @end */
 
 		}
@@ -1113,7 +1151,7 @@
 
 	.theft-6 {
 
-		/* @group page-specific elements and animations */
+	/* @group page-specific elements and animations */
 
 		@extend .cowsale-3;
 
@@ -1126,6 +1164,12 @@
 		@include dimensions(250px, 239px);
 		bottom: -240px;
 		left: 400px;
+	}
+
+	.coins2 {
+		bottom: -150px;
+		left: 375px;
+		@include dimensions(60px, 52px);
 	}
 
 	.goose {
@@ -1497,16 +1541,100 @@
 
 /* @group end-10 */
 
-	.end-10 {
-		background-color: #212350;
-	}
+	/* @group page-specific elements and animations */
 
-	.the-end {
-		//temp
-		font-size: 100px;
-		color: white;
-		left: 350px;
-		top: 210px;
-	}
+		.end-10 {
 
-/*  */
+			&.current {
+
+				.a, .c {
+					@include animation(star, 3s, 0.5s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+				}
+
+				.b, .e {
+					@include animation(star, 2s, 1.3s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+				}
+
+				.c, .f, {
+					@include animation(star, 3s, 0s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+				}
+
+				.big-star {
+					@include animation(star, 5s, 0s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+				}
+
+				.theend {
+					@include animation(theendup, 5s, 4s, $function:ease-in-out, $fill-mode:forwards);
+				}
+			}
+		}
+
+	/* @end */
+
+	/* @group keyframes */
+
+		@include keyframes(star) {
+			0% { opacity: 1; }
+			50% { opacity: 0.2; }
+			100% { opacity: 1; }
+		}
+
+		@include keyframes(theendup) {
+			0% { @include translate3d(0,0,0); }
+			100% { @include translate3d(0, -600px ,0); }
+		}
+
+	/* @end */
+
+	/* @group elements */
+
+		.end-10 {
+			background-color: #212350;
+		}
+
+		.end-mountain {
+			@include dimensions(1022px, 212px);
+			bottom: 0;
+			right: 0;
+		}
+
+		.end-bg { 
+			@include dimensions(1024, 768px); 
+		}
+
+		.theend {
+			@include dimensions(471px, 978px);
+			left: 290px;
+			top: -125px;
+		}
+
+		.smallerstars { 
+			@include dimensions(977px, 346px);
+			top: -17px;
+			left: 61px;
+		}
+
+		.big-star { 
+			@include dimensions(68px, 67px);
+			top: 200px;
+			left: 200px;
+		}
+
+		.small-star { 
+			@include dimensions(34px, 34px); 
+		}
+
+		.a { top: 50px; left: 300px;}
+		.b { top: 200px; left: 700px;}
+		.c { top: 500px; left: 100px;}
+		.d { top: 300px; left: 900px;}
+		.e { top: 100px; left: 50px;}
+		.f { top: 100px; left: 850px;}
+
+		.read-again { 
+			// @include dimensions(); 
+		}
+
+	/* @end */
+
+/* @end  */
