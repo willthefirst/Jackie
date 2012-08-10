@@ -442,12 +442,29 @@ var APP = {
 			$('.btn-next').hide();
 			var down = APP.events.down;
 			var up = APP.events.up;
+			var $read_again = $('.read-again');
 
-			$('.read-again').on(down, function() {
+			$('.theend, .read-again').css('-webkit-animation','theendup 5s 4s ease-in-out forwards');
+
+			//turns off animation, resets positions, all to allow for transition on click of read-again button.
+
+			setTimeout( function() {
+				$('.theend').css('top','-725px');
+				$('.read-again').css('top','248px');
+				$('.theend, .read-again').css('-webkit-animation','');
+			}, 9000);
+
+			//time determined by overall css animation time.
+
+			$read_again.on(down, function() {
+				$read_again.addClass('read-again-hover');
+			});
+
+			$read_again.on(up, function() {
+				$read_again.removeClass('read-again-hover');
 
 				var page = APP.paginate;
 				var a = page.$current;
-				console.log(a);
 
 				/* Reset scene-specific JS */
 				var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
@@ -459,17 +476,19 @@ var APP = {
 				a.css('opacity','0');
 
 				window.setTimeout(function() {
-					a.toggleClass('current hidden').css('opacity','');
+				a.toggleClass('current hidden').css('opacity','');
 				}, 1500);
 
 				$('.btn-next').show();
 
 				page.newPage($('.start-1'));
 			});
-
 		},
 
-		reset: function(current) {}
+		reset: function(current) {
+			$('.theend, .read-again').css('top','');
+			$('.theend, .read-again').css('-webkit-animation','');
+		}
 	}
 };
 
