@@ -440,6 +440,31 @@ var APP = {
 
 		start: function(current) {
 			$('.btn-next').hide();
+			var down = APP.events.down;
+			var up = APP.events.up;
+
+			$('.read-again').on(down, function() {
+
+				var page = APP.paginate;
+				var a = page.$current;
+				console.log(a);
+
+				/* Reset scene-specific JS */
+				var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
+				APP[scene].reset(a);
+
+				$('.start-1').toggleClass('hidden current');
+				page.$previous.toggleClass('previous hidden');
+
+				a.css('opacity','0');
+
+				window.setTimeout(function() {
+					a.toggleClass('current hidden').css('opacity','');
+				}, 1500);
+
+				page.newPage($('.start-1'));
+			});
+
 		},
 
 		reset: function(current) {}

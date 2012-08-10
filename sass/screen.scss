@@ -1632,7 +1632,11 @@
 		.f { top: 100px; left: 850px;}
 
 		.read-again { 
-			// @include dimensions(); 
+			@include dimensions(200px, 50px);
+			display: block; 
+			color: white;
+			top: 500px;
+			left: 500px;
 		}
 
 	/* @end */
