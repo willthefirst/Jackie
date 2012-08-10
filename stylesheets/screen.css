@@ -829,11 +829,8 @@ p.dropcap:first-letter {
   }
   /* line 117, ../sass/screen.scss */
   .got.end-bg {
-    background: url(../images/normal/10end/background.png) no-repeat bottom left;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
+    background: url(../images/normal/10end/background.jpg) no-repeat bottom left;
+    background-size: 1024px 768px;
   }
   /* line 118, ../sass/screen.scss */
   .got.theend {
@@ -1315,11 +1312,8 @@ p.dropcap:first-letter {
   }
   /* line 270, ../sass/screen.scss */
   .got.end-bg {
-    background: url(../images/retina/10end/background_2x.png) no-repeat bottom left;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
+    background: url(../images/retina/10end/background_2x.jpg) no-repeat bottom left;
+    background-size: 1024px 768px;
   }
   /* line 271, ../sass/screen.scss */
   .got.theend {
@@ -4005,7 +3999,7 @@ p.dropcap:first-letter {
 /* @group end-10 */
 /* @group page-specific elements and animations */
 /* line 1550, ../sass/screen.scss */
-.end-10.current .a, .end-10.current .exposition-2 .c, .exposition-2 .end-10.current .c, .end-10.current .c {
+.end-10.current .a, .end-10.current .exposition-2 .c, .exposition-2 .end-10.current .c, .end-10.current .d {
   -webkit-animation: star 3s 0.5s infinite linear forwards;
   -moz-animation: star 3s 0.5s infinite linear forwards;
 }
@@ -4020,7 +4014,7 @@ p.dropcap:first-letter {
   -moz-animation: star 3s 0s infinite linear forwards;
 }
 /* line 1562, ../sass/screen.scss */
-.end-10.current .big-star {
+.end-10.current .big-star, .end-10.current .smallerstars {
   -webkit-animation: star 5s 0s infinite linear forwards;
   -moz-animation: star 5s 0s infinite linear forwards;
 }
@@ -4123,7 +4117,7 @@ p.dropcap:first-letter {
 
 /* line 1601, ../sass/screen.scss */
 .end-bg {
-  width: 1024;
+  width: 1024px;
   height: 768px;
 }
 
@@ -4189,7 +4183,7 @@ p.dropcap:first-letter {
 
 /* line 1632, ../sass/screen.scss */
 .f {
-  top: 100px;
+  top: 43px;
   left: 850px;
 }
 

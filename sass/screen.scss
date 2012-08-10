@@ -114,7 +114,7 @@
 			/* @group end-10 */
 			
 				&.end-mountain { @include normal(10end/mountain, bottom left); }
-				&.end-bg { @include normal(10end/background, bottom left); }
+				&.end-bg { background: url(../images/normal/10end/background.jpg) no-repeat bottom left; background-size: 1024px 768px; }
 				&.theend { @include normal(10end/theend, bottom left); }
 				&.smallerstars { @include normal(10end/smallerstars, bottom left); }
 				&.big-star { background: sprite($stars, big) no-repeat; }
@@ -267,7 +267,7 @@
 			/* @group end-10 */
 			
 				&.end-mountain { @include retina(10end/mountain, bottom left); }
-				&.end-bg { @include retina(10end/background, bottom left); }
+				&.end-bg { background: url(../images/retina/10end/background_2x.jpg) no-repeat bottom left; background-size: 1024px 768px; }
 				&.theend { @include retina(10end/theend, bottom left); }
 				&.smallerstars { @include retina(10end/smallerstars, bottom left); }
 				&.big-star { 
@@ -1547,7 +1547,7 @@
 
 			&.current {
 
-				.a, .c {
+				.a, .d {
 					@include animation(star, 3s, 0.5s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 				}
 
@@ -1555,11 +1555,11 @@
 					@include animation(star, 2s, 1.3s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 				}
 
-				.c, .f, {
+				.c, .f {
 					@include animation(star, 3s, 0s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 				}
 
-				.big-star {
+				.big-star, .smallerstars {
 					@include animation(star, 5s, 0s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 				}
 
@@ -1599,7 +1599,7 @@
 		}
 
 		.end-bg { 
-			@include dimensions(1024, 768px); 
+			@include dimensions(1024px, 768px); 
 		}
 
 		.theend {
@@ -1629,7 +1629,7 @@
 		.c { top: 500px; left: 100px;}
 		.d { top: 300px; left: 900px;}
 		.e { top: 100px; left: 50px;}
-		.f { top: 100px; left: 850px;}
+		.f { top: 43px; left: 850px;}
 
 		.read-again { 
 			@include dimensions(200px, 50px);

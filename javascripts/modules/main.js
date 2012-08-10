@@ -116,7 +116,7 @@ var APP = {
 
 	start_1: {
 		start: function(current) {
-			$('.btn-previous').hide();
+			$('.btn-previous, .btn-previous-temp').hide();
 		},
 
 		reset: function(current) {
@@ -461,6 +461,8 @@ var APP = {
 				window.setTimeout(function() {
 					a.toggleClass('current hidden').css('opacity','');
 				}, 1500);
+
+				$('.btn-next').show();
 
 				page.newPage($('.start-1'));
 			});
