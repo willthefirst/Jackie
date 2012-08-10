@@ -466,17 +466,14 @@ var APP = {
 				var page = APP.paginate;
 				var a = page.$current;
 
-				/* Reset scene-specific JS */
-				var scene = page.$current.attr('class').split(' ')[0].replace("-", "_").toString();
-				APP[scene].reset(a);
-
 				$('.start-1').toggleClass('hidden current');
 				page.$previous.toggleClass('previous hidden');
 
 				a.css('opacity','0');
 
 				window.setTimeout(function() {
-				a.toggleClass('current hidden').css('opacity','');
+					a.toggleClass('current hidden').css('opacity','');
+					APP.end_10.reset(a);
 				}, 1500);
 
 				$('.btn-next').show();

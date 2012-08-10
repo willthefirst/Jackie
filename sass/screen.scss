@@ -27,6 +27,7 @@
 
 		.btn-previous { @include normal(general/left); &.pressed { @include normal(general/left-dark); } }
 		.btn-next { @include normal(general/right); &.pressed { @include normal(general/right-dark); } }
+		.container { background: url(../images/normal/general/pattern.jpg) 0 0; }
 
 		.got {
 
@@ -130,6 +131,7 @@
 
 		.btn-previous { @include retina(general/left); &.pressed { @include retina(general/left-dark); } }
 		.btn-next { @include retina(general/right); &.pressed { @include retina(general/right-dark); } }
+		.container { background: url(../images/retina/general/pattern_2x.jpg) 0 0; background-size: 256px 256px; }
 
 		.got {
 
