@@ -112,6 +112,16 @@
 	
 			/* @end */
 
+			/* @group recap-9 */
+
+				&.recap-bg { background: url(../images/normal/9recap/background.jpg) no-repeat bottom left; background-size: 1024px 768px; }
+				&.recap-egg { @include normal(9recap/egg, bottom left); }
+				&.recap-goose { @include normal(9recap/goose, bottom left); }
+				&.recap-coins { @include normal(9recap/coins, bottom left); }
+				&.recap-harp { @include normal(9recap/harp, bottom left); }
+
+			/* @end */
+
 			/* @group end-10 */
 			
 				&.end-mountain { @include normal(10end/mountain, bottom left); }
@@ -264,6 +274,16 @@
 					@include background-size(87px, 224px);
 					background-position: sprite-position($sheds, s7);
 				}
+
+			/* @end */
+
+			/* @group recap-9 */
+
+				&.recap-bg { background: url(../images/retina/9recap/background_2x.jpg) no-repeat bottom left; background-size: 1024px 768px; }
+				&.recap-egg { @include retina(9recap/egg, bottom left); }
+				&.recap-goose { @include retina(9recap/goose, bottom left); }
+				&.recap-coins { @include retina(9recap/coins, bottom left); }
+				&.recap-harp { @include retina(9recap/harp, bottom left); }
 
 			/* @end */
 
@@ -1536,6 +1556,34 @@
 				left: 30px;
 				width: 500px;
 			}
+		}
+
+		.recap-bg {
+			@include dimensions(1024px, 768px);
+		}
+
+		.recap-harp {
+			@include dimensions(235px, 345px);
+			left: 250px;
+			top: 350px;
+		}
+
+		.recap-goose {
+			@include dimensions(237px, 370px);
+			top: 300px;
+			left: 270px;
+		}
+
+		.recap-egg {
+			@include dimensions(80px, 97px);
+			left: 410px;
+			top: 500px;
+		}
+
+		.recap-coins {
+			@include dimensions(212px, 221px);
+			top: 413px;
+			left: 350px;
 		}
 	}
 

@@ -498,6 +498,8 @@ p.dropcap:first-letter {
     /* @end */
     /* @group giant-7 */
     /* @end */
+    /* @group recap-9 */
+    /* @end */
     /* @group end-10 */
     /* @end */
   }
@@ -827,6 +829,43 @@ p.dropcap:first-letter {
     background: url('../images/normal/7giant/sheds-s7e99300fcf.png') 0 0 no-repeat;
   }
   /* line 117, ../sass/screen.scss */
+  .got.recap-bg {
+    background: url(../images/normal/9recap/background.jpg) no-repeat bottom left;
+    background-size: 1024px 768px;
+  }
+  /* line 118, ../sass/screen.scss */
+  .got.recap-egg {
+    background: url(../images/normal/9recap/egg.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 119, ../sass/screen.scss */
+  .got.recap-goose {
+    background: url(../images/normal/9recap/goose.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 120, ../sass/screen.scss */
+  .got.recap-coins {
+    background: url(../images/normal/9recap/coins.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 121, ../sass/screen.scss */
+  .got.recap-harp {
+    background: url(../images/normal/9recap/harp.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 127, ../sass/screen.scss */
   .got.end-mountain {
     background: url(../images/normal/10end/mountain.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -834,12 +873,12 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 118, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   .got.end-bg {
     background: url(../images/normal/10end/background.jpg) no-repeat bottom left;
     background-size: 1024px 768px;
   }
-  /* line 119, ../sass/screen.scss */
+  /* line 129, ../sass/screen.scss */
   .got.theend {
     background: url(../images/normal/10end/theend.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -847,7 +886,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 120, ../sass/screen.scss */
+  /* line 130, ../sass/screen.scss */
   .got.smallerstars {
     background: url(../images/normal/10end/smallerstars.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -855,15 +894,15 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 121, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   .got.big-star {
     background: url('../images/normal/10end/stars-s1ef4d3437b.png') 0 0 no-repeat;
   }
-  /* line 122, ../sass/screen.scss */
+  /* line 132, ../sass/screen.scss */
   .got.small-star {
     background: url('../images/normal/10end/stars-s1ef4d3437b.png') 0 -68px no-repeat;
   }
-  /* line 123, ../sass/screen.scss */
+  /* line 133, ../sass/screen.scss */
   .got.read-again {
     background: url(../images/normal/10end/read-again.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -871,7 +910,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 124, ../sass/screen.scss */
+  /* line 134, ../sass/screen.scss */
   .got.read-again-hover {
     background: url(../images/normal/10end/read-again-hover.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -881,7 +920,7 @@ p.dropcap:first-letter {
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 132, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   .btn-previous, .btn-previous-temp {
     background: url(../images/retina/general/left_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -889,7 +928,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 132, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   .btn-previous.pressed, .pressed.btn-previous-temp {
     background: url(../images/retina/general/left-dark_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -898,7 +937,7 @@ p.dropcap:first-letter {
     background-size: 100% 100%;
   }
 
-  /* line 133, ../sass/screen.scss */
+  /* line 143, ../sass/screen.scss */
   .btn-next, .btn-next-temp {
     background: url(../images/retina/general/right_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -906,7 +945,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 133, ../sass/screen.scss */
+  /* line 143, ../sass/screen.scss */
   .btn-next.pressed, .pressed.btn-next-temp {
     background: url(../images/retina/general/right-dark_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -915,13 +954,13 @@ p.dropcap:first-letter {
     background-size: 100% 100%;
   }
 
-  /* line 134, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
   .container {
     background: url(../images/retina/general/pattern_2x.jpg) 0 0;
     background-size: 256px 256px;
   }
 
-  /* line 136, ../sass/screen.scss */
+  /* line 146, ../sass/screen.scss */
   .got {
     /* @group start-1 */
     /* @end */
@@ -937,10 +976,12 @@ p.dropcap:first-letter {
     /* @end */
     /* @group giant-7 */
     /* @end */
+    /* @group recap-9 */
+    /* @end */
     /* @group end-10 */
     /* @end */
   }
-  /* line 140, ../sass/screen.scss */
+  /* line 150, ../sass/screen.scss */
   .got.title {
     background: url(../images/retina/1start/title_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -948,7 +989,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 141, ../sass/screen.scss */
+  /* line 151, ../sass/screen.scss */
   .got.background {
     background: url(../images/retina/1start/background_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -956,7 +997,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 142, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   .got.cloud-1 {
     background: url(../images/retina/1start/cloud1_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -964,7 +1005,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 143, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   .got.cloud-2 {
     background: url(../images/retina/1start/cloud2_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -972,7 +1013,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 144, ../sass/screen.scss */
+  /* line 154, ../sass/screen.scss */
   .got.titlej {
     background: url(../images/retina/1start/frontj_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -980,7 +1021,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 145, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   .got.right-cloud {
     background: url(../images/retina/1start/right-cloud_2x.png) no-repeat top right;
     -webkit-background-size: 100% 100%;
@@ -988,7 +1029,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 146, ../sass/screen.scss */
+  /* line 156, ../sass/screen.scss */
   .got.left-cloud {
     background: url(../images/retina/1start/left-cloud_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -996,7 +1037,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 152, ../sass/screen.scss */
+  /* line 162, ../sass/screen.scss */
   .got.house-right {
     background: url(../images/retina/2exposition/house_right_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -1004,7 +1045,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 153, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   .got.house-left {
     background: url(../images/retina/2exposition/house_left_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1012,7 +1053,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 154, ../sass/screen.scss */
+  /* line 164, ../sass/screen.scss */
   .got.cloud {
     background: url(../images/retina/2exposition/cloud_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1020,7 +1061,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 155, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   .got.sign {
     background: url(../images/retina/2exposition/sign_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1028,7 +1069,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 156, ../sass/screen.scss */
+  /* line 166, ../sass/screen.scss */
   .got.grass-top {
     background: url(../images/retina/2exposition/grass_top_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1036,7 +1077,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 157, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   .got.grass-bottom {
     background: url(../images/retina/2exposition/grass_bottom_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1044,7 +1085,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 158, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   .got.cow {
     background: url(../images/retina/2exposition/cow_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1052,7 +1093,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 164, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   .got.beans {
     background: url(../images/retina/general/beans_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1060,7 +1101,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 170, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   .got.scroll, .got.scroll-out {
     background: url(../images/retina/multitext/scroll_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -1068,7 +1109,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 171, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
   .got.scroll-left-bottom, .got.scroll-left-top, .got.scroll-left-bottom-out {
     background: url(../images/retina/multitext/left_shadow_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1076,7 +1117,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 172, ../sass/screen.scss */
+  /* line 182, ../sass/screen.scss */
   .got.scroll-left-top {
     background: url(../images/retina/multitext/left_noshadow_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1084,7 +1125,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 173, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   .got.scroll-right, .got.scroll-right-out {
     background: url(../images/retina/multitext/right_shadow_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1092,12 +1133,12 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 179, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   .got.wrapper {
     background: url(../images/retina/4beanstalk/background_2x.jpeg) no-repeat bottom left;
     background-size: 1024px 3228px;
   }
-  /* line 180, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   .got.castle {
     background: url(../images/retina/4beanstalk/castle_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -1105,7 +1146,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 181, ../sass/screen.scss */
+  /* line 191, ../sass/screen.scss */
   .got.up-arrow {
     background: url(../images/retina/general/up_2x.png) no-repeat top left;
     -webkit-background-size: 100% 100%;
@@ -1113,7 +1154,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 182, ../sass/screen.scss */
+  /* line 192, ../sass/screen.scss */
   .got.upperclouds {
     background: url(../images/retina/4beanstalk/cloudsupper_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1121,7 +1162,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 183, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   .got.castleclouds {
     background: url(../images/retina/4beanstalk/castleclouds_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1129,7 +1170,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 184, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   .got.cloudfront {
     background: url(../images/retina/4beanstalk/cloudfront_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1137,7 +1178,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 186, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
   .got.birda {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 0 no-repeat;
     -webkit-background-size: 18px 28px;
@@ -1146,7 +1187,7 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 0;
   }
-  /* line 192, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   .got.birdb {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 -11px no-repeat;
     -webkit-background-size: 18px 28px;
@@ -1155,7 +1196,7 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 -6px;
   }
-  /* line 198, ../sass/screen.scss */
+  /* line 208, ../sass/screen.scss */
   .got.birdc {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 -32px no-repeat;
     -webkit-background-size: 18px 28px;
@@ -1164,7 +1205,7 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 -17px;
   }
-  /* line 204, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   .got.birdd {
     background: url('../images/retina/4beanstalk/birds-sb3f4007793.png') 0 -44px no-repeat;
     -webkit-background-size: 18px 28px;
@@ -1173,7 +1214,7 @@ p.dropcap:first-letter {
     background-size: 18px 28px;
     background-position: 0 -23px;
   }
-  /* line 214, ../sass/screen.scss */
+  /* line 224, ../sass/screen.scss */
   .got.coins {
     background: url(../images/retina/general/coins_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1181,7 +1222,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 215, ../sass/screen.scss */
+  /* line 225, ../sass/screen.scss */
   .got.coins {
     background: url(../images/retina/general/coins_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1189,7 +1230,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 216, ../sass/screen.scss */
+  /* line 226, ../sass/screen.scss */
   .got.coins2 {
     background: url(../images/retina/general/coins2_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1197,7 +1238,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 217, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   .got.egg {
     background: url(../images/retina/general/egg_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1205,7 +1246,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 218, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   .got.goose {
     background: url(../images/retina/general/goose_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1213,7 +1254,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 219, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   .got.harp {
     background: url(../images/retina/general/harp_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1221,7 +1262,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 225, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .got.giant-bg {
     background: url(../images/retina/7giant/background_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1229,7 +1270,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 226, ../sass/screen.scss */
+  /* line 236, ../sass/screen.scss */
   .got.fee {
     background: url(../images/retina/7giant/fee_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1237,7 +1278,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 227, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   .got.fi {
     background: url(../images/retina/7giant/fi_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1245,7 +1286,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 228, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   .got.fo {
     background: url(../images/retina/7giant/fo_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1253,7 +1294,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 229, ../sass/screen.scss */
+  /* line 239, ../sass/screen.scss */
   .got.fum {
     background: url(../images/retina/7giant/fum_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1261,7 +1302,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 230, ../sass/screen.scss */
+  /* line 240, ../sass/screen.scss */
   .got.clouds {
     background: url(../images/retina/7giant/clouds_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1269,7 +1310,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 232, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   .got.s1 {
     background: url('../images/retina/7giant/sheds-s94dcbbb51c.png') 0 -317px no-repeat;
     -webkit-background-size: 87px, 224px;
@@ -1278,7 +1319,7 @@ p.dropcap:first-letter {
     background-size: 87px, 224px;
     background-position: 0 -159px;
   }
-  /* line 238, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   .got.s2 {
     background: url('../images/retina/7giant/sheds-s94dcbbb51c.png') 0 -352px no-repeat;
     -webkit-background-size: 87px, 224px;
@@ -1287,7 +1328,7 @@ p.dropcap:first-letter {
     background-size: 87px, 224px;
     background-position: 0 -177px;
   }
-  /* line 244, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   .got.s4 {
     background: url('../images/retina/7giant/sheds-s94dcbbb51c.png') 0 -377px no-repeat;
     -webkit-background-size: 87px, 224px;
@@ -1296,7 +1337,7 @@ p.dropcap:first-letter {
     background-size: 87px, 224px;
     background-position: 0 -190px;
   }
-  /* line 250, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   .got.s5 {
     background: url('../images/retina/7giant/sheds-s94dcbbb51c.png') 0 -156px no-repeat;
     -webkit-background-size: 87px, 224px;
@@ -1305,7 +1346,7 @@ p.dropcap:first-letter {
     background-size: 87px, 224px;
     background-position: 0 -78px;
   }
-  /* line 256, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   .got.s6 {
     background: url('../images/retina/7giant/sheds-s94dcbbb51c.png') 0 -247px no-repeat;
     -webkit-background-size: 87px, 224px;
@@ -1314,7 +1355,7 @@ p.dropcap:first-letter {
     background-size: 87px, 224px;
     background-position: 0 -124px;
   }
-  /* line 262, ../sass/screen.scss */
+  /* line 272, ../sass/screen.scss */
   .got.s7 {
     background: url('../images/retina/7giant/sheds-s94dcbbb51c.png') 0 0 no-repeat;
     -webkit-background-size: 87px, 224px;
@@ -1323,7 +1364,44 @@ p.dropcap:first-letter {
     background-size: 87px, 224px;
     background-position: 0 0;
   }
-  /* line 272, ../sass/screen.scss */
+  /* line 282, ../sass/screen.scss */
+  .got.recap-bg {
+    background: url(../images/retina/9recap/background_2x.jpg) no-repeat bottom left;
+    background-size: 1024px 768px;
+  }
+  /* line 283, ../sass/screen.scss */
+  .got.recap-egg {
+    background: url(../images/retina/9recap/egg_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 284, ../sass/screen.scss */
+  .got.recap-goose {
+    background: url(../images/retina/9recap/goose_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 285, ../sass/screen.scss */
+  .got.recap-coins {
+    background: url(../images/retina/9recap/coins_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 286, ../sass/screen.scss */
+  .got.recap-harp {
+    background: url(../images/retina/9recap/harp_2x.png) no-repeat bottom left;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  /* line 292, ../sass/screen.scss */
   .got.end-mountain {
     background: url(../images/retina/10end/mountain_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1331,12 +1409,12 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 273, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   .got.end-bg {
     background: url(../images/retina/10end/background_2x.jpg) no-repeat bottom left;
     background-size: 1024px 768px;
   }
-  /* line 274, ../sass/screen.scss */
+  /* line 294, ../sass/screen.scss */
   .got.theend {
     background: url(../images/retina/10end/theend_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1344,7 +1422,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 275, ../sass/screen.scss */
+  /* line 295, ../sass/screen.scss */
   .got.smallerstars {
     background: url(../images/retina/10end/smallerstars_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1352,7 +1430,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 276, ../sass/screen.scss */
+  /* line 296, ../sass/screen.scss */
   .got.big-star {
     background: url('../images/retina/10end/stars-sb498984bb3.png') 0 0 no-repeat;
     -webkit-background-size: 68px, 103px;
@@ -1361,7 +1439,7 @@ p.dropcap:first-letter {
     background-size: 68px, 103px;
     background-position: 0 0;
   }
-  /* line 282, ../sass/screen.scss */
+  /* line 302, ../sass/screen.scss */
   .got.small-star {
     background: url('../images/retina/10end/stars-sb498984bb3.png') 0 -136px no-repeat;
     -webkit-background-size: 68px, 103px;
@@ -1370,7 +1448,7 @@ p.dropcap:first-letter {
     background-size: 68px, 103px;
     background-position: 0 -68px;
   }
-  /* line 287, ../sass/screen.scss */
+  /* line 307, ../sass/screen.scss */
   .got.read-again {
     background: url(../images/retina/10end/read-again_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1378,7 +1456,7 @@ p.dropcap:first-letter {
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
   }
-  /* line 288, ../sass/screen.scss */
+  /* line 308, ../sass/screen.scss */
   .got.read-again-hover {
     background: url(../images/retina/10end/read-again-hover_2x.png) no-repeat bottom left;
     -webkit-background-size: 100% 100%;
@@ -1390,7 +1468,7 @@ p.dropcap:first-letter {
 /* @end  */
 /* @group start-1 page */
 /* @group page-specific elements and animations */
-/* line 302, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .start-1 {
   background: #e3e4e5;
   /* Old browsers */
@@ -1409,22 +1487,22 @@ p.dropcap:first-letter {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e4e5', endColorstr='#155a93',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 306, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .start-1.current > .right-cloud {
   -webkit-animation: right-cloud 5s 1s  ease-in forwards;
   -moz-animation: right-cloud 5s 1s  ease-in forwards;
 }
-/* line 310, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .start-1.current > .left-cloud {
   -webkit-animation: left-cloud 5s 1s  ease-in forwards;
   -moz-animation: left-cloud 5s 1s  ease-in forwards;
 }
-/* line 314, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .start-1.current > .cloud-1 {
   -webkit-animation: cloud-1 50s 1s  linear forwards;
   -moz-animation: cloud-1 50s 1s  linear forwards;
 }
-/* line 318, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .start-1.current > .cloud-2 {
   -webkit-animation: cloud-2 50s 1s  linear forwards;
   -moz-animation: cloud-2 50s 1s  linear forwards;
@@ -1433,7 +1511,7 @@ p.dropcap:first-letter {
 /* @group end */
 /* @group keyframes */
 @-webkit-keyframes right-cloud {
-  /* line 329, ../sass/screen.scss */
+  /* line 349, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1442,7 +1520,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 330, ../sass/screen.scss */
+  /* line 350, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -1453,7 +1531,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes right-cloud {
-  /* line 329, ../sass/screen.scss */
+  /* line 349, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1462,7 +1540,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 330, ../sass/screen.scss */
+  /* line 350, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -1473,7 +1551,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes left-cloud {
-  /* line 334, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1482,7 +1560,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 335, ../sass/screen.scss */
+  /* line 355, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -1493,7 +1571,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes left-cloud {
-  /* line 334, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1502,7 +1580,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 335, ../sass/screen.scss */
+  /* line 355, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -1513,7 +1591,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes cloud-1 {
-  /* line 339, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1522,7 +1600,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 340, ../sass/screen.scss */
+  /* line 360, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-400%, 0, 0);
     -moz-transform: translate3d(-400%, 0, 0);
@@ -1533,7 +1611,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud-1 {
-  /* line 339, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1542,7 +1620,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 340, ../sass/screen.scss */
+  /* line 360, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-400%, 0, 0);
     -moz-transform: translate3d(-400%, 0, 0);
@@ -1553,7 +1631,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes cloud-2 {
-  /* line 344, ../sass/screen.scss */
+  /* line 364, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1562,7 +1640,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 345, ../sass/screen.scss */
+  /* line 365, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(300%, 0, 0);
     -moz-transform: translate3d(300%, 0, 0);
@@ -1573,7 +1651,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud-2 {
-  /* line 344, ../sass/screen.scss */
+  /* line 364, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -1582,7 +1660,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 345, ../sass/screen.scss */
+  /* line 365, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(300%, 0, 0);
     -moz-transform: translate3d(300%, 0, 0);
@@ -1594,7 +1672,7 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 352, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .title {
   width: 577.6px;
   height: 533px;
@@ -1602,14 +1680,14 @@ p.dropcap:first-letter {
   margin-left: -280.5px;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .background {
   width: 1024px;
   height: 462px;
   bottom: -2px;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 .cloud-1 {
   width: 230px;
   height: 178px;
@@ -1617,7 +1695,7 @@ p.dropcap:first-letter {
   right: 75px;
 }
 
-/* line 369, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .cloud-2 {
   width: 295.2px;
   height: 120px;
@@ -1625,7 +1703,7 @@ p.dropcap:first-letter {
   left: 120px;
 }
 
-/* line 375, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .titlej {
   width: 273.45px;
   height: 268.95px;
@@ -1633,14 +1711,14 @@ p.dropcap:first-letter {
   left: 240px;
 }
 
-/* line 381, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .right-cloud {
   width: 890px;
   height: 460px;
   right: 0;
 }
 
-/* line 386, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 .left-cloud {
   width: 950px;
   height: 640px;
@@ -1651,7 +1729,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group exposition-2 */
 /* @group page-specific elements and animations */
-/* line 399, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 .exposition-2 {
   background: #e3e4e5;
   /* Old browsers */
@@ -1672,7 +1750,7 @@ p.dropcap:first-letter {
   /* @group timing variables */
   /* @end */
 }
-/* line 402, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .exposition-2 .a {
   width: 400px;
   height: 400px;
@@ -1680,57 +1758,57 @@ p.dropcap:first-letter {
   position: absolute;
   top: 110px;
 }
-/* line 409, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .exposition-2 .b {
   float: right;
   opacity: 0;
 }
-/* line 414, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .exposition-2 .c {
   opacity: 0;
 }
-/* line 417, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .exposition-2 .c:first-letter {
   line-height: 120px;
   margin-bottom: 20px;
   margin-right: 40px;
 }
-/* line 436, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .exposition-2.current > .cloud {
   -webkit-animation: cloud 60s 0.1s  linear forwards;
   -moz-animation: cloud 60s 0.1s  linear forwards;
 }
-/* line 442, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .exposition-2.next > .a > .b {
   -webkit-animation: in 1s 0.1s  linear forwards;
   -moz-animation: in 1s 0.1s  linear forwards;
 }
-/* line 446, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .exposition-2.next > .a {
   -webkit-animation: out 1s 2.1s  linear forwards;
   -moz-animation: out 1s 2.1s  linear forwards;
 }
-/* line 450, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 .exposition-2.next > .c {
   -webkit-animation: in 1s 2.1s  linear forwards;
   -moz-animation: in 1s 2.1s  linear forwards;
 }
-/* line 454, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 .exposition-2.next > .house-right {
   -webkit-animation: fall_right 1.5s 0.6s  ease-in forwards;
   -moz-animation: fall_right 1.5s 0.6s  ease-in forwards;
 }
-/* line 458, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .exposition-2.next > .house-left {
   -webkit-animation: fall_left 1.5s 0.6s  ease-in forwards;
   -moz-animation: fall_left 1.5s 0.6s  ease-in forwards;
 }
-/* line 462, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .exposition-2.next > .sign {
   -webkit-animation: sign 0.3s 2.6s  ease-in forwards;
   -moz-animation: sign 0.3s 2.6s  ease-in forwards;
 }
-/* line 466, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 .exposition-2.next > .cow {
   -webkit-animation: cow 1s 2.6s  cubic-bezier(0.77, 0.02, 1, 1) forwards;
   -moz-animation: cow 1s 2.6s  cubic-bezier(0.77, 0.02, 1, 1) forwards;
@@ -1739,7 +1817,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group keyframes */
 @-webkit-keyframes fall_right {
-  /* line 477, ../sass/screen.scss */
+  /* line 497, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1749,7 +1827,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 482, ../sass/screen.scss */
+  /* line 502, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1759,7 +1837,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 487, ../sass/screen.scss */
+  /* line 507, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1771,7 +1849,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fall_right {
-  /* line 477, ../sass/screen.scss */
+  /* line 497, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1781,7 +1859,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 482, ../sass/screen.scss */
+  /* line 502, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1791,7 +1869,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 487, ../sass/screen.scss */
+  /* line 507, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, -25, 0, 150deg);
     -moz-transform: rotate3d(100, -25, 0, 150deg);
@@ -1803,7 +1881,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fall_left {
-  /* line 494, ../sass/screen.scss */
+  /* line 514, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1813,7 +1891,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 499, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1823,7 +1901,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 504, ../sass/screen.scss */
+  /* line 524, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1835,7 +1913,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fall_left {
-  /* line 494, ../sass/screen.scss */
+  /* line 514, ../sass/screen.scss */
   0% {
     opacity: 1;
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
@@ -1845,7 +1923,7 @@ p.dropcap:first-letter {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 
-  /* line 499, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   60% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1855,7 +1933,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 504, ../sass/screen.scss */
+  /* line 524, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(100, 25, 0, 150deg);
     -moz-transform: rotate3d(100, 25, 0, 150deg);
@@ -1867,7 +1945,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes sign {
-  /* line 511, ../sass/screen.scss */
+  /* line 531, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -1878,7 +1956,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes sign {
-  /* line 511, ../sass/screen.scss */
+  /* line 531, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -1889,7 +1967,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes cloud {
-  /* line 517, ../sass/screen.scss */
+  /* line 537, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-300%, 0, 0);
     -moz-transform: translate3d(-300%, 0, 0);
@@ -1900,7 +1978,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cloud {
-  /* line 517, ../sass/screen.scss */
+  /* line 537, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-300%, 0, 0);
     -moz-transform: translate3d(-300%, 0, 0);
@@ -1911,7 +1989,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes cow {
-  /* line 523, ../sass/screen.scss */
+  /* line 543, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 690px, 0);
     -moz-transform: translate3d(0, 690px, 0);
@@ -1922,7 +2000,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes cow {
-  /* line 523, ../sass/screen.scss */
+  /* line 543, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 690px, 0);
     -moz-transform: translate3d(0, 690px, 0);
@@ -1934,7 +2012,7 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 532, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 .cow {
   width: 187px;
   height: 115px;
@@ -1942,7 +2020,7 @@ p.dropcap:first-letter {
   right: 350px;
 }
 
-/* line 538, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 .house-right {
   -webkit-transform-origin: 50% 95%;
   -moz-transform-origin: 50% 95%;
@@ -1955,7 +2033,7 @@ p.dropcap:first-letter {
   width: 160px;
 }
 
-/* line 546, ../sass/screen.scss */
+/* line 566, ../sass/screen.scss */
 .house-left {
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
@@ -1968,7 +2046,7 @@ p.dropcap:first-letter {
   width: 415.53px;
 }
 
-/* line 554, ../sass/screen.scss */
+/* line 574, ../sass/screen.scss */
 .cloud {
   height: 299.46px;
   right: -100px;
@@ -1976,7 +2054,7 @@ p.dropcap:first-letter {
   width: 395.87px;
 }
 
-/* line 561, ../sass/screen.scss */
+/* line 581, ../sass/screen.scss */
 .sign {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1994,14 +2072,14 @@ p.dropcap:first-letter {
   width: 173px;
 }
 
-/* line 570, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 .grass-top {
   bottom: 0;
   height: 485px;
   width: 100%;
 }
 
-/* line 576, ../sass/screen.scss */
+/* line 596, ../sass/screen.scss */
 .grass-bottom {
   bottom: 0;
   height: 188px;
@@ -2012,7 +2090,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group cowsale-3 */
 /* @group page-specific elements and animations */
-/* line 590, ../sass/screen.scss */
+/* line 610, ../sass/screen.scss */
 .cowsale-3, .theft-6, .conversation1-8 {
   background: #31607d;
   /* Old browsers */
@@ -2031,22 +2109,22 @@ p.dropcap:first-letter {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#31607d', endColorstr='#07102b',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 594, ../sass/screen.scss */
+/* line 614, ../sass/screen.scss */
 .cowsale-3.current > .scroll-left-top, .current.theft-6 > .scroll-left-top, .current.conversation1-8 > .scroll-left-top {
   -webkit-animation: moveleft 1.5s 1s  ease-out forwards;
   -moz-animation: moveleft 1.5s 1s  ease-out forwards;
 }
-/* line 598, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 .cowsale-3.current > .scroll-left-bottom, .current.theft-6 > .scroll-left-bottom, .current.conversation1-8 > .scroll-left-bottom, .cowsale-3.current > .scroll-left-top, .current.theft-6 > .scroll-left-top, .current.conversation1-8 > .scroll-left-top, .cowsale-3.current > .scroll-left-bottom-out, .current.theft-6 > .scroll-left-bottom-out, .current.conversation1-8 > .scroll-left-bottom-out {
   -webkit-animation: moveleft 1.5s 1s  ease-out forwards;
   -moz-animation: moveleft 1.5s 1s  ease-out forwards;
 }
-/* line 602, ../sass/screen.scss */
+/* line 622, ../sass/screen.scss */
 .cowsale-3.current > .scroll-right, .current.theft-6 > .scroll-right, .current.conversation1-8 > .scroll-right, .cowsale-3.current > .scroll-right-out, .current.theft-6 > .scroll-right-out, .current.conversation1-8 > .scroll-right-out {
   -webkit-animation: moveleftthenright 3s 1s  ease-out forwards;
   -moz-animation: moveleftthenright 3s 1s  ease-out forwards;
 }
-/* line 606, ../sass/screen.scss */
+/* line 626, ../sass/screen.scss */
 .cowsale-3.current > .scroll, .current.theft-6 > .scroll, .current.conversation1-8 > .scroll, .cowsale-3.current > .scroll-out, .current.theft-6 > .scroll-out, .current.conversation1-8 > .scroll-out {
   -webkit-animation: expand 1.5s 2.5s  ease-out forwards;
   -moz-animation: expand 1.5s 2.5s  ease-out forwards;
@@ -2055,7 +2133,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group keyframes */
 @-webkit-keyframes moveleftthenright {
-  /* line 617, ../sass/screen.scss */
+  /* line 637, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -2064,7 +2142,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 621, ../sass/screen.scss */
+  /* line 641, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(-310px, 0px, 0px);
     -moz-transform: translate3d(-310px, 0px, 0px);
@@ -2073,7 +2151,7 @@ p.dropcap:first-letter {
     transform: translate3d(-310px, 0px, 0px);
   }
 
-  /* line 625, ../sass/screen.scss */
+  /* line 645, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(315px, 0px, 0px);
     -moz-transform: translate3d(315px, 0px, 0px);
@@ -2084,7 +2162,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes moveleftthenright {
-  /* line 617, ../sass/screen.scss */
+  /* line 637, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -2093,7 +2171,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 621, ../sass/screen.scss */
+  /* line 641, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(-310px, 0px, 0px);
     -moz-transform: translate3d(-310px, 0px, 0px);
@@ -2102,7 +2180,7 @@ p.dropcap:first-letter {
     transform: translate3d(-310px, 0px, 0px);
   }
 
-  /* line 625, ../sass/screen.scss */
+  /* line 645, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(315px, 0px, 0px);
     -moz-transform: translate3d(315px, 0px, 0px);
@@ -2113,7 +2191,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes moveleft {
-  /* line 631, ../sass/screen.scss */
+  /* line 651, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -2122,7 +2200,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 635, ../sass/screen.scss */
+  /* line 655, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-310px, 0px, 0px);
     -moz-transform: translate3d(-310px, 0px, 0px);
@@ -2133,7 +2211,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes moveleft {
-  /* line 631, ../sass/screen.scss */
+  /* line 651, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
@@ -2142,7 +2220,7 @@ p.dropcap:first-letter {
     transform: translate3d(0px, 0px, 0px);
   }
 
-  /* line 635, ../sass/screen.scss */
+  /* line 655, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-310px, 0px, 0px);
     -moz-transform: translate3d(-310px, 0px, 0px);
@@ -2153,24 +2231,24 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes expand {
-  /* line 641, ../sass/screen.scss */
+  /* line 661, ../sass/screen.scss */
   0% {
     width: 40px;
   }
 
-  /* line 645, ../sass/screen.scss */
+  /* line 665, ../sass/screen.scss */
   100% {
     width: 640px;
   }
 }
 
 @-moz-keyframes expand {
-  /* line 641, ../sass/screen.scss */
+  /* line 661, ../sass/screen.scss */
   0% {
     width: 40px;
   }
 
-  /* line 645, ../sass/screen.scss */
+  /* line 665, ../sass/screen.scss */
   100% {
     width: 640px;
   }
@@ -2178,7 +2256,7 @@ p.dropcap:first-letter {
 
 /* @group end */
 /* @group elements */
-/* line 654, ../sass/screen.scss */
+/* line 674, ../sass/screen.scss */
 .beans {
   width: 298px;
   height: 181px;
@@ -2186,7 +2264,7 @@ p.dropcap:first-letter {
   left: 400px;
 }
 
-/* line 660, ../sass/screen.scss */
+/* line 680, ../sass/screen.scss */
 .scroll.in, .in.scroll-out {
   -webkit-background-size: 640px, 502px;
   -moz-background-size: 640px, 502px;
@@ -2199,7 +2277,7 @@ p.dropcap:first-letter {
   margin-left: 191px;
 }
 
-/* line 668, ../sass/screen.scss */
+/* line 688, ../sass/screen.scss */
 .scroll-left-bottom, .scroll-left-top, .scroll-left-bottom-out {
   width: 136px;
   height: 553px;
@@ -2207,13 +2285,13 @@ p.dropcap:first-letter {
   top: 136px;
 }
 
-/* line 674, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 .scroll-left-top {
   width: 97px;
   height: 553px;
 }
 
-/* line 679, ../sass/screen.scss */
+/* line 699, ../sass/screen.scss */
 .scroll-right, .scroll-right-out {
   width: 139px;
   height: 553px;
@@ -2221,7 +2299,7 @@ p.dropcap:first-letter {
   top: 127px;
 }
 
-/* line 685, ../sass/screen.scss */
+/* line 705, ../sass/screen.scss */
 .text, .text4, .intrigue {
   width: 520px;
   color: #000;
@@ -2234,7 +2312,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @end */
 /* @group nextmorning-4 */
-/* line 700, ../sass/screen.scss */
+/* line 720, ../sass/screen.scss */
 .nextmorning-4 {
   background: #31607d;
   /* Old browsers */
@@ -2254,7 +2332,7 @@ p.dropcap:first-letter {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 704, ../sass/screen.scss */
+/* line 724, ../sass/screen.scss */
 .scroll-out {
   width: 640px;
   height: 502px;
@@ -2263,24 +2341,24 @@ p.dropcap:first-letter {
   margin-left: 191px;
 }
 
-/* line 713, ../sass/screen.scss */
+/* line 733, ../sass/screen.scss */
 .scroll-left-bottom-out {
   left: 108px;
 }
 
-/* line 718, ../sass/screen.scss */
+/* line 738, ../sass/screen.scss */
 .scroll-right-out {
   left: 774px;
   top: 127px;
 }
 
-/* line 724, ../sass/screen.scss */
+/* line 744, ../sass/screen.scss */
 .text4 {
   width: 300px;
   margin-left: 200px;
 }
 
-/* line 730, ../sass/screen.scss */
+/* line 750, ../sass/screen.scss */
 .intrigue {
   width: 500px;
   margin: 280px 50px 0 170px;
@@ -2289,99 +2367,99 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group beanstalk-5 */
-/* line 743, ../sass/screen.scss */
+/* line 763, ../sass/screen.scss */
 .beanstalk-5 {
   overflow-y: scroll;
   overflow-x: hidden;
   /* @group animations */
   /* @end */
 }
-/* line 749, ../sass/screen.scss */
+/* line 769, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > {
   /* @group text */
   /* @end */
   /* @group z-indexes */
   /* @end */
 }
-/* line 751, ../sass/screen.scss */
+/* line 771, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go {
   /* @group lower clouds */
   /* @end */
   /* @group top */
   /* @end */
 }
-/* line 754, ../sass/screen.scss */
+/* line 774, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.top {
   -webkit-animation: left 10s 0.1s infinite linear forwards;
   -moz-animation: left 10s 0.1s infinite linear forwards;
 }
-/* line 758, ../sass/screen.scss */
+/* line 778, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.top2 {
   -webkit-animation: right 14s 1s infinite linear forwards;
   -moz-animation: right 14s 1s infinite linear forwards;
 }
-/* line 762, ../sass/screen.scss */
+/* line 782, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.middle {
   -webkit-animation: right 12s 0.1s infinite linear forwards;
   -moz-animation: right 12s 0.1s infinite linear forwards;
 }
-/* line 766, ../sass/screen.scss */
+/* line 786, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.bottom {
   -webkit-animation: left 16s 0.1s infinite linear forwards;
   -moz-animation: left 16s 0.1s infinite linear forwards;
 }
-/* line 770, ../sass/screen.scss */
+/* line 790, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.up-arrow {
   -webkit-animation: bouncesmall 1s 0.1s infinite ease-in forwards;
   -moz-animation: bouncesmall 1s 0.1s infinite ease-in forwards;
 }
-/* line 778, ../sass/screen.scss */
+/* line 798, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.castleclouds {
   -webkit-animation: bouncesmall 3s 0.1s infinite ease-in-out forwards;
   -moz-animation: bouncesmall 3s 0.1s infinite ease-in-out forwards;
 }
-/* line 782, ../sass/screen.scss */
+/* line 802, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.birda {
   -webkit-animation: fly1 3s 0.1s infinite linear forwards;
   -moz-animation: fly1 3s 0.1s infinite linear forwards;
 }
-/* line 786, ../sass/screen.scss */
+/* line 806, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.birdb {
   -webkit-animation: fly2 3s 0.1s infinite linear forwards;
   -moz-animation: fly2 3s 0.1s infinite linear forwards;
 }
-/* line 790, ../sass/screen.scss */
+/* line 810, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.birdc {
   -webkit-animation: fly3 3s 0.1s infinite linear forwards;
   -moz-animation: fly3 3s 0.1s infinite linear forwards;
 }
-/* line 794, ../sass/screen.scss */
+/* line 814, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .go.birdd {
   -webkit-animation: fly4 4s 0.1s infinite linear forwards;
   -moz-animation: fly4 4s 0.1s infinite linear forwards;
 }
-/* line 803, ../sass/screen.scss */
+/* line 823, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .on {
   -webkit-animation: in 1s 0s  linear forwards;
   -moz-animation: in 1s 0s  linear forwards;
 }
-/* line 807, ../sass/screen.scss */
+/* line 827, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .off {
   -webkit-animation: out 0.5s 0s  linear forwards;
   -moz-animation: out 0.5s 0s  linear forwards;
 }
-/* line 815, ../sass/screen.scss */
+/* line 835, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .castle {
   z-index: 1;
 }
-/* line 819, ../sass/screen.scss */
+/* line 839, ../sass/screen.scss */
 .beanstalk-5.current > .wrapper > .upperclouds, .beanstalk-5.current > .wrapper > .birda, .beanstalk-5.current > .wrapper > .birdb {
   z-index: 2;
 }
 
 /* @group keyframes */
 @-webkit-keyframes left {
-  /* line 833, ../sass/screen.scss */
+  /* line 853, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2390,7 +2468,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 834, ../sass/screen.scss */
+  /* line 854, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -2399,7 +2477,7 @@ p.dropcap:first-letter {
     transform: translate3d(-200%, 0, 0);
   }
 
-  /* line 835, ../sass/screen.scss */
+  /* line 855, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2410,7 +2488,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes left {
-  /* line 833, ../sass/screen.scss */
+  /* line 853, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2419,7 +2497,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 834, ../sass/screen.scss */
+  /* line 854, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -2428,7 +2506,7 @@ p.dropcap:first-letter {
     transform: translate3d(-200%, 0, 0);
   }
 
-  /* line 835, ../sass/screen.scss */
+  /* line 855, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2439,7 +2517,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes right {
-  /* line 839, ../sass/screen.scss */
+  /* line 859, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2448,7 +2526,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 840, ../sass/screen.scss */
+  /* line 860, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2457,7 +2535,7 @@ p.dropcap:first-letter {
     transform: translate3d(200%, 0, 0);
   }
 
-  /* line 841, ../sass/screen.scss */
+  /* line 861, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -2468,7 +2546,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes right {
-  /* line 839, ../sass/screen.scss */
+  /* line 859, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -2477,7 +2555,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 840, ../sass/screen.scss */
+  /* line 860, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(200%, 0, 0);
     -moz-transform: translate3d(200%, 0, 0);
@@ -2486,7 +2564,7 @@ p.dropcap:first-letter {
     transform: translate3d(200%, 0, 0);
   }
 
-  /* line 841, ../sass/screen.scss */
+  /* line 861, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(-200%, 0, 0);
     -moz-transform: translate3d(-200%, 0, 0);
@@ -2497,7 +2575,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly1 {
-  /* line 845, ../sass/screen.scss */
+  /* line 865, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
     -moz-transform: rotate3d(0, 1, 0, 90deg);
@@ -2507,7 +2585,7 @@ p.dropcap:first-letter {
     right: 115px;
   }
 
-  /* line 850, ../sass/screen.scss */
+  /* line 870, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2517,12 +2595,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 855, ../sass/screen.scss */
+  /* line 875, ../sass/screen.scss */
   49% {
     z-index: 2;
   }
 
-  /* line 859, ../sass/screen.scss */
+  /* line 879, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2533,7 +2611,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 865, ../sass/screen.scss */
+  /* line 885, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2543,12 +2621,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 870, ../sass/screen.scss */
+  /* line 890, ../sass/screen.scss */
   99% {
     z-index: 0;
   }
 
-  /* line 874, ../sass/screen.scss */
+  /* line 894, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2561,7 +2639,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly1 {
-  /* line 845, ../sass/screen.scss */
+  /* line 865, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
     -moz-transform: rotate3d(0, 1, 0, 90deg);
@@ -2571,7 +2649,7 @@ p.dropcap:first-letter {
     right: 115px;
   }
 
-  /* line 850, ../sass/screen.scss */
+  /* line 870, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2581,12 +2659,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 855, ../sass/screen.scss */
+  /* line 875, ../sass/screen.scss */
   49% {
     z-index: 2;
   }
 
-  /* line 859, ../sass/screen.scss */
+  /* line 879, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2597,7 +2675,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 865, ../sass/screen.scss */
+  /* line 885, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2607,12 +2685,12 @@ p.dropcap:first-letter {
     right: 162.5px;
   }
 
-  /* line 870, ../sass/screen.scss */
+  /* line 890, ../sass/screen.scss */
   99% {
     z-index: 0;
   }
 
-  /* line 874, ../sass/screen.scss */
+  /* line 894, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2625,7 +2703,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly2 {
-  /* line 882, ../sass/screen.scss */
+  /* line 902, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2635,12 +2713,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 887, ../sass/screen.scss */
+  /* line 907, ../sass/screen.scss */
   24% {
     z-index: 2;
   }
 
-  /* line 891, ../sass/screen.scss */
+  /* line 911, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2651,7 +2729,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 897, ../sass/screen.scss */
+  /* line 917, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2661,12 +2739,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 902, ../sass/screen.scss */
+  /* line 922, ../sass/screen.scss */
   74% {
     z-index: 0;
   }
 
-  /* line 906, ../sass/screen.scss */
+  /* line 926, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2677,7 +2755,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 912, ../sass/screen.scss */
+  /* line 932, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2689,7 +2767,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly2 {
-  /* line 882, ../sass/screen.scss */
+  /* line 902, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     -moz-transform: rotate3d(0, 1, 0, 0deg);
@@ -2699,12 +2777,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 887, ../sass/screen.scss */
+  /* line 907, ../sass/screen.scss */
   24% {
     z-index: 2;
   }
 
-  /* line 891, ../sass/screen.scss */
+  /* line 911, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2715,7 +2793,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 897, ../sass/screen.scss */
+  /* line 917, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2725,12 +2803,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 902, ../sass/screen.scss */
+  /* line 922, ../sass/screen.scss */
   74% {
     z-index: 0;
   }
 
-  /* line 906, ../sass/screen.scss */
+  /* line 926, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2741,7 +2819,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 912, ../sass/screen.scss */
+  /* line 932, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2753,7 +2831,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly3 {
-  /* line 919, ../sass/screen.scss */
+  /* line 939, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2764,7 +2842,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 925, ../sass/screen.scss */
+  /* line 945, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2774,12 +2852,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 930, ../sass/screen.scss */
+  /* line 950, ../sass/screen.scss */
   49% {
     z-index: 0;
   }
 
-  /* line 934, ../sass/screen.scss */
+  /* line 954, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2790,7 +2868,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 940, ../sass/screen.scss */
+  /* line 960, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2800,12 +2878,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 945, ../sass/screen.scss */
+  /* line 965, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 949, ../sass/screen.scss */
+  /* line 969, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -2818,7 +2896,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly3 {
-  /* line 919, ../sass/screen.scss */
+  /* line 939, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2829,7 +2907,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 925, ../sass/screen.scss */
+  /* line 945, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2839,12 +2917,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 930, ../sass/screen.scss */
+  /* line 950, ../sass/screen.scss */
   49% {
     z-index: 0;
   }
 
-  /* line 934, ../sass/screen.scss */
+  /* line 954, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2855,7 +2933,7 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 940, ../sass/screen.scss */
+  /* line 960, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2865,12 +2943,12 @@ p.dropcap:first-letter {
     right: 170px;
   }
 
-  /* line 945, ../sass/screen.scss */
+  /* line 965, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 949, ../sass/screen.scss */
+  /* line 969, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -2883,7 +2961,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes fly4 {
-  /* line 957, ../sass/screen.scss */
+  /* line 977, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2894,7 +2972,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 963, ../sass/screen.scss */
+  /* line 983, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2905,7 +2983,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 969, ../sass/screen.scss */
+  /* line 989, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2915,7 +2993,7 @@ p.dropcap:first-letter {
     right: 110px;
   }
 
-  /* line 974, ../sass/screen.scss */
+  /* line 994, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2926,12 +3004,12 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 980, ../sass/screen.scss */
+  /* line 1000, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 984, ../sass/screen.scss */
+  /* line 1004, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -2944,7 +3022,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes fly4 {
-  /* line 957, ../sass/screen.scss */
+  /* line 977, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(0, 1, 0, -90deg);
     -moz-transform: rotate3d(0, 1, 0, -90deg);
@@ -2955,7 +3033,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 963, ../sass/screen.scss */
+  /* line 983, ../sass/screen.scss */
   25% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     -moz-transform: rotate3d(0, 1, 0, -180deg);
@@ -2966,7 +3044,7 @@ p.dropcap:first-letter {
     z-index: 0;
   }
 
-  /* line 969, ../sass/screen.scss */
+  /* line 989, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -270deg);
     -moz-transform: rotate3d(0, 1, 0, -270deg);
@@ -2976,7 +3054,7 @@ p.dropcap:first-letter {
     right: 110px;
   }
 
-  /* line 974, ../sass/screen.scss */
+  /* line 994, ../sass/screen.scss */
   75% {
     -webkit-transform: rotate3d(0, 1, 0, -360deg);
     -moz-transform: rotate3d(0, 1, 0, -360deg);
@@ -2987,12 +3065,12 @@ p.dropcap:first-letter {
     z-index: 2;
   }
 
-  /* line 980, ../sass/screen.scss */
+  /* line 1000, ../sass/screen.scss */
   99% {
     z-index: 2;
   }
 
-  /* line 984, ../sass/screen.scss */
+  /* line 1004, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(0, 1, 0, -450deg);
     -moz-transform: rotate3d(0, 1, 0, -450deg);
@@ -3005,7 +3083,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes bouncesmall {
-  /* line 992, ../sass/screen.scss */
+  /* line 1012, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -3014,7 +3092,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 993, ../sass/screen.scss */
+  /* line 1013, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, 10px, 0);
     -moz-transform: translate3d(0, 10px, 0);
@@ -3023,7 +3101,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 10px, 0);
   }
 
-  /* line 994, ../sass/screen.scss */
+  /* line 1014, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -3034,7 +3112,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes bouncesmall {
-  /* line 992, ../sass/screen.scss */
+  /* line 1012, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -3043,7 +3121,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 993, ../sass/screen.scss */
+  /* line 1013, ../sass/screen.scss */
   50% {
     -webkit-transform: translate3d(0, 10px, 0);
     -moz-transform: translate3d(0, 10px, 0);
@@ -3052,7 +3130,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 10px, 0);
   }
 
-  /* line 994, ../sass/screen.scss */
+  /* line 1014, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -3064,14 +3142,14 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group page-specific elements */
-/* line 1001, ../sass/screen.scss */
+/* line 1021, ../sass/screen.scss */
 .wrapper {
   width: 100%;
   height: 3229px;
   /* @group text */
   /* @end */
 }
-/* line 1006, ../sass/screen.scss */
+/* line 1026, ../sass/screen.scss */
 .wrapper .a {
   bottom: 460px;
   font-size: 30px;
@@ -3082,21 +3160,21 @@ p.dropcap:first-letter {
   height: auto;
   opacity: 1;
 }
-/* line 1016, ../sass/screen.scss */
+/* line 1036, ../sass/screen.scss */
 .wrapper .b {
   bottom: 1000px;
   right: 40px;
   color: #228529;
   opacity: 0;
 }
-/* line 1023, ../sass/screen.scss */
+/* line 1043, ../sass/screen.scss */
 .wrapper .c {
   bottom: 1600px;
   left: 300px;
   color: #228529;
   opacity: 0;
 }
-/* line 1030, ../sass/screen.scss */
+/* line 1050, ../sass/screen.scss */
 .wrapper .d {
   bottom: 2039px;
   right: 340px;
@@ -3108,7 +3186,7 @@ p.dropcap:first-letter {
   color: #228529;
   opacity: 0;
 }
-/* line 1038, ../sass/screen.scss */
+/* line 1058, ../sass/screen.scss */
 .wrapper .e {
   top: 40px;
   left: 200px;
@@ -3118,7 +3196,7 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 1052, ../sass/screen.scss */
+/* line 1072, ../sass/screen.scss */
 .up-arrow {
   width: 28px;
   height: 80px;
@@ -3126,22 +3204,22 @@ p.dropcap:first-letter {
   left: 380px;
 }
 
-/* line 1058, ../sass/screen.scss */
+/* line 1078, ../sass/screen.scss */
 .btn-next-temp {
   display: none;
 }
 
-/* line 1063, ../sass/screen.scss */
+/* line 1083, ../sass/screen.scss */
 .btn-previous-temp {
   display: none;
 }
 
-/* line 1068, ../sass/screen.scss */
+/* line 1088, ../sass/screen.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 1072, ../sass/screen.scss */
+/* line 1092, ../sass/screen.scss */
 .castle {
   width: 335px;
   height: 558px;
@@ -3150,7 +3228,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 1079, ../sass/screen.scss */
+/* line 1099, ../sass/screen.scss */
 .upperclouds {
   width: 523px;
   height: 517px;
@@ -3159,7 +3237,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 1086, ../sass/screen.scss */
+/* line 1106, ../sass/screen.scss */
 .birda {
   width: 12px;
   height: 6px;
@@ -3168,7 +3246,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 1093, ../sass/screen.scss */
+/* line 1113, ../sass/screen.scss */
 .birdb {
   width: 11px;
   height: 6px;
@@ -3177,7 +3255,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 1100, ../sass/screen.scss */
+/* line 1120, ../sass/screen.scss */
 .birdc {
   width: 10px;
   height: 5px;
@@ -3186,7 +3264,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 1107, ../sass/screen.scss */
+/* line 1127, ../sass/screen.scss */
 .birdd {
   width: 18px;
   height: 6px;
@@ -3195,7 +3273,7 @@ p.dropcap:first-letter {
   z-index: 0;
 }
 
-/* line 1114, ../sass/screen.scss */
+/* line 1134, ../sass/screen.scss */
 .castleclouds {
   width: 184px;
   height: 108px;
@@ -3203,34 +3281,34 @@ p.dropcap:first-letter {
   right: 90px;
 }
 
-/* line 1120, ../sass/screen.scss */
+/* line 1140, ../sass/screen.scss */
 .right {
   right: -200%;
 }
 
-/* line 1124, ../sass/screen.scss */
+/* line 1144, ../sass/screen.scss */
 .left {
   left: -200%;
 }
 
-/* line 1128, ../sass/screen.scss */
+/* line 1148, ../sass/screen.scss */
 .cloudfront {
   width: 1689px;
   height: 987px;
 }
-/* line 1131, ../sass/screen.scss */
+/* line 1151, ../sass/screen.scss */
 .cloudfront.top {
   bottom: 1500px;
 }
-/* line 1135, ../sass/screen.scss */
+/* line 1155, ../sass/screen.scss */
 .cloudfront.top2 {
   bottom: 1500px;
 }
-/* line 1139, ../sass/screen.scss */
+/* line 1159, ../sass/screen.scss */
 .cloudfront.middle {
   bottom: 1000px;
 }
-/* line 1143, ../sass/screen.scss */
+/* line 1163, ../sass/screen.scss */
 .cloudfront.bottom {
   bottom: 800px;
 }
@@ -3238,16 +3316,16 @@ p.dropcap:first-letter {
 /* @end */
 /* @end */
 /* @group theft-6 */
-/* line 1154, ../sass/screen.scss */
+/* line 1174, ../sass/screen.scss */
 .theft-6 {
   /* @group page-specific elements and animations */
 }
-/* line 1160, ../sass/screen.scss */
+/* line 1180, ../sass/screen.scss */
 .theft-6 p:first-letter {
   margin-bottom: 50px;
 }
 
-/* line 1165, ../sass/screen.scss */
+/* line 1185, ../sass/screen.scss */
 .coins {
   width: 250px;
   height: 239px;
@@ -3255,7 +3333,7 @@ p.dropcap:first-letter {
   left: 400px;
 }
 
-/* line 1171, ../sass/screen.scss */
+/* line 1191, ../sass/screen.scss */
 .coins2 {
   bottom: -150px;
   left: 375px;
@@ -3263,7 +3341,7 @@ p.dropcap:first-letter {
   height: 52px;
 }
 
-/* line 1177, ../sass/screen.scss */
+/* line 1197, ../sass/screen.scss */
 .goose {
   width: 151px;
   height: 324px;
@@ -3271,7 +3349,7 @@ p.dropcap:first-letter {
   left: 400px;
 }
 
-/* line 1183, ../sass/screen.scss */
+/* line 1203, ../sass/screen.scss */
 .egg {
   width: 114px;
   height: 154px;
@@ -3279,7 +3357,7 @@ p.dropcap:first-letter {
   left: 400px;
 }
 
-/* line 1189, ../sass/screen.scss */
+/* line 1209, ../sass/screen.scss */
 .harp {
   width: 165px;
   height: 342px;
@@ -3290,52 +3368,52 @@ p.dropcap:first-letter {
 /* @end */
 /* @group giant-7 */
 /* @group page-specific elements and animations */
-/* line 1215, ../sass/screen.scss */
+/* line 1235, ../sass/screen.scss */
 .giant-7.current .fee {
   -webkit-animation: wordfall-left 3s 1s  cubic-bezier(0.935, 0, 1, 1) forwards;
   -moz-animation: wordfall-left 3s 1s  cubic-bezier(0.935, 0, 1, 1) forwards;
 }
-/* line 1219, ../sass/screen.scss */
+/* line 1239, ../sass/screen.scss */
 .giant-7.current .fi {
   -webkit-animation: wordfall-right 3s 3s  ease-out forwards;
   -moz-animation: wordfall-right 3s 3s  ease-out forwards;
 }
-/* line 1223, ../sass/screen.scss */
+/* line 1243, ../sass/screen.scss */
 .giant-7.current .fo {
   -webkit-animation: wordfall-left 3s 5s  ease-out forwards;
   -moz-animation: wordfall-left 3s 5s  ease-out forwards;
 }
-/* line 1227, ../sass/screen.scss */
+/* line 1247, ../sass/screen.scss */
 .giant-7.current .fum {
   -webkit-animation: wordfall-right 3s 7s  ease-out forwards;
   -moz-animation: wordfall-right 3s 7s  ease-out forwards;
 }
-/* line 1231, ../sass/screen.scss */
+/* line 1251, ../sass/screen.scss */
 .giant-7.current .s1 {
   -webkit-animation: shed-left 1s 2s  linear forwards;
   -moz-animation: shed-left 1s 2s  linear forwards;
 }
-/* line 1235, ../sass/screen.scss */
+/* line 1255, ../sass/screen.scss */
 .giant-7.current .s2 {
   -webkit-animation: shed-right 1s 4s  linear forwards;
   -moz-animation: shed-right 1s 4s  linear forwards;
 }
-/* line 1239, ../sass/screen.scss */
+/* line 1259, ../sass/screen.scss */
 .giant-7.current .s4 {
   -webkit-animation: shed-left 1s 5.9s  linear forwards;
   -moz-animation: shed-left 1s 5.9s  linear forwards;
 }
-/* line 1243, ../sass/screen.scss */
+/* line 1263, ../sass/screen.scss */
 .giant-7.current .s5 {
   -webkit-animation: shed-left 1s 8.05s  linear forwards;
   -moz-animation: shed-left 1s 8.05s  linear forwards;
 }
-/* line 1247, ../sass/screen.scss */
+/* line 1267, ../sass/screen.scss */
 .giant-7.current .s6 {
   -webkit-animation: shed-left 1s 6s  linear forwards;
   -moz-animation: shed-left 1s 6s  linear forwards;
 }
-/* line 1251, ../sass/screen.scss */
+/* line 1271, ../sass/screen.scss */
 .giant-7.current .s7 {
   -webkit-animation: shed-right 1s 7.9s  linear forwards;
   -moz-animation: shed-right 1s 7.9s  linear forwards;
@@ -3344,7 +3422,7 @@ p.dropcap:first-letter {
 /* @end */
 /* @group keyframes */
 @-webkit-keyframes wordfall-left {
-  /* line 1262, ../sass/screen.scss */
+  /* line 1282, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
@@ -3358,7 +3436,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1270, ../sass/screen.scss */
+  /* line 1290, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
@@ -3367,7 +3445,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
   }
 
-  /* line 1276, ../sass/screen.scss */
+  /* line 1296, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3380,7 +3458,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1283, ../sass/screen.scss */
+  /* line 1303, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
@@ -3393,7 +3471,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1290, ../sass/screen.scss */
+  /* line 1310, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3406,7 +3484,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1297, ../sass/screen.scss */
+  /* line 1317, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
@@ -3419,7 +3497,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1304, ../sass/screen.scss */
+  /* line 1324, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3428,7 +3506,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
   }
 
-  /* line 1308, ../sass/screen.scss */
+  /* line 1328, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3438,7 +3516,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1313, ../sass/screen.scss */
+  /* line 1333, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
@@ -3450,7 +3528,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes wordfall-left {
-  /* line 1262, ../sass/screen.scss */
+  /* line 1282, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(0px, 0px);
@@ -3464,7 +3542,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1270, ../sass/screen.scss */
+  /* line 1290, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
@@ -3473,7 +3551,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, -30deg) translate(-260px, 490px);
   }
 
-  /* line 1276, ../sass/screen.scss */
+  /* line 1296, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3486,7 +3564,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1283, ../sass/screen.scss */
+  /* line 1303, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -15deg) translate(-138px, 490px);
@@ -3499,7 +3577,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1290, ../sass/screen.scss */
+  /* line 1310, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3512,7 +3590,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1297, ../sass/screen.scss */
+  /* line 1317, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, -4deg) translate(-50px, 490px);
@@ -3525,7 +3603,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1304, ../sass/screen.scss */
+  /* line 1324, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3534,7 +3612,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
   }
 
-  /* line 1308, ../sass/screen.scss */
+  /* line 1328, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 490px);
@@ -3544,7 +3622,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1313, ../sass/screen.scss */
+  /* line 1333, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(-20px, 800px);
@@ -3556,7 +3634,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes wordfall-right {
-  /* line 1320, ../sass/screen.scss */
+  /* line 1340, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
@@ -3570,7 +3648,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1328, ../sass/screen.scss */
+  /* line 1348, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
@@ -3579,7 +3657,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
   }
 
-  /* line 1334, ../sass/screen.scss */
+  /* line 1354, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3592,7 +3670,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1341, ../sass/screen.scss */
+  /* line 1361, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
@@ -3605,7 +3683,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1348, ../sass/screen.scss */
+  /* line 1368, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3618,7 +3696,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1355, ../sass/screen.scss */
+  /* line 1375, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
@@ -3631,7 +3709,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1362, ../sass/screen.scss */
+  /* line 1382, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3640,7 +3718,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
   }
 
-  /* line 1366, ../sass/screen.scss */
+  /* line 1386, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3650,7 +3728,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1371, ../sass/screen.scss */
+  /* line 1391, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 800px);
@@ -3662,7 +3740,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes wordfall-right {
-  /* line 1320, ../sass/screen.scss */
+  /* line 1340, ../sass/screen.scss */
   0% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(0px, 0px);
@@ -3676,7 +3754,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1328, ../sass/screen.scss */
+  /* line 1348, ../sass/screen.scss */
   30% {
     -webkit-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
@@ -3685,7 +3763,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 30deg) translate(260px, 490px);
   }
 
-  /* line 1334, ../sass/screen.scss */
+  /* line 1354, ../sass/screen.scss */
   33% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3698,7 +3776,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1341, ../sass/screen.scss */
+  /* line 1361, ../sass/screen.scss */
   45% {
     -webkit-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 15deg) translate(138px, 490px);
@@ -3711,7 +3789,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1348, ../sass/screen.scss */
+  /* line 1368, ../sass/screen.scss */
   60% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3724,7 +3802,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-out;
   }
 
-  /* line 1355, ../sass/screen.scss */
+  /* line 1375, ../sass/screen.scss */
   70% {
     -webkit-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 4deg) translate(50px, 490px);
@@ -3737,7 +3815,7 @@ p.dropcap:first-letter {
     animation-timing-function: ease-in;
   }
 
-  /* line 1362, ../sass/screen.scss */
+  /* line 1382, ../sass/screen.scss */
   80% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3746,7 +3824,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
   }
 
-  /* line 1366, ../sass/screen.scss */
+  /* line 1386, ../sass/screen.scss */
   90% {
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
     -moz-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 490px);
@@ -3756,7 +3834,7 @@ p.dropcap:first-letter {
     opacity: 1;
   }
 
-  /* line 1371, ../sass/screen.scss */
+  /* line 1391, ../sass/screen.scss */
   100% {
     opacity: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(20px, 800px);
@@ -3768,7 +3846,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes shed-left {
-  /* line 1379, ../sass/screen.scss */
+  /* line 1399, ../sass/screen.scss */
   0% {
     z-index: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
@@ -3778,7 +3856,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
   }
 
-  /* line 1384, ../sass/screen.scss */
+  /* line 1404, ../sass/screen.scss */
   100% {
     -webkit-transform:  rotate3d(0, 0, 1, -180deg) translate(50px, -400px);
     -moz-transform:  rotate3d(0, 0, 1, -180deg) translate(50px, -400px);
@@ -3789,7 +3867,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes shed-left {
-  /* line 1379, ../sass/screen.scss */
+  /* line 1399, ../sass/screen.scss */
   0% {
     z-index: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
@@ -3799,7 +3877,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
   }
 
-  /* line 1384, ../sass/screen.scss */
+  /* line 1404, ../sass/screen.scss */
   100% {
     -webkit-transform:  rotate3d(0, 0, 1, -180deg) translate(50px, -400px);
     -moz-transform:  rotate3d(0, 0, 1, -180deg) translate(50px, -400px);
@@ -3810,7 +3888,7 @@ p.dropcap:first-letter {
 }
 
 @-webkit-keyframes shed-right {
-  /* line 1392, ../sass/screen.scss */
+  /* line 1412, ../sass/screen.scss */
   0% {
     z-index: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
@@ -3820,7 +3898,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
   }
 
-  /* line 1397, ../sass/screen.scss */
+  /* line 1417, ../sass/screen.scss */
   100% {
     -webkit-transform:  rotate3d(0, 0, 1, 180deg) translate(-50px, -400px);
     -moz-transform:  rotate3d(0, 0, 1, 180deg) translate(-50px, -400px);
@@ -3831,7 +3909,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes shed-right {
-  /* line 1392, ../sass/screen.scss */
+  /* line 1412, ../sass/screen.scss */
   0% {
     z-index: 0;
     -webkit-transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
@@ -3841,7 +3919,7 @@ p.dropcap:first-letter {
     transform:  rotate3d(0, 0, 0, 0deg) translate(0px, 0px);
   }
 
-  /* line 1397, ../sass/screen.scss */
+  /* line 1417, ../sass/screen.scss */
   100% {
     -webkit-transform:  rotate3d(0, 0, 1, 180deg) translate(-50px, -400px);
     -moz-transform:  rotate3d(0, 0, 1, 180deg) translate(-50px, -400px);
@@ -3853,13 +3931,13 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 1409, ../sass/screen.scss */
+/* line 1429, ../sass/screen.scss */
 .giant-bg {
   width: 1024px;
   height: 768px;
 }
 
-/* line 1413, ../sass/screen.scss */
+/* line 1433, ../sass/screen.scss */
 .fee {
   width: 570px;
   height: 259px;
@@ -3872,7 +3950,7 @@ p.dropcap:first-letter {
   top: -240px;
 }
 
-/* line 1420, ../sass/screen.scss */
+/* line 1440, ../sass/screen.scss */
 .fi {
   width: 421px;
   height: 240px;
@@ -3890,7 +3968,7 @@ p.dropcap:first-letter {
   top: -229px;
 }
 
-/* line 1428, ../sass/screen.scss */
+/* line 1448, ../sass/screen.scss */
 .fo {
   width: 100%;
   height: 100%;
@@ -3900,7 +3978,7 @@ p.dropcap:first-letter {
   top: -233px;
 }
 
-/* line 1435, ../sass/screen.scss */
+/* line 1455, ../sass/screen.scss */
 .fum {
   width: 713px;
   height: 241px;
@@ -3908,13 +3986,13 @@ p.dropcap:first-letter {
   top: -230px;
 }
 
-/* line 1441, ../sass/screen.scss */
+/* line 1461, ../sass/screen.scss */
 .clouds {
   width: 100%;
   height: 100%;
 }
 
-/* line 1445, ../sass/screen.scss */
+/* line 1465, ../sass/screen.scss */
 .landleft {
   -webkit-transform-origin: 0% 100%;
   -moz-transform-origin: 0% 100%;
@@ -3923,7 +4001,7 @@ p.dropcap:first-letter {
   transform-origin: 0% 100%;
 }
 
-/* line 1449, ../sass/screen.scss */
+/* line 1469, ../sass/screen.scss */
 .landright {
   -webkit-transform-origin: 100% 100%;
   -moz-transform-origin: 100% 100%;
@@ -3932,7 +4010,7 @@ p.dropcap:first-letter {
   transform-origin: 100% 100%;
 }
 
-/* line 1455, ../sass/screen.scss */
+/* line 1475, ../sass/screen.scss */
 .s1 {
   z-index: -1;
   width: 31px;
@@ -3941,7 +4019,7 @@ p.dropcap:first-letter {
   top: 456px;
 }
 
-/* line 1464, ../sass/screen.scss */
+/* line 1484, ../sass/screen.scss */
 .s2 {
   z-index: -1;
   width: 20px;
@@ -3950,7 +4028,7 @@ p.dropcap:first-letter {
   top: 466px;
 }
 
-/* line 1473, ../sass/screen.scss */
+/* line 1493, ../sass/screen.scss */
 .s4 {
   z-index: -1;
   width: 8px;
@@ -3959,7 +4037,7 @@ p.dropcap:first-letter {
   top: 466px;
 }
 
-/* line 1482, ../sass/screen.scss */
+/* line 1502, ../sass/screen.scss */
 .s5 {
   z-index: -1;
   width: 76px;
@@ -3968,7 +4046,7 @@ p.dropcap:first-letter {
   top: 440px;
 }
 
-/* line 1491, ../sass/screen.scss */
+/* line 1511, ../sass/screen.scss */
 .s6 {
   z-index: -1;
   width: 28px;
@@ -3977,7 +4055,7 @@ p.dropcap:first-letter {
   top: 399px;
 }
 
-/* line 1500, ../sass/screen.scss */
+/* line 1520, ../sass/screen.scss */
 .s7 {
   z-index: -1;
   width: 87px;
@@ -3991,7 +4069,7 @@ p.dropcap:first-letter {
 /* @group conversation1-8 */
 /* @end */
 /* @group conversation2-8 */
-/* line 1521, ../sass/screen.scss */
+/* line 1541, ../sass/screen.scss */
 .conversation2-9 {
   background: #31607d;
   /* Old browsers */
@@ -4013,66 +4091,99 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group recap-9 */
-/* line 1529, ../sass/screen.scss */
+/* line 1549, ../sass/screen.scss */
 .recap-9 {
   background-color: #212350;
 }
-/* line 1534, ../sass/screen.scss */
+/* line 1554, ../sass/screen.scss */
 .recap-9.current > .a {
   top: 100px;
   left: 30px;
   width: 500px;
 }
+/* line 1561, ../sass/screen.scss */
+.recap-9 .recap-bg {
+  width: 1024px;
+  height: 768px;
+}
+/* line 1565, ../sass/screen.scss */
+.recap-9 .recap-harp {
+  width: 235px;
+  height: 345px;
+  left: 250px;
+  top: 350px;
+}
+/* line 1571, ../sass/screen.scss */
+.recap-9 .recap-goose {
+  width: 237px;
+  height: 370px;
+  top: 300px;
+  left: 270px;
+}
+/* line 1577, ../sass/screen.scss */
+.recap-9 .recap-egg {
+  width: 80px;
+  height: 97px;
+  left: 410px;
+  top: 500px;
+}
+/* line 1583, ../sass/screen.scss */
+.recap-9 .recap-coins {
+  width: 212px;
+  height: 221px;
+  top: 413px;
+  left: 350px;
+}
 
 /* @end */
 /* @group end-10 */
 /* @group page-specific elements and animations */
-/* line 1550, ../sass/screen.scss */
+/* line 1598, ../sass/screen.scss */
 .end-10 .a {
   top: 50px;
   left: 300px;
 }
-/* line 1551, ../sass/screen.scss */
+/* line 1599, ../sass/screen.scss */
 .end-10 .b {
   top: 200px;
   left: 700px;
 }
-/* line 1552, ../sass/screen.scss */
+/* line 1600, ../sass/screen.scss */
 .end-10 .c {
   top: 500px;
   left: 100px;
 }
-/* line 1553, ../sass/screen.scss */
+/* line 1601, ../sass/screen.scss */
 .end-10 .d {
   top: 300px;
   left: 900px;
 }
-/* line 1554, ../sass/screen.scss */
+/* line 1602, ../sass/screen.scss */
 .end-10 .e {
   top: 100px;
   left: 50px;
 }
-/* line 1555, ../sass/screen.scss */
+/* line 1603, ../sass/screen.scss */
 .end-10 .f {
   top: 43px;
   left: 850px;
 }
-/* line 1559, ../sass/screen.scss */
+/* line 1607, ../sass/screen.scss */
 .end-10.current .a, .end-10.current .d {
   -webkit-animation: star 3s 0.5s infinite linear forwards;
   -moz-animation: star 3s 0.5s infinite linear forwards;
 }
-/* line 1563, ../sass/screen.scss */
+/* line 1611, ../sass/screen.scss */
 .end-10.current .b, .end-10.current .e {
   -webkit-animation: star 2s 1.3s infinite linear forwards;
   -moz-animation: star 2s 1.3s infinite linear forwards;
 }
-/* line 1567, ../sass/screen.scss */
+/* line 1615, ../sass/screen.scss */
 .end-10.current .c, .end-10.current .f {
   -webkit-animation: star 3s 0s infinite linear forwards;
   -moz-animation: star 3s 0s infinite linear forwards;
 }
-/* line 1571, ../sass/screen.scss */
+/* line 1619, ../sass/screen.scss */
 .end-10.current .big-star, .end-10.current .smallerstars {
   -webkit-animation: star 5s 0s infinite linear forwards;
   -moz-animation: star 5s 0s infinite linear forwards;
@@ -4081,41 +4192,41 @@ p.dropcap:first-letter {
 /* @end */
 /* @group keyframes */
 @-webkit-keyframes star {
-  /* line 1586, ../sass/screen.scss */
+  /* line 1634, ../sass/screen.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 1587, ../sass/screen.scss */
+  /* line 1635, ../sass/screen.scss */
   50% {
     opacity: 0.2;
   }
 
-  /* line 1588, ../sass/screen.scss */
+  /* line 1636, ../sass/screen.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes star {
-  /* line 1586, ../sass/screen.scss */
+  /* line 1634, ../sass/screen.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 1587, ../sass/screen.scss */
+  /* line 1635, ../sass/screen.scss */
   50% {
     opacity: 0.2;
   }
 
-  /* line 1588, ../sass/screen.scss */
+  /* line 1636, ../sass/screen.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes theendup {
-  /* line 1592, ../sass/screen.scss */
+  /* line 1640, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -4124,7 +4235,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 1593, ../sass/screen.scss */
+  /* line 1641, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, -600px, 0);
     -moz-transform: translate3d(0, -600px, 0);
@@ -4135,7 +4246,7 @@ p.dropcap:first-letter {
 }
 
 @-moz-keyframes theendup {
-  /* line 1592, ../sass/screen.scss */
+  /* line 1640, ../sass/screen.scss */
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -4144,7 +4255,7 @@ p.dropcap:first-letter {
     transform: translate3d(0, 0, 0);
   }
 
-  /* line 1593, ../sass/screen.scss */
+  /* line 1641, ../sass/screen.scss */
   100% {
     -webkit-transform: translate3d(0, -600px, 0);
     -moz-transform: translate3d(0, -600px, 0);
@@ -4156,12 +4267,12 @@ p.dropcap:first-letter {
 
 /* @end */
 /* @group elements */
-/* line 1600, ../sass/screen.scss */
+/* line 1648, ../sass/screen.scss */
 .end-10 {
   background-color: #212350;
 }
 
-/* line 1604, ../sass/screen.scss */
+/* line 1652, ../sass/screen.scss */
 .end-mountain {
   width: 1022px;
   height: 212px;
@@ -4169,13 +4280,13 @@ p.dropcap:first-letter {
   right: 0;
 }
 
-/* line 1610, ../sass/screen.scss */
+/* line 1658, ../sass/screen.scss */
 .end-bg {
   width: 1024px;
   height: 768px;
 }
 
-/* line 1614, ../sass/screen.scss */
+/* line 1662, ../sass/screen.scss */
 .theend {
   width: 471px;
   height: 978px;
@@ -4183,7 +4294,7 @@ p.dropcap:first-letter {
   top: -125px;
 }
 
-/* line 1620, ../sass/screen.scss */
+/* line 1668, ../sass/screen.scss */
 .smallerstars {
   width: 977px;
   height: 346px;
@@ -4191,7 +4302,7 @@ p.dropcap:first-letter {
   left: 61px;
 }
 
-/* line 1626, ../sass/screen.scss */
+/* line 1674, ../sass/screen.scss */
 .big-star {
   width: 68px;
   height: 67px;
@@ -4199,13 +4310,13 @@ p.dropcap:first-letter {
   left: 200px;
 }
 
-/* line 1632, ../sass/screen.scss */
+/* line 1680, ../sass/screen.scss */
 .small-star {
   width: 34px;
   height: 34px;
 }
 
-/* line 1636, ../sass/screen.scss */
+/* line 1684, ../sass/screen.scss */
 .read-again {
   -webkit-transition-property: -webkit-transform, background;
   -moz-transition-property: -moz-transform, background;
@@ -4226,7 +4337,7 @@ p.dropcap:first-letter {
   cursor: pointer;
 }
 
-/* line 1655, ../sass/screen.scss */
+/* line 1703, ../sass/screen.scss */
 .read-again-hover {
   -webkit-transform-origin: 50% 0%;
   -moz-transform-origin: 50% 0%;
