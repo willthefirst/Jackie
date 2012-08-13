@@ -154,8 +154,11 @@ var APP = {
 		},
 
 		reset: function(current) {
+			var up = APP.events.up;
+
 			this.$next_temp.hide();
 			this.$btn_next.show();
+			this.$next_temp.off(up, this.houseFall);
 
 			setTimeout(function() {
 				$('.exposition-2').removeClass('next');
@@ -191,7 +194,7 @@ var APP = {
 	/* SCENE beanstalk_5 */
 
 	beanstalk_5: {
-
+		isAnimating: false,
 		$scene: $('.beanstalk-5'),
 		$next_temp: $('.btn-next-temp'),
 		$previous_temp: $('.btn-previous-temp'),
@@ -216,27 +219,45 @@ var APP = {
 		},
 
 		sendToTop: function() {
-			APP.beanstalk_5.$next_temp.removeClass('pressed');
+			if (!APP.beanstalk_5.isAnimating) {
+				APP.beanstalk_5.isAnimating = true;
 
-			setTimeout(function() {
+				var down = APP.events.down;
+				var up = APP.events.up;
+
+				APP.beanstalk_5.$next_temp.removeClass('pressed');
+
+				$('.btn-next').show();
 				APP.beanstalk_5.$next_temp.hide();
-			}, 300);
 
-			APP.beanstalk_5.$scene.animate({
-				scrollTop: 0
-			}, 4000);
+				APP.beanstalk_5.$scene.animate({
+					scrollTop: 0
+				}, 4000, function() {
+					APP.beanstalk_5.isAnimating = false;
+				});
+			}
 		},
 
 		sendToBottom: function() {
-			APP.beanstalk_5.$previous_temp.removeClass('pressed');
+			if (!APP.beanstalk_5.isAnimating) {
+				console.log('shit');
 
-			setTimeout(function() {
+				APP.beanstalk_5.isAnimating = true;
+
+				var down = APP.events.down;
+				var up = APP.events.up;
+
+				APP.beanstalk_5.$previous_temp.removeClass('pressed');
+
 				APP.beanstalk_5.$previous_temp.hide();
-			}, 300);
+				$('.btn-previous').show();
 
-			APP.beanstalk_5.$scene.animate({
-				scrollTop: 2464
-			}, 4000);
+				APP.beanstalk_5.$scene.animate({
+					scrollTop: 2464
+				}, 4000, function() {
+					APP.beanstalk_5.isAnimating = false;
+				});
+			}
 		},
 
 		pollForScroll: function() {
@@ -353,8 +374,17 @@ var APP = {
 		},
 
 		reset: function(current) {
+			var down = APP.events.down;
+			var up = APP.events.up;
+
+			APP.beanstalk_5.$scene.stop();
+			APP.beanstalk_5.isAnimating = false;
+
 			APP.beanstalk_5.$next_temp.hide();
 			APP.beanstalk_5.$previous_temp.hide();
+			this.$next_temp.off(up, this.sendToTop);
+			this.$previous_temp.off(up, this.sendToBottom);
+
 			$('.btn-next').show();
 			$('.btn-previous').show();
 		}
