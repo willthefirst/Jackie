@@ -119,6 +119,8 @@
 				&.recap-goose { @include normal(9recap/goose, bottom left); }
 				&.recap-coins { @include normal(9recap/coins, bottom left); }
 				&.recap-harp { @include normal(9recap/harp, bottom left); }
+				&.arm { @include normal(9recap/arm, bottom left); }
+
 
 			/* @end */
 
@@ -284,6 +286,7 @@
 				&.recap-goose { @include retina(9recap/goose, bottom left); }
 				&.recap-coins { @include retina(9recap/coins, bottom left); }
 				&.recap-harp { @include retina(9recap/harp, bottom left); }
+				&.arm { @include retina(9recap/arm, bottom left); }
 
 			/* @end */
 
@@ -772,19 +775,19 @@
 						/* @group lower clouds */
 	
 							&.top {
-								@include animation(left, 10s, 0.1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+								@include animation(left, 10s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 							}
 	
 							&.top2 {
-								@include animation(right, 14s, 1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+								@include animation(right, 14s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 							}
 	
 							&.middle {
-								@include animation(right, 12s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+								@include animation(right, 12s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 							}
 	
 							&.bottom {
-								@include animation(left, 16s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
+								@include animation(left, 16s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 							}
 
 							&.up-arrow {
@@ -851,14 +854,14 @@
 
 		@include keyframes(left) {
 			0% { @include translate3d(0, 0, 0); }
-			50% { @include translate3d(-200%, 0, 0); }
-			100% { @include translate3d(200%, 0, 0); }
+			50% { @include translate3d(-150%, 0, 0); }
+			100% { @include translate3d(0, 0, 0); }
 		}
 
 		@include keyframes(right) {
 			0% { @include translate3d(0, 0, 0); }
-			50% { @include translate3d(200%, 0, 0); }
-			100% { @include translate3d(-200%, 0, 0); }
+			50% { @include translate3d(150%, 0, 0); }
+			100% { @include translate3d(0, 0, 0); }
 		}
 
 		@include keyframes(fly1) {
@@ -1138,11 +1141,11 @@
 		}
 
 		.right {
-			right: -200%;
+			right: -150%;
 		}
 
 		.left {
-			left: -200%;
+			left: -150%;
 		}
 
 		.cloudfront {
@@ -1548,6 +1551,8 @@
 
 	.recap-9 {
 
+		$items-delay: 4.5s;
+
 		background-color: #212350;
 
 		&.current {
@@ -1556,6 +1561,26 @@
 				left: 30px;
 				width: 500px;
 			}
+
+			.recap-harp {
+				@include animation(harp, 2s, $items-delay, $function:ease-in, $fill-mode:forwards);
+			}
+
+			.recap-goose{
+				@include animation(goose, 2s, $items-delay, $function:ease-in, $fill-mode:forwards);
+			}
+
+			.recap-egg {
+				@include animation(egg, 2s, $items-delay, $function:ease-in, $fill-mode:forwards);
+			}
+
+			.recap-coins {
+				@include animation(coins, 2s, $items-delay, $function:ease-in, $fill-mode:forwards);
+			}
+
+			.arm {
+				@include animation(arm, 4s, 2s, $function:ease-in-out, $fill-mode:forwards);
+			}
 		}
 
 		.recap-bg {
@@ -1563,29 +1588,119 @@
 		}
 
 		.recap-harp {
+			visibility: hidden;
 			@include dimensions(235px, 345px);
-			left: 250px;
-			top: 350px;
+			left: 200px;
+			top: 390px;
 		}
 
 		.recap-goose {
+			visibility: hidden;
 			@include dimensions(237px, 370px);
-			top: 300px;
-			left: 270px;
+			top: 340px;
+			left: 220px;
 		}
 
 		.recap-egg {
+			visibility: hidden;
 			@include dimensions(80px, 97px);
-			left: 410px;
-			top: 500px;
+			left: 360px;
+			top: 540px;
 		}
 
 		.recap-coins {
+			visibility: hidden;
 			@include dimensions(212px, 221px);
-			top: 413px;
-			left: 350px;
+			top: 443px;
+			left: 280px;
+		}
+
+		.arm {
+			left: 220px;
+			top: -681px;
+			@include dimensions(332px, 677px);
 		}
 	}
+
+	/* @group keyframes */
+
+		@include keyframes(goose) {
+			0% {
+				opacity: 0;
+				visibility: visible;
+				@include translate3d(0,0,0);
+			}
+
+			10% {
+				opacity: 1;
+			}
+
+			100% {
+				visibility: visible;
+				@include translate3d(-10px,0,0);
+			}
+		}
+
+		@include keyframes(egg) {
+			0% {
+				visibility: visible;
+				@include translate3d(0,0,0);
+			}
+
+			100% {
+				visibility: visible;
+				@include translate3d(30px,0,0);
+			}
+		}
+
+		@include keyframes(harp) {
+			0% {
+				opacity: 0;
+				visibility: visible;
+				@include translate3d(0,0,0);
+			}
+
+			20% {
+				opacity: 1;
+			}
+
+			100% {
+				visibility: visible;
+				@include translate3d(-80px,0,0);
+			}
+		}
+
+		@include keyframes(coins) {
+			0% {
+				visiility: visible;
+				@include translate3d(0,0,0);
+			}
+
+			100% {
+				visibility: visible;
+				@include translate3d(60px,0,0);
+			}
+		}
+
+		@include keyframes(arm) {
+			0% {
+				@include translate3d(0,0,0);
+			}
+
+			60% {
+				@include translate3d(0,681px,0);
+			}
+
+			62% {
+				@include translate3d(0,681px,0);
+			}
+
+			100% {
+				@include translate3d(0,0,0);
+			}
+		}
+
+	/* @end */
 
 /* @end */
 
