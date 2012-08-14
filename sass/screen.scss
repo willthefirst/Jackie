@@ -81,6 +81,7 @@
 				&.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
 				&.arrow-border { @include normal(4beanstalk/arrow-border, bottom left); }
 				&.up-arrow { @include normal(4beanstalk/arrow, bottom left); }
+				&.scrollup { @include normal(4beanstalk/scroll-up, bottom left); }
 				&.birda { background: sprite($birds, a) no-repeat; }
 				&.birdb { background: sprite($birds, b) no-repeat; }
 				&.birdc { background: sprite($birds, c) no-repeat; }
@@ -201,6 +202,7 @@
 				&.cloudfront { @include retina(4beanstalk/cloudfront, bottom left); }
 				&.arrow-border { @include retina(4beanstalk/arrow-border, bottom left); }
 				&.up-arrow { @include retina(4beanstalk/arrow, bottom left); }
+				&.scrollup { @include retina(4beanstalk/scroll-up, bottom left); }
 				
 				&.birda { 
 					background: sprite($birds_2x, a) no-repeat;
@@ -1106,10 +1108,9 @@
 	/* @group elements */
 
 		.scrollup {
-			font-size: 25px;
 			bottom: 710px;
 			left: 422px;
-			text-shadow: 1px 1px #000;
+			@include dimensions(133px, 40px);
 		}
 
 		.up-arrow {

@@ -124,6 +124,10 @@ var APP = {
 
 	start_1: {
 		start: function(current) {
+			
+			//GA
+			_gaq.push(['_trackPageview','/1-Start']);
+
 			$('.btn-previous, .btn-previous-temp').hide();
 		},
 
@@ -139,6 +143,10 @@ var APP = {
 		$btn_next: $('.btn-next'),
 
 		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/2-Exposition']);
+
 			$('.btn-previous').show();
 
 			var down = APP.events.down;
@@ -179,6 +187,10 @@ var APP = {
 	cowsale_3: {
 
 		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/3-Cow Sale']);
+
 			$button = $('.js_beans');
 			$beans = $('.beans, .beans2');
 
@@ -193,7 +205,12 @@ var APP = {
 
 	nextmorning_4: {
 
-		start: function(current) {},
+		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/4-Next Morning']);
+
+		},
 
 		reset: function(current) {}
 
@@ -208,6 +225,10 @@ var APP = {
 		$previous_temp: $('.btn-previous-temp'),
 
 		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/5-Beanstalk']);
+
 			var down = APP.events.down;
 			var up = APP.events.up;
 
@@ -406,6 +427,9 @@ var APP = {
 
 		start: function(current) {
 
+			//GA
+			_gaq.push(['_trackPageview','/6-Theft']);
+
 			//Deals with birds/castle z-index problem on fade from scene 5
 
 			$('.theft-6').css('z-index', '2');
@@ -432,6 +456,18 @@ var APP = {
 	/* SCENE giant-7 */
 
 	giant_7: {
+		
+		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/7-Giant']);
+
+			this.goToNext();
+		},
+
+		reset: function(current) {
+			window.clearTimeout(this.timeoutID);
+		},
 
 		goToNext: function() {
 			var up = APP.events.up;
@@ -439,19 +475,15 @@ var APP = {
 			this.timeoutID = window.setTimeout( function() {
 				$('.btn-next').trigger(up);
 			}, 10000);
-		},
-		
-		start: function(current) {
-			this.goToNext();
-		},
-
-		reset: function(current) {
-			window.clearTimeout(this.timeoutID);
 		}
 	},
 
 	conversation1_8: {
 		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/8-Conversation1']);
+
 		},
 
 		reset: function(current) {}
@@ -460,6 +492,10 @@ var APP = {
 	conversation2_9: {
 
 		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/9-Conversation2']);
+
 		},
 
 		reset: function(current) {}
@@ -469,6 +505,10 @@ var APP = {
 	recap_9: {
 
 		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/10-Recap']);
+
 			$('.btn-next').show();
 		},
 
@@ -479,6 +519,11 @@ var APP = {
 	end_10: {
 
 		start: function(current) {
+
+			//GA
+			_gaq.push(['_trackPageview','/11-End']);
+
+
 			$('.btn-next').hide();
 			var down = APP.events.down;
 			var up = APP.events.up;
