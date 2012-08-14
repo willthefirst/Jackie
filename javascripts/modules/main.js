@@ -107,11 +107,12 @@ var APP = {
 		}
 	},
 
-	handleClick: function(button, flyer) {
+	handleClick: function(button, flyer, button_GA) {
 		var down = APP.events.down;
 
 		button.on(down, function() {
 			flyer.addClass('fly');
+			eval(button_GA);
 			button.off(down);
 			setTimeout(function() {
 				flyer.removeClass('fly');
@@ -191,10 +192,11 @@ var APP = {
 			//GA
 			_gaq.push(['_trackPageview','/3-Cow Sale']);
 
-			$button = $('.js_beans');
-			$beans = $('.beans, .beans2');
+			var $button = $('.js_beans');
+			var $beans = $('.beans, .beans2');
+			var beans_GA = "_gaq.push(['_trackEvent', '3-Cow Sale', 'Phrase', 'magic beans']);";
 
-			APP.handleClick($button , $beans);
+			APP.handleClick($button , $beans, beans_GA);
 		},
 
 		reset: function(current) {}
@@ -251,6 +253,8 @@ var APP = {
 			if (!APP.beanstalk_5.isAnimating) {
 				APP.beanstalk_5.isAnimating = true;
 
+				_gaq.push(['_trackEvent', '5-Beanstalk', 'Arrow', 'Next-Scene']);
+
 				var down = APP.events.down;
 				var up = APP.events.up;
 
@@ -269,9 +273,10 @@ var APP = {
 
 		sendToBottom: function() {
 			if (!APP.beanstalk_5.isAnimating) {
-				console.log('shit');
-
 				APP.beanstalk_5.isAnimating = true;
+
+				//GA
+				_gaq.push(['_trackEvent', '5-Beanstalk', 'Arrow', 'Previous-Scene']);
 
 				var down = APP.events.down;
 				var up = APP.events.up;
@@ -443,9 +448,13 @@ var APP = {
 			$coins = $('.coins, .coins2');
 			$goose = $('.goose, .egg');
 			$harp = $('.harp');
-			APP.handleClick( $button_coins, $coins );
-			APP.handleClick( $button_gooseandegg, $goose );
-			APP.handleClick( $button_harp, $harp );
+			var coins_GA = "_gaq.push(['_trackEvent', '6-Theft', 'Phrase', 'gold coins']);";
+			var harp_GA = "_gaq.push(['_trackEvent', '6-Theft', 'Phrase', 'golden harp']);";
+			var goose_GA = "_gaq.push(['_trackEvent', '6-Theft', 'Phrase', 'goose']);";
+
+			APP.handleClick( $button_coins, $coins, coins_GA );
+			APP.handleClick( $button_gooseandegg, $goose, goose_GA );
+			APP.handleClick( $button_harp, $harp, harp_GA );
 
 		},
 
@@ -547,6 +556,8 @@ var APP = {
 
 			$read_again.on(up, function() {
 				$read_again.removeClass('read-again-hover');
+
+				_gaq.push(['_trackEvent', '11-End', 'Arrow', 'Read Again']);
 
 				var page = APP.paginate;
 				var a = page.$current;
