@@ -87,7 +87,7 @@ var addToHome = (function (w) {
 		isSafari = nav.appVersion.match(/Safari/gi);
 		isChromeiOS = nav.appVersion.match(/CriOS/gi);
 		isStandalone = nav.standalone;
-		
+
 		OSVersion = nav.appVersion.match(/OS (\d+_\d+)/i);
 		OSVersion = OSVersion[1] ? +OSVersion[1].replace('_', '.') : 0;
 		
@@ -124,6 +124,7 @@ var addToHome = (function (w) {
 		balloon = document.createElement('div');
 		balloon.id = 'addToHomeScreen';
 		balloon.style.cssText += 'left:-9999px;-webkit-transition-property:-webkit-transform,opacity;-webkit-transition-duration:0;-webkit-transform:translate3d(0,0,0);position:' + (OSVersion < 5 ? 'absolute' : 'fixed');
+
 
 		// Localize message
 		if ( options.message in intl ) {		// You may force a language despite the user's locale

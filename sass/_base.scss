@@ -177,6 +177,10 @@
 		&.coins {
 			@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
 		}
+
+		&.beans2 {
+			@include animation(fly, 1.5s, .1s, $fill-mode:forwards);
+		}
 	}
 
 	@include keyframes(fly) {

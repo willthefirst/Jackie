@@ -2,12 +2,20 @@ var APP = {
 
 	init: function() {
 		APP.clickOrTouch();
+		APP.isStandalone();
 		APP.paginate.init();
 	},
 
 	events: {
 		down: 'mousedown',
 		up: 'mouseup'
+	},
+
+	isStandalone: function() {
+		if
+		( window.navigator.standalone ){
+			$('.btn-next, .btn-previous, .btn-next-temp, .btn-previous-temp').css('margin-top','30px');
+		}
 	},
 
 	clickOrTouch: function() {
@@ -172,7 +180,7 @@ var APP = {
 
 		start: function(current) {
 			$button = $('.js_beans');
-			$beans = $('.beans');
+			$beans = $('.beans, .beans2');
 
 			APP.handleClick($button , $beans);
 		},
@@ -271,7 +279,6 @@ var APP = {
 
 				if (APP.beanstalk_5.$scene.scrollTop() !== oldScroll) {
 					oldScroll = APP.beanstalk_5.$scene.scrollTop();
-					console.log(oldScroll);
 					x = true;
 				}
 				
@@ -485,7 +492,7 @@ var APP = {
 				$('.theend').css('top','-725px');
 				$('.read-again').css('top','248px');
 				$('.theend, .read-again').css('-webkit-animation','');
-			}, 9000);
+			}, 6000);
 
 			//time determined by overall css animation time.
 

@@ -57,7 +57,8 @@
 	
 			/* @group cowsale-3 */
 	
-				&.beans { @include normal(general/beans, bottom left); }
+			&.beans { @include normal(general/beans, bottom left); }
+			&.beans2 { @include normal(general/beans2, bottom left); }
 	
 			/* @end */
 	
@@ -175,6 +176,7 @@
 			/* @group cowsale-3 */
 
 				&.beans { @include retina(general/beans, bottom left); }
+				&.beans2 { @include retina(general/beans2, bottom left); }
 
 			/* @end */
 
@@ -687,6 +689,12 @@
 			left: 400px;
 		}
 
+		.beans2 {
+			@include dimensions(74px, 52px);
+			bottom: -180px;
+			left: 400px;
+		}
+
 		.scroll.in {
 			@include background-size(640px, 502px);
 			@include dimensions(0px, 502px);
@@ -1062,7 +1070,7 @@
 				}
 
 				.d {
-					bottom: 2062px;
+					bottom: 2092px;
 					right: 355px;
 					@include rotateZ(22deg);
 					color: rgb(34, 133, 41);
@@ -1861,3 +1869,4 @@
 	/* @end */
 
 /* @end  */
+ 
