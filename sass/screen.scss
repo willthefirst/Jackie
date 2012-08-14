@@ -52,6 +52,7 @@
 				&.grass-top { @include normal(2exposition/grass_top, bottom left); }
 				&.grass-bottom { @include normal(2exposition/grass_bottom, bottom left); }
 				&.cow { @include normal(2exposition/cow, bottom left); }
+				&.cow-shadow { @include normal(2exposition/cow-shadow, bottom left); }
 	
 			/* @end */
 	
@@ -170,6 +171,7 @@
 				&.grass-top { @include retina(2exposition/grass_top, bottom left); }
 				&.grass-bottom{ @include retina(2exposition/grass_bottom, bottom left); }
 				&.cow { @include retina(2exposition/cow, bottom left); }
+				&.cow-shadow { @include retina(2exposition/cow-shadow, bottom left); }
 
 			/* @end */
 
@@ -461,6 +463,7 @@
 				$second_text_go: $house_fall_go + 1.5;
 				$sign_go: $house_fall_go + 2;
 				$cow_go: $sign_go;
+				$cowshadow_go: $cow_go+1;
 
 			/* @end */
 
@@ -497,6 +500,10 @@
 
 				&> .cow {
 					@include animation(cow, 1s, $cow_go, $function:cubic-bezier(.77, .02, 1, 1), $fill-mode:forwards);
+				}
+
+				&> .cow-shadow {
+					@include animation(in, 0.2s, $cowshadow_go, $fill-mode:forwards);
 				}
 			}
 		}
@@ -562,9 +569,16 @@
 	/* @group elements */
 
 		.cow {
-			@include dimensions(187px, 115px);
-			bottom: 760px;
+			@include dimensions(114px, 108px);
+			bottom: 767px;
 			right: 350px;
+		}
+
+		.cow-shadow {
+			opacity: 0;
+			@include dimensions(173px, 101px);
+			bottom: 60px;
+			right: 378px;
 		}
 
 		.house-right {
