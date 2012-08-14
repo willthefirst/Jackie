@@ -232,7 +232,7 @@ var APP = {
 
 				APP.beanstalk_5.$scene.animate({
 					scrollTop: 0
-				}, 4000, function() {
+				}, 9000, function() {
 					APP.beanstalk_5.isAnimating = false;
 				});
 			}
@@ -271,6 +271,7 @@ var APP = {
 
 				if (APP.beanstalk_5.$scene.scrollTop() !== oldScroll) {
 					oldScroll = APP.beanstalk_5.$scene.scrollTop();
+					console.log(oldScroll);
 					x = true;
 				}
 				
@@ -352,7 +353,7 @@ var APP = {
 
 			var a = new Narrator('text', $('.wrapper > .a'), 2465, 2393);
 			a.isOn = true;
-			var b = new Narrator('text', $('.wrapper > .b'), 2045, 1585);
+			var b = new Narrator('text', $('.wrapper > .b'), 2055, 1585);
 			var c = new Narrator('text', $('.wrapper > .c'), 1493, 1061);
 			var d = new Narrator('text', $('.wrapper > .d'), 1025, 517);
 			var e = new Narrator('text', $('.wrapper > .e'), 200, -1);
@@ -367,9 +368,11 @@ var APP = {
 			var n = new Narrator('button', $('.btn-next'), 200, -1);
 			n.isOn = true;
 			var o = new Narrator('button', $('.btn-previous'), 2465, 200);
+			var p = new Narrator('animation', $('.up-arrow'), 2465, 1750);
+			var q = new Narrator('text', $('.scrollup'), 2465, 2400);
 			var birds = new Narrator('animation', $('.birds'), 249, -1);
 
-			var narrators = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,birds];
+			var narrators = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,birds];
 			return narrators;
 		},
 

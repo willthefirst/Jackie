@@ -74,10 +74,11 @@
 	
 				&.wrapper { background: url(../images/normal/4beanstalk/background.jpeg) no-repeat bottom left; background-size: 1024px 3228px;}
 				&.castle { @include normal(4beanstalk/castle); }
-				&.up-arrow { @include normal(general/up); }
 				&.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
 				&.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
 				&.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
+				&.arrow-border { @include normal(4beanstalk/arrow-border, bottom left); }
+				&.up-arrow { @include normal(4beanstalk/arrow, bottom left); }
 				&.birda { background: sprite($birds, a) no-repeat; }
 				&.birdb { background: sprite($birds, b) no-repeat; }
 				&.birdc { background: sprite($birds, c) no-repeat; }
@@ -194,6 +195,8 @@
 				&.upperclouds { @include retina(4beanstalk/cloudsupper, bottom left); }
 				&.castleclouds { @include retina(4beanstalk/castleclouds, bottom left); }
 				&.cloudfront { @include retina(4beanstalk/cloudfront, bottom left); }
+				&.arrow-border { @include retina(4beanstalk/arrow-border, bottom left); }
+				&.up-arrow { @include retina(4beanstalk/arrow, bottom left); }
 				
 				&.birda { 
 					background: sprite($birds_2x, a) no-repeat;
@@ -769,7 +772,7 @@
 
 		/* @group animations */
 
-			&.current > .wrapper > {
+			&.current > .wrapper {
 
 					.go {				
 						/* @group lower clouds */
@@ -791,8 +794,9 @@
 							}
 
 							&.up-arrow {
-								@include animation(bouncesmall, 1s, .1s, $iterations:infinite, $function:ease-in, $fill-mode:forwards);
+								@include animation(uparrow, 2s, .1s, $iterations:infinite, $function:linear, $fill-mode:forwards);
 							}
+							
 	
 						/* @end */
 					
@@ -824,11 +828,11 @@
 				/* @group text */
 
 					.on {
-						@include animation(in, 1s, 0s, $function:linear, $fill-mode:forwards);
+						@include animation(in, .2s, 0s, $function:linear, $fill-mode:forwards);
 					}
 
 					.off {
-						@include animation(out, .5s, 0s, $function:linear, $fill-mode:forwards);
+						@include animation(out, .2s, 0s, $function:linear, $fill-mode:forwards);
 					}
 
 				/* @end */
@@ -1017,6 +1021,11 @@
 			100% { @include translate3d(0, 0, 0); }
 		}
 
+		@include keyframes(uparrow) {
+			0% { @include translate3d(0, 0, 0); }
+			100% { @include translate3d(0, -220px, 0); }
+		}
+
 	/* @end */
 
 	/* @group page-specific elements */
@@ -1027,11 +1036,9 @@
 			/* @group text */
 
 				.a {
-					bottom: 460px;
-					font-size: 30px;
-					line-height: 36px;
+					bottom: 400px;
 					text-align: right;
-					right: 110px;
+					right: 30px;
 					@include dimensions(500px, auto);
 					opacity: 1;
 				}
@@ -1051,17 +1058,17 @@
 				}
 
 				.d {
-					bottom: 2039px;
-					right: 340px;
+					bottom: 2062px;
+					right: 355px;
 					@include rotateZ(22deg);
 					color: rgb(34, 133, 41);
 					opacity: 0;
 				}
 
 				.e {
-					top: 40px;
-					left: 200px;
-					width: 600px;
+					top: 26px;
+					left: 136px;
+					width: 400px;
 					opacity: 0;
 				}
 
@@ -1072,10 +1079,27 @@
 
 	/* @group elements */
 
+		.scrollup {
+			font-size: 25px;
+			bottom: 710px;
+			left: 422px;
+			text-shadow: 1px 1px #000;
+		}
+
 		.up-arrow {
-			@include dimensions(28px, 80px);
-			bottom: 680px;
-			left: 380px;
+			@include dimensions(96px, 108px);
+			bottom: -108px;
+		}
+
+		.arrow-border {
+			@include dimensions(109px, 109px);
+		}
+
+		.arrow-wrapper{
+			@include dimensions(109px, 109px);
+			top: 2467px;
+			left: 313px;
+			overflow: hidden;
 		}
 
 		.btn-next-temp {
