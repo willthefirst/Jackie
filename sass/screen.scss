@@ -439,6 +439,10 @@
 
 			.c {
 				opacity: 0;
+				@include dimensions(500px, auto);
+				left: 65px;
+				position: absolute;
+				top: 70px;
 
 				&:first-letter {
 					line-height: 120px;
@@ -578,10 +582,10 @@
 		 }
 
 		.cloud {
-			height: 299.46px;
+			height: 288px;
 			right: -100px;
 			top: 20px;
-			width: 395.87px;
+			width: 396px;
 		 }
 
 		.sign {
@@ -1066,7 +1070,7 @@
 				}
 
 				.e {
-					top: 26px;
+					top: 18px;
 					left: 136px;
 					width: 400px;
 					opacity: 0;
@@ -1567,6 +1571,11 @@
 
 	.conversation2-9 {
 		@include scrollbg;
+
+		p {
+			font-size: 30px;
+			line-height: 40px;
+		}
 	}
 
 /* @end */
@@ -1575,15 +1584,20 @@
 
 	.recap-9 {
 
-		$items-delay: 4.5s;
+		$items-delay: 3.5s;
 
 		background-color: #212350;
 
 		&.current {
 			&> .a {
-				top: 100px;
+				top: 80px;
 				left: 30px;
 				width: 500px;
+
+				&:first-letter {
+					margin-bottom: 50px;
+					margin-right: 30px;
+				}
 			}
 
 			.recap-harp {
@@ -1603,7 +1617,7 @@
 			}
 
 			.arm {
-				@include animation(arm, 4s, 2s, $function:ease-in-out, $fill-mode:forwards);
+				@include animation(arm, 4s, 1s, $function:ease-in-out, $fill-mode:forwards);
 			}
 		}
 
