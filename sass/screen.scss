@@ -58,8 +58,8 @@
 	
 			/* @group cowsale-3 */
 	
-			&.beans { @include normal(general/beans, bottom left); }
-			&.beans2 { @include normal(general/beans2, bottom left); }
+				&.beans { @include normal(general/beans, bottom left); }
+				&.beans2 { @include normal(general/beans2, bottom left); }
 	
 			/* @end */
 	
@@ -74,17 +74,15 @@
 	
 			/* @group beanstalk-5 */
 
-			&.bg-beanstalk { background-color: green};
-
 				// &.bg-beanstalk { background: url(../images/normal/4beanstalk/background.jpeg) no-repeat 0 0; background-size: 1024px 3206px;}
-				&.bg-1 { background: url(../images/normal/4beanstalk/bg_1.jpg) no-repeat 0 0; background-size: 1024px 458px;}
-				&.bg-2 { background: url(../images/normal/4beanstalk/bg_2.jpg) no-repeat 0 0; background-size: 1024px 458px;}
-				&.bg-3 { background: url(../images/normal/4beanstalk/bg_3.jpg) no-repeat 0 0; background-size: 1024px 458px;}
-				&.bg-4 { background: url(../images/normal/4beanstalk/bg_4.jpg) no-repeat 0 0; background-size: 1024px 458px;}
-				&.bg-5 { background: url(../images/normal/4beanstalk/bg_5.jpg) no-repeat 0 0; background-size: 1024px 458px;}
-				&.bg-6 { background: url(../images/normal/4beanstalk/bg_6.jpg) no-repeat 0 0; background-size: 1024px 458px;}
-				&.bg-7 { background: url(../images/normal/4beanstalk/bg_7.jpg) no-repeat 0 0; background-size: 1024px 458px;}
-
+				&.bg-1 { background: url(../images/normal/4beanstalk/bg_1.jpg) no-repeat 0 0; }
+				&.bg-2 { background: url(../images/normal/4beanstalk/bg_2.jpg) no-repeat 0 0; }
+				&.bg-3 { background: url(../images/normal/4beanstalk/bg_3.jpg) no-repeat 0 0; }
+				&.bg-4 { background: url(../images/normal/4beanstalk/bg_4.jpg) no-repeat 0 0; }
+				&.bg-5 { background: url(../images/normal/4beanstalk/bg_5.jpg) no-repeat 0 0; }
+				&.bg-6 { background: url(../images/normal/4beanstalk/bg_6.jpg) no-repeat 0 0; }
+				&.bg-7 { background: url(../images/normal/4beanstalk/bg_7.jpg) no-repeat 0 0; }
+				&.castle { @include normal(4beanstalk/castle, bottom left); }
 				&.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
 				&.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
 				&.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
@@ -203,7 +201,14 @@
 
 			/* @group beanstalk-5 */
 
-				&.bg-beanstalk { background: url(../images/retina/4beanstalk/background_2x.jpeg) no-repeat 0 0; background-size: 1024px 3206px;}
+				// &.bg-beanstalk { background: url(../images/retina/4beanstalk/background_2x.jpeg) no-repeat 0 0; background-size: 1024px 3206px;}
+				&.bg-1 { background: url(../images/retina/4beanstalk/bg_1_2x.jpg) no-repeat 0 0; background-size: 1024px 458px; }
+				&.bg-2 { background: url(../images/retina/4beanstalk/bg_2_2x.jpg) no-repeat 0 0; background-size: 1024px 458px; }
+				&.bg-3 { background: url(../images/retina/4beanstalk/bg_3_2x.jpg) no-repeat 0 0; background-size: 1024px 458px; }
+				&.bg-4 { background: url(../images/retina/4beanstalk/bg_4_2x.jpg) no-repeat 0 0; background-size: 1024px 458px; }
+				&.bg-5 { background: url(../images/retina/4beanstalk/bg_5_2x.jpg) no-repeat 0 0; background-size: 1024px 458px; }
+				&.bg-6 { background: url(../images/retina/4beanstalk/bg_6_2x.jpg) no-repeat 0 0; background-size: 1024px 458px; }
+				&.bg-7 { background: url(../images/retina/4beanstalk/bg_7_2x.jpg) no-repeat 0 0; background-size: 1024px 458px; }
 				&.castle { @include retina(4beanstalk/castle); }
 				&.up-arrow { @include retina(general/up); }
 				&.upperclouds { @include retina(4beanstalk/cloudsupper, bottom left); }
@@ -1195,9 +1200,9 @@
 			display: none;
 		}
 	
-		// ::-webkit-scrollbar {
-		//     display: none;
-		// }
+		::-webkit-scrollbar {
+			//review
+		}
 
 		.castle {
 			@include dimensions(335px, 558px);
