@@ -49,6 +49,10 @@
 			float: left;
 		}
 
+		//Hides FB comment box
+		.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+		display: none !important;}
+
 		p {
 			font-size: 16px;
 			line-height: 18px;
