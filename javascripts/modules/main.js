@@ -1,8 +1,8 @@
 var APP = {
 
 	init: function() {
-		APP.clickOrTouch();
 		APP.isStandalone();
+		APP.clickOrTouch();
 		APP.paginate.init();
 	},
 
@@ -14,6 +14,8 @@ var APP = {
 			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=330725970353334";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
+		var a = function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		a();
 	},
 
 	events: {
@@ -33,10 +35,10 @@ var APP = {
 		if
 		( window.navigator.standalone ){
 			$('.btn-next, .btn-previous, .btn-next-temp, .btn-previous-temp').css('margin-top','30px');
-			// $('.share').remove();
+			$('.share').remove();
 		}
 		else {
-			// APP.share();
+			APP.share();
 		}
 	},
 
