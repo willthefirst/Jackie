@@ -4,7 +4,6 @@ var APP = {
 		APP.clickOrTouch();
 		APP.isStandalone();
 		APP.paginate.init();
-		APP.share();
 	},
 
 	share: function() {
@@ -34,6 +33,10 @@ var APP = {
 		if
 		( window.navigator.standalone ){
 			$('.btn-next, .btn-previous, .btn-next-temp, .btn-previous-temp').css('margin-top','30px');
+			// $('.share').remove();
+		}
+		else {
+			// APP.share();
 		}
 	},
 
