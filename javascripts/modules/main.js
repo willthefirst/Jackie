@@ -11,18 +11,18 @@ var APP = {
 		up: 'mouseup'
 	},
 
-	isStandalone: function() {
-		if
-		( window.navigator.standalone ){
-			$('.btn-next, .btn-previous, .btn-next-temp, .btn-previous-temp').css('margin-top','30px');
-		}
-	},
-
 	clickOrTouch: function() {
 		var UA = navigator.userAgent;
 		if (UA.indexOf("iPad") != -1) {
 			APP.events.down = 'touchstart';
 			APP.events.up = 'touchend';
+		}
+	},
+
+	isStandalone: function() {
+		if
+		( window.navigator.standalone ){
+			$('.btn-next, .btn-previous, .btn-next-temp, .btn-previous-temp').css('margin-top','30px');
 		}
 	},
 
@@ -225,6 +225,8 @@ var APP = {
 		$scene: $('.beanstalk-5'),
 		$next_temp: $('.btn-next-temp'),
 		$previous_temp: $('.btn-previous-temp'),
+		$wrapper: $('.wrapper'),
+		$scroll_listener: $('.scroll-listener'),
 
 		start: function(current) {
 
@@ -263,7 +265,9 @@ var APP = {
 				$('.btn-next').show();
 				APP.beanstalk_5.$next_temp.hide();
 
-				APP.beanstalk_5.$scene.animate({
+				// APP.beanstalk_5.$wrapper.css('-webkit-transform','translate3d(0,0,0)');
+
+				APP.beanstalk_5.$scroll_listener.animate({
 					scrollTop: 0
 				}, 9000, function() {
 					APP.beanstalk_5.isAnimating = false;
@@ -295,16 +299,21 @@ var APP = {
 		},
 
 		pollForScroll: function() {
+
+			APP.beanstalk_5.$scroll_listener.scrollTop(2464);
+
+			var translate_css = "";
 			var narrators = this.narrators();
-			APP.beanstalk_5.$scene.scrollTop(2464);
 
 			var oldScroll = 0;
 
 			var didScroll = function() {
 				x = false;
 
-				if (APP.beanstalk_5.$scene.scrollTop() !== oldScroll) {
-					oldScroll = APP.beanstalk_5.$scene.scrollTop();
+				if (APP.beanstalk_5.$scroll_listener.scrollTop() !== oldScroll) {
+					oldScroll = APP.beanstalk_5.$scroll_listener.scrollTop();
+					translate_css = "translate3d(0,-" + oldScroll + "px,0)";
+					APP.beanstalk_5.$wrapper.css('-webkit-transform', translate_css);
 					x = true;
 				}
 				
@@ -330,7 +339,7 @@ var APP = {
 						}
 					}
 				}
-			}, 250);
+			}, 100);
 		},
 
 		narrators: function() {
@@ -384,28 +393,35 @@ var APP = {
 				}
 			};
 
-			var a = new Narrator('text', $('.wrapper > .a'), 2465, 2393);
+			var a = new Narrator('text', $('.wrapper > .a'), 2439, 2393);
 			a.isOn = true;
 			var b = new Narrator('text', $('.wrapper > .b'), 2055, 1585);
 			var c = new Narrator('text', $('.wrapper > .c'), 1493, 1061);
 			var d = new Narrator('text', $('.wrapper > .d'), 1025, 517);
 			var e = new Narrator('text', $('.wrapper > .e'), 200, -1);
-			var f = new Narrator('button', $('.btn-next-temp'), 2465, 200);
+			var f = new Narrator('button', $('.btn-next-temp'), 2439, 200);
 			var g = new Narrator('button', $('.btn-previous-temp'), 200, -1);
 			var h = new Narrator('animation', $('.bottom'), 2384, 549);
 			var i = new Narrator('animation', $('.middle'), 2285, 525);
 			var j = new Narrator('animation', $('.top'), 1550, 70);
 			var k = new Narrator('animation', $('.top2'), 1550, 70);
-			var l = new Narrator('animation', $('.up-arrow'), 2465, 1500);
+			var l = new Narrator('animation', $('.up-arrow'), 2439, 1500);
 			var m = new Narrator('animation', $('.castleclouds'), 249, -1);
 			var n = new Narrator('button', $('.btn-next'), 200, -1);
 			n.isOn = true;
-			var o = new Narrator('button', $('.btn-previous'), 2465, 200);
-			var p = new Narrator('animation', $('.up-arrow'), 2465, 1750);
-			var q = new Narrator('text', $('.scrollup'), 2465, 2400);
+			var o = new Narrator('button', $('.btn-previous'), 2439, 200);
+			var p = new Narrator('animation', $('.up-arrow'), 2439, 1750);
+			var q = new Narrator('text', $('.scrollup'), 2439, 2400);
+			var r = new Narrator('button', $('.bg-1'), 2439, 1523);
+			var s = new Narrator('button', $('.bg-2'), 2439, 1213);
+			var t = new Narrator('button', $('.bg-3'), 2291, 755);
+			var u = new Narrator('button', $('.bg-4'), 1833, 297);
+			var v = new Narrator('button', $('.bg-5'), 1375, 0);
+			var w = new Narrator('button', $('.bg-6'), 1375, 0);
+			var x = new Narrator('button', $('.bg-7'), 1375, 0);
 			var birds = new Narrator('animation', $('.birds'), 249, -1);
 
-			var narrators = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,birds];
+			var narrators = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,birds];
 			return narrators;
 		},
 

@@ -73,9 +73,18 @@
 			/* @end */
 	
 			/* @group beanstalk-5 */
-	
-				&.wrapper { background: url(../images/normal/4beanstalk/background.jpeg) no-repeat bottom left; background-size: 1024px 3228px;}
-				&.castle { @include normal(4beanstalk/castle); }
+
+			&.bg-beanstalk { background-color: green};
+
+				// &.bg-beanstalk { background: url(../images/normal/4beanstalk/background.jpeg) no-repeat 0 0; background-size: 1024px 3206px;}
+				&.bg-1 { background: url(../images/normal/4beanstalk/bg_1.jpg) no-repeat 0 0; background-size: 1024px 458px;}
+				&.bg-2 { background: url(../images/normal/4beanstalk/bg_2.jpg) no-repeat 0 0; background-size: 1024px 458px;}
+				&.bg-3 { background: url(../images/normal/4beanstalk/bg_3.jpg) no-repeat 0 0; background-size: 1024px 458px;}
+				&.bg-4 { background: url(../images/normal/4beanstalk/bg_4.jpg) no-repeat 0 0; background-size: 1024px 458px;}
+				&.bg-5 { background: url(../images/normal/4beanstalk/bg_5.jpg) no-repeat 0 0; background-size: 1024px 458px;}
+				&.bg-6 { background: url(../images/normal/4beanstalk/bg_6.jpg) no-repeat 0 0; background-size: 1024px 458px;}
+				&.bg-7 { background: url(../images/normal/4beanstalk/bg_7.jpg) no-repeat 0 0; background-size: 1024px 458px;}
+
 				&.upperclouds { @include normal(4beanstalk/cloudsupper, bottom left); }
 				&.castleclouds { @include normal(4beanstalk/castleclouds, bottom left); }
 				&.cloudfront { @include normal(4beanstalk/cloudfront, bottom left); }
@@ -194,7 +203,7 @@
 
 			/* @group beanstalk-5 */
 
-				&.wrapper { background: url(../images/retina/4beanstalk/background_2x.jpeg) no-repeat bottom left; background-size: 1024px 3228px;}
+				&.bg-beanstalk { background: url(../images/retina/4beanstalk/background_2x.jpeg) no-repeat 0 0; background-size: 1024px 3206px;}
 				&.castle { @include retina(4beanstalk/castle); }
 				&.up-arrow { @include retina(general/up); }
 				&.upperclouds { @include retina(4beanstalk/cloudsupper, bottom left); }
@@ -795,8 +804,6 @@
 	// Note: The css for this scene is formatted differently due to the scroll interaction that occurs.
 
 	.beanstalk-5 {
-		overflow-y: scroll;
-		overflow-x: hidden;
 
 		/* @group animations */
 
@@ -1058,8 +1065,57 @@
 
 	/* @group page-specific elements */
 
+		.bg-beanstalk {
+			@include dimensions(1024px, 458px);
+			display: block;
+		}
+
+		.bg-1 {
+			bottom: 0;
+		}
+
+		.bg-2 {
+			bottom: 458px;
+		}
+
+		.bg-3 {
+			bottom: 916px;
+		}
+
+		.bg-4 {
+			bottom: 1374px;
+		}
+
+		.bg-5 {
+			bottom: 1832px;
+		}
+
+		.bg-6 {
+			bottom: 2290px;
+		}
+
+		.bg-7 {
+			bottom: 2748px;
+		}
+
+		.scroll-listener {
+			@include dimensions(1024px, 768px);
+			overflow-x: hidden;
+			overflow-y: scroll;
+			z-index: 1;
+			opacity: .5;
+
+		}
+
+		.scroll-dummy {
+			@include dimensions(1024px, 3206px);
+			background-color: green;
+		}
+
 		.wrapper {
-			@include dimensions(100%, 3229px);
+			@include dimensions(1024px, 3206px);
+			-webkit-transition: all 0.2s linear;
+			-webkit-transform: translate3d(0,-2441px,0);
 
 			/* @group text */
 
@@ -1139,9 +1195,9 @@
 			display: none;
 		}
 	
-		::-webkit-scrollbar {
-		    display: none;
-		}
+		// ::-webkit-scrollbar {
+		//     display: none;
+		// }
 
 		.castle {
 			@include dimensions(335px, 558px);
