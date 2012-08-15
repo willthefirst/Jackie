@@ -1108,19 +1108,17 @@
 			overflow-x: hidden;
 			overflow-y: scroll;
 			z-index: 1;
-			opacity: .5;
-
+			opacity: 0;
 		}
 
 		.scroll-dummy {
 			@include dimensions(1024px, 3206px);
-			background-color: green;
 		}
 
 		.wrapper {
 			@include dimensions(1024px, 3206px);
-			-webkit-transition: all 0.2s linear;
-			-webkit-transform: translate3d(0,-2441px,0);
+			@include single-transition(all, 0.2s, linear);
+			-webkit-transform: translate3d(0,-2438px,0);
 
 			/* @group text */
 
@@ -1185,8 +1183,8 @@
 
 		.arrow-wrapper{
 			@include dimensions(109px, 109px);
-			top: 2467px;
-			left: 313px;
+			top: 2438px;
+			left: 319px;
 			overflow: hidden;
 		}
 
@@ -1201,7 +1199,7 @@
 		}
 	
 		::-webkit-scrollbar {
-			//review
+			display: none;
 		}
 
 		.castle {
@@ -1292,8 +1290,11 @@
 
 		@extend .cowsale-3;
 
-		p:first-letter {
-			margin-bottom: 50px;
+		p {
+			font-size: 21px;
+			&:first-letter {
+				margin-bottom: 50px;
+			}
 		}
 	}
 
