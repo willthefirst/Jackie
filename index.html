@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns:fb="http://ogp.me/ns/fb#">
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# jackieandtheb: http://ogp.me/ns/fb/jackieandtheb#">
 	<meta charset="UTF-8">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-transclucent" />
@@ -13,6 +13,14 @@
 	<title>Jackie</title>
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="assets/add2home.css">
+	<meta property="fb:app_id" content="330725970353334" /> 
+	<meta property="og:type" content="jackieandtheb:beanstalk" /> 
+	<meta property="og:title" content="the beanstalk" />
+	<meta property="og:url" content="http://www.jackieandthebeanstalk.com" />
+	<meta property="og:image" content="http://jackieandthebeanstalk.com/images/icon/ogicon.png" />
+	<meta property="og:site_name" content="Jackie And The Beanstalk" />
+	<meta property="og:description" content="Check out Jackie and the Beanstalk, a photo-real interactive children's storybook" />
+	<meta property="fb:admins" content="1064730089" />
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-34070683-1']);
@@ -25,12 +33,34 @@
 	</script>
 </head>
 <body>
+
 	<div class="container">
 		<div class="share">
 			<div id="fb-root"></div>
+			<script>
+			  window.fbAsyncInit = function() {
+			    FB.init({
+			      appId      : '330725970353334', // App ID
+			      status     : true, // check login status
+			      cookie     : true, // enable cookies to allow the server to access the session
+			      xfbml      : true  // parse XFBML
+			    });
+			  };
+
+			  // Load the SDK Asynchronously
+			  (function(d){
+			    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+			    js = d.createElement('script'); js.id = id; js.async = true;
+			    js.src = "//connect.facebook.net/en_US/all.js";
+			    d.getElementsByTagName('head')[0].appendChild(js);
+			  }(document));
+			</script>
 			<fb:like href="http://www.jackieandthebeanstalk.com" send="false" layout="box_count" width="70" show_faces="false" font="verdana"></fb:like>
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jackieandthebeanstalk.com" data-text="Check out Jackie and the Beanstalk, a photo-real interactive children's storybook" data-hashtags="viget" data-count="vertical" data-size="medium">Tweet</a>
 			<p>This works in Chrome, Safari, and Mobile Safari on any iPad.<br><br>It also supports Retina displays.</p>
+			<form>
+				<input id="shareonfacebook" type="checkbox" name="facebook" value="share" checked="checked" />Definitely don't not share on Facebook when I help Jackie climb the beanstalk.
+			</form>
 		</div>
 		<div class="frame">
 			<div class="btn-previous"></div>

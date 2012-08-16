@@ -33,7 +33,6 @@ var APP = {
 	isStandalone: function() {
 		if
 		( window.navigator.standalone ){
-			$('.btn-next, .btn-previous, .btn-next-temp, .btn-previous-temp').css('margin-top','30px');
 			$('.share').remove();
 		}
 
@@ -191,7 +190,7 @@ var APP = {
 
 			this.$next_temp.hide();
 			this.$btn_next.show();
-			this.$next_temp.off(up, this.houseFall);
+			this.$next_temp.off();
 
 			setTimeout(function() {
 				$('.exposition-2').removeClass('next');
@@ -467,6 +466,14 @@ var APP = {
 			$('.btn-next').show();
 			$('.btn-previous').show();
 
+			if( $('#shareonfacebook').prop("checked") === true ) {
+
+				FB.api(
+				'/me/jackieandtheb:climb',
+				'post',
+				{ beanstalk: 'http://www.jackieandthebeanstalk.com'},	function(response) {
+				});
+			}
 		}
 	},
 
