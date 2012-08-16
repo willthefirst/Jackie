@@ -36,6 +36,7 @@ var APP = {
 			$('.btn-next, .btn-previous, .btn-next-temp, .btn-previous-temp').css('margin-top','30px');
 			$('.share').remove();
 		}
+
 		else {
 			APP.share();
 		}
@@ -581,7 +582,7 @@ var APP = {
 			var up = APP.events.up;
 			var $read_again = $('.read-again');
 
-			$('.theend, .read-again').css('-webkit-animation','theendup 5s 2s ease-in-out forwards');
+			$('.theend, .read-again, .credits').css('-webkit-animation','theendup 5s 2s ease-in-out forwards');
 
 			//turns off animation, resets positions, all to allow for transition on click of read-again button.
 
@@ -589,6 +590,7 @@ var APP = {
 				$('.theend').css('top','-725px');
 				$('.read-again').css('top','248px');
 				$('.theend, .read-again').css('-webkit-animation','');
+				$('.credits').css('z-index','1');
 			}, 7000);
 
 			//time determined by overall css animation time.

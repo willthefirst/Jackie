@@ -23,7 +23,7 @@
 
 /* @group media query for images, lazy loading */
 
-	@media screen and (-webkit-max-device-pixel-ratio: 1.5) {
+	@media screen and (-webkit-max-device-pixel-ratio: 1.5), (max--moz-device-pixel-ratio: 1.5) {
 
 		.btn-previous { @include normal(general/left); &.pressed { @include normal(general/left-dark); } }
 		.btn-next { @include normal(general/right); &.pressed { @include normal(general/right-dark); } }
@@ -151,7 +151,7 @@
 		}
 	}
 
-	@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	@media screen and (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2) {
 
 		.btn-previous { @include retina(general/left); &.pressed { @include retina(general/left-dark); } }
 		.btn-next { @include retina(general/right); &.pressed { @include retina(general/right-dark); } }
@@ -1949,6 +1949,28 @@
 		.read-again-hover {
 			@include transform-origin(50%, 0%);
 			@include rotate3d(1,0,0,25deg);
+		}
+
+		.credits {
+			font-size: 16px;
+			color: #b3c9dc;
+			right: 10px;
+			bottom: -477px;
+
+			a {
+				@include single-transition(all, .2s, linear);
+				font-family: 'Esteban', serif;
+				color: inherit;
+				text-decoration: none;
+				float: left;
+				clear: left;
+				margin-top: 4px;
+			}
+
+			a:hover {
+				color: #dcadd8;
+			};
+			
 		}
 
 	/* @end */
