@@ -14,6 +14,7 @@ var APP = {
 			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=330725970353334";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
+
 		(!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"));
 	},
 
@@ -472,6 +473,13 @@ var APP = {
 				'/me/jackieandtheb:climb',
 				'post',
 				{ beanstalk: 'http://www.jackieandthebeanstalk.com'},	function(response) {
+					if (!response || response.error) {
+						console.log('Error occured' + response.error.message);
+						var a= response;
+						console.log(a);
+					} else {
+						console.log('Success! Action ID: ' + response.id);
+					}
 				});
 			}
 		}
