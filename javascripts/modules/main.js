@@ -467,21 +467,18 @@ var APP = {
 			$('.btn-next').show();
 			$('.btn-previous').show();
 
-			if( $('#shareonfacebook').prop("checked") === true ) {
-
-				FB.api(
-				'/me/jackieandtheb:climb',
-				'post',
-				{ beanstalk: 'http://www.jackieandthebeanstalk.com'},	function(response) {
-					if (!response || response.error) {
-						console.log('Error occured' + response.error.message);
-						var a= response;
-						console.log(a);
-					} else {
-						console.log('Success! Action ID: ' + response.id);
-					}
-				});
-			}
+			FB.api(
+			'/me/jackieandtheb:climb',
+			'post',
+			{ beanstalk: 'http://www.jackieandthebeanstalk.com'},	function(response) {
+				if (!response || response.error) {
+					console.log('Error occured' + response.error.message);
+					var a= response;
+					console.log(a);
+				} else {
+					console.log('Success! Action ID: ' + response.id);
+				}
+			});
 		}
 	},
 
